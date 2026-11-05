@@ -19,6 +19,8 @@ An open-source map of the Bitcoin community: meetups, conferences, local communi
 | Your own events | `profiles/<name>/events.json` | yours | on commit |
 | Bitcoin-only companies | `profiles/<name>/ecosystem.json`, each entry with a source; only entries read at their source or approved by an editor are published | editorial | on commit |
 
+Event pictures (Plan ₿ thumbnails, community feed covers) and community logos are copied and resized at harvest time into `data/images/` and served by the atlas itself, so visitors load nothing from third-party servers. A Meetup event shows its community's logo. Company logos live in the profile (`logos/`); `node scripts/fetch-logos.mjs` fetches them from the GitHub organisation named in each entry's `github` field.
+
 The same event published by several sources appears once, with links to the others. Personal contact fields from BTC Map (email, phone, WhatsApp, Signal) are never republished. Meetup descriptions are not copied. See [docs/DATA.md](docs/DATA.md).
 
 ## Run it
@@ -33,7 +35,7 @@ npm test
 npm run preview      # http://127.0.0.1:8790/community-atlas/
 ```
 
-The repository holds the last harvested data, so `npm run build` works offline. Behind an HTTP proxy, run the harvest with `NODE_USE_ENV_PROXY=1` so that Node's `fetch` uses it.
+The repository holds the last harvested data, so `npm run build` works offline, without pictures until the first `npm run harvest`. Behind an HTTP proxy, run the harvest with `NODE_USE_ENV_PROXY=1` so that Node's `fetch` uses it.
 
 Another profile: `ATLAS_PROFILE=profiles/example-region npm run build`, or `node scripts/build.mjs --profile profiles/example-region`.
 

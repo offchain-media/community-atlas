@@ -4,7 +4,8 @@
  */
 import { resolve } from "node:path";
 import { writeFile } from "node:fs/promises";
-import { SOURCES, fetchJSON, writeJSON } from "../lib/io.mjs";
+import { SOURCES, fetchJSON, pool, writeJSON } from "../lib/io.mjs";
+import { saveIndex, storeImage } from "../lib/images.mjs";
 import { representativePoint, simplify, shape, inShape } from "../lib/geo.mjs";
 import { safeURL } from "../../src/shared/util.js";
 
@@ -97,12 +98,21 @@ export async function harvestAreas() {
         country: countryAt(point[0], point[1]),
         continent: a.tags.continent || null,
         links,
+        icon: safeURL(a.tags["icon:square"]),
         btcmap: `https://btcmap.org/community/${encodeURIComponent(a.tags.url_alias)}`,
       };
     })
     .filter(Boolean)
     .sort((a, b) => a.name.localeCompare(b.name));
 
+  // Community logos, resized and kept locally.
+  await pool(communities, 6, async (c) => {
+    const icon = c.icon;
+    delete c.icon;
+    if (icon) c.image = await storeImage(icon, "communities/" + c.id.replace(/[^\w-]/g, "_"), "logo");
+    if (!c.image) delete c.image;
+  });
+  await saveIndex();
   const fetchedAt = new Date().toISOString();
   const license = "ODbL-1.0 (BTC Map)";
   await writeJSON(resolve(SOURCES, "btcmap-countries.json"), { fetchedAt, source: url, license, countries }, false);

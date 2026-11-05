@@ -1,4 +1,4 @@
-{"fetchedAt":"2026-11-05T21:22:31.096Z","source":"https://api.btcmap.org/v4/places?fields=id,lat,lon,name,deleted_at","license":"ODbL-1.0 (OpenStreetMap contributors, BTC Map)","fields":["id","lon","lat","name"],"places":[
+{"fetchedAt":"2026-11-05T21:55:04.235Z","source":"https://api.btcmap.org/v4/places?fields=id,lat,lon,name,deleted_at","license":"ODbL-1.0 (OpenStreetMap contributors, BTC Map)","fields":["id","lon","lat","name"],"places":[
 [2,8.94982,45.99988,"Boatcenter Lugano"],
 [4,168.73086,-45.01522,"Ones and Zeros Technology"],
 [5,8.95284,46.00467,"La Dispensa"],

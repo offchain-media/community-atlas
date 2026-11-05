@@ -31,7 +31,10 @@ test("Off-Chain Media edition builds under its two paths", (t) => {
   const events = JSON.parse(readFileSync(join(dir, "community-atlas/data/events.json"), "utf8")).events;
   assert.ok(events.length > 0);
   assert.equal(new Set(events.map((e) => e.id)).size, events.length);
+  // Every picture an event or a community points to is in the build (none when nothing was harvested).
+  for (const e of events.filter((e) => e.image)) assert.ok(existsSync(join(dir, e.image)), e.image);
   const communities = JSON.parse(readFileSync(join(dir, "community-atlas/data/communities.json"), "utf8")).communities;
+  for (const c of communities.filter((c) => c.image)) assert.ok(existsSync(join(dir, c.image)), c.image);
   assert.ok(communities.every((c) => !JSON.stringify(c.links).match(/mailto:|"email"|"phone"|whatsapp/i)), "no personal contact fields");
   const embed = readFileSync(join(dir, "community-atlas/embed/index.html"), "utf8");
   assert.match(embed, /name="robots" content="noindex"/);

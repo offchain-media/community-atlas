@@ -17,7 +17,10 @@
    "evidenceNote": "Site and README (github.com/muun/apollo) describe a non-custodial Bitcoin and Lightning wallet; terms name Muun Wallet Inc., incorporated in the Cayman Islands.",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "muun",
+   "logo": "logos/muun.webp",
+   "logoSource": "https://github.com/muun"
   },
   {
    "id": "sparrow-wallet",
@@ -33,7 +36,10 @@
    "evidenceNote": "README: 'Sparrow is a modern desktop Bitcoin wallet application'; no other assets supported (no explicit 'bitcoin-only' wording).",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "sparrowwallet",
+   "logo": "logos/sparrow-wallet.webp",
+   "logoSource": "https://github.com/sparrowwallet"
   },
   {
    "id": "wizardsardine",
@@ -49,7 +55,10 @@
    "evidenceNote": "README: 'Liana is a simple Bitcoin wallet' with a recovery key usable after inactivity; site tagline 'Bitcoin infrastructure, on your own terms'.",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "wizardsardine",
+   "logo": "logos/wizardsardine.webp",
+   "logoSource": "https://github.com/wizardsardine"
   },
   {
    "id": "zeus",
@@ -65,7 +74,10 @@
    "evidenceNote": "README feature list includes '[x] Bitcoin only wallet'; AGPLv3, Lightning, on-chain and Cashu ecash.",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "ZeusLN",
+   "logo": "logos/zeus.webp",
+   "logoSource": "https://github.com/ZeusLN"
   },
   {
    "id": "bitkey",
@@ -113,7 +125,10 @@
    "evidenceNote": "README: 'Build an offline, airgapped Bitcoin signing device for less than $50!'",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "SeedSigner",
+   "logo": "logos/seedsigner.webp",
+   "logoSource": "https://github.com/SeedSigner"
   },
   {
    "id": "21bitcoin",
@@ -209,7 +224,10 @@
    "evidenceNote": "Blog: works exclusively with Bitcoin, 'no altcoins'; wallet marketed as 'self-custodial, open source, Bitcoin only'.",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "SatoshiPortal",
+   "logo": "logos/bull-bitcoin.webp",
+   "logoSource": "https://github.com/SatoshiPortal"
   },
   {
    "id": "peach-bitcoin",
@@ -401,7 +419,10 @@
    "evidenceNote": "ACINQ describes itself as a French Bitcoin technology company focused on the Lightning Network; Phoenix is a self-custodial Bitcoin Lightning wallet (phoenix.acinq.co).",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "ACINQ",
+   "logo": "logos/acinq.webp",
+   "logoSource": "https://github.com/ACINQ"
   },
   {
    "id": "alby",
@@ -449,7 +470,10 @@
    "evidenceNote": "README: 'the easiest way to run a dedicated, easy to use, Bitcoin Node and Lightning Wallet'.",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "mynodebtc",
+   "logo": "logos/mynode.webp",
+   "logoSource": "https://github.com/mynodebtc"
   },
   {
    "id": "raspiblitz",
@@ -465,7 +489,10 @@
    "evidenceNote": "README: 'a do-it-yourself Bitcoin & Lightning Fullnode running on a RaspberryPi'.",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "raspiblitz",
+   "logo": "logos/raspiblitz.webp",
+   "logoSource": "https://github.com/raspiblitz"
   },
   {
    "id": "mempool",
@@ -481,7 +508,10 @@
    "evidenceNote": "README: mempool visualizer, explorer and API 'developed and operated for the benefit of the Bitcoin community'. Also offers a Liquid explorer view.",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "mempool",
+   "logo": "logos/mempool.webp",
+   "logoSource": "https://github.com/mempool"
   },
   {
    "id": "bitaxe",
@@ -545,7 +575,10 @@
    "evidenceNote": "Official DATUM Gateway README (Bitcoin Ocean, LLC): 'Official DATUM supports Bitcoin only, using Bitcoin's consensus rules and SHA-256d proof of work'.",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "OCEAN-xyz",
+   "logo": "logos/ocean.webp",
+   "logoSource": "https://github.com/OCEAN-xyz"
   },
   {
    "id": "nunchuk",
@@ -646,7 +679,7 @@
   {
    "id": "plan-b-network",
    "name": "Plan ₿ Network",
-   "url": "https://planb.network",
+   "url": "https://planb.academy",
    "category": "education",
    "country": null,
    "description": {
@@ -657,7 +690,10 @@
    "evidenceNote": "README: aims to build 'the first multilingual and open-source e-learning platform focused on Bitcoin'; content CC BY-SA.",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "PlanB-Network",
+   "logo": "logos/plan-b-network.webp",
+   "logoSource": "https://github.com/PlanB-Network"
   },
   {
    "id": "wasabi-wallet",
@@ -673,7 +709,10 @@
    "evidenceNote": "README: 'An open-source, non-custodial, privacy-focused Bitcoin wallet for desktop'; MIT licence.",
    "verifiedAt": "2026-11-05",
    "verification": "read",
-   "review": "pending"
+   "review": "pending",
+   "github": "WalletWasabi",
+   "logo": "logos/wasabi-wallet.webp",
+   "logoSource": "https://github.com/WalletWasabi"
   }
  ]
 }

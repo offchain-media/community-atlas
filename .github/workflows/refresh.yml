@@ -30,6 +30,12 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # Resized pictures are not committed; the cache keeps them between runs so only new ones are fetched.
+      - uses: actions/cache@v4
+        with:
+          path: data/images
+          key: images-${{ github.run_id }}
+          restore-keys: images-
       - run: npm run harvest
       - run: npm test
       - run: npm run build

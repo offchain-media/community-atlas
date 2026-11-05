@@ -51,19 +51,20 @@ function link(href, text) {
   return url ? `<a href="${esc(url)}" rel="noopener noreferrer">${esc(text)}</a>` : esc(text);
 }
 
-/** One event as an HTML list item. Every value is escaped. */
+/** One event as an HTML list item: picture (or date), labels, title, sources. Every value is escaped. */
 export function eventHTML(e, T, lang, tag = "li") {
   const p = dateParts(e, T.locale);
   const where = e.online ? T.online : [e.city, countryName(e.country, T.locale)].filter(Boolean).join(", ");
   const source = e.listing && e.listing !== e.url ? link(e.listing, e.sourceName) : esc(e.sourceName);
   const others = (e.alsoListedBy || []).map((o) => link(o.url, o.sourceName)).join(", ");
-  return `<${tag} class="event" data-type="${esc(e.type)}"><div class="date" aria-hidden="true">${
-    p
-      ? `<span class="d">${esc(p.day)}</span><span class="m">${esc(p.month)}</span><span class="y">${esc(p.year)}</span>`
-      : '<span class="m">?</span>'
-  }</div><div class="body"><h3>${link(e.url, eventTitle(e, lang))}</h3><p class="when">${esc(dateLabel(e, T))}</p><p class="meta"><span class="type">${esc(
+  const thumb = e.image
+    ? `<div class="thumb${e.imageFit === "contain" ? " logo" : ""}"><img src="${esc(e.image)}" alt="" loading="lazy" decoding="async" width="480" height="270"></div>`
+    : `<div class="thumb date" aria-hidden="true">${p ? `<span class="d">${esc(p.day)}</span><span class="m">${esc(p.month)} ${esc(p.year)}</span>` : '<span class="d">?</span>'}</div>`;
+  const cityLevel = e.precision === "city" ? ` <span title="${esc(T.cityLevel)}">◌</span>` : "";
+  return `<${tag} class="event" data-type="${esc(e.type)}">${thumb}<div class="body"><p class="kicker"><span class="cat">${esc(
     T.types[e.type] || T.types.other,
-  )}</span>${where ? " · " + esc(where) : ""}${
-    e.precision === "city" ? ` <span class="muted" title="${esc(T.cityLevel)}">◌</span>` : ""
-  }</p><p class="source">${esc(T.listedBy)} ${source}${others ? `, ${esc(T.alsoListedBy)} ${others}` : ""}</p></div></${tag}>`;
+  )}</span><span>${esc(dateLabel(e, T))}</span>${where ? `<span>${esc(where)}${cityLevel}</span>` : ""}</p><h3>${link(
+    e.url,
+    eventTitle(e, lang),
+  )}</h3><p class="source">${esc(T.listedBy)} ${source}${others ? `, ${esc(T.alsoListedBy)} ${others}` : ""}</p></div></${tag}>`;
 }

@@ -14,4 +14,6 @@ The MIT licence covers the code of this repository only. The following keep thei
 | Community feeds | `data/sources/feed-events.json` | Published by each listed site, linked back to it. |
 | Basemap | loaded from OpenFreeMap | © OpenMapTiles, © OpenStreetMap contributors; attribution shown on the map |
 | Off-Chain Media name and logo | `profiles/offchain-media/logo.svg` | Trademark of Off-Chain Media, not licensed. Replace it in your fork. |
+| Event pictures and community logos | `data/images/` (not committed) and the build | Belong to the events' organisers and to the communities; shown to illustrate their own listing, with a link to the source. Plan ₿ thumbnails come from its CC BY-SA 4.0 repository. |
+| Company logos | `profiles/*/logos/` | GitHub organisation avatars of each project, trademarks of their owners, shown next to their own listing. |
 | Company names and links | `profiles/*/ecosystem.json` | Names belong to their owners. A listing is editorial and does not imply partnership. |

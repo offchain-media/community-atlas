@@ -15,7 +15,7 @@ import { bbox, inBbox, inShape, shape } from "./lib/geo.mjs";
 import { fromFeed } from "./harvest/feeds.mjs";
 import { dedupe, groupEvents, toICS } from "../src/shared/events.js";
 import { esc, fmt, plural, safeURL } from "../src/shared/util.js";
-import { eventHTML } from "../src/shared/format.js";
+import { countryName, eventHTML } from "../src/shared/format.js";
 
 const { values } = parseArgs({
   options: {
@@ -138,10 +138,34 @@ const groups = groupEvents(events, NOW);
 const ecosystemFile = await readJSON(join(PROFILE_DIR, "ecosystem.json"), { companies: [] });
 const companies = ecosystemFile.companies
   .filter((c) => safeURL(c.url) && (c.verification === "read" || c.review === "approved"))
-  .map(({ id, name, url, category, country, description, evidence, verifiedAt, review }) => ({
+  .map(({ id, name, url, category, country, description, evidence, verifiedAt, review, logo }) => ({
     id, name, url, category, country, description, evidence, verifiedAt, reviewed: review === "approved",
+    logo: logo && /^[\w./-]+$/.test(logo) ? join(PROFILE_DIR, logo) : null,
   }));
 const layers = [S.merchants && "merchants", S.communities && "communities", "events"].filter(Boolean);
+
+// Pictures: harvested ones live in data/images/ (see scripts/lib/images.mjs), company logos in the profile.
+// Only those of published items are copied; a missing file simply leaves the item without a picture.
+const IMG = ASSETS + "assets/img/";
+const copies = [];
+function picture(from, to) {
+  if (!from || !existsSync(from)) return null;
+  copies.push([from, at("assets/img", to)]);
+  return IMG + to;
+}
+for (const e of events) {
+  const p = picture(e.image && resolve(ROOT, "data/images", e.image), e.image);
+  // A community logo standing in for an event picture is shown whole, not cropped to 16:9.
+  if (p) Object.assign(e, { image: p }, e.image.startsWith("communities/") ? { imageFit: "contain" } : {});
+  else delete e.image;
+}
+for (const c of communities) {
+  const p = picture(c.image && resolve(ROOT, "data/images", c.image), c.image);
+  if (p) c.image = p;
+  else delete c.image;
+}
+
+for (const c of companies) c.logo = picture(c.logo, "logos/" + basename(c.logo || ""));
 
 /* ---------- credits, shared by the map, footer, About page and llms.txt ---------- */
 
@@ -198,6 +222,11 @@ await writeFile(
 const host = new URL(profile.origin).hostname;
 const calendarEvents = [...groups.upcoming, ...groups.past.filter((e) => Date.parse(e.start) > NOW - 30 * 86400000)];
 await writeFile(at("events.ics"), toICS(calendarEvents, { name: profile.name, host, now: NOW }));
+
+for (const [from, to] of copies) {
+  await mkdir(join(to, ".."), { recursive: true });
+  await cp(from, to);
+}
 
 // Code, styles, map library, fonts and images.
 await mkdir(at("assets/shared"), { recursive: true });
@@ -264,16 +293,20 @@ function themeVars() {
 
 function companyCard(c, lang, T) {
   const desc = c.description?.[lang] || c.description?.en || "";
-  return `<article class="company" data-category="${esc(c.category)}"><h3><a href="${esc(c.url)}" rel="noopener noreferrer">${esc(c.name)}</a></h3><p class="meta">${esc(T.categories[c.category] || c.category)}${c.country ? " · " + esc(c.country) : ""}</p><p>${esc(desc)}</p>${
-    safeURL(c.evidence) ? `<p class="why"><a href="${esc(c.evidence)}" rel="noopener noreferrer">${esc(T.whyBitcoinOnly)} ↗</a></p>` : ""
-  }</article>`;
+  const logo = c.logo
+    ? `<img class="logo-img" src="${esc(c.logo)}" alt="" loading="lazy" decoding="async" width="56" height="56">`
+    : `<span class="mono" aria-hidden="true">${esc([...c.name][0])}</span>`;
+  const country = c.country ? countryName(c.country, T.locale) : "";
+  return `<article class="company" data-category="${esc(c.category)}">${logo}<div>${country ? `<p class="kicker"><span class="cat">${esc(country)}</span></p>` : ""}<h3><a href="${esc(c.url)}" rel="noopener noreferrer">${esc(c.name)}</a></h3><p class="desc">${esc(desc)}</p>${
+    safeURL(c.evidence) ? `<p class="links"><a href="${esc(c.evidence)}" rel="noopener noreferrer">${esc(T.whyBitcoinOnly)} ↗</a></p>` : ""
+  }</div></article>`;
 }
 
 function ecosystemHTML(lang, T) {
   return Object.keys(T.categories)
     .map((cat) => [cat, companies.filter((c) => c.category === cat)])
     .filter(([, list]) => list.length)
-    .map(([cat, list]) => `<section data-group="${esc(cat)}"><h2 class="group-title">${esc(T.categories[cat])}</h2><div class="grid">${list.map((c) => companyCard(c, lang, T)).join("")}</div></section>`)
+    .map(([cat, list]) => `<section data-group="${esc(cat)}"><div class="section-head"><h2 class="group-title">${esc(T.categories[cat])}</h2></div><div class="grid">${list.map((c) => companyCard(c, lang, T)).join("")}</div></section>`)
     .join("");
 }
 

@@ -39,6 +39,12 @@ export async function fetchText(url, { timeout = 30000, headers = {} } = {}) {
   return response.text();
 }
 
+export async function fetchBuffer(url, { timeout = 30000 } = {}) {
+  const response = await fetch(url, { headers: { "User-Agent": userAgent }, signal: AbortSignal.timeout(timeout), redirect: "follow" });
+  if (!response.ok) throw new Error(`HTTP ${response.status} for ${url}`);
+  return Buffer.from(await response.arrayBuffer());
+}
+
 export async function fetchJSON(url, options) {
   return JSON.parse(await fetchText(url, options));
 }

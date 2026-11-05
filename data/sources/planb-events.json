@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-05T21:22:50.681Z",
+ "fetchedAt": "2026-11-05T21:55:49.618Z",
  "source": "https://github.com/PlanB-Network/bitcoin-educational-content/tree/a400db3d8ff3481663fd622ff814b63ae36f8d58/events",
  "license": "CC BY-SA 4.0 (Plan ₿ Network)",
  "skipped": [
@@ -57,6 +57,7 @@
    "online": false,
    "venue": "Gasthof Pension Strohmaier",
    "url": "https://docs.google.com/forms/d/e/1FAIpQLSc0Za-no0XEnFrWA6Nnk7CB8y1HhbOw-zN_XEHYy936_FrJqQ/viewform",
+   "image": null,
    "listing": "https://planb.academy/en/events/82011dd9-0a20-42a2-8020-9106336c47f5",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -83,6 +84,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.bitcoin-alps.ch/konferenz/2024-Programm/",
+   "image": null,
    "listing": "https://planb.academy/en/events/0212a3c8-f0bd-4c97-b81c-daf2e280c79f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -109,6 +111,7 @@
    "online": false,
    "venue": "3700 Franklin Street, Denver, Colorado 80205, The Space – Bitcoin Education Hub",
    "url": "https://timechainsummit.com/",
+   "image": "events/planb-Timechain-Summit-2026-opening-event.webp",
    "listing": "https://planb.academy/en/events/7dc3de61-76d3-45ca-af10-fb79317d7b0e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -135,6 +138,7 @@
    "online": false,
    "venue": "3700 Franklin Street, Denver, Colorado 80205, The Space – Bitcoin Education Hub",
    "url": "https://timechainsummit.com/",
+   "image": "events/planb-Timechain-Summit-2026-working-sessions.webp",
    "listing": "https://planb.academy/en/events/eb76ff83-3745-4c12-a526-7b9347138c18",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -161,6 +165,7 @@
    "online": false,
    "venue": null,
    "url": "https://docs.google.com/forms/d/e/1FAIpQLSfhgXH99WLVR373wzUWA_RJFQRehMLCrcKGnflImO05Q29EwA/viewform",
+   "image": null,
    "listing": "https://planb.academy/en/events/93feaa21-7b2c-4736-a867-c821fe2d90b7",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -187,6 +192,7 @@
    "online": false,
    "venue": null,
    "url": "https://acelerandobitcoin.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/d82080d4-32b5-487e-be59-e289d28b9e5e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -213,6 +219,7 @@
    "online": false,
    "venue": null,
    "url": "https://sv24.adoptingbitcoin.org/",
+   "image": null,
    "listing": "https://planb.academy/en/events/67499f97-cfe4-40f0-a494-d750a2371c48",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -239,6 +246,7 @@
    "online": false,
    "venue": null,
    "url": "https://sv25.adoptingbitcoin.org/",
+   "image": "events/planb-adopting-bitcoin-2025.webp",
    "listing": "https://planb.academy/en/events/9aa3a9bd-2a53-4e49-82c8-5d80e89a57e7",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -265,6 +273,7 @@
    "online": false,
    "venue": "Luxor Live theatre",
    "url": "https://www.adoptingbitcoinarnhem.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/807c3bfb-9b73-4f6c-9edf-46025c065dcf",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -291,6 +300,7 @@
    "online": false,
    "venue": "Workshop17 Watershed",
    "url": "https://za25.adoptingbitcoin.org/",
+   "image": null,
    "listing": "https://planb.academy/en/events/73778652-d8e5-493d-b09e-c3f86492aaba",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -317,6 +327,7 @@
    "online": false,
    "venue": "Workshop17 Watershed",
    "url": "https://za25.adoptingbitcoin.org/",
+   "image": "events/planb-adopting-bitcoin-cape-town-2026.webp",
    "listing": "https://planb.academy/en/events/c38e3d0c-3af6-4e8f-8f6c-822b1743f928",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -343,6 +354,7 @@
    "online": false,
    "venue": null,
    "url": "https://afrobitcoin.org/",
+   "image": null,
    "listing": "https://planb.academy/en/events/9656b0d9-49c0-40ae-9d59-a106de4dadf3",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -369,6 +381,7 @@
    "online": false,
    "venue": "Caudan Arts Centre",
    "url": "https://afrobitcoin.org/",
+   "image": "events/planb-africa-bitcoin-conference-2025.webp",
    "listing": "https://planb.academy/en/events/230602a1-4861-43c3-9f16-c4d910aa08a0",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -395,6 +408,7 @@
    "online": false,
    "venue": null,
    "url": "https://afrobitcoin.org/",
+   "image": "events/planb-africa-bitcoin-conference-2026.webp",
    "listing": "https://planb.academy/en/events/36066023-c61b-4228-a1aa-d44fb378715d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -421,6 +435,7 @@
    "online": false,
    "venue": null,
    "url": "https://africanbitcoinmining.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/c0999fec-072e-4c80-89fe-8e57f22ca4f9",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -447,6 +462,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.lacasadesatoshi.xyz/",
+   "image": null,
    "listing": "https://planb.academy/en/events/c1eb3327-694a-464c-a5ea-1c792a4803e9",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -473,6 +489,7 @@
    "online": false,
    "venue": null,
    "url": "https://luma.com/bitplebsmining",
+   "image": null,
    "listing": "https://planb.academy/en/events/fc956f88-4954-40d8-ba14-6d39be953226",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -499,6 +516,7 @@
    "online": false,
    "venue": "Tempo House",
    "url": "https://www.btcsquad.asia/",
+   "image": "events/planb-asia-bitcoin-squad-2026.webp",
    "listing": "https://planb.academy/en/events/6120a4e5-3270-468a-b327-70fca80d3123",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -525,6 +543,7 @@
    "online": false,
    "venue": "The Hop: Craft Beer House, 10 de Julio casi, Fernando de la Mora 110308, Paraguay",
    "url": "https://bitcoinparaguay.org/",
+   "image": "events/planb-asu-bitcoin-meetup-21.webp",
    "listing": "https://planb.academy/en/events/fc84c271-5bc7-4bdc-9019-1c69a3c5c6f2",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -551,6 +570,7 @@
    "online": false,
    "venue": "The Hop: Craft Beer House, 10 de Julio casi, Fernando de la Mora 110308, Paraguay",
    "url": "https://www.satlantis.io/events/1317/ASU%3A-Bitcoin-Paraguay-Social-Meet-%235",
+   "image": "events/planb-asu-bitcoin-paraguay-social-meet-5.webp",
    "listing": "https://planb.academy/en/events/26e5a538-091a-4822-a558-3e01c32c010a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -577,6 +597,7 @@
    "online": false,
    "venue": "Juan de Salazar 372, entre Artigas y, El Granel",
    "url": "https://bitcoinparaguay.org/",
+   "image": "events/planb-asu-bitdevs-11.webp",
    "listing": "https://planb.academy/en/events/dd65ceee-1d36-44c4-9cd7-f3e2bbf6f8bd",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -603,6 +624,7 @@
    "online": false,
    "venue": null,
    "url": "https://web.archive.org/web/20250909072523/https://bitcoinlille.fr/b-on-lille/",
+   "image": null,
    "listing": "https://planb.academy/en/events/be270cf1-8e09-47ea-8181-7fd38bf5a6cd",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -629,6 +651,7 @@
    "online": false,
    "venue": null,
    "url": "https://b-only.org/",
+   "image": null,
    "listing": "https://planb.academy/en/events/88b30384-3867-416c-91ca-ff3df66a1ca6",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -655,6 +678,7 @@
    "online": false,
    "venue": "Novotel Annecy Centre, 1 Place Marie Curie, 1 Av. Berthollet, 74000",
    "url": "https://b-only.org/",
+   "image": "events/planb-b-only-2025-annecy.webp",
    "listing": "https://planb.academy/en/events/9e019639-7d23-4f78-8520-ff87bbaf36d7",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -681,6 +705,7 @@
    "online": false,
    "venue": "Novotel Annecy Centre, 1 Place Marie Curie, 1 Av. Berthollet, 74000",
    "url": "https://b-only.org/",
+   "image": "events/planb-b-only-2026-annecy.webp",
    "listing": "https://planb.academy/en/events/a67f71bf-fd4f-4ef3-9569-4fb91e18103c",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -707,6 +732,7 @@
    "online": false,
    "venue": "BBB Martinsberg, Wiesenstrasse 32, 5400 Baden, Switzerland",
    "url": "https://bitcoinbaden.ch/",
+   "image": null,
    "listing": "https://planb.academy/en/events/25ebfcab-d5fa-4b8f-80cc-d2f0f7018fe4",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -733,6 +759,7 @@
    "online": false,
    "venue": null,
    "url": "https://baltichoneybadger.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/76e27d5b-e2b1-4b94-bf1a-3b36715cf9c1",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -759,6 +786,7 @@
    "online": false,
    "venue": null,
    "url": "https://baltichoneybadger.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/30a6dedf-e42b-45d4-86be-54af24459b9f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -785,6 +813,7 @@
    "online": false,
    "venue": null,
    "url": "https://tickets.bcc8333.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/26156f07-b29a-4fe2-b9bc-f809f6e2d7a7",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -811,6 +840,7 @@
    "online": false,
    "venue": null,
    "url": "https://docs.google.com/forms/d/e/1FAIpQLSenhOzeJ32O_UQ6sFL1zuU8MH2JYGXWK8Cz2qSXrx3SG62n3w/viewform",
+   "image": null,
    "listing": "https://planb.academy/en/events/6a0629e8-2d62-43a3-8efb-f8b07a3a5f55",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -837,6 +867,7 @@
    "online": false,
    "venue": null,
    "url": "https://docs.google.com/forms/d/e/1FAIpQLSdUjGcB9zYs-yMpwrdorLDNJ7NWh7XGfIOaNhysgBOx1mDANg/viewform",
+   "image": null,
    "listing": "https://planb.academy/en/events/1ba73013-bf71-4017-8e2f-6cac5dc83bfa",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -863,6 +894,7 @@
    "online": false,
    "venue": null,
    "url": "https://docs.google.com/forms/d/e/1FAIpQLSdDBgvlJHNDTVt7frNLuZ5SKSGTzpcdYrzOXOuUhevLAq0sSw/viewform",
+   "image": null,
    "listing": "https://planb.academy/en/events/ccafd630-3eff-4336-98ff-c05f47981790",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -889,6 +921,7 @@
    "online": false,
    "venue": null,
    "url": "https://docs.google.com/forms/d/e/1FAIpQLSc8C1yV0z2QRLwIGCHoWmtFKaHRP-jAI33kyWmhracQRtgFYA/viewform",
+   "image": null,
    "listing": "https://planb.academy/en/events/e55187b8-defe-44a4-86d4-08d0990bd089",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -915,6 +948,7 @@
    "online": false,
    "venue": null,
    "url": "https://docs.google.com/forms/d/e/1FAIpQLSejIxrpdGdkQgjcrkltA9-YUiAJLlHS2OPk98E6wYMLMVphug/viewform",
+   "image": null,
    "listing": "https://planb.academy/en/events/949ac131-4c1f-48d3-88c0-2220ed273186",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -941,6 +975,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.amityage.com/bea",
+   "image": null,
    "listing": "https://planb.academy/en/events/f98412bf-f1b3-4d33-be3e-b7f8ac1a07bf",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -967,6 +1002,7 @@
    "online": false,
    "venue": null,
    "url": "https://docs.google.com/forms/d/e/1FAIpQLSdMgMk-7P6taVBcRcvAEGqDI1JIvsnfnaoDj_m_N-2ps0Wcpg/viewform",
+   "image": null,
    "listing": "https://planb.academy/en/events/9c768046-163b-4218-9272-dc7fe0a3ccb9",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -993,6 +1029,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.amityage.com/bea",
+   "image": null,
    "listing": "https://planb.academy/en/events/1763f4de-b22c-4d63-a4c0-d0523ecf638e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1019,6 +1056,7 @@
    "online": false,
    "venue": "Beechworth Servicemen's Memorial Hall, 101 Ford St, Beechworth VIC 3747",
    "url": "http://bitcoinbushbash.info/",
+   "image": "events/planb-beechworth-bitcoin-bush-bash-2026.webp",
    "listing": "https://planb.academy/en/events/cb3004ad-6a7f-46aa-9d5f-000a6711d9a7",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1045,6 +1083,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinbushbash.info/",
+   "image": null,
    "listing": "https://planb.academy/en/events/9c70b176-fcfa-473c-81d1-e7823d1e168b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1071,6 +1110,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.meetup.com/dvadeset-jedan/events/304723983/?eventOrigin=group_upcoming_events",
+   "image": null,
    "listing": "https://planb.academy/en/events/eb3a9a4b-e99b-462c-a593-9351dc42ec4b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1097,6 +1137,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/yeywgio6",
+   "image": null,
    "listing": "https://planb.academy/en/events/dd3ff4a5-8841-4a73-a35e-0b80aa83dcf0",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1123,6 +1164,7 @@
    "online": false,
    "venue": "Suyeong-gu, Suyeong-ro, 513 2층, Base21",
    "url": "https://www.satlantis.io/events/1735/BiP---2%EC%9B%94-%EC%9B%94%EA%B0%84-%EB%B0%8B%EC%97%85-%2F-Session---Inflation",
+   "image": "events/planb-bip-2-session-inflation.webp",
    "listing": "https://planb.academy/en/events/72eafd9e-2947-4f1b-91c2-57bbf8234aa8",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1149,6 +1191,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/8oircnb3",
+   "image": null,
    "listing": "https://planb.academy/en/events/82ac9924-49b5-4f2f-a63d-c18891641633",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1175,6 +1218,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitblockboom.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/e998af9d-65fe-4467-863f-f38ba9782e6b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1201,6 +1245,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitblockboom.com/",
+   "image": "events/planb-bitblockboom-2026.webp",
    "listing": "https://planb.academy/en/events/bde64a96-b00e-4a51-89c1-61eb7ae703e0",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1227,6 +1272,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcareforum.it/",
+   "image": null,
    "listing": "https://planb.academy/en/events/5e0216d6-a691-4714-8a11-a87a7862d800",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1253,6 +1299,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcareforum.it/",
+   "image": null,
    "listing": "https://planb.academy/en/events/88ead57e-fd19-4eb7-beed-fad1912fb35f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1279,6 +1326,7 @@
    "online": false,
    "venue": "Teatro Clerici, Via San Zeno 168, 25124 Brescia",
    "url": "https://bitcareforum.it/",
+   "image": "events/planb-bitcare-forum-2026.webp",
    "listing": "https://planb.academy/en/events/7cc16549-e323-4c5e-ae33-714f874b3bd8",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1305,6 +1353,7 @@
    "online": false,
    "venue": null,
    "url": "https://btcpp.dev/conf/berlin24",
+   "image": null,
    "listing": "https://planb.academy/en/events/f12157a1-41cd-4063-8011-f95f157c3340",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1331,6 +1380,7 @@
    "online": false,
    "venue": null,
    "url": "https://btcpp.dev/conf/atx25",
+   "image": null,
    "listing": "https://planb.academy/en/events/5aa64c13-2f0a-4ffb-83a3-af6ce0000ffc",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1357,6 +1407,7 @@
    "online": false,
    "venue": "Salt Galata",
    "url": "https://btcpp.dev/conf/berlin25",
+   "image": null,
    "listing": "https://planb.academy/en/events/d2918e63-dacf-49a6-86e5-1e1fc59bd973",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1383,6 +1434,7 @@
    "online": false,
    "venue": null,
    "url": "https://btcpp.dev/conf/floripa",
+   "image": null,
    "listing": "https://planb.academy/en/events/8bb72179-10fc-4b3b-9404-0090cfad3000",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1409,6 +1461,7 @@
    "online": false,
    "venue": "Salt Galata",
    "url": "https://btcpp.dev/conf/istanbul",
+   "image": null,
    "listing": "https://planb.academy/en/events/e8006f9e-4710-4187-991c-4702c1368af4",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1435,6 +1488,7 @@
    "online": false,
    "venue": "The Great Hall, Toronto",
    "url": "https://btcpp.dev/toronto",
+   "image": "events/planb-bitcoin__-finds-consensus.webp",
    "listing": "https://planb.academy/en/events/1e3235d5-a10c-4f45-8d38-7aa067f705de",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1461,6 +1515,7 @@
    "online": false,
    "venue": "Area Tres Workplace, Florianopolis",
    "url": "https://btcpp.dev/floripa26",
+   "image": "events/planb-bitcoin__-gets-exploited.webp",
    "listing": "https://planb.academy/en/events/d9ce4ed8-95e1-4294-a99f-13c422f2a4d7",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1487,6 +1542,7 @@
    "online": false,
    "venue": null,
    "url": "https://btcpp.dev/berlin26",
+   "image": "events/planb-bitcoin__-gets-paid-in-berlin.webp",
    "listing": "https://planb.academy/en/events/5209d50e-5657-4b50-98e2-a5fb3d414bab",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1513,6 +1569,7 @@
    "online": false,
    "venue": "201 W Main St, Durham, NC 27701,",
    "url": "https://btcpp.dev/durham",
+   "image": "events/planb-bitcoin__-goes-local.webp",
    "listing": "https://planb.academy/en/events/9c06b2af-2018-41a0-a242-567366e5a53e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1539,6 +1596,7 @@
    "online": false,
    "venue": "POPOP",
    "url": "https://btcpp.dev/taipei",
+   "image": "events/planb-bitcoin__-is-standing-sovereign.webp",
    "listing": "https://planb.academy/en/events/ee049230-ecae-4276-a249-48ae03deb2e8",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1565,6 +1623,7 @@
    "online": false,
    "venue": null,
    "url": "https://btcpp.dev/riga",
+   "image": null,
    "listing": "https://planb.academy/en/events/bccc5a26-7f6f-4b00-9d04-488b2fbe9029",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1591,6 +1650,7 @@
    "online": false,
    "venue": "Hoover Dam Spillway House",
    "url": "https://btcpp.dev/vegas",
+   "image": "events/planb-bitcoin__-villain-edition.webp",
    "listing": "https://planb.academy/en/events/c6948879-1988-4c72-81b2-aa6f74f75ab5",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1617,6 +1677,7 @@
    "online": false,
    "venue": "The Venetian",
    "url": "https://b.tc/conference/2026",
+   "image": "events/planb-bitcoin-2026.webp",
    "listing": "https://planb.academy/en/events/cc4acc48-5c7a-42bb-98d6-b7e396140c0a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1643,6 +1704,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinalaska.org/",
+   "image": null,
    "listing": "https://planb.academy/en/events/a3d64c9e-ac8b-48f6-9301-5a64a85ba8b0",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1669,6 +1731,7 @@
    "online": false,
    "venue": "The Roundhouse",
    "url": "https://bitcoinalive.io/",
+   "image": null,
    "listing": "https://planb.academy/en/events/892ca640-d11c-42d0-874a-7763875af1e0",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1695,6 +1758,7 @@
    "online": false,
    "venue": null,
    "url": "https://b.tc/conference/amsterdam",
+   "image": null,
    "listing": "https://planb.academy/en/events/6f585dd1-4959-4158-a402-7fffd4e57ae5",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1721,6 +1785,7 @@
    "online": false,
    "venue": null,
    "url": "https://amsterdam.b.tc/",
+   "image": "events/planb-bitcoin-amsterdam-2026.webp",
    "listing": "https://planb.academy/en/events/5df215df-051f-4ba2-a00b-00720ee9a184",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1747,6 +1812,7 @@
    "online": false,
    "venue": "Pg. de Gràcia, 19, Planta Baja, L'Eixample, 08007",
    "url": "https://www.satlantis.io/events/1710/Bitcoin-and-Gen-Z---The-next-generation-of-Bitcoin-Innovators",
+   "image": "events/planb-bitcoin-and-gen-z-the-next-generation-of-bitcoin-innovators.webp",
    "listing": "https://planb.academy/en/events/f4aacfec-0728-45e3-8676-7db4a17a4b0b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1773,6 +1839,7 @@
    "online": false,
    "venue": null,
    "url": "https://b.tc/conference/asia",
+   "image": null,
    "listing": "https://planb.academy/en/events/fcbe7cfd-0063-447b-9626-4f8cf172e678",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1799,6 +1866,7 @@
    "online": false,
    "venue": null,
    "url": "https://b.tc/conference/asia",
+   "image": null,
    "listing": "https://planb.academy/en/events/1b157dfe-c39e-4e22-aa6d-0b4b52641dbc",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1825,6 +1893,7 @@
    "online": false,
    "venue": "Hong Kong Convention and Exhibition Centre",
    "url": "https://asia.b.tc/2026",
+   "image": "events/planb-bitcoin-asia-2026.webp",
    "listing": "https://planb.academy/en/events/4180bcae-a5e6-4b51-9451-70748b58b0ff",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1851,6 +1920,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinretreat.co.uk/",
+   "image": null,
    "listing": "https://planb.academy/en/events/637b1458-a97d-474b-8890-ac453caf7ab3",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1877,6 +1947,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/pqurq7uf",
+   "image": null,
    "listing": "https://planb.academy/en/events/4f7cd49a-eb9b-49a0-8fab-1a6458ae9de9",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1903,6 +1974,7 @@
    "online": false,
    "venue": "Palm Cove QLD",
    "url": "https://bitcoinbushbash.info/",
+   "image": null,
    "listing": "https://planb.academy/en/events/49305c12-424e-4c41-94a8-a4724424e01d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1929,6 +2001,7 @@
    "online": false,
    "venue": null,
    "url": "https://x.com/Bitcoinbeach",
+   "image": "events/planb-bitcoin-circular-economies-summit.webp",
    "listing": "https://planb.academy/en/events/7a4742c8-cf43-4117-81e2-a3f565272fe4",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1955,6 +2028,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoincopenhagen.dk/",
+   "image": "events/planb-bitcoin-copenhagen-2026.webp",
    "listing": "https://planb.academy/en/events/98504681-5460-4bf6-a00e-1611a2d1f505",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -1981,6 +2055,7 @@
    "online": false,
    "venue": "9 Northington Street, Cyphermunk House",
    "url": "https://bitcoinculturefestival.london/",
+   "image": null,
    "listing": "https://planb.academy/en/events/be688b79-4066-4387-a252-bda74e3abd4f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2007,6 +2082,7 @@
    "online": false,
    "venue": null,
    "url": "https://x.com/aurore_btc/status/1836432265955389945",
+   "image": null,
    "listing": "https://planb.academy/en/events/fab93ec5-0b94-42bd-95ec-502ae560d7bb",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2033,6 +2109,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/0sbihthf",
+   "image": null,
    "listing": "https://planb.academy/en/events/049291e7-56b8-417a-b51b-c4776de3daa3",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2059,6 +2136,7 @@
    "online": false,
    "venue": "Emotions Restaurant & Sushi Bar, Hotel Hilton Panamá Level L2, Av. Vasco Nuñez de Balboa",
    "url": "https://luma.com/iwetmqu3",
+   "image": "events/planb-bitcoin-day-panam-2026.webp",
    "listing": "https://planb.academy/en/events/4df2f60b-461b-4aa4-8439-d75791c777a2",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2085,6 +2163,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinday.io/",
+   "image": null,
    "listing": "https://planb.academy/en/events/c43a1706-d1bc-4656-9a4c-1f1afe5f2a34",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2111,6 +2190,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinday.io/",
+   "image": null,
    "listing": "https://planb.academy/en/events/dace19ff-98ca-4494-9816-7e855a5ce26f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2137,6 +2217,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.breizhbitcoin.com/bitcoin-economic-forum/",
+   "image": null,
    "listing": "https://planb.academy/en/events/8c1764df-e7ad-4618-80aa-80d8b93f1087",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2163,6 +2244,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.breizhbitcoin.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/a56da7d2-4900-44c1-8cb3-a55734b64c3d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2189,6 +2271,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.breizhbitcoin.com/bitcoin-economic-forum/",
+   "image": "events/planb-bitcoin-economic-forum-2026.webp",
    "listing": "https://planb.academy/en/events/b6d02e19-eb1a-4d56-8425-b2e6ae818e21",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2215,6 +2298,7 @@
    "online": false,
    "venue": null,
    "url": "https://web.archive.org/web/20250815160249/https://bitcoinunconference.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/18fd2d0e-6d9d-4f28-84f1-8fabb92456b4",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2241,6 +2325,7 @@
    "online": false,
    "venue": "85 Washington Pl, New York, NY 10011, USA, Pubkey",
    "url": "https://delgadosfuego.com/",
+   "image": "events/planb-bitcoin-en-espaol-2026.webp",
    "listing": "https://planb.academy/en/events/6dfa389b-5389-4bda-a3e6-d828b1b9cb88",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2267,6 +2352,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/gluk14gm",
+   "image": null,
    "listing": "https://planb.academy/en/events/a2febf72-0770-497f-9207-fe21ee32638e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2293,6 +2379,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinfilmfest.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/834c2a0c-645f-47db-bd58-7ba8d679b64d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2319,6 +2406,7 @@
    "online": false,
    "venue": "Palace of Culture and Science",
    "url": "https://bitcoinfilmfest.com/bff26",
+   "image": "events/planb-bitcoin-filmfest-2026.webp",
    "listing": "https://planb.academy/en/events/99b8e304-9caf-11f0-9548-1fecc7d3fe32",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2345,6 +2433,7 @@
    "online": false,
    "venue": "10 An Phu, Thu Duc, Big Bep",
    "url": "https://bitcoinsaigon.org/support-satoshi-flea-market-saigon-christmas-2025/",
+   "image": "events/planb-bitcoin-flea-market-christmas-2025.webp",
    "listing": "https://planb.academy/en/events/3241b9db-0ae4-46ee-9044-5dce8fad504b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2371,6 +2460,7 @@
    "online": false,
    "venue": "Funk Factory - 10 An Phu, Thu Duc",
    "url": "https://bitcoinsaigon.org/support-upcoming-satoshi-flea-market-saigon-summer-2025/",
+   "image": null,
    "listing": "https://planb.academy/en/events/04349067-93de-42f7-9527-62e755f2830d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2397,6 +2487,7 @@
    "online": false,
    "venue": "Jalan Kayu Manis, Canggu, Kec. Kuta Utara",
    "url": "https://www.eventbrite.com/e/bitcoin-for-kids-workshop-inflation-monster-tickets-1060555121919",
+   "image": null,
    "listing": "https://planb.academy/en/events/79bc5b3b-1667-4ea1-a4fc-120e96ebdfbe",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2423,6 +2514,7 @@
    "online": false,
    "venue": "La Aurora International Airport, Ciudad de, 9 Avenida 14-75, Cdad. de Guatemala 00013",
    "url": "https://osmomoney.com/private",
+   "image": "events/planb-bitcoin-guatemala-city-2026.webp",
    "listing": "https://planb.academy/en/events/ce018c5b-beb6-465d-8eaa-ed255fbaaa16",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2449,6 +2541,7 @@
    "online": false,
    "venue": null,
    "url": "https://btchelsinki.com/",
+   "image": "events/planb-bitcoin-helsinki-2026.webp",
    "listing": "https://planb.academy/en/events/907c1de3-15db-4d32-9df2-970cadad8134",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2475,6 +2568,7 @@
    "online": false,
    "venue": null,
    "url": "https://x.com/bitcoinofficesv",
+   "image": "events/planb-bitcoin-historico.webp",
    "listing": "https://planb.academy/en/events/21ba1614-e2cf-40dd-aedf-d0b93ddea74d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2501,6 +2595,7 @@
    "online": false,
    "venue": null,
    "url": "https://web.archive.org/web/20250813134138/https://einundzwanzig-stuttg.art/",
+   "image": null,
    "listing": "https://planb.academy/en/events/48023c7d-e4a4-4b9d-82bf-2bd43fead60a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2527,6 +2622,7 @@
    "online": false,
    "venue": null,
    "url": "https://btc-singapore.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/7b8a65e9-d3d5-4ea4-815d-ac39d16270a1",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2553,6 +2649,7 @@
    "online": false,
    "venue": "Jl. Bungur No.5, Cipedes, Kec. Sukajadi, Jawa Barat 40162",
    "url": "https://www.eventbrite.com/e/bitcoin-indonesia-community-meetup-bandung-14-februari-2026-tickets-1980084158019",
+   "image": "events/planb-bitcoin-indonesia-community-meetup-bandung-14-februari-2026.webp",
    "listing": "https://planb.academy/en/events/fe6673db-9985-4d92-b75f-53b17699c17c",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2579,6 +2676,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinindonesia.xyz/bitcoin-indonesia-conference-2025/",
+   "image": null,
    "listing": "https://planb.academy/en/events/5a866c76-6a0b-4f3a-a2f0-e4c7bc017ad2",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2605,6 +2703,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.bitcoinireland.eu/home",
+   "image": null,
    "listing": "https://planb.academy/en/events/7e80adaa-ea83-4025-a90c-3620428a5aec",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2631,6 +2730,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinireland.eu/",
+   "image": "events/planb-bitcoin-ireland-conference-2026.webp",
    "listing": "https://planb.academy/en/events/facab778-7d7a-4aea-b6fa-f456b2a12926",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2657,6 +2757,7 @@
    "online": false,
    "venue": "Revolution Hall, Portland",
    "url": "https://bitcoinisforeveryone.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/af871e5e-7598-4465-b751-95d7cc4000e3",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2683,6 +2784,7 @@
    "online": false,
    "venue": "Tokyo Station Hotel, Chiyoda City.",
    "url": "https://btc-jpn.com/en",
+   "image": "events/planb-bitcoin-japan-2025.webp",
    "listing": "https://planb.academy/en/events/e0bea861-cc5e-4e84-8b61-f0e3b8c41a9a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2709,6 +2811,7 @@
    "online": false,
    "venue": "COEX Convention & Exhibition Center, 513 Yeongdong-daero, Gangnam-gu",
    "url": "https://www.bitcoinkoreaconference.com/",
+   "image": "events/planb-bitcoin-korea-conference-2026.webp",
    "listing": "https://planb.academy/en/events/742dfc51-2ae2-4677-a97b-0e2f246f59ac",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2735,6 +2838,7 @@
    "online": false,
    "venue": null,
    "url": "https://b.tc/conference/2025",
+   "image": null,
    "listing": "https://planb.academy/en/events/48579382-4540-47da-acc7-0e2a9f3e48da",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2761,6 +2865,7 @@
    "online": false,
    "venue": "Diaspora Hôtel, Ouidah",
    "url": "https://www.btcmastermind.xyz/",
+   "image": null,
    "listing": "https://planb.academy/en/events/96e3bdb4-a7ac-4bcd-b37a-7efad4fca5f4",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2787,6 +2892,7 @@
    "online": false,
    "venue": "Azalaï Hôtel, Cotonou",
    "url": "https://www.btcmastermind.xyz/",
+   "image": null,
    "listing": "https://planb.academy/en/events/adecc6c7-e1cd-4673-b3e4-3c253f5984b1",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2813,6 +2919,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinmedellin.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/2c289325-bc1a-4dc5-a465-867f754ae2bd",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2839,6 +2946,7 @@
    "online": false,
    "venue": null,
    "url": "https://b.tc/conference/mena",
+   "image": null,
    "listing": "https://planb.academy/en/events/897a2040-2cf1-4a40-add6-056356731a7a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2865,6 +2973,7 @@
    "online": false,
    "venue": null,
    "url": "https://mena.b.tc/",
+   "image": "events/planb-bitcoin-mena-2025.webp",
    "listing": "https://planb.academy/en/events/5bac24c3-81a3-49cc-8bc8-681081472cc0",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2891,6 +3000,7 @@
    "online": false,
    "venue": null,
    "url": "https://mena.b.tc/",
+   "image": "events/planb-bitcoin-mena-2026.webp",
    "listing": "https://planb.academy/en/events/f61acad9-a48e-415c-b5dc-d0fa731c4313",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2917,6 +3027,7 @@
    "online": false,
    "venue": "Pride Inn Azure Towers, Westlands",
    "url": "https://btcpp.dev/nairobi",
+   "image": "events/planb-bitcoin-nairobi-2026-open-source-edition.webp",
    "listing": "https://planb.academy/en/events/57e878e4-81f7-4cbd-bdc6-55e1e8ae946b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2943,6 +3054,7 @@
    "online": false,
    "venue": null,
    "url": "https://b.tc/conference/2024",
+   "image": null,
    "listing": "https://planb.academy/en/events/15ba9ac4-1e96-4fd9-ac95-43929445db38",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2969,6 +3081,7 @@
    "online": false,
    "venue": null,
    "url": "http://www.bitcoin-oasis.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/11ded982-b846-4ffa-88ed-6c6f6ffbedd9",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -2995,6 +3108,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoin-oasis.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/bbb5a9ff-012b-4013-bb2e-fa45843aa0b0",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3021,6 +3135,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/mjjkr1wh",
+   "image": null,
    "listing": "https://planb.academy/en/events/88e2a4ef-93f0-40fd-a098-34ac150d234d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3047,6 +3162,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/p0m31uj9",
+   "image": null,
    "listing": "https://planb.academy/en/events/fb5c8a9d-5535-405b-b24e-d5781fd3509a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3073,6 +3189,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/n2ymp1n1",
+   "image": null,
    "listing": "https://planb.academy/en/events/4250af97-4de8-4555-b863-11dbae6a23be",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3099,6 +3216,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.btcpolicysummit.org/",
+   "image": null,
    "listing": "https://planb.academy/en/events/86514713-76c8-4be7-be66-5802774efc54",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3125,6 +3243,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.amityage.com/brr",
+   "image": null,
    "listing": "https://planb.academy/en/events/17151c87-0b2e-4e75-9b73-e51ef58ac1f8",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3151,6 +3270,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.bitcoinrodeo.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/8b6c02a3-6fd5-48b5-b726-8a20784fdf6d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3177,6 +3297,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinrodeo.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/5cb8f5e9-2754-4e51-be62-974b3165504f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3203,6 +3324,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinrodeo.com/",
+   "image": "events/planb-bitcoin-rodeo-2026.webp",
    "listing": "https://planb.academy/en/events/b3b434fc-efe8-4c22-99f8-5a4d3f31954e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3229,6 +3351,7 @@
    "online": false,
    "venue": "Bohicon",
    "url": "https://luma.com/3bkmbvc7",
+   "image": "events/planb-bitcoin-school-bohicon-2026.webp",
    "listing": "https://planb.academy/en/events/31c64b5a-f115-41d2-ba21-21dd70802c79",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3255,6 +3378,7 @@
    "online": false,
    "venue": "Université de Parakou",
    "url": "https://luma.com/y4c7qnfe",
+   "image": "events/planb-bitcoin-school-parakou-2026.webp",
    "listing": "https://planb.academy/en/events/ccf078e6-0bf2-4a4b-965e-65cdb2c85e49",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3281,6 +3405,7 @@
    "online": false,
    "venue": "Canada",
    "url": "https://x.com/londonON_BTC/status/1815793867376959673",
+   "image": null,
    "listing": "https://planb.academy/en/events/dab93014-7bf4-41ce-a2c0-71f36dd0ddd6",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3307,6 +3432,7 @@
    "online": false,
    "venue": null,
    "url": "https://planb.academy/en/events/16c8c175-773f-4510-8200-8f64f6aef46d",
+   "image": null,
    "listing": "https://planb.academy/en/events/16c8c175-773f-4510-8200-8f64f6aef46d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3333,6 +3459,7 @@
    "online": false,
    "venue": null,
    "url": "https://planb.academy/en/events/ba9ac1a8-6bef-442f-9dfc-e3e6a520576f",
+   "image": null,
    "listing": "https://planb.academy/en/events/ba9ac1a8-6bef-442f-9dfc-e3e6a520576f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3359,6 +3486,7 @@
    "online": true,
    "venue": null,
    "url": "https://bitcoinreservesummit.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/a6309fc1-31fa-45c5-b91c-88ef05c0e334",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3385,6 +3513,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinconference.tokyo/",
+   "image": null,
    "listing": "https://planb.academy/en/events/d562bb51-10ad-43c3-944c-e50f2ec5ebde",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3411,6 +3540,7 @@
    "online": false,
    "venue": "Sarit Centre, Lower Kabete Rd",
    "url": "https://thecore.africa/",
+   "image": "events/planb-bitcoin-unconference-03-2026.webp",
    "listing": "https://planb.academy/en/events/ac00a203-05f7-4a54-b174-614b35a7c12a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3437,6 +3567,7 @@
    "online": false,
    "venue": "Corkagh Park, Naas Rd, Corkagh Demesne",
    "url": "https://www.satlantis.io/events/1513/Bitcoin-Walk-with-Gingers-for-Bitcoin-",
+   "image": "events/planb-bitcoin-walk-with-gingers-for-bitcoin-2026.webp",
    "listing": "https://planb.academy/en/events/e4e808ee-98ed-4055-8e3b-9494f7597f08",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3463,6 +3594,7 @@
    "online": false,
    "venue": null,
    "url": "https://france.bitcoinweek.eu/",
+   "image": null,
    "listing": "https://planb.academy/en/events/d2cb23bd-6891-4602-8d5c-eda3b8998d9b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3489,6 +3621,7 @@
    "online": false,
    "venue": null,
    "url": "https://x.com/BTCZitadelle",
+   "image": null,
    "listing": "https://planb.academy/en/events/8a35c2ac-17af-4c4b-b9ff-68bada588382",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3515,6 +3648,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinday.io/naples25",
+   "image": null,
    "listing": "https://planb.academy/en/events/26507312-9dfc-4203-aa47-0b4a6ced96b1",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3541,6 +3675,7 @@
    "online": false,
    "venue": "Jalan Kayu Manis, Bitcoin House Bali, Bali 80351",
    "url": "https://www.eventbrite.com/e/bitdevs-bali-tickets-1002169103767",
+   "image": "events/planb-bitdevs-bali-2026.webp",
    "listing": "https://planb.academy/en/events/61344d94-e88a-4a23-bb4b-0be3d1976b6d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3567,6 +3702,7 @@
    "online": false,
    "venue": "Jalan Kayu Manis, Canggu, Kec. Kuta Utara",
    "url": "https://www.eventbrite.com/e/bitdevs-bali-meetup-tickets-1002169103767",
+   "image": null,
    "listing": "https://planb.academy/en/events/64d64648-1e29-44cd-9363-dd7ab0f46265",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3593,6 +3729,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/14rxdu52",
+   "image": null,
    "listing": "https://planb.academy/en/events/77534310-0831-4eb1-aba1-6fa556005dfb",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3619,6 +3756,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.meetup.com/san-salvador-bitdevs/events/301493699/?eventOrigin=group_upcoming_events",
+   "image": null,
    "listing": "https://planb.academy/en/events/da283882-028f-4db3-8e2a-7332a6eb37bd",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3645,6 +3783,7 @@
    "online": false,
    "venue": "Pendulum Hotel, Manchester Weston Building, Sackville Street",
    "url": "https://bitfest.uk/",
+   "image": "events/planb-bitfest-2025-manchester.webp",
    "listing": "https://planb.academy/en/events/696a8cb9-9c0d-43bc-b841-c1957127ac70",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3671,6 +3810,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.bitfinex.com/securities/events/",
+   "image": "events/planb-bitfinex-securities-day-el-salvador.webp",
    "listing": "https://planb.academy/en/events/8bfb3537-a8d4-4367-a329-fe7443a71636",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3697,6 +3837,7 @@
    "online": false,
    "venue": "12918 Cerise Ave, Hawthorne, CA 90250, Los Angeles Ale Works - Brewery & Tasting Room",
    "url": "https://lu.ma/bitplebsla",
+   "image": "events/planb-bitplebs-los-angeles-2026.webp",
    "listing": "https://planb.academy/en/events/e84d2088-0ed1-42e0-900b-774d52333bdf",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3723,6 +3864,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitplebs.in/",
+   "image": null,
    "listing": "https://planb.academy/en/events/01cfd92f-645f-4a1f-b376-67240fcaebda",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3749,6 +3891,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/cd55r5d4",
+   "image": null,
    "listing": "https://planb.academy/en/events/57f77252-811f-4dce-9638-23225a5ec9db",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3775,6 +3918,7 @@
    "online": false,
    "venue": null,
    "url": "https://luma.com/bitplebsboss",
+   "image": null,
    "listing": "https://planb.academy/en/events/1f265a96-01ba-4b18-9e0e-de586cac3c08",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3801,6 +3945,7 @@
    "online": false,
    "venue": "Casino Lugano",
    "url": "https://planb.lugano.ch/planb-forum/",
+   "image": null,
    "listing": "https://planb.academy/en/events/499efc08-bccf-41c5-aa30-cab630f264ec",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3827,6 +3972,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/9pqf4svd",
+   "image": null,
    "listing": "https://planb.academy/en/events/697fe499-9fec-4e83-b468-62db7050e54c",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3853,6 +3999,7 @@
    "online": false,
    "venue": "MMC Studios, Köln",
    "url": "https://www.blocktrainer.de/blocktrainer-community-event-2024",
+   "image": null,
    "listing": "https://planb.academy/en/events/1aa14207-11b2-4da3-a50c-d7a03f866fb2",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3879,6 +4026,7 @@
    "online": false,
    "venue": "Storgata 8, Restaurant Bjørk",
    "url": "https://www.satlantis.io/events/1650/Bod%C3%B8-Bitcoin-Meet--up!",
+   "image": "events/planb-bod-bitcoin-meet-up-2026.webp",
    "listing": "https://planb.academy/en/events/a52788f5-d34c-4fe1-bcf8-aa5503da7c23",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3905,6 +4053,7 @@
    "online": false,
    "venue": null,
    "url": "https://web.archive.org/web/20240622113136/https://wolfnyc.com/bootloader",
+   "image": null,
    "listing": "https://planb.academy/en/events/5123489d-f3d9-4a18-bdfc-5ce700b78b0e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3931,6 +4080,7 @@
    "online": false,
    "venue": null,
    "url": "https://luma.com/bitplebspolicy",
+   "image": null,
    "listing": "https://planb.academy/en/events/076ed1a4-4cb6-4086-a7be-f8183ab2863a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3957,6 +4107,7 @@
    "online": false,
    "venue": null,
    "url": "https://myfirstbitcoin.org/about/events",
+   "image": null,
    "listing": "https://planb.academy/en/events/09f83187-2a01-4412-9a84-1648e9123069",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -3983,6 +4134,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.bsebtc.co.uk/events/bse-bitcoin-sovereignty-economics/",
+   "image": null,
    "listing": "https://planb.academy/en/events/58411a67-ff06-49f5-8468-8bc99ce3946b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4009,6 +4161,7 @@
    "online": false,
    "venue": null,
    "url": "https://btcpp.dev/nairobi",
+   "image": "events/planb-btc__-nairobi-2026.webp",
    "listing": "https://planb.academy/en/events/2c07922e-dc33-4d4b-8201-d7891560bc04",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4035,6 +4188,7 @@
    "online": false,
    "venue": "Weitsicht Cobenzl",
    "url": "https://btcpp.dev/vienna",
+   "image": "events/planb-btc__-vienna-2026.webp",
    "listing": "https://planb.academy/en/events/d11602c7-af6c-4238-a8ce-b66dae1d8e15",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4061,6 +4215,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.btcbalkans.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/45c3ac96-4001-4dcb-be2d-ab3be58475b5",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4087,6 +4242,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.btcprague.com/#",
+   "image": null,
    "listing": "https://planb.academy/en/events/b820ad87-c07a-4380-ad8a-d55c725140b1",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4113,6 +4269,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.btcprague.com/#",
+   "image": null,
    "listing": "https://planb.academy/en/events/49be0f03-e583-4837-b3ef-41b3e793846e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4139,6 +4296,7 @@
    "online": false,
    "venue": "PVA EXPO",
    "url": "https://btcprague.com/",
+   "image": "events/planb-btc-prague-2026.webp",
    "listing": "https://planb.academy/en/events/aa7fcdb5-4ea1-4009-8096-1d8681aea0a2",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4165,6 +4323,7 @@
    "online": false,
    "venue": "Kulttuuritehdas Korjaamo, Helsinki",
    "url": "https://btchel.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/ad4e4cc4-f948-46f2-8088-0e901fef41b5",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4191,6 +4350,7 @@
    "online": false,
    "venue": null,
    "url": "https://clooza.com/events/BTRUSTDEVELOPERDAY",
+   "image": "events/planb-btrust-developer-day.webp",
    "listing": "https://planb.academy/en/events/d183ada9-6654-438c-9c82-079b53723c60",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4217,6 +4377,7 @@
    "online": false,
    "venue": null,
    "url": "https://budapestbitcoin.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/31b1ef28-04f4-40ed-baea-0b4af7c5b0f7",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4243,6 +4404,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinbristol.org/#conference",
+   "image": null,
    "listing": "https://planb.academy/en/events/67455b93-ecda-40ca-a2fe-6ed95cfb8792",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4269,6 +4431,7 @@
    "online": false,
    "venue": "Ñu Guasu - ACCESO 1",
    "url": "https://www.satlantis.io/events/1712/Caminata-%E2%82%BFitcoin-Paraguay",
+   "image": "events/planb-caminata-bitcoin-paraguay-2026.webp",
    "listing": "https://planb.academy/en/events/a921437d-cf40-4f97-a5ab-a0c3d5fc7493",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4295,6 +4458,7 @@
    "online": false,
    "venue": null,
    "url": "https://canadianbitcoinconf.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/f65ee775-8ace-46f6-8913-f34af856af9e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4321,6 +4485,7 @@
    "online": false,
    "venue": "Digital Asset Studios, 6th Floor, Unit 605, Touchstone House",
    "url": "https://freerouting.africa/cape-town-lightning-developer-bootcamp/",
+   "image": null,
    "listing": "https://planb.academy/en/events/e9760030-484e-4ca6-a4cc-c62ce6d88804",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4347,6 +4512,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.cheatcode.co.uk/",
+   "image": "events/planb-cheatcode-2026.webp",
    "listing": "https://planb.academy/en/events/f4400f57-0eec-47a9-9466-0d30bfbec9fd",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4373,6 +4539,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.cheatcode.co.uk/",
+   "image": null,
    "listing": "https://planb.academy/en/events/5927a523-8d4d-494a-9401-720b691ef2aa",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4399,6 +4566,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.cheatcode.co.uk/",
+   "image": null,
    "listing": "https://planb.academy/en/events/8f20d538-c6a1-42c9-a451-e1949ed6628a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4425,6 +4593,7 @@
    "online": false,
    "venue": "75010 Paris, it will be received by email",
    "url": "https://bce-bip21.fr/",
+   "image": "events/planb-comprendre-lessential-2026.webp",
    "listing": "https://planb.academy/en/events/9e7815ac-5740-40d5-8031-f611f300864c",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4451,6 +4620,7 @@
    "online": false,
    "venue": "True Digital Park [West], Grand Hall [3rd FL]",
    "url": "https://www.eventpop.me/e/17031",
+   "image": null,
    "listing": "https://planb.academy/en/events/0750351d-ce6a-4224-a546-5101aba89a2a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4477,6 +4647,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.afriquebitcoin.org/",
+   "image": null,
    "listing": "https://planb.academy/en/events/2dbe4f31-1c11-4d18-a9d1-4691193744c2",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4503,6 +4674,7 @@
    "online": false,
    "venue": "Cumbres de Cuscatlan, Calles Teotl",
    "url": "https://www.eventbrite.com/e/cubo-meetup-tickets-1047157244507?aff=oddtdtcreator",
+   "image": null,
    "listing": "https://planb.academy/en/events/b4d9d241-27a1-4b1f-a764-e41495afd2f1",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4529,6 +4701,7 @@
    "online": false,
    "venue": "Olsen Spaces Sector 7, 5th Main Road, 7th Sector, HSR Layout, Bengaluru, Karnataka, India  RSVP  Contact  Share",
    "url": "https://app.evento.so/e/evt_XPtu2rSvZspJus1L",
+   "image": "events/planb-cyberswaraj-privacy101-for-everyday-people-2026.webp",
    "listing": "https://planb.academy/en/events/b7464bfd-9fce-4e7a-8ede-3a47029d6a60",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4555,6 +4728,7 @@
    "online": false,
    "venue": "Azalaï Hôtel, Cotonou",
    "url": "https://dakarbitcoindays.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/9edaa4af-bc77-4427-932d-997f7ac0be59",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4581,6 +4755,7 @@
    "online": false,
    "venue": "Kennedy Center",
    "url": "https://btcindc.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/aef7eb7f-a709-4ee9-b391-5b2ecb55a429",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4607,6 +4782,7 @@
    "online": true,
    "venue": null,
    "url": "https://bitcoinindonesia.xyz/decoding-bitcoin/",
+   "image": null,
    "listing": "https://planb.academy/en/events/b6a8f897-9757-4509-ad97-346e4384c67c",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4633,6 +4809,7 @@
    "online": false,
    "venue": null,
    "url": "https://btcprague.com/dev-hack-day/",
+   "image": null,
    "listing": "https://planb.academy/en/events/1f93ae87-6117-481b-9b48-3998d668a2c9",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4659,6 +4836,7 @@
    "online": false,
    "venue": null,
    "url": "https://sv24.adoptingbitcoin.org/satellite-events",
+   "image": null,
    "listing": "https://planb.academy/en/events/9fc5d410-ab82-41fb-ac6c-ec5095dec420",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4685,6 +4863,7 @@
    "online": false,
    "venue": null,
    "url": "https://web.archive.org/web/20240820085020/https://www.rideofpassage.live/bitcoin-educators-mastermind",
+   "image": null,
    "listing": "https://planb.academy/en/events/bd5e9c03-96d9-47f8-a91f-c2608742373b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4711,6 +4890,7 @@
    "online": false,
    "venue": "Cowboy Steakhouse",
    "url": "https://www.satlantis.io/events/1569/El-Meetup-Hisp%C3%A1nico---Rumbo-a-Plan-%E2%82%BF-Forum-El-Salvador-2026",
+   "image": "events/planb-el-meetup-hisp_nico.webp",
    "listing": "https://planb.academy/en/events/804a4123-ee9b-465b-88a0-2c340761c6d4",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4737,6 +4917,7 @@
    "online": false,
    "venue": null,
    "url": "https://swiss-bitcoin-conference.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/5802e45e-dc20-4f15-940a-9b0f8774087f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4763,6 +4944,7 @@
    "online": false,
    "venue": "Handelsbeurs in Antwerpen",
    "url": "https://start2bitcoin.com/conference-2024/",
+   "image": null,
    "listing": "https://planb.academy/en/events/2de2225d-cf13-466b-8c06-50847ee14c02",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4789,6 +4971,7 @@
    "online": false,
    "venue": "R. das Mercês 41, 9000-224, Cowork Funchal",
    "url": "https://www.satlantis.io/events/1691/FREE-Madeira-Bitcoin-Meetup",
+   "image": "events/planb-free-madeira-bitcoin-meetup-2026.webp",
    "listing": "https://planb.academy/en/events/6dd354fe-dd69-4cb1-beb2-8c2b1263c633",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4815,6 +4998,7 @@
    "online": false,
    "venue": null,
    "url": "https://freedomtechsummit.com/",
+   "image": "events/planb-freedom-tech-summit-2026.webp",
    "listing": "https://planb.academy/en/events/2d5ef638-3d5b-4c98-9e27-d0110a823d4f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4841,6 +5025,7 @@
    "online": false,
    "venue": "At the tent in Plan ₿ Lugano Forum 2024",
    "url": "https://planb.academy/en/events/60f9f655-e24f-4351-8715-ad0236eb6470",
+   "image": null,
    "listing": "https://planb.academy/en/events/60f9f655-e24f-4351-8715-ad0236eb6470",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4867,6 +5052,7 @@
    "online": false,
    "venue": "Lugano, Ticino",
    "url": "https://web.archive.org/web/20260317094346/https://www.bitcoinrunners.org/lugano25/",
+   "image": null,
    "listing": "https://planb.academy/en/events/9ff9c612-c035-4ac1-a49a-d23fbbd31aa8",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4893,6 +5079,7 @@
    "online": false,
    "venue": null,
    "url": "https://planb.academy/en/events/c4622245-110a-444a-ba2f-f1b9d29e0e06",
+   "image": null,
    "listing": "https://planb.academy/en/events/c4622245-110a-444a-ba2f-f1b9d29e0e06",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4919,6 +5106,7 @@
    "online": false,
    "venue": null,
    "url": "https://hodlween.party/",
+   "image": null,
    "listing": "https://planb.academy/en/events/afeedbcc-9930-44d7-a69d-d1ccf7de6b8c",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4945,6 +5133,7 @@
    "online": false,
    "venue": "Online",
    "url": "https://lu.ma/zaevqzza",
+   "image": null,
    "listing": "https://planb.academy/en/events/2809fbc1-759c-4bc7-a727-1684643bd5c4",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4971,6 +5160,7 @@
    "online": false,
    "venue": "138 West St, Sandown, Sandton, 2031, Workshop17 West Street",
    "url": "https://freerouting.africa/johannesburg-lightning-developer-bootcamp/",
+   "image": "events/planb-johannesburg-bitcoin-lightning-developer-bootcamp-2026.webp",
    "listing": "https://planb.academy/en/events/66f4fb1f-4bb3-4f25-8ef7-976d467cf384",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -4997,6 +5187,7 @@
    "online": false,
    "venue": null,
    "url": "https://astralaurastudio.com/shop/p/kansas-city-bitcoin-summit-2025",
+   "image": null,
    "listing": "https://planb.academy/en/events/cc7cf471-2c1b-4a3f-a9a7-6a082603d50f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5023,6 +5214,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.labitconf.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/c420a3b3-0889-4959-96fa-9df8ff0c64e3",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5049,6 +5241,7 @@
    "online": false,
    "venue": null,
    "url": "https://twitter.com/LakeSatoshi",
+   "image": null,
    "listing": "https://planb.academy/en/events/d9193d5e-13e7-4f4f-b419-333cf3aed278",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5075,6 +5268,7 @@
    "online": false,
    "venue": "The Crystal Garden",
    "url": "https://www.learningbitcoin.ca/",
+   "image": null,
    "listing": "https://planb.academy/en/events/50c813b9-45e8-46bc-8e1b-30cb25544c87",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5101,6 +5295,7 @@
    "online": false,
    "venue": "Vancouver Convention Centre",
    "url": "https://www.learningbitcoin.ca/",
+   "image": null,
    "listing": "https://planb.academy/en/events/d7a95fb1-ec23-404a-b232-e3407371459e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5127,6 +5322,7 @@
    "online": false,
    "venue": "Jalan Kayu Manis, Canggu, Kec. Kuta Utara",
    "url": "https://www.eventbrite.com/e/learn-bitcoin-from-the-command-line-study-cohort-tickets-1061892331549",
+   "image": null,
    "listing": "https://planb.academy/en/events/9cb1d8c5-e53b-4ef0-aa5e-188e65d678ad",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5153,6 +5349,7 @@
    "online": false,
    "venue": "Libertador Hotel, Av. Córdoba 690, C1054 Cdad. Autónoma de Buenos Aires",
    "url": "https://liquid.net/bootcamp",
+   "image": null,
    "listing": "https://planb.academy/en/events/c08b8c6d-3baa-4c09-82c8-4d31ec8d8adc",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5179,6 +5376,7 @@
    "online": false,
    "venue": "Plovdiv University",
    "url": "https://liquid.net/bootcamp",
+   "image": null,
    "listing": "https://planb.academy/en/events/a8120c17-c859-4edd-ac3a-b61343541c6e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5205,6 +5403,7 @@
    "online": false,
    "venue": "Polytechnic University of Turin",
    "url": "https://liquid.net/bootcamp",
+   "image": null,
    "listing": "https://planb.academy/en/events/2854a6f4-daa3-40ea-932f-bd6056f4b04a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5231,6 +5430,7 @@
    "online": false,
    "venue": null,
    "url": "https://liquid.net/lugano-2024",
+   "image": null,
    "listing": "https://planb.academy/en/events/6d716e2c-1b1a-44b9-b8dd-e89f55506f97",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5257,6 +5457,7 @@
    "online": false,
    "venue": "Game Terminal, Terminal Court",
    "url": "https://evento.so/p/evt_gXCAucxeHtx6qBTG",
+   "image": null,
    "listing": "https://planb.academy/en/events/5ccd7016-62a7-459b-bc01-d079c4ad075b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5283,6 +5484,7 @@
    "online": false,
    "venue": "621 E 6th St",
    "url": "https://www.meetup.com/pleb-lab/events/299939676",
+   "image": null,
    "listing": "https://planb.academy/en/events/e1adacb1-764f-4c11-b066-3aef1313317b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5309,6 +5511,7 @@
    "online": false,
    "venue": "Asilo Ciani Viale Carlo Cattaneo 5, 6900 Lugano",
    "url": "https://spazio21.planb.network/",
+   "image": null,
    "listing": "https://planb.academy/en/events/3243e263-3d3b-4f6d-b1d2-8bd76515648d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5335,6 +5538,7 @@
    "online": false,
    "venue": "Trinity Irish Puv, Via Luigi Canonica 19, 6900 Lugano",
    "url": "https://satoshispritzlugano.planb.network/",
+   "image": null,
    "listing": "https://planb.academy/en/events/33783177-a199-4fd7-86e6-49ba32ede650",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5361,6 +5565,7 @@
    "online": false,
    "venue": "IFEMA Centro de Convenciones Norte, Gta. de Edimburgo, Barajas, 28042 Madrid",
    "url": "https://madbitcoinsummit.com/",
+   "image": "events/planb-madbitcoin-summit-2026.webp",
    "listing": "https://planb.academy/en/events/f09c3995-6bf0-4667-b0fa-8c07d80ddcf0",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5387,6 +5592,7 @@
    "online": false,
    "venue": "zwischen, Templin",
    "url": "https://x.com/ZitadelleUM",
+   "image": null,
    "listing": "https://planb.academy/en/events/89c6315b-eb35-4e9a-aa98-fb99d3792c73",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5413,6 +5619,7 @@
    "online": false,
    "venue": null,
    "url": "https://mallorcablockchaindays.com/",
+   "image": "events/planb-mallorca-blockchain-days-2026.webp",
    "listing": "https://planb.academy/en/events/7012e486-97eb-448b-937f-05eddb341d4e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5439,6 +5646,7 @@
    "online": false,
    "venue": null,
    "url": "https://mallorcablockchaindays.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/645750ac-11ee-4936-b0d2-eace084d7482",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5465,6 +5673,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.campnakamoto.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/4e1e166d-269a-411a-b2f5-506fbcb1d97d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5491,6 +5700,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/bitcoingrove?k=c&e=calev-wNNMpZmfClJEXzE",
+   "image": null,
    "listing": "https://planb.academy/en/events/9fad402f-d9ce-4d87-884a-2bb8b5bfcccb",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5517,6 +5727,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.microstrategy.com/world25",
+   "image": null,
    "listing": "https://planb.academy/en/events/38f7bf58-11ad-4acd-b3c2-2c4d19620605",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5543,6 +5754,7 @@
    "online": false,
    "venue": null,
    "url": "https://miningdisrupt.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/beeca725-850e-4ee9-998f-a94a2ed4a6a2",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5569,6 +5781,7 @@
    "online": false,
    "venue": "Broward County Convention Center",
    "url": "https://miningdisrupt.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/43c50be9-b11a-4710-a88b-40e2ce703f2f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5595,6 +5808,7 @@
    "online": false,
    "venue": "711 NW 72nd Ave, Miami, FL 33126, USA, DoubleTree by Hilton Miami Airport & Convention Center",
    "url": "https://bitcoinonly.events/mining-disrupt-2026-miami/",
+   "image": "events/planb-mining-disrupt-2026-miami.webp",
    "listing": "https://planb.academy/en/events/4824d395-5bd7-4b02-992b-7dacda171777",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5621,6 +5835,7 @@
    "online": false,
    "venue": "Miami Airport Convention Center",
    "url": "https://miningdisrupt.com/",
+   "image": "events/planb-mining-disrupt-miami-2026.webp",
    "listing": "https://planb.academy/en/events/82a81887-6737-44a4-94f2-61d950085269",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5647,6 +5862,7 @@
    "online": false,
    "venue": null,
    "url": "https://miningdisrupt.com/",
+   "image": "events/planb-mining-disrupt-texas-2025.webp",
    "listing": "https://planb.academy/en/events/6d9e6e37-525e-41d4-952f-c06683c6e721",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5673,6 +5889,7 @@
    "online": false,
    "venue": null,
    "url": "https://planb.network/courses/7750d9da-417a-4377-8e35-85c377168477",
+   "image": null,
    "listing": "https://planb.academy/en/events/d7a26772-7b22-49af-accb-4eee61f29588",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5699,6 +5916,7 @@
    "online": false,
    "venue": null,
    "url": "https://mitbtcexpo.org/",
+   "image": null,
    "listing": "https://planb.academy/en/events/dc1fbc3a-b2aa-45b6-93ac-ed4f85bc8f5b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5725,6 +5943,7 @@
    "online": false,
    "venue": null,
    "url": "https://mitbitcoinexpo.org/",
+   "image": "events/planb-mit-bitcoin-expo-2026.webp",
    "listing": "https://planb.academy/en/events/a173e038-bf15-4979-9570-f2bb45645193",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5751,6 +5970,7 @@
    "online": false,
    "venue": null,
    "url": "https://planb.academy/en/events/6bc21fb3-1513-42af-b9aa-997a071dcd90",
+   "image": null,
    "listing": "https://planb.academy/en/events/6bc21fb3-1513-42af-b9aa-997a071dcd90",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5777,6 +5997,7 @@
    "online": false,
    "venue": "Plaza Presidente",
    "url": "https://docs.google.com/forms/d/e/1FAIpQLSem2YAIDTXHBLTBzMd6tVnfy13h7Jr_ZTo3NbaLlP7qcDUx8g/viewform",
+   "image": null,
    "listing": "https://planb.academy/en/events/46959995-0b3a-481e-a637-a874fc69abad",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5803,6 +6024,7 @@
    "online": false,
    "venue": "Grand Café Al Porto",
    "url": "https://luma.com/z0ubttzn",
+   "image": null,
    "listing": "https://planb.academy/en/events/667b0b74-55cc-4c00-90e9-17e7cb598685",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5829,6 +6051,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.nicehashx.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/ab8b98c3-1ce9-4675-820e-d24c1d6ef76a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5855,6 +6078,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoin.fr/normandie-bitcoin-day/",
+   "image": null,
    "listing": "https://planb.academy/en/events/d8e700f6-92ef-4be6-9e63-ae6530015d51",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5881,6 +6105,7 @@
    "online": false,
    "venue": "Tokyo, Shinjuku City, Kabukicho, 2 Chome−19−15 6階",
    "url": "https://nostrasia.com/",
+   "image": "events/planb-nostrasia-2025.webp",
    "listing": "https://planb.academy/en/events/89238b9f-00dc-47e1-aa86-49b531101134",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5907,6 +6132,7 @@
    "online": false,
    "venue": null,
    "url": "https://nostr.world/",
+   "image": null,
    "listing": "https://planb.academy/en/events/68a35093-761a-41a6-9171-bcd7ca3251dc",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5933,6 +6159,7 @@
    "online": false,
    "venue": "1851 Kirschner Rd, Porter's",
    "url": "https://okbtc.ca/",
+   "image": "events/planb-ok-bitcoin-meetup-kelowna-ylw-2026.webp",
    "listing": "https://planb.academy/en/events/5eb23237-910a-4c98-8bb9-d651ad553a11",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5959,6 +6186,7 @@
    "online": false,
    "venue": null,
    "url": "https://opnext.dev/",
+   "image": null,
    "listing": "https://planb.academy/en/events/37aa9abc-b9c5-45d5-8dab-9b05ca07d55f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -5985,6 +6213,7 @@
    "online": false,
    "venue": null,
    "url": "https://opnext.dev/",
+   "image": "events/planb-opnext-2026.webp",
    "listing": "https://planb.academy/en/events/6dcf69eb-a719-4ba9-a63b-80e0596cf197",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6011,6 +6240,7 @@
    "online": false,
    "venue": null,
    "url": "https://oslofreedomforum.com/off-2025-attendance-application/",
+   "image": null,
    "listing": "https://planb.academy/en/events/725dfdf4-683c-41db-a2c2-cf8271ca9b9e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6037,6 +6267,7 @@
    "online": false,
    "venue": "109 Magdalen Rd, Oxford OX4 1RQ, UK, Taste Tibet",
    "url": "https://www.satlantis.io/events/1730/OxBit---The-'SATSurday-Brunch'-One",
+   "image": "events/planb-oxbit-the-satsurday-brunch-one.webp",
    "listing": "https://planb.academy/en/events/191656cb-bf6e-4872-aefe-892dc06b2028",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6063,6 +6294,7 @@
    "online": false,
    "venue": null,
    "url": "https://leparadigmebitcoin.ch/",
+   "image": null,
    "listing": "https://planb.academy/en/events/633fb72d-4561-471a-834d-ee98ba222698",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6089,6 +6321,7 @@
    "online": false,
    "venue": "Coworking Blockchain, rue St-Honoré 10",
    "url": "https://leparadigmebitcoin.ch/",
+   "image": null,
    "listing": "https://planb.academy/en/events/98f510b7-638c-4a66-94ba-e1b74625d047",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6115,6 +6348,7 @@
    "online": false,
    "venue": null,
    "url": "https://bce-bip21.fr/",
+   "image": "events/planb-paris-bip21-bce2-2026.webp",
    "listing": "https://planb.academy/en/events/5f8765c4-3231-4bd7-9971-c69df70e957e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6141,6 +6375,7 @@
    "online": false,
    "venue": null,
    "url": "https://pizzaday.cz/",
+   "image": null,
    "listing": "https://planb.academy/en/events/f1b882f8-69d3-42f8-bf42-7263b36e0fe4",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6167,6 +6402,7 @@
    "online": false,
    "venue": null,
    "url": "https://planb.lugano.ch/planb-forum/",
+   "image": null,
    "listing": "https://planb.academy/en/events/8cde8d8b-dd20-4b79-a319-e11bc9f105fc",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6193,6 +6429,7 @@
    "online": false,
    "venue": "Colonia San Benito, Avenida De La Revolución",
    "url": "https://planb.sv/",
+   "image": null,
    "listing": "https://planb.academy/en/events/5a1e72aa-5c21-4bdb-bbf3-36f9e27bf815",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6219,6 +6456,7 @@
    "online": false,
    "venue": "Colonia San Benito, Avenida De La Revolución",
    "url": "https://planb.sv/",
+   "image": "events/planb-planb-forum-elsalvador-2026.webp",
    "listing": "https://planb.academy/en/events/76dc5fcd-a431-426c-8127-3936f54a4938",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6245,6 +6483,7 @@
    "online": false,
    "venue": "Piazza Castello",
    "url": "https://planb.lugano.ch/planb-forum/",
+   "image": null,
    "listing": "https://planb.academy/en/events/46c65041-0a89-4858-8b35-c2abf16f0add",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6271,6 +6510,7 @@
    "online": false,
    "venue": "Palazzo dei Congressi",
    "url": "https://planb.lugano.ch/planb-forum",
+   "image": "events/planb-planb-lugano-2026.webp",
    "listing": "https://planb.academy/en/events/6cdb616a-ff55-4575-b0fb-01db5b2b834b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6297,6 +6537,7 @@
    "online": false,
    "venue": null,
    "url": "https://planb.network/courses/c762773a-9017-4129-bc0e-06adf86050ef",
+   "image": null,
    "listing": "https://planb.academy/en/events/51281082-f063-4b0c-9798-c0ed8cc47651",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6323,6 +6564,7 @@
    "online": false,
    "venue": null,
    "url": "https://luma.com/z4aj18cr",
+   "image": "events/planb-plebfi-scaling-bitcoin-2025.webp",
    "listing": "https://planb.academy/en/events/38713c36-2d2b-44ac-84d0-ea11427b9900",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6349,6 +6591,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.meetup.com/pleb-lab/events/302290112/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link",
+   "image": null,
    "listing": "https://planb.academy/en/events/f2c6cc27-f8e1-430e-88ba-8926e92b76a5",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6375,6 +6618,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.meetup.com/pleb-lab/events/301693658/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link",
+   "image": null,
    "listing": "https://planb.academy/en/events/c6c9e3c5-20f6-496f-8df7-716b4876df11",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6401,6 +6645,7 @@
    "online": true,
    "venue": null,
    "url": "https://www.pleblab.dev/blog-detail/pleblab-startup-day-mexico-city-experience-the-future-of-bitcoin-innovation",
+   "image": null,
    "listing": "https://planb.academy/en/events/7183fa29-ba59-4e9b-81d9-0583239845ac",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6427,6 +6672,7 @@
    "online": false,
    "venue": "Bitcoin Berlín Center, 2a Calle Poniente",
    "url": "https://www.youtube.com/watch?v=KnYTDtEilWE",
+   "image": null,
    "listing": "https://planb.academy/en/events/c7a9934e-2016-49a9-a804-f908c794338d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6453,6 +6699,7 @@
    "online": false,
    "venue": null,
    "url": "https://event.bitcoin.design/",
+   "image": null,
    "listing": "https://planb.academy/en/events/8cc47713-b330-4839-aa36-df6f5d58f9bf",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6479,6 +6726,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/2jclwk8d",
+   "image": null,
    "listing": "https://planb.academy/en/events/6bec9f86-93f6-4d7e-8887-7de11916bc57",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6505,6 +6753,7 @@
    "online": false,
    "venue": "Villa Ciani, Gate on Lake Lugano",
    "url": "https://web.archive.org/web/20260118150951/https://www.bitcoinrunners.org/lugano24/",
+   "image": null,
    "listing": "https://planb.academy/en/events/733e1d41-047b-4d51-a94a-757ff7c3345d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6531,6 +6780,7 @@
    "online": false,
    "venue": "Villa Ciani",
    "url": "https://web.archive.org/web/20260317094346/https://www.bitcoinrunners.org/lugano25/",
+   "image": null,
    "listing": "https://planb.academy/en/events/93f9cc37-b80e-4d7f-b889-460778a64179",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6557,6 +6807,7 @@
    "online": false,
    "venue": null,
    "url": "https://discord.com/invite/aZzsy2EfJ",
+   "image": null,
    "listing": "https://planb.academy/en/events/c03de0bc-484a-47a6-8035-c181f6d3ccef",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6583,6 +6834,7 @@
    "online": false,
    "venue": null,
    "url": "https://discord.com/invite/aZzsy2EfJ",
+   "image": null,
    "listing": "https://planb.academy/en/events/e7a4946d-769f-4898-860a-474d4309571c",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6609,6 +6861,7 @@
    "online": false,
    "venue": "Calle La Mascota N°450 CC KTM, Garage Burger La Mascota",
    "url": "https://www.satlantis.io/events/1765/San-Salvador-Bitcoin-Meetup",
+   "image": "events/planb-san-salvador-bitcoin-meetup-2026.webp",
    "listing": "https://planb.academy/en/events/f51857b3-7629-4a85-950b-823bf9234683",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6635,6 +6888,7 @@
    "online": false,
    "venue": null,
    "url": "https://web.archive.org/web/20241013112031/https://zitadelle2024.einundzwanzig.space/",
+   "image": null,
    "listing": "https://planb.academy/en/events/d86c7d37-b4c3-472b-ae7f-86b748c56c5e",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6661,6 +6915,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.satsconf.com.br/2025",
+   "image": "events/planb-satsconf-2025.webp",
    "listing": "https://planb.academy/en/events/fe150e16-2299-4d16-ac1b-522e6e3d839b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6687,6 +6942,7 @@
    "online": false,
    "venue": "186/4 ถนน เจริญราษฎร์ Wat Ket, Mueang Chiang Mai District, Chiang Mai 50000, Tailandia",
    "url": "https://web.archive.org/web/20260614105052/http://satsnfacts.btc.pub/",
+   "image": null,
    "listing": "https://planb.academy/en/events/4f41cea9-0298-419b-ae9f-57e32c34afcb",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6713,6 +6969,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.bthechange.net/",
+   "image": null,
    "listing": "https://planb.academy/en/events/14c9bd72-c325-4c3d-b550-797be91dc410",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6739,6 +6996,7 @@
    "online": false,
    "venue": "Port of Peniche",
    "url": "https://primal.net/p/npub1va4vvlyfwnqss496f3dc4rsa4gtpfdx6crr8ppp8sz82uf9fczxq4wda00",
+   "image": null,
    "listing": "https://planb.academy/en/events/3eaaed21-3073-4c97-bb86-b43fd7c0960a",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6765,6 +7023,7 @@
    "online": false,
    "venue": null,
    "url": "https://discord.com/invite/aZzsy2EfJ",
+   "image": null,
    "listing": "https://planb.academy/en/events/96eba541-f63f-4bc3-bfe6-d1abe30c5379",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6791,6 +7050,7 @@
    "online": false,
    "venue": null,
    "url": "https://x.com/SistersoSatoshi/status/2013294561087410363",
+   "image": "events/planb-sisters-of-satoshi.webp",
    "listing": "https://planb.academy/en/events/33ebf193-f874-473c-8b5c-16fd2480f31d",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6817,6 +7077,7 @@
    "online": false,
    "venue": null,
    "url": "https://bitcoinfrancophone.org/",
+   "image": "events/planb-sommet-bitcoin-francophone-2026.webp",
    "listing": "https://planb.academy/en/events/204aef01-4db0-4053-9cfc-cc838fffc495",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6843,6 +7104,7 @@
    "online": false,
    "venue": "Le Shadok - Presqu'ile André Malraux, 25 Rue du Bass. d'Austerlitz, 67100 Strasbourg",
    "url": "https://conference-cryptomonnaie.eu/store",
+   "image": "events/planb-sur-la-crypto-monnaie-a-strasbourg.webp",
    "listing": "https://planb.academy/en/events/7f483a0a-f728-43eb-b0fe-873805a0ecc0",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6869,6 +7131,7 @@
    "online": false,
    "venue": null,
    "url": "https://surfinbitcoin.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/b68ecdae-77a8-4647-ba50-fbc40ac92503",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6895,6 +7158,7 @@
    "online": false,
    "venue": null,
    "url": "http://www.surfinbitcoin.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/3f49f2f0-ec74-4615-ad21-308e288102c3",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6921,6 +7185,7 @@
    "online": false,
    "venue": null,
    "url": "https://surinamedecentralized.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/401094f8-34fe-4a77-8dfb-30e63787d760",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6947,6 +7212,7 @@
    "online": false,
    "venue": null,
    "url": "https://surinamedecentralized.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/42c060c4-57b5-4bbf-8e9e-7a7d449a474f",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6973,6 +7239,7 @@
    "online": false,
    "venue": null,
    "url": "https://swissbitcoinconference.com/",
+   "image": "events/planb-swiss-bitcoin-conference-2026.webp",
    "listing": "https://planb.academy/en/events/a54d7d2a-a067-42cb-a096-7377470874d9",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -6999,6 +7266,7 @@
    "online": false,
    "venue": null,
    "url": "https://6.tabconf.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/7a50d13c-b992-4448-bfe7-fa4ce125cc2c",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7025,6 +7293,7 @@
    "online": false,
    "venue": null,
    "url": "https://6.tabconf.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/7254f3ea-970d-42c7-a368-d6b828e72f08",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7051,6 +7320,7 @@
    "online": false,
    "venue": "Bulgaria Blvd 125, Restaurant Avocado",
    "url": "https://terminal21.bg/",
+   "image": "events/planb-terminal21-2026.webp",
    "listing": "https://planb.academy/en/events/e96b0f2a-be69-4b70-b142-f60ceee5b45b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7077,6 +7347,7 @@
    "online": false,
    "venue": null,
    "url": "https://lu.ma/9znzjl5u",
+   "image": null,
    "listing": "https://planb.academy/en/events/394d5c56-cc04-440e-81c3-08233bd64cdf",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7103,6 +7374,7 @@
    "online": true,
    "venue": null,
    "url": "https://planb.academy/en/events/ea1ecfa3-1bb7-42be-a3e9-f7c7196dd32b",
+   "image": null,
    "listing": "https://planb.academy/en/events/ea1ecfa3-1bb7-42be-a3e9-f7c7196dd32b",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7129,6 +7401,7 @@
    "online": false,
    "venue": null,
    "url": "https://canadianbitcoinconf.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/e00f4bc8-4907-4445-b7ac-63ab8a184a73",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7155,6 +7428,7 @@
    "online": false,
    "venue": "Palo Verde Sustainable Hotel",
    "url": "https://www.eventbrite.com/e/3er-anniversary-bitcoin-country-tickets-995424791347",
+   "image": null,
    "listing": "https://planb.academy/en/events/0a03c623-8044-441d-8906-0ddaf8115470",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7181,6 +7455,7 @@
    "online": false,
    "venue": null,
    "url": "https://ephtga25ls4.typeform.com/to/RxoLrJ5S?typeform-source=planb.lugano.ch",
+   "image": null,
    "listing": "https://planb.academy/en/events/e2a6f325-b491-42e3-ac6c-04614cf40e09",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7207,6 +7482,7 @@
    "online": false,
    "venue": "Online",
    "url": "https://lu.ma/61kly0km",
+   "image": null,
    "listing": "https://planb.academy/en/events/67b4f5ba-13c4-11f0-a8dc-2f2256a9d8dc",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7233,6 +7509,7 @@
    "online": false,
    "venue": "Universidad Latino, Plaza Altabrisa, Cholul, Merida",
    "url": "https://x.com/mayanbitcoin",
+   "image": null,
    "listing": "https://planb.academy/en/events/d56bf4d0-9bc4-424a-a403-74ebb8b8d209",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7259,6 +7536,7 @@
    "online": false,
    "venue": "Universidad Latino, Plaza Altabrisa, Cholul, Merida",
    "url": "https://x.com/mayanbitcoin",
+   "image": null,
    "listing": "https://planb.academy/en/events/44042b52-0163-4416-aa4c-a4df61ec78bd",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7285,6 +7563,7 @@
    "online": false,
    "venue": "Principino",
    "url": "https://luma.com/fcp4ov95",
+   "image": "events/planb-tuscany-lightning-summit.webp",
    "listing": "https://planb.academy/en/events/54ac4a19-3402-4691-83ae-642e11325229",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7311,6 +7590,7 @@
    "online": false,
    "venue": null,
    "url": "https://unconfiscatable.com/",
+   "image": null,
    "listing": "https://planb.academy/en/events/f96b8892-b07a-4634-8880-6dc286ece9e1",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7337,6 +7617,7 @@
    "online": false,
    "venue": "Sophia University",
    "url": "https://evento.so/p/evt_QBSwPMorV2QRCzrv",
+   "image": "events/planb-unstoppable-money-human-rights-foundation.webp",
    "listing": "https://planb.academy/en/events/5045cf5d-ef72-4888-8cd7-fbaf61a46274",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7363,6 +7644,7 @@
    "online": false,
    "venue": "7 del Politecnico",
    "url": "https://lu.ma/o39hmet4",
+   "image": null,
    "listing": "https://planb.academy/en/events/b57d3d76-07e8-49a0-97b3-6852389ed44c",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7389,6 +7671,7 @@
    "online": false,
    "venue": "1025 Dunsmuir St, FUNK. Coffee Bar",
    "url": "https://www.bitdevs.ca/",
+   "image": "events/planb-vancouver-bitdevs-2026.webp",
    "listing": "https://planb.academy/en/events/c84baacc-8e1c-47e8-a6a1-af68aa440103",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7415,6 +7698,7 @@
    "online": false,
    "venue": null,
    "url": "https://wobitcoin.org/",
+   "image": null,
    "listing": "https://planb.academy/en/events/79aff896-495b-4c63-aa31-f664c8f5d740",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7441,6 +7725,7 @@
    "online": false,
    "venue": null,
    "url": "https://wobitcoin.org/",
+   "image": null,
    "listing": "https://planb.academy/en/events/1a088195-8ed1-49c7-a2cb-72f411fcf683",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7467,6 +7752,7 @@
    "online": false,
    "venue": null,
    "url": "https://www.zumwildenmichel.de/event-details/wild-btc-2024-black-forest-bitcoin-camp-05-07-07-07-24",
+   "image": null,
    "listing": "https://planb.academy/en/events/67189585-ca65-4d34-bcd0-1f0e17ac5757",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7493,6 +7779,7 @@
    "online": false,
    "venue": null,
    "url": "https://web.archive.org/web/20240630204431/https://www.zapconf.xyz/",
+   "image": null,
    "listing": "https://planb.academy/en/events/97ec3299-1b93-485e-a913-48003fae1601",
    "attribution": {
     "name": "Plan ₿ Network",
@@ -7519,6 +7806,7 @@
    "online": false,
    "venue": "Šibenik Archipelago, Dalmatia",
    "url": "https://razue.github.io/zitadelle2026/#",
+   "image": "events/planb-zitadelle-2026.webp",
    "listing": "https://planb.academy/en/events/8c5e58dc-034e-4eb0-9c6d-4547efa62a15",
    "attribution": {
     "name": "Plan ₿ Network",

@@ -1,8 +1,12 @@
 {
- "fetchedAt": "2026-11-05T21:22:49.357Z",
+ "fetchedAt": "2026-11-05T21:55:40.208Z",
  "source": "Meetup.com group calendars linked from BTC Map communities",
  "groups": 97,
  "failures": [
+  {
+   "group": "bitcoin-albany",
+   "error": "HTTP 404 for https://www.meetup.com/bitcoin-albany/events/ical/"
+  },
   {
    "group": "ann-arbor-liberty-meetup-group",
    "error": "HTTP 404 for https://www.meetup.com/ann-arbor-liberty-meetup-group/events/ical/"
@@ -10,10 +14,6 @@
   {
    "group": "fr-FR",
    "error": "HTTP 404 for https://www.meetup.com/fr-FR/events/ical/"
-  },
-  {
-   "group": "bitcoin-albany",
-   "error": "HTTP 404 for https://www.meetup.com/bitcoin-albany/events/ical/"
   },
   {
    "group": "es-ES",
@@ -96,12 +96,12 @@
    "error": "HTTP 404 for https://www.meetup.com/nevco-bitcoin-meetup/events/ical/"
   },
   {
-   "group": "Portland-Bitcoin-Group",
-   "error": "HTTP 403 for https://www.meetup.com/Portland-Bitcoin-Group/events/ical/"
-  },
-  {
    "group": "porto-alegre-bitcoin-meetup",
    "error": "HTTP 403 for https://www.meetup.com/porto-alegre-bitcoin-meetup/events/ical/"
+  },
+  {
+   "group": "Portland-Bitcoin-Group",
+   "error": "HTTP 403 for https://www.meetup.com/Portland-Bitcoin-Group/events/ical/"
   },
   {
    "group": "ko-KR",
@@ -116,12 +116,12 @@
    "error": "HTTP 404 for https://www.meetup.com/saint-charles-bitcoin-meetup-group/events/ical/"
   },
   {
-   "group": "topeka-bitcoin-meet-up-group",
-   "error": "HTTP 404 for https://www.meetup.com/topeka-bitcoin-meet-up-group/events/ical/"
-  },
-  {
    "group": "triangle-bitdevs",
    "error": "HTTP 404 for https://www.meetup.com/triangle-bitdevs/events/ical/"
+  },
+  {
+   "group": "topeka-bitcoin-meet-up-group",
+   "error": "HTTP 404 for https://www.meetup.com/topeka-bitcoin-meet-up-group/events/ical/"
   },
   {
    "group": "istanbul-bitcoin-meetup-group",
@@ -152,7 +152,8 @@
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
    },
-   "community": "arnhem-bitcoin-city"
+   "community": "arnhem-bitcoin-city",
+   "image": "communities/arnhem-bitcoin-city.webp"
   },
   {
    "id": "meetup:315560883",
@@ -177,7 +178,8 @@
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
    },
-   "community": "arnhem-bitcoin-city"
+   "community": "arnhem-bitcoin-city",
+   "image": "communities/arnhem-bitcoin-city.webp"
   },
   {
    "id": "meetup:316084657",
@@ -202,7 +204,8 @@
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
    },
-   "community": "arnhem-bitcoin-city"
+   "community": "arnhem-bitcoin-city",
+   "image": "communities/arnhem-bitcoin-city.webp"
   },
   {
    "id": "meetup:316323782",
@@ -227,7 +230,8 @@
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
    },
-   "community": "arnhem-bitcoin-city"
+   "community": "arnhem-bitcoin-city",
+   "image": "communities/arnhem-bitcoin-city.webp"
   },
   {
    "id": "meetup:trffvtyjcqbgb",
@@ -252,7 +256,8 @@
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
    },
-   "community": "arnhem-bitcoin-city"
+   "community": "arnhem-bitcoin-city",
+   "image": "communities/arnhem-bitcoin-city.webp"
   },
   {
    "id": "meetup:315560938",
@@ -277,7 +282,8 @@
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
    },
-   "community": "arnhem-bitcoin-city"
+   "community": "arnhem-bitcoin-city",
+   "image": "communities/arnhem-bitcoin-city.webp"
   },
   {
    "id": "meetup:316084663",
@@ -302,7 +308,8 @@
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
    },
-   "community": "arnhem-bitcoin-city"
+   "community": "arnhem-bitcoin-city",
+   "image": "communities/arnhem-bitcoin-city.webp"
   },
   {
    "id": "meetup:trffvtykccbcb",
@@ -327,7 +334,8 @@
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
    },
-   "community": "arnhem-bitcoin-city"
+   "community": "arnhem-bitcoin-city",
+   "image": "communities/arnhem-bitcoin-city.webp"
   },
   {
    "id": "meetup:trffvtykcdbhb",
@@ -352,7 +360,8 @@
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
    },
-   "community": "arnhem-bitcoin-city"
+   "community": "arnhem-bitcoin-city",
+   "image": "communities/arnhem-bitcoin-city.webp"
   },
   {
    "id": "meetup:trffvtykcfbhb",
@@ -377,7 +386,8 @@
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
    },
-   "community": "arnhem-bitcoin-city"
+   "community": "arnhem-bitcoin-city",
+   "image": "communities/arnhem-bitcoin-city.webp"
   },
   {
    "id": "meetup:315045010",
@@ -402,7 +412,8 @@
     "name": "Atlanta BitDevs",
     "url": "https://www.meetup.com/atlantabitdevs/"
    },
-   "community": "atlanta-bit-devs"
+   "community": "atlanta-bit-devs",
+   "image": "communities/atlanta-bit-devs.webp"
   },
   {
    "id": "meetup:317195141",
@@ -427,7 +438,8 @@
     "name": "Atlanta BitDevs",
     "url": "https://www.meetup.com/atlantabitdevs/"
    },
-   "community": "atlanta-bit-devs"
+   "community": "atlanta-bit-devs",
+   "image": "communities/atlanta-bit-devs.webp"
   },
   {
    "id": "meetup:315045051",
@@ -452,7 +464,8 @@
     "name": "Atlanta BitDevs",
     "url": "https://www.meetup.com/atlantabitdevs/"
    },
-   "community": "atlanta-bit-devs"
+   "community": "atlanta-bit-devs",
+   "image": "communities/atlanta-bit-devs.webp"
   },
   {
    "id": "meetup:317182049",
@@ -477,7 +490,8 @@
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
    },
-   "community": "bay-area-bitcoiners"
+   "community": "bay-area-bitcoiners",
+   "image": "communities/bay-area-bitcoiners.webp"
   },
   {
    "id": "meetup:317262538",
@@ -502,7 +516,8 @@
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
    },
-   "community": "bay-area-bitcoiners"
+   "community": "bay-area-bitcoiners",
+   "image": "communities/bay-area-bitcoiners.webp"
   },
   {
    "id": "meetup:314863314",
@@ -527,7 +542,8 @@
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
    },
-   "community": "bay-area-bitcoiners"
+   "community": "bay-area-bitcoiners",
+   "image": "communities/bay-area-bitcoiners.webp"
   },
   {
    "id": "meetup:314863327",
@@ -552,7 +568,8 @@
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
    },
-   "community": "bay-area-bitcoiners"
+   "community": "bay-area-bitcoiners",
+   "image": "communities/bay-area-bitcoiners.webp"
   },
   {
    "id": "meetup:317049329",
@@ -577,7 +594,8 @@
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
    },
-   "community": "bay-area-bitcoiners"
+   "community": "bay-area-bitcoiners",
+   "image": "communities/bay-area-bitcoiners.webp"
   },
   {
    "id": "meetup:314863328",
@@ -602,7 +620,8 @@
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
    },
-   "community": "bay-area-bitcoiners"
+   "community": "bay-area-bitcoiners",
+   "image": "communities/bay-area-bitcoiners.webp"
   },
   {
    "id": "meetup:314863329",
@@ -627,7 +646,8 @@
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
    },
-   "community": "bay-area-bitcoiners"
+   "community": "bay-area-bitcoiners",
+   "image": "communities/bay-area-bitcoiners.webp"
   },
   {
    "id": "meetup:314863330",
@@ -652,7 +672,8 @@
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
    },
-   "community": "bay-area-bitcoiners"
+   "community": "bay-area-bitcoiners",
+   "image": "communities/bay-area-bitcoiners.webp"
   },
   {
    "id": "meetup:314863338",
@@ -677,7 +698,8 @@
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
    },
-   "community": "bay-area-bitcoiners"
+   "community": "bay-area-bitcoiners",
+   "image": "communities/bay-area-bitcoiners.webp"
   },
   {
    "id": "meetup:pcrzmtykchbkc",
@@ -702,7 +724,8 @@
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
    },
-   "community": "bay-area-bitcoiners"
+   "community": "bay-area-bitcoiners",
+   "image": "communities/bay-area-bitcoiners.webp"
   },
   {
    "id": "meetup:316413135",
@@ -727,7 +750,8 @@
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
    },
-   "community": "bitcoin-paris-montmartre"
+   "community": "bitcoin-paris-montmartre",
+   "image": "communities/bitcoin-paris-montmartre.webp"
   },
   {
    "id": "meetup:lkknbvyjcqbkb",
@@ -752,7 +776,8 @@
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
    },
-   "community": "bitcoin-paris-montmartre"
+   "community": "bitcoin-paris-montmartre",
+   "image": "communities/bitcoin-paris-montmartre.webp"
   },
   {
    "id": "meetup:ghkwbvyjcqbvb",
@@ -777,7 +802,8 @@
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
    },
-   "community": "bitcoin-paris-montmartre"
+   "community": "bitcoin-paris-montmartre",
+   "image": "communities/bitcoin-paris-montmartre.webp"
   },
   {
    "id": "meetup:lkknbvykccbgb",
@@ -802,7 +828,8 @@
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
    },
-   "community": "bitcoin-paris-montmartre"
+   "community": "bitcoin-paris-montmartre",
+   "image": "communities/bitcoin-paris-montmartre.webp"
   },
   {
    "id": "meetup:ghkwbvykccbbc",
@@ -827,7 +854,8 @@
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
    },
-   "community": "bitcoin-paris-montmartre"
+   "community": "bitcoin-paris-montmartre",
+   "image": "communities/bitcoin-paris-montmartre.webp"
   },
   {
    "id": "meetup:lkknbvykcdbcb",
@@ -852,7 +880,8 @@
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
    },
-   "community": "bitcoin-paris-montmartre"
+   "community": "bitcoin-paris-montmartre",
+   "image": "communities/bitcoin-paris-montmartre.webp"
   },
   {
    "id": "meetup:ghkwbvykcdbwb",
@@ -877,7 +906,8 @@
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
    },
-   "community": "bitcoin-paris-montmartre"
+   "community": "bitcoin-paris-montmartre",
+   "image": "communities/bitcoin-paris-montmartre.webp"
   },
   {
    "id": "meetup:lkknbvykcfbcb",
@@ -902,7 +932,8 @@
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
    },
-   "community": "bitcoin-paris-montmartre"
+   "community": "bitcoin-paris-montmartre",
+   "image": "communities/bitcoin-paris-montmartre.webp"
   },
   {
    "id": "meetup:ghkwbvykcfbwb",
@@ -927,7 +958,8 @@
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
    },
-   "community": "bitcoin-paris-montmartre"
+   "community": "bitcoin-paris-montmartre",
+   "image": "communities/bitcoin-paris-montmartre.webp"
   },
   {
    "id": "meetup:ghkwbvykcgbcc",
@@ -952,7 +984,8 @@
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
    },
-   "community": "bitcoin-paris-montmartre"
+   "community": "bitcoin-paris-montmartre",
+   "image": "communities/bitcoin-paris-montmartre.webp"
   },
   {
    "id": "meetup:316912317",
@@ -977,7 +1010,8 @@
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
    },
-   "community": "bitcoin-and-beer"
+   "community": "bitcoin-and-beer",
+   "image": "communities/bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:317192449",
@@ -1002,7 +1036,8 @@
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
    },
-   "community": "bitcoin-and-beer"
+   "community": "bitcoin-and-beer",
+   "image": "communities/bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:zpskwtykccblb",
@@ -1027,7 +1062,8 @@
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
    },
-   "community": "bitcoin-and-beer"
+   "community": "bitcoin-and-beer",
+   "image": "communities/bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:zpskwtykcdbqb",
@@ -1052,7 +1088,8 @@
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
    },
-   "community": "bitcoin-and-beer"
+   "community": "bitcoin-and-beer",
+   "image": "communities/bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:zpskwtykcfbqb",
@@ -1077,7 +1114,8 @@
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
    },
-   "community": "bitcoin-and-beer"
+   "community": "bitcoin-and-beer",
+   "image": "communities/bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:zpskwtykcgbmb",
@@ -1102,7 +1140,8 @@
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
    },
-   "community": "bitcoin-and-beer"
+   "community": "bitcoin-and-beer",
+   "image": "communities/bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:zpskwtykchbsb",
@@ -1127,7 +1166,8 @@
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
    },
-   "community": "bitcoin-and-beer"
+   "community": "bitcoin-and-beer",
+   "image": "communities/bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:zpskwtykcjbpb",
@@ -1152,7 +1192,8 @@
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
    },
-   "community": "bitcoin-and-beer"
+   "community": "bitcoin-and-beer",
+   "image": "communities/bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:zpskwtykckbmb",
@@ -1177,7 +1218,8 @@
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
    },
-   "community": "bitcoin-and-beer"
+   "community": "bitcoin-and-beer",
+   "image": "communities/bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:zpskwtykclbrb",
@@ -1202,7 +1244,8 @@
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
    },
-   "community": "bitcoin-and-beer"
+   "community": "bitcoin-and-beer",
+   "image": "communities/bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:316155728",
@@ -1227,7 +1270,8 @@
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
    },
-   "community": "bitcoin-alps"
+   "community": "bitcoin-alps",
+   "image": "communities/bitcoin-alps.webp"
   },
   {
    "id": "meetup:315325639",
@@ -1252,7 +1296,8 @@
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
    },
-   "community": "bitcoin-alps"
+   "community": "bitcoin-alps",
+   "image": "communities/bitcoin-alps.webp"
   },
   {
    "id": "meetup:312417505",
@@ -1277,7 +1322,8 @@
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
    },
-   "community": "bitcoin-alps"
+   "community": "bitcoin-alps",
+   "image": "communities/bitcoin-alps.webp"
   },
   {
    "id": "meetup:zwlxvtykccbgb",
@@ -1302,7 +1348,8 @@
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
    },
-   "community": "bitcoin-alps"
+   "community": "bitcoin-alps",
+   "image": "communities/bitcoin-alps.webp"
   },
   {
    "id": "meetup:wkbmgtykccbsb",
@@ -1327,7 +1374,8 @@
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
    },
-   "community": "bitcoin-alps"
+   "community": "bitcoin-alps",
+   "image": "communities/bitcoin-alps.webp"
   },
   {
    "id": "meetup:zwlxvtykcdbcb",
@@ -1352,7 +1400,8 @@
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
    },
-   "community": "bitcoin-alps"
+   "community": "bitcoin-alps",
+   "image": "communities/bitcoin-alps.webp"
   },
   {
    "id": "meetup:wkbmgtykcdbpb",
@@ -1377,7 +1426,8 @@
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
    },
-   "community": "bitcoin-alps"
+   "community": "bitcoin-alps",
+   "image": "communities/bitcoin-alps.webp"
   },
   {
    "id": "meetup:zwlxvtykcfbcb",
@@ -1402,7 +1452,8 @@
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
    },
-   "community": "bitcoin-alps"
+   "community": "bitcoin-alps",
+   "image": "communities/bitcoin-alps.webp"
   },
   {
    "id": "meetup:wkbmgtykcfbpb",
@@ -1427,7 +1478,8 @@
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
    },
-   "community": "bitcoin-alps"
+   "community": "bitcoin-alps",
+   "image": "communities/bitcoin-alps.webp"
   },
   {
    "id": "meetup:zwlxvtykcgbhb",
@@ -1452,7 +1504,8 @@
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
    },
-   "community": "bitcoin-alps"
+   "community": "bitcoin-alps",
+   "image": "communities/bitcoin-alps.webp"
   },
   {
    "id": "meetup:317275740",
@@ -1477,7 +1530,8 @@
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
    },
-   "community": "bitcoin-byron-bay"
+   "community": "bitcoin-byron-bay",
+   "image": "communities/bitcoin-byron-bay.webp"
   },
   {
    "id": "meetup:qjqzxtyjcqbjb",
@@ -1502,7 +1556,8 @@
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
    },
-   "community": "bitcoin-byron-bay"
+   "community": "bitcoin-byron-bay",
+   "image": "communities/bitcoin-byron-bay.webp"
   },
   {
    "id": "meetup:xtstztyjcqbqb",
@@ -1527,7 +1582,8 @@
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
    },
-   "community": "bitcoin-byron-bay"
+   "community": "bitcoin-byron-bay",
+   "image": "communities/bitcoin-byron-bay.webp"
   },
   {
    "id": "meetup:qjqzxtykccbfb",
@@ -1552,7 +1608,8 @@
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
    },
-   "community": "bitcoin-byron-bay"
+   "community": "bitcoin-byron-bay",
+   "image": "communities/bitcoin-byron-bay.webp"
   },
   {
    "id": "meetup:xtstztykccbmb",
@@ -1577,7 +1634,8 @@
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
    },
-   "community": "bitcoin-byron-bay"
+   "community": "bitcoin-byron-bay",
+   "image": "communities/bitcoin-byron-bay.webp"
   },
   {
    "id": "meetup:qjqzxtykcdbkb",
@@ -1602,7 +1660,8 @@
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
    },
-   "community": "bitcoin-byron-bay"
+   "community": "bitcoin-byron-bay",
+   "image": "communities/bitcoin-byron-bay.webp"
   },
   {
    "id": "meetup:xtstztykcdbrb",
@@ -1627,7 +1686,8 @@
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
    },
-   "community": "bitcoin-byron-bay"
+   "community": "bitcoin-byron-bay",
+   "image": "communities/bitcoin-byron-bay.webp"
   },
   {
    "id": "meetup:qjqzxtykcfbkb",
@@ -1652,7 +1712,8 @@
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
    },
-   "community": "bitcoin-byron-bay"
+   "community": "bitcoin-byron-bay",
+   "image": "communities/bitcoin-byron-bay.webp"
   },
   {
    "id": "meetup:xtstztykcfbrb",
@@ -1677,7 +1738,8 @@
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
    },
-   "community": "bitcoin-byron-bay"
+   "community": "bitcoin-byron-bay",
+   "image": "communities/bitcoin-byron-bay.webp"
   },
   {
    "id": "meetup:qjqzxtykcgbgb",
@@ -1702,7 +1764,8 @@
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
    },
-   "community": "bitcoin-byron-bay"
+   "community": "bitcoin-byron-bay",
+   "image": "communities/bitcoin-byron-bay.webp"
   },
   {
    "id": "meetup:317037517",
@@ -1727,7 +1790,8 @@
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
    },
-   "community": "bitcoin-charlotte"
+   "community": "bitcoin-charlotte",
+   "image": "communities/bitcoin-charlotte.webp"
   },
   {
    "id": "meetup:316390404",
@@ -1752,7 +1816,8 @@
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
    },
-   "community": "bitcoin-charlotte"
+   "community": "bitcoin-charlotte",
+   "image": "communities/bitcoin-charlotte.webp"
   },
   {
    "id": "meetup:317133951",
@@ -1777,7 +1842,8 @@
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
    },
-   "community": "bitcoin-charlotte"
+   "community": "bitcoin-charlotte",
+   "image": "communities/bitcoin-charlotte.webp"
   },
   {
    "id": "meetup:317243313",
@@ -1802,7 +1868,8 @@
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
    },
-   "community": "bitcoin-charlotte"
+   "community": "bitcoin-charlotte",
+   "image": "communities/bitcoin-charlotte.webp"
   },
   {
    "id": "meetup:qtqrwtyjcpblc",
@@ -1827,7 +1894,8 @@
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
    },
-   "community": "bitcoin-charlotte"
+   "community": "bitcoin-charlotte",
+   "image": "communities/bitcoin-charlotte.webp"
   },
   {
    "id": "meetup:rngzwtyjcqbhb",
@@ -1852,7 +1920,8 @@
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
    },
-   "community": "bitcoin-charlotte"
+   "community": "bitcoin-charlotte",
+   "image": "communities/bitcoin-charlotte.webp"
   },
   {
    "id": "meetup:cnppztyjcqbkb",
@@ -1877,7 +1946,8 @@
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
    },
-   "community": "bitcoin-charlotte"
+   "community": "bitcoin-charlotte",
+   "image": "communities/bitcoin-charlotte.webp"
   },
   {
    "id": "meetup:316390407",
@@ -1902,7 +1972,8 @@
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
    },
-   "community": "bitcoin-charlotte"
+   "community": "bitcoin-charlotte",
+   "image": "communities/bitcoin-charlotte.webp"
   },
   {
    "id": "meetup:dpgzwtyjcqbqb",
@@ -1927,7 +1998,8 @@
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
    },
-   "community": "bitcoin-charlotte"
+   "community": "bitcoin-charlotte",
+   "image": "communities/bitcoin-charlotte.webp"
   },
   {
    "id": "meetup:qtrvztyjcqbzb",
@@ -1952,7 +2024,8 @@
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
    },
-   "community": "bitcoin-charlotte"
+   "community": "bitcoin-charlotte",
+   "image": "communities/bitcoin-charlotte.webp"
   },
   {
    "id": "meetup:316670091",
@@ -1977,7 +2050,8 @@
     "name": "Bitcoin District",
     "url": "https://www.meetup.com/bitcoin-district/"
    },
-   "community": "bitcoin-district"
+   "community": "bitcoin-district",
+   "image": "communities/bitcoin-district.webp"
   },
   {
    "id": "meetup:317184603",
@@ -2002,7 +2076,8 @@
     "name": "Bitcoin District",
     "url": "https://www.meetup.com/bitcoin-district/"
    },
-   "community": "bitcoin-district"
+   "community": "bitcoin-district",
+   "image": "communities/bitcoin-district.webp"
   },
   {
    "id": "meetup:316670092",
@@ -2027,7 +2102,8 @@
     "name": "Bitcoin District",
     "url": "https://www.meetup.com/bitcoin-district/"
    },
-   "community": "bitcoin-district"
+   "community": "bitcoin-district",
+   "image": "communities/bitcoin-district.webp"
   },
   {
    "id": "meetup:310457850",
@@ -2052,7 +2128,8 @@
     "name": "Bitcoin District",
     "url": "https://www.meetup.com/bitcoin-district/"
    },
-   "community": "bitcoin-district"
+   "community": "bitcoin-district",
+   "image": "communities/bitcoin-district.webp"
   },
   {
    "id": "meetup:316670691",
@@ -2077,7 +2154,8 @@
     "name": "Bitcoin Mallorca",
     "url": "https://www.meetup.com/Bitcoin-Mallorca/"
    },
-   "community": "bitcoin-mallorca"
+   "community": "bitcoin-mallorca",
+   "image": "communities/bitcoin-mallorca.webp"
   },
   {
    "id": "meetup:mdgtltyjcpbjc",
@@ -2102,7 +2180,8 @@
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
    },
-   "community": "bitcoin-manchester"
+   "community": "bitcoin-manchester",
+   "image": "communities/bitcoin-manchester.webp"
   },
   {
    "id": "meetup:315752830",
@@ -2127,7 +2206,8 @@
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
    },
-   "community": "bitcoin-manchester"
+   "community": "bitcoin-manchester",
+   "image": "communities/bitcoin-manchester.webp"
   },
   {
    "id": "meetup:mdgtltykccblc",
@@ -2152,7 +2232,8 @@
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
    },
-   "community": "bitcoin-manchester"
+   "community": "bitcoin-manchester",
+   "image": "communities/bitcoin-manchester.webp"
   },
   {
    "id": "meetup:mdgtltykcdbhc",
@@ -2177,7 +2258,8 @@
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
    },
-   "community": "bitcoin-manchester"
+   "community": "bitcoin-manchester",
+   "image": "communities/bitcoin-manchester.webp"
   },
   {
    "id": "meetup:mdgtltykcfbhc",
@@ -2202,7 +2284,8 @@
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
    },
-   "community": "bitcoin-manchester"
+   "community": "bitcoin-manchester",
+   "image": "communities/bitcoin-manchester.webp"
   },
   {
    "id": "meetup:mdgtltykcgbmc",
@@ -2227,7 +2310,8 @@
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
    },
-   "community": "bitcoin-manchester"
+   "community": "bitcoin-manchester",
+   "image": "communities/bitcoin-manchester.webp"
   },
   {
    "id": "meetup:mdgtltykchbkc",
@@ -2252,7 +2336,8 @@
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
    },
-   "community": "bitcoin-manchester"
+   "community": "bitcoin-manchester",
+   "image": "communities/bitcoin-manchester.webp"
   },
   {
    "id": "meetup:mdgtltykcjbgc",
@@ -2277,7 +2362,8 @@
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
    },
-   "community": "bitcoin-manchester"
+   "community": "bitcoin-manchester",
+   "image": "communities/bitcoin-manchester.webp"
   },
   {
    "id": "meetup:mdgtltykckbmc",
@@ -2302,7 +2388,8 @@
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
    },
-   "community": "bitcoin-manchester"
+   "community": "bitcoin-manchester",
+   "image": "communities/bitcoin-manchester.webp"
   },
   {
    "id": "meetup:mdgtltykclbjc",
@@ -2327,7 +2414,8 @@
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
    },
-   "community": "bitcoin-manchester"
+   "community": "bitcoin-manchester",
+   "image": "communities/bitcoin-manchester.webp"
   },
   {
    "id": "meetup:317179286",
@@ -2352,7 +2440,8 @@
     "name": "Bitcoin Munich",
     "url": "https://www.meetup.com/bitcoin-munich/"
    },
-   "community": "bitcoin-munich"
+   "community": "bitcoin-munich",
+   "image": "communities/bitcoin-munich.webp"
   },
   {
    "id": "meetup:316955860",
@@ -2377,7 +2466,8 @@
     "name": "Bitcoin Noosa",
     "url": "https://www.meetup.com/bitcoin-noosa/"
    },
-   "community": "bitcoin-noosa"
+   "community": "bitcoin-noosa",
+   "image": "communities/bitcoin-noosa.webp"
   },
   {
    "id": "meetup:316685502",
@@ -2402,7 +2492,8 @@
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
    },
-   "community": "bitcoin-northern-beaches"
+   "community": "bitcoin-northern-beaches",
+   "image": "communities/bitcoin-northern-beaches.webp"
   },
   {
    "id": "meetup:316685519",
@@ -2427,7 +2518,8 @@
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
    },
-   "community": "bitcoin-northern-beaches"
+   "community": "bitcoin-northern-beaches",
+   "image": "communities/bitcoin-northern-beaches.webp"
   },
   {
    "id": "meetup:316685543",
@@ -2452,7 +2544,8 @@
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
    },
-   "community": "bitcoin-northern-beaches"
+   "community": "bitcoin-northern-beaches",
+   "image": "communities/bitcoin-northern-beaches.webp"
   },
   {
    "id": "meetup:316685562",
@@ -2477,7 +2570,8 @@
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
    },
-   "community": "bitcoin-northern-beaches"
+   "community": "bitcoin-northern-beaches",
+   "image": "communities/bitcoin-northern-beaches.webp"
   },
   {
    "id": "meetup:316685577",
@@ -2502,7 +2596,8 @@
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
    },
-   "community": "bitcoin-northern-beaches"
+   "community": "bitcoin-northern-beaches",
+   "image": "communities/bitcoin-northern-beaches.webp"
   },
   {
    "id": "meetup:317080733",
@@ -2527,7 +2622,8 @@
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
    },
-   "community": "bitcoin-northern-beaches"
+   "community": "bitcoin-northern-beaches",
+   "image": "communities/bitcoin-northern-beaches.webp"
   },
   {
    "id": "meetup:317080522",
@@ -2552,7 +2648,8 @@
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
    },
-   "community": "bitcoin-northern-beaches"
+   "community": "bitcoin-northern-beaches",
+   "image": "communities/bitcoin-northern-beaches.webp"
   },
   {
    "id": "meetup:317080579",
@@ -2577,7 +2674,8 @@
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
    },
-   "community": "bitcoin-northern-beaches"
+   "community": "bitcoin-northern-beaches",
+   "image": "communities/bitcoin-northern-beaches.webp"
   },
   {
    "id": "meetup:317080655",
@@ -2602,7 +2700,8 @@
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
    },
-   "community": "bitcoin-northern-beaches"
+   "community": "bitcoin-northern-beaches",
+   "image": "communities/bitcoin-northern-beaches.webp"
   },
   {
    "id": "meetup:316338826",
@@ -2627,7 +2726,8 @@
     "name": "Bitcoin P2P Gent",
     "url": "https://www.meetup.com/p2p-gent/"
    },
-   "community": "bitcoin-p2p-gent"
+   "community": "bitcoin-p2p-gent",
+   "image": "communities/bitcoin-p2p-gent.webp"
   },
   {
    "id": "meetup:312080213",
@@ -2652,7 +2752,8 @@
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
    },
-   "community": "bitcoin-park"
+   "community": "bitcoin-park",
+   "image": "communities/bitcoin-park.webp"
   },
   {
    "id": "meetup:312080240",
@@ -2677,7 +2778,8 @@
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
    },
-   "community": "bitcoin-park"
+   "community": "bitcoin-park",
+   "image": "communities/bitcoin-park.webp"
   },
   {
    "id": "meetup:317260115",
@@ -2702,7 +2804,8 @@
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
    },
-   "community": "bitcoin-park"
+   "community": "bitcoin-park",
+   "image": "communities/bitcoin-park.webp"
   },
   {
    "id": "meetup:316358712",
@@ -2727,7 +2830,8 @@
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
    },
-   "community": "bitcoin-park"
+   "community": "bitcoin-park",
+   "image": "communities/bitcoin-park.webp"
   },
   {
    "id": "meetup:312947782",
@@ -2752,7 +2856,8 @@
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
    },
-   "community": "bitcoin-park"
+   "community": "bitcoin-park",
+   "image": "communities/bitcoin-park.webp"
   },
   {
    "id": "meetup:312447076",
@@ -2777,7 +2882,8 @@
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
    },
-   "community": "bitcoin-park"
+   "community": "bitcoin-park",
+   "image": "communities/bitcoin-park.webp"
   },
   {
    "id": "meetup:jpbnztyjcqbjc",
@@ -2802,7 +2908,8 @@
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
    },
-   "community": "bitcoin-park"
+   "community": "bitcoin-park",
+   "image": "communities/bitcoin-park.webp"
   },
   {
    "id": "meetup:317021611",
@@ -2827,7 +2934,8 @@
     "name": "Bitcoin Saigon",
     "url": "https://www.meetup.com/Bitcoin-Saigon-Meetup/"
    },
-   "community": "bitcoin-saigon"
+   "community": "bitcoin-saigon",
+   "image": "communities/bitcoin-saigon.webp"
   },
   {
    "id": "meetup:312669067",
@@ -2852,7 +2960,8 @@
     "name": "Bitcoin Uppsala",
     "url": "https://www.meetup.com/swedish-bitcoin-meetups/"
    },
-   "community": "bitcoin-uppsala"
+   "community": "bitcoin-uppsala",
+   "image": "communities/bitcoin-uppsala.webp"
   },
   {
    "id": "meetup:317285663",
@@ -2877,7 +2986,8 @@
     "name": "Bitcoin Uppsala",
     "url": "https://www.meetup.com/swedish-bitcoin-meetups/"
    },
-   "community": "bitcoin-uppsala"
+   "community": "bitcoin-uppsala",
+   "image": "communities/bitcoin-uppsala.webp"
   },
   {
    "id": "meetup:317015057",
@@ -2902,7 +3012,8 @@
     "name": "Bitcoin Uppsala",
     "url": "https://www.meetup.com/swedish-bitcoin-meetups/"
    },
-   "community": "bitcoin-uppsala"
+   "community": "bitcoin-uppsala",
+   "image": "communities/bitcoin-uppsala.webp"
   },
   {
    "id": "meetup:312669070",
@@ -2927,7 +3038,8 @@
     "name": "Bitcoin Uppsala",
     "url": "https://www.meetup.com/swedish-bitcoin-meetups/"
    },
-   "community": "bitcoin-uppsala"
+   "community": "bitcoin-uppsala",
+   "image": "communities/bitcoin-uppsala.webp"
   },
   {
    "id": "meetup:317242464",
@@ -2952,7 +3064,8 @@
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
    },
-   "community": "bitcoin-y-lightning-guadalajara"
+   "community": "bitcoin-y-lightning-guadalajara",
+   "image": "communities/bitcoin-y-lightning-guadalajara.webp"
   },
   {
    "id": "meetup:317279188",
@@ -2977,7 +3090,8 @@
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
    },
-   "community": "bitcoin-y-lightning-guadalajara"
+   "community": "bitcoin-y-lightning-guadalajara",
+   "image": "communities/bitcoin-y-lightning-guadalajara.webp"
   },
   {
    "id": "meetup:317279389",
@@ -3002,7 +3116,8 @@
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
    },
-   "community": "bitcoin-y-lightning-guadalajara"
+   "community": "bitcoin-y-lightning-guadalajara",
+   "image": "communities/bitcoin-y-lightning-guadalajara.webp"
   },
   {
    "id": "meetup:317279320",
@@ -3027,7 +3142,8 @@
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
    },
-   "community": "bitcoin-y-lightning-guadalajara"
+   "community": "bitcoin-y-lightning-guadalajara",
+   "image": "communities/bitcoin-y-lightning-guadalajara.webp"
   },
   {
    "id": "meetup:317279316",
@@ -3052,7 +3168,8 @@
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
    },
-   "community": "bitcoin-y-lightning-guadalajara"
+   "community": "bitcoin-y-lightning-guadalajara",
+   "image": "communities/bitcoin-y-lightning-guadalajara.webp"
   },
   {
    "id": "meetup:fdswbvyjcqbhb",
@@ -3077,7 +3194,8 @@
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
    },
-   "community": "bitcoin-y-lightning-guadalajara"
+   "community": "bitcoin-y-lightning-guadalajara",
+   "image": "communities/bitcoin-y-lightning-guadalajara.webp"
   },
   {
    "id": "meetup:fdswbvyjcqbqb",
@@ -3102,7 +3220,8 @@
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
    },
-   "community": "bitcoin-y-lightning-guadalajara"
+   "community": "bitcoin-y-lightning-guadalajara",
+   "image": "communities/bitcoin-y-lightning-guadalajara.webp"
   },
   {
    "id": "meetup:317220907",
@@ -3127,7 +3246,8 @@
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
    },
-   "community": "bitshala"
+   "community": "bitshala",
+   "image": "communities/bitshala.webp"
   },
   {
    "id": "meetup:317270889",
@@ -3152,7 +3272,8 @@
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
    },
-   "community": "bitshala"
+   "community": "bitshala",
+   "image": "communities/bitshala.webp"
   },
   {
    "id": "meetup:317071800",
@@ -3177,7 +3298,8 @@
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
    },
-   "community": "bitshala"
+   "community": "bitshala",
+   "image": "communities/bitshala.webp"
   },
   {
    "id": "meetup:317285169",
@@ -3202,7 +3324,8 @@
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
    },
-   "community": "bitshala"
+   "community": "bitshala",
+   "image": "communities/bitshala.webp"
   },
   {
    "id": "meetup:317299781",
@@ -3227,7 +3350,8 @@
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
    },
-   "community": "bitshala"
+   "community": "bitshala",
+   "image": "communities/bitshala.webp"
   },
   {
    "id": "meetup:knbpztyjcpbqb",
@@ -3252,7 +3376,8 @@
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
    },
-   "community": "bitshala"
+   "community": "bitshala",
+   "image": "communities/bitshala.webp"
   },
   {
    "id": "meetup:lnbpztyjcpbrb",
@@ -3277,7 +3402,8 @@
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
    },
-   "community": "bitshala"
+   "community": "bitshala",
+   "image": "communities/bitshala.webp"
   },
   {
    "id": "meetup:gnbpztyjcpbvb",
@@ -3302,7 +3428,8 @@
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
    },
-   "community": "bitshala"
+   "community": "bitshala",
+   "image": "communities/bitshala.webp"
   },
   {
    "id": "meetup:hnbpztyjcpbwb",
@@ -3327,7 +3454,8 @@
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
    },
-   "community": "bitshala"
+   "community": "bitshala",
+   "image": "communities/bitshala.webp"
   },
   {
    "id": "meetup:jnbpztyjcpbxb",
@@ -3352,7 +3480,8 @@
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
    },
-   "community": "bitshala"
+   "community": "bitshala",
+   "image": "communities/bitshala.webp"
   },
   {
    "id": "meetup:317220065",
@@ -3377,7 +3506,8 @@
     "name": "Boulder Bitcoin",
     "url": "https://www.meetup.com/boulder-bitcoiners/"
    },
-   "community": "boulder-bitcoin"
+   "community": "boulder-bitcoin",
+   "image": "communities/boulder-bitcoin.webp"
   },
   {
    "id": "meetup:316896816",
@@ -3402,7 +3532,8 @@
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
    },
-   "community": "dallas-bitcoin"
+   "community": "dallas-bitcoin",
+   "image": "communities/dallas-bitcoin.webp"
   },
   {
    "id": "meetup:dvcsjtyjcqbnb",
@@ -3427,7 +3558,8 @@
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
    },
-   "community": "dallas-bitcoin"
+   "community": "dallas-bitcoin",
+   "image": "communities/dallas-bitcoin.webp"
   },
   {
    "id": "meetup:dvcsjtykccbsb",
@@ -3452,7 +3584,8 @@
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
    },
-   "community": "dallas-bitcoin"
+   "community": "dallas-bitcoin",
+   "image": "communities/dallas-bitcoin.webp"
   },
   {
    "id": "meetup:dvcsjtykcdbpb",
@@ -3477,7 +3610,8 @@
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
    },
-   "community": "dallas-bitcoin"
+   "community": "dallas-bitcoin",
+   "image": "communities/dallas-bitcoin.webp"
   },
   {
    "id": "meetup:dvcsjtykcfbpb",
@@ -3502,7 +3636,8 @@
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
    },
-   "community": "dallas-bitcoin"
+   "community": "dallas-bitcoin",
+   "image": "communities/dallas-bitcoin.webp"
   },
   {
    "id": "meetup:dvcsjtykcgblb",
@@ -3527,7 +3662,8 @@
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
    },
-   "community": "dallas-bitcoin"
+   "community": "dallas-bitcoin",
+   "image": "communities/dallas-bitcoin.webp"
   },
   {
    "id": "meetup:dvcsjtykchbrb",
@@ -3552,7 +3688,8 @@
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
    },
-   "community": "dallas-bitcoin"
+   "community": "dallas-bitcoin",
+   "image": "communities/dallas-bitcoin.webp"
   },
   {
    "id": "meetup:dvcsjtykcjbnb",
@@ -3577,7 +3714,8 @@
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
    },
-   "community": "dallas-bitcoin"
+   "community": "dallas-bitcoin",
+   "image": "communities/dallas-bitcoin.webp"
   },
   {
    "id": "meetup:dvcsjtykckblb",
@@ -3602,7 +3740,8 @@
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
    },
-   "community": "dallas-bitcoin"
+   "community": "dallas-bitcoin",
+   "image": "communities/dallas-bitcoin.webp"
   },
   {
    "id": "meetup:dvcsjtykclbqb",
@@ -3627,7 +3766,8 @@
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
    },
-   "community": "dallas-bitcoin"
+   "community": "dallas-bitcoin",
+   "image": "communities/dallas-bitcoin.webp"
   },
   {
    "id": "meetup:317098137",
@@ -3652,7 +3792,8 @@
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
    },
-   "community": "detroit-bitcoin-and-beer"
+   "community": "detroit-bitcoin-and-beer",
+   "image": "communities/detroit-bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:317262985",
@@ -3677,7 +3818,8 @@
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
    },
-   "community": "detroit-bitcoin-and-beer"
+   "community": "detroit-bitcoin-and-beer",
+   "image": "communities/detroit-bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:317199102",
@@ -3702,7 +3844,8 @@
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
    },
-   "community": "detroit-bitcoin-and-beer"
+   "community": "detroit-bitcoin-and-beer",
+   "image": "communities/detroit-bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:tfqrxtyjcpbhc",
@@ -3727,7 +3870,8 @@
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
    },
-   "community": "detroit-bitcoin-and-beer"
+   "community": "detroit-bitcoin-and-beer",
+   "image": "communities/detroit-bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:tfqrxtyjcqbdb",
@@ -3752,7 +3896,8 @@
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
    },
-   "community": "detroit-bitcoin-and-beer"
+   "community": "detroit-bitcoin-and-beer",
+   "image": "communities/detroit-bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:tfqrxtyjcqbmb",
@@ -3777,7 +3922,8 @@
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
    },
-   "community": "detroit-bitcoin-and-beer"
+   "community": "detroit-bitcoin-and-beer",
+   "image": "communities/detroit-bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:tfqrxtyjcqbvb",
@@ -3802,7 +3948,8 @@
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
    },
-   "community": "detroit-bitcoin-and-beer"
+   "community": "detroit-bitcoin-and-beer",
+   "image": "communities/detroit-bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:tfqrxtyjcqbfc",
@@ -3827,7 +3974,8 @@
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
    },
-   "community": "detroit-bitcoin-and-beer"
+   "community": "detroit-bitcoin-and-beer",
+   "image": "communities/detroit-bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:tfqrxtyjcqbnc",
@@ -3852,7 +4000,8 @@
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
    },
-   "community": "detroit-bitcoin-and-beer"
+   "community": "detroit-bitcoin-and-beer",
+   "image": "communities/detroit-bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:tfqrxtykccbjb",
@@ -3877,7 +4026,8 @@
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
    },
-   "community": "detroit-bitcoin-and-beer"
+   "community": "detroit-bitcoin-and-beer",
+   "image": "communities/detroit-bitcoin-and-beer.webp"
   },
   {
    "id": "meetup:316687671",
@@ -3902,7 +4052,8 @@
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
    },
-   "community": "grand-rapids-bitcoin"
+   "community": "grand-rapids-bitcoin",
+   "image": "communities/grand-rapids-bitcoin.webp"
   },
   {
    "id": "meetup:fczbbvyjcpbhc",
@@ -3927,7 +4078,8 @@
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
    },
-   "community": "grand-rapids-bitcoin"
+   "community": "grand-rapids-bitcoin",
+   "image": "communities/grand-rapids-bitcoin.webp"
   },
   {
    "id": "meetup:nrcbwtyjcqbsb",
@@ -3952,7 +4104,8 @@
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
    },
-   "community": "grand-rapids-bitcoin"
+   "community": "grand-rapids-bitcoin",
+   "image": "communities/grand-rapids-bitcoin.webp"
   },
   {
    "id": "meetup:fczbbvyjcqbnc",
@@ -3977,7 +4130,8 @@
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
    },
-   "community": "grand-rapids-bitcoin"
+   "community": "grand-rapids-bitcoin",
+   "image": "communities/grand-rapids-bitcoin.webp"
   },
   {
    "id": "meetup:312750871",
@@ -4002,7 +4156,8 @@
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
    },
-   "community": "grand-rapids-bitcoin"
+   "community": "grand-rapids-bitcoin",
+   "image": "communities/grand-rapids-bitcoin.webp"
   },
   {
    "id": "meetup:fczbbvykccbkc",
@@ -4027,7 +4182,8 @@
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
    },
-   "community": "grand-rapids-bitcoin"
+   "community": "grand-rapids-bitcoin",
+   "image": "communities/grand-rapids-bitcoin.webp"
   },
   {
    "id": "meetup:fczbbvykcdbgc",
@@ -4052,7 +4208,8 @@
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
    },
-   "community": "grand-rapids-bitcoin"
+   "community": "grand-rapids-bitcoin",
+   "image": "communities/grand-rapids-bitcoin.webp"
   },
   {
    "id": "meetup:fczbbvykcfbpc",
@@ -4077,7 +4234,8 @@
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
    },
-   "community": "grand-rapids-bitcoin"
+   "community": "grand-rapids-bitcoin",
+   "image": "communities/grand-rapids-bitcoin.webp"
   },
   {
    "id": "meetup:fczbbvykcgblc",
@@ -4102,7 +4260,8 @@
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
    },
-   "community": "grand-rapids-bitcoin"
+   "community": "grand-rapids-bitcoin",
+   "image": "communities/grand-rapids-bitcoin.webp"
   },
   {
    "id": "meetup:fczbbvykchbjc",
@@ -4127,7 +4286,8 @@
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
    },
-   "community": "grand-rapids-bitcoin"
+   "community": "grand-rapids-bitcoin",
+   "image": "communities/grand-rapids-bitcoin.webp"
   },
   {
    "id": "meetup:317168966",
@@ -4152,7 +4312,8 @@
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
    },
-   "community": "magic-city-bitcoin"
+   "community": "magic-city-bitcoin",
+   "image": "communities/magic-city-bitcoin.webp"
   },
   {
    "id": "meetup:rtpqztyjcqbcc",
@@ -4177,7 +4338,8 @@
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
    },
-   "community": "magic-city-bitcoin"
+   "community": "magic-city-bitcoin",
+   "image": "communities/magic-city-bitcoin.webp"
   },
   {
    "id": "meetup:rtpqztykccbxb",
@@ -4202,7 +4364,8 @@
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
    },
-   "community": "magic-city-bitcoin"
+   "community": "magic-city-bitcoin",
+   "image": "communities/magic-city-bitcoin.webp"
   },
   {
    "id": "meetup:rtpqztykcdbtb",
@@ -4227,7 +4390,8 @@
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
    },
-   "community": "magic-city-bitcoin"
+   "community": "magic-city-bitcoin",
+   "image": "communities/magic-city-bitcoin.webp"
   },
   {
    "id": "meetup:rtpqztykcfbtb",
@@ -4252,7 +4416,8 @@
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
    },
-   "community": "magic-city-bitcoin"
+   "community": "magic-city-bitcoin",
+   "image": "communities/magic-city-bitcoin.webp"
   },
   {
    "id": "meetup:rtpqztykcgbzb",
@@ -4277,7 +4442,8 @@
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
    },
-   "community": "magic-city-bitcoin"
+   "community": "magic-city-bitcoin",
+   "image": "communities/magic-city-bitcoin.webp"
   },
   {
    "id": "meetup:rtpqztykchbwb",
@@ -4302,7 +4468,8 @@
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
    },
-   "community": "magic-city-bitcoin"
+   "community": "magic-city-bitcoin",
+   "image": "communities/magic-city-bitcoin.webp"
   },
   {
    "id": "meetup:rtpqztykcjbcc",
@@ -4327,7 +4494,8 @@
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
    },
-   "community": "magic-city-bitcoin"
+   "community": "magic-city-bitcoin",
+   "image": "communities/magic-city-bitcoin.webp"
   },
   {
    "id": "meetup:rtpqztykckbzb",
@@ -4352,7 +4520,8 @@
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
    },
-   "community": "magic-city-bitcoin"
+   "community": "magic-city-bitcoin",
+   "image": "communities/magic-city-bitcoin.webp"
   },
   {
    "id": "meetup:rtpqztykclbvb",
@@ -4377,7 +4546,8 @@
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
    },
-   "community": "magic-city-bitcoin"
+   "community": "magic-city-bitcoin",
+   "image": "communities/magic-city-bitcoin.webp"
   },
   {
    "id": "meetup:308318864",
@@ -4402,7 +4572,8 @@
     "name": "Mass Adoption",
     "url": "https://www.meetup.com/massachusetts-bitcoin-meetup/"
    },
-   "community": "mass-adoption"
+   "community": "mass-adoption",
+   "image": "communities/mass-adoption.webp"
   },
   {
    "id": "meetup:316992816",
@@ -4427,7 +4598,8 @@
     "name": "Melbourne Bitcoin Only",
     "url": "https://www.meetup.com/Melbourne-Bitcoin-Only/"
    },
-   "community": "melbourne-bitcoin-only"
+   "community": "melbourne-bitcoin-only",
+   "image": "communities/melbourne-bitcoin-only.webp"
   },
   {
    "id": "meetup:314601860",
@@ -4452,7 +4624,8 @@
     "name": "Melbourne Bitcoin Only",
     "url": "https://www.meetup.com/Melbourne-Bitcoin-Only/"
    },
-   "community": "melbourne-bitcoin-only"
+   "community": "melbourne-bitcoin-only",
+   "image": "communities/melbourne-bitcoin-only.webp"
   },
   {
    "id": "meetup:317029241",
@@ -4477,7 +4650,8 @@
     "name": "Melbourne Bitcoin Only",
     "url": "https://www.meetup.com/Melbourne-Bitcoin-Only/"
    },
-   "community": "melbourne-bitcoin-only"
+   "community": "melbourne-bitcoin-only",
+   "image": "communities/melbourne-bitcoin-only.webp"
   },
   {
    "id": "meetup:317254156",
@@ -4502,7 +4676,8 @@
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
    },
-   "community": "nola-bitcoin"
+   "community": "nola-bitcoin",
+   "image": "communities/nola-bitcoin.webp"
   },
   {
    "id": "meetup:dhgvttykccbgb",
@@ -4527,7 +4702,8 @@
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
    },
-   "community": "nola-bitcoin"
+   "community": "nola-bitcoin",
+   "image": "communities/nola-bitcoin.webp"
   },
   {
    "id": "meetup:dhgvttykcdbcb",
@@ -4552,7 +4728,8 @@
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
    },
-   "community": "nola-bitcoin"
+   "community": "nola-bitcoin",
+   "image": "communities/nola-bitcoin.webp"
   },
   {
    "id": "meetup:dhgvttykcfbcb",
@@ -4577,7 +4754,8 @@
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
    },
-   "community": "nola-bitcoin"
+   "community": "nola-bitcoin",
+   "image": "communities/nola-bitcoin.webp"
   },
   {
    "id": "meetup:dhgvttykcgbhb",
@@ -4602,7 +4780,8 @@
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
    },
-   "community": "nola-bitcoin"
+   "community": "nola-bitcoin",
+   "image": "communities/nola-bitcoin.webp"
   },
   {
    "id": "meetup:dhgvttykchbfb",
@@ -4627,7 +4806,8 @@
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
    },
-   "community": "nola-bitcoin"
+   "community": "nola-bitcoin",
+   "image": "communities/nola-bitcoin.webp"
   },
   {
    "id": "meetup:dhgvttykcjbkb",
@@ -4652,7 +4832,8 @@
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
    },
-   "community": "nola-bitcoin"
+   "community": "nola-bitcoin",
+   "image": "communities/nola-bitcoin.webp"
   },
   {
    "id": "meetup:dhgvttykckbhb",
@@ -4677,7 +4858,8 @@
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
    },
-   "community": "nola-bitcoin"
+   "community": "nola-bitcoin",
+   "image": "communities/nola-bitcoin.webp"
   },
   {
    "id": "meetup:dhgvttykclbdb",
@@ -4702,7 +4884,8 @@
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
    },
-   "community": "nola-bitcoin"
+   "community": "nola-bitcoin",
+   "image": "communities/nola-bitcoin.webp"
   },
   {
    "id": "meetup:dhgvttykcmbjb",
@@ -4727,7 +4910,8 @@
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
    },
-   "community": "nola-bitcoin"
+   "community": "nola-bitcoin",
+   "image": "communities/nola-bitcoin.webp"
   },
   {
    "id": "meetup:316891906",
@@ -4752,7 +4936,8 @@
     "name": "Northwest Arkansas Bitcoin",
     "url": "https://www.meetup.com/fayetteville-cryptocurrency-meetup-group/"
    },
-   "community": "northwest-arkansas-bitcoin"
+   "community": "northwest-arkansas-bitcoin",
+   "image": "communities/northwest-arkansas-bitcoin.webp"
   },
   {
    "id": "meetup:316190516",
@@ -4777,7 +4962,8 @@
     "name": "Rhode Island Bitcoiners",
     "url": "https://www.meetup.com/ribitcoiners/"
    },
-   "community": "rhode-island-bitcoiners"
+   "community": "rhode-island-bitcoiners",
+   "image": "communities/rhode-island-bitcoiners.webp"
   },
   {
    "id": "meetup:316190548",
@@ -4802,7 +4988,8 @@
     "name": "Rhode Island Bitcoiners",
     "url": "https://www.meetup.com/ribitcoiners/"
    },
-   "community": "rhode-island-bitcoiners"
+   "community": "rhode-island-bitcoiners",
+   "image": "communities/rhode-island-bitcoiners.webp"
   },
   {
    "id": "meetup:316787153",
@@ -4827,7 +5014,8 @@
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
    },
-   "community": "sactown-bitcoin"
+   "community": "sactown-bitcoin",
+   "image": "communities/sactown-bitcoin.webp"
   },
   {
    "id": "meetup:317116220",
@@ -4852,7 +5040,8 @@
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
    },
-   "community": "sactown-bitcoin"
+   "community": "sactown-bitcoin",
+   "image": "communities/sactown-bitcoin.webp"
   },
   {
    "id": "meetup:317127377",
@@ -4877,7 +5066,8 @@
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
    },
-   "community": "sactown-bitcoin"
+   "community": "sactown-bitcoin",
+   "image": "communities/sactown-bitcoin.webp"
   },
   {
    "id": "meetup:316787165",
@@ -4902,7 +5092,8 @@
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
    },
-   "community": "sactown-bitcoin"
+   "community": "sactown-bitcoin",
+   "image": "communities/sactown-bitcoin.webp"
   },
   {
    "id": "meetup:jbwxbtykccbsb",
@@ -4927,7 +5118,8 @@
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
    },
-   "community": "sactown-bitcoin"
+   "community": "sactown-bitcoin",
+   "image": "communities/sactown-bitcoin.webp"
   },
   {
    "id": "meetup:nndfxtykccblc",
@@ -4952,7 +5144,8 @@
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
    },
-   "community": "sactown-bitcoin"
+   "community": "sactown-bitcoin",
+   "image": "communities/sactown-bitcoin.webp"
   },
   {
    "id": "meetup:jbwxbtykcdbpb",
@@ -4977,7 +5170,8 @@
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
    },
-   "community": "sactown-bitcoin"
+   "community": "sactown-bitcoin",
+   "image": "communities/sactown-bitcoin.webp"
   },
   {
    "id": "meetup:nndfxtykcdbhc",
@@ -5002,7 +5196,8 @@
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
    },
-   "community": "sactown-bitcoin"
+   "community": "sactown-bitcoin",
+   "image": "communities/sactown-bitcoin.webp"
   },
   {
    "id": "meetup:jbwxbtykcfbpb",
@@ -5027,7 +5222,8 @@
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
    },
-   "community": "sactown-bitcoin"
+   "community": "sactown-bitcoin",
+   "image": "communities/sactown-bitcoin.webp"
   },
   {
    "id": "meetup:nndfxtykcfbhc",
@@ -5052,7 +5248,8 @@
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
    },
-   "community": "sactown-bitcoin"
+   "community": "sactown-bitcoin",
+   "image": "communities/sactown-bitcoin.webp"
   },
   {
    "id": "meetup:317185876",
@@ -5077,7 +5274,8 @@
     "name": "Victoria Bitcoin",
     "url": "https://www.meetup.com/vicbtc/"
    },
-   "community": "victoria-bitcoin"
+   "community": "victoria-bitcoin",
+   "image": "communities/victoria-bitcoin.webp"
   },
   {
    "id": "meetup:317185926",
@@ -5102,7 +5300,8 @@
     "name": "Victoria Bitcoin",
     "url": "https://www.meetup.com/vicbtc/"
    },
-   "community": "victoria-bitcoin"
+   "community": "victoria-bitcoin",
+   "image": "communities/victoria-bitcoin.webp"
   },
   {
    "id": "meetup:317185921",
@@ -5127,7 +5326,8 @@
     "name": "Victoria Bitcoin",
     "url": "https://www.meetup.com/vicbtc/"
    },
-   "community": "victoria-bitcoin"
+   "community": "victoria-bitcoin",
+   "image": "communities/victoria-bitcoin.webp"
   },
   {
    "id": "meetup:317036271",
@@ -5152,7 +5352,8 @@
     "name": "Western Mass Bitcoin",
     "url": "https://www.meetup.com/western-mass-bitcoin-meetup/"
    },
-   "community": "western-mass-bitcoin"
+   "community": "western-mass-bitcoin",
+   "image": "communities/western-mass-bitcoin.webp"
   },
   {
    "id": "meetup:317036288",
@@ -5177,7 +5378,8 @@
     "name": "Western Mass Bitcoin",
     "url": "https://www.meetup.com/western-mass-bitcoin-meetup/"
    },
-   "community": "western-mass-bitcoin"
+   "community": "western-mass-bitcoin",
+   "image": "communities/western-mass-bitcoin.webp"
   },
   {
    "id": "meetup:317193378",
@@ -5202,7 +5404,8 @@
     "name": "YYC Bitcoin",
     "url": "https://www.meetup.com/yycbitcoin/"
    },
-   "community": "yyc"
+   "community": "yyc",
+   "image": "communities/yyc.webp"
   }
  ]
 }

@@ -62,6 +62,7 @@ export async function harvestMeetup({ horizonDays = 365 } = {}) {
           listing: `https://www.meetup.com/${group}/events/`,
           organiser: { name: community.name, url: `https://www.meetup.com/${group}/` },
           community: community.id,
+          image: community.image || null,
         }));
     } catch (error) {
       failures.push({ group, error: String(error.message || error) });

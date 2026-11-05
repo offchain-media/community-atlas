@@ -9,6 +9,8 @@
 - **Community feeds.** Listed in the profile. An entry whose `canonical` page is on another site is skipped: it is a copy, and the original comes from that other site's feed.
 - **Duplicates.** Two events are the same when they start the same day (or within 24 hours), are less than 100 km apart and share at least 60 % of their significant title words. The edition's own event wins, then the most precise location; the other sources stay listed under `alsoListedBy`.
 
+- **Pictures.** Plan ₿ thumbnails (events from the last year onwards), the `image.src` of feed events (relative to the feed file or to the site root) and BTC Map community logos are resized to WebP (480 × 270 for events, 128 × 128 for logos) into `data/images/`, with `data/images/index.json` recording each source so a picture is fetched again only when it changes. The folder is not committed.
+
 A source that fails keeps its previous data; `data/sources/meta.json` records the last success and error of each.
 
 ## Event format
@@ -29,6 +31,7 @@ A source that fails keeps its previous data; `data/sources/meta.json` records th
 | `online` | true for online-only events |
 | `url`, `listing` | the event's page, and the page where the source lists it (credited as "Listed by") |
 | `organiser`, `community` | `{ name, url }`, and the BTC Map community id when known |
+| `image`, `imageFit` | path of the picture served by the atlas; `contain` when it is a community logo |
 | `attribution` | `{ name, url, license }` for sources that require it |
 | `alsoListedBy` | other sources that published the same event |
 

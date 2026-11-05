@@ -6,6 +6,7 @@
 import { resolve } from "node:path";
 import { SOURCES, fetchJSON, writeJSON } from "../lib/io.mjs";
 import { safeURL, safeZone } from "../../src/shared/util.js";
+import { saveIndex, storeImage } from "../lib/images.mjs";
 
 const pick = (v, lang = "en") =>
   v && typeof v === "object" ? v[lang] || Object.values(v)[0] || "" : String(v || "");
@@ -53,6 +54,17 @@ export function fromFeed(e, feed) {
   };
 }
 
+/** A feed image path may be relative to the feed file or to the site root: try both. */
+async function feedImage(src, feed, id) {
+  const name = "events/" + id.replace(/[^\w-]/g, "_");
+  for (const base of [feed.url, new URL("/", feed.url).href]) {
+    const candidate = safeURL(new URL(src, base).href);
+    const stored = candidate && (await storeImage(candidate, name));
+    if (stored) return stored;
+  }
+  return null;
+}
+
 export async function harvestFeeds(feeds = []) {
   const events = [],
     failures = [];
@@ -63,12 +75,15 @@ export async function harvestFeeds(feeds = []) {
       if (!Array.isArray(list)) throw new Error("not an event list");
       for (const e of list) {
         const ev = e && e.id && e.title ? fromFeed(e, feed) : null;
-        if (ev?.title) events.push(ev);
+        if (!ev?.title) continue;
+        if (e.image?.src) ev.image = await feedImage(e.image.src, feed, ev.id);
+        events.push(ev);
       }
     } catch (error) {
       failures.push({ url: feed.url, error: String(error.message || error) });
     }
   }
+  await saveIndex();
   const out = resolve(SOURCES, "feed-events.json");
   await writeJSON(out, { fetchedAt: new Date().toISOString(), feeds: feeds.map((f) => f.url), failures, events });
   return { events: events.length, failures: failures.length };

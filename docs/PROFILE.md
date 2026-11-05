@@ -43,8 +43,11 @@ Events you publish yourself, in the [feed format](DATA.md#feed-format). When ano
     "category": "wallet", "country": null,
     "description": { "en": "...", "fr": "..." },
     "evidence": "https://...", "evidenceNote": "...", "verifiedAt": "2026-11-05",
-    "verification": "read", "review": "pending" } ] }
+    "verification": "read", "review": "pending",
+    "github": "sparrowwallet", "logo": "logos/sparrow.webp" } ] }
 ```
+
+`github` names the GitHub organisation whose avatar `node scripts/fetch-logos.mjs` stores as `logo` (a file in the profile folder). Without a logo, the card shows the first letter of the name.
 
 Categories: `wallet`, `hardware`, `broker`, `payments`, `lightning`, `node`, `mining`, `finance`, `custody`, `education`, `privacy`.
 

@@ -322,7 +322,7 @@ async function openPopup(layer, feature) {
   if (layer === "merchants") return merchantPopup(body, feature.properties);
   if (layer === "communities") {
     const c = (await load("communities")).communities.find((x) => x.id === id);
-    if (c) body.append(...(await communityCard(c, true)).childNodes);
+    if (c) body.append(...(await communityCard(c, true)).lastChild.childNodes);
     return;
   }
   const e = (await load("events")).events.find((x) => x.id === id);
@@ -398,7 +398,8 @@ async function renderEvents() {
     const g = groupEvents(items);
     const shown = state.when === "past" ? g.past : g.upcoming;
     let html = shown.length ? eventsHTML(shown.slice(0, state.limit)) : `<p class="empty">${esc(T.noResults)}</p>`;
-    if (state.when === "upcoming" && g.planned.length) html += `<h2 class="sub">${esc(T.planned)}</h2>` + eventsHTML(g.planned, "events planned");
+    if (state.when === "upcoming" && g.planned.length)
+      html += `<div class="section-head"><h2 class="sub">${esc(T.planned)}</h2></div>` + eventsHTML(g.planned, "events planned");
     list.innerHTML = html;
     if (shown.length > state.limit)
       list.querySelector("ol").after(h("button", { type: "button", class: "more", onclick: () => { state.limit += PAGE; draw(); } }, T.showMore));
@@ -416,15 +417,23 @@ async function communityCard(c, compact = false) {
     .slice(0, compact ? 4 : 8)
     .map(([k, url]) => extLink(url, T.links[k] || k));
   links.push(extLink(c.btcmap, "BTC Map"));
+  const logo = c.image
+    ? h("img", { class: "logo-img", src: c.image, alt: "", loading: "lazy", decoding: "async", width: 56, height: 56 })
+    : h("span", { class: "mono", "aria-hidden": "true" }, [...c.name.replace(/^[^\p{L}\p{N}]+/u, "")][0] || "·");
   return h(
     "article",
     { class: "community" },
-    h("h3", {}, extLink(c.links.website || c.btcmap, c.name)),
-    h("p", { class: "meta" }, countryName(c.country, T.locale) || c.continent || ""),
-    upcoming.length
-      ? h("p", { class: "next" }, plural(T.eventsCount, upcoming.length, T.locale), ": ", extLink(upcoming[0].url, eventTitle(upcoming[0], LANG)), " · ", dateLabel(upcoming[0], T))
-      : null,
-    h("p", { class: "links" }, links.flatMap((a, i) => (i ? [" · ", a] : [a]))),
+    logo,
+    h(
+      "div",
+      {},
+      h("p", { class: "kicker" }, h("span", { class: "cat" }, countryName(c.country, T.locale) || c.continent || "")),
+      h("h3", {}, extLink(c.links.website || c.btcmap, c.name)),
+      upcoming.length
+        ? h("p", { class: "next" }, plural(T.eventsCount, upcoming.length, T.locale), ": ", extLink(upcoming[0].url, eventTitle(upcoming[0], LANG)), " · ", dateLabel(upcoming[0], T))
+        : null,
+      h("p", { class: "links" }, links.flatMap((a, i) => (i ? [" · ", a] : [a]))),
+    ),
   );
 }
 
@@ -507,6 +516,7 @@ function renderAbout() {
     },
     T.embedCopy,
   );
+  copy.className = "btn";
   function update() {
     const u = new URL(CFG.embedURL);
     u.searchParams.set("view", viewSel.value);

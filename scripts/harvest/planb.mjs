@@ -12,6 +12,7 @@ import { resolve } from "node:path";
 import { parse } from "yaml";
 import { ROOT, SOURCES, fetchJSON, readJSON, sleep, writeJSON } from "../lib/io.mjs";
 import { safeURL, safeZone } from "../../src/shared/util.js";
+import { saveIndex, storeImage } from "../lib/images.mjs";
 
 const REPO = "https://github.com/PlanB-Network/bitcoin-educational-content";
 const BRANCH = "dev";
@@ -140,6 +141,10 @@ export async function harvestPlanB() {
       if (!geo && !notLocated.some((n) => n.folder === folder)) notLocated.push({ folder, place, error: "not found" });
     }
     const listing = y.id ? `https://planb.academy/en/events/${y.id}` : null;
+    // Thumbnails of events from the last year onwards; older ones are rarely looked at.
+    const thumbnail = resolve(dir, "events", folder, "assets/thumbnail.webp");
+    const recent = Date.parse(dates.end || dates.start) > Date.now() - 365 * 86400000;
+    const image = recent && existsSync(thumbnail) ? await storeImage(thumbnail, "events/planb-" + folder.replace(/[^\w-]/g, "_")) : null;
     events.push({
       id: "planb:" + folder,
       source: "planb",
@@ -159,6 +164,7 @@ export async function harvestPlanB() {
       online,
       venue: [y.address_line_2, y.address_line_3].filter(Boolean).join(", ") || null,
       url: safeURL(y.links?.website) || listing,
+      image,
       listing,
       attribution: {
         name: "Plan ₿ Network",
@@ -168,6 +174,7 @@ export async function harvestPlanB() {
     });
   }
   await writeJSON(CACHE, Object.fromEntries(Object.entries(cache).sort()));
+  await saveIndex();
   const commit = execFileSync("git", ["-C", dir, "rev-parse", "HEAD"]).toString().trim();
   await writeJSON(resolve(SOURCES, "planb-events.json"), {
     fetchedAt: new Date().toISOString(),

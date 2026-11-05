@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-05T21:22:52.924Z",
+ "fetchedAt": "2026-11-05T21:56:02.819Z",
  "feeds": [
   "https://lithuaniabtc.com/data/events.json",
   "https://bitcoinbaltics.com/data/events.json",
@@ -102,7 +102,8 @@
    "attribution": {
     "name": "Lithuania BTC",
     "url": "https://lithuaniabtc.com/en/"
-   }
+   },
+   "image": "events/feed_lithuaniabtc_com_meetup-315774816.webp"
   },
   {
    "id": "feed:lithuaniabtc.com:2026-08-06-fed",
@@ -134,7 +135,8 @@
    "attribution": {
     "name": "Lithuania BTC",
     "url": "https://lithuaniabtc.com/en/"
-   }
+   },
+   "image": "events/feed_lithuaniabtc_com_2026-08-06-fed.webp"
   },
   {
    "id": "feed:lithuaniabtc.com:2026-07-02-farmer",
@@ -166,7 +168,8 @@
    "attribution": {
     "name": "Lithuania BTC",
     "url": "https://lithuaniabtc.com/en/"
-   }
+   },
+   "image": "events/feed_lithuaniabtc_com_2026-07-02-farmer.webp"
   },
   {
    "id": "feed:lithuaniabtc.com:meetup-315411067",
@@ -198,7 +201,8 @@
    "attribution": {
     "name": "Lithuania BTC",
     "url": "https://lithuaniabtc.com/en/"
-   }
+   },
+   "image": "events/feed_lithuaniabtc_com_meetup-315411067.webp"
   },
   {
    "id": "feed:lithuaniabtc.com:2026-06-04-ekasi",
@@ -230,7 +234,8 @@
    "attribution": {
     "name": "Lithuania BTC",
     "url": "https://lithuaniabtc.com/en/"
-   }
+   },
+   "image": "events/feed_lithuaniabtc_com_2026-06-04-ekasi.webp"
   },
   {
    "id": "feed:bitcoinbaltics.com:planned-meetup",
@@ -326,7 +331,8 @@
    "attribution": {
     "name": "Bitcoin Baltics",
     "url": "https://bitcoinbaltics.com/"
-   }
+   },
+   "image": "events/feed_bitcoinbaltics_com_meetup-315774816.webp"
   },
   {
    "id": "feed:bitcoinbaltics.com:2026-08-06-fed",
@@ -358,7 +364,8 @@
    "attribution": {
     "name": "Bitcoin Baltics",
     "url": "https://bitcoinbaltics.com/"
-   }
+   },
+   "image": "events/feed_bitcoinbaltics_com_2026-08-06-fed.webp"
   },
   {
    "id": "feed:bitcoinbaltics.com:2026-07-02-farmer",
@@ -390,7 +397,8 @@
    "attribution": {
     "name": "Bitcoin Baltics",
     "url": "https://bitcoinbaltics.com/"
-   }
+   },
+   "image": "events/feed_bitcoinbaltics_com_2026-07-02-farmer.webp"
   },
   {
    "id": "feed:bitcoinbaltics.com:meetup-315411067",
@@ -422,7 +430,8 @@
    "attribution": {
     "name": "Bitcoin Baltics",
     "url": "https://bitcoinbaltics.com/"
-   }
+   },
+   "image": "events/feed_bitcoinbaltics_com_meetup-315411067.webp"
   },
   {
    "id": "feed:bitcoinbaltics.com:2026-06-04-ekasi",
@@ -454,7 +463,8 @@
    "attribution": {
     "name": "Bitcoin Baltics",
     "url": "https://bitcoinbaltics.com/"
-   }
+   },
+   "image": "events/feed_bitcoinbaltics_com_2026-06-04-ekasi.webp"
   },
   {
    "id": "feed:bitcoinbaltics.com:tallinn-316565528",
@@ -485,7 +495,8 @@
    "attribution": {
     "name": "Bitcoin Baltics",
     "url": "https://bitcoinbaltics.com/"
-   }
+   },
+   "image": "events/feed_bitcoinbaltics_com_tallinn-316565528.webp"
   },
   {
    "id": "feed:bitcoinbaltics.com:honeybadger-riga-2025",
@@ -516,7 +527,8 @@
    "attribution": {
     "name": "Bitcoin Baltics",
     "url": "https://bitcoinbaltics.com/"
-   }
+   },
+   "image": "events/feed_bitcoinbaltics_com_honeybadger-riga-2025.webp"
   },
   {
    "id": "feed:bitcoinbaltics.com:btcpp-riga-privacy-2025",
@@ -547,7 +559,8 @@
    "attribution": {
     "name": "Bitcoin Baltics",
     "url": "https://bitcoinbaltics.com/"
-   }
+   },
+   "image": "events/feed_bitcoinbaltics_com_btcpp-riga-privacy-2025.webp"
   },
   {
    "id": "feed:cryptobaltics.org:planned-meetup",
@@ -643,7 +656,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_meetup-315774816.webp"
   },
   {
    "id": "feed:cryptobaltics.org:2026-08-06-fed",
@@ -675,7 +689,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_2026-08-06-fed.webp"
   },
   {
    "id": "feed:cryptobaltics.org:2026-07-02-farmer",
@@ -707,7 +722,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_2026-07-02-farmer.webp"
   },
   {
    "id": "feed:cryptobaltics.org:meetup-315411067",
@@ -739,7 +755,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_meetup-315411067.webp"
   },
   {
    "id": "feed:cryptobaltics.org:2026-06-04-ekasi",
@@ -771,7 +788,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_2026-06-04-ekasi.webp"
   },
   {
    "id": "feed:cryptobaltics.org:tallinn-316565528",
@@ -802,7 +820,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_tallinn-316565528.webp"
   },
   {
    "id": "feed:cryptobaltics.org:honeybadger-riga-2025",
@@ -833,7 +852,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_honeybadger-riga-2025.webp"
   },
   {
    "id": "feed:cryptobaltics.org:btcpp-riga-privacy-2025",
@@ -864,7 +884,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_btcpp-riga-privacy-2025.webp"
   },
   {
    "id": "feed:cryptobaltics.org:solana-connect-2026",
@@ -895,7 +916,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_solana-connect-2026.webp"
   },
   {
    "id": "feed:cryptobaltics.org:unblock-fintech-2026",
@@ -926,7 +948,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_unblock-fintech-2026.webp"
   },
   {
    "id": "feed:cryptobaltics.org:unblock-2027",
@@ -957,7 +980,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_unblock-2027.webp"
   },
   {
    "id": "feed:cryptobaltics.org:solana-vibecheck-2026",
@@ -988,7 +1012,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_solana-vibecheck-2026.webp"
   },
   {
    "id": "feed:cryptobaltics.org:unblock-2026",
@@ -1019,7 +1044,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_unblock-2026.webp"
   },
   {
    "id": "feed:cryptobaltics.org:ethtallinn-2024",
@@ -1050,7 +1076,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_ethtallinn-2024.webp"
   },
   {
    "id": "feed:cryptobaltics.org:web3-vilnius-2023",
@@ -1081,7 +1108,8 @@
    "attribution": {
     "name": "Crypto Baltics",
     "url": "https://cryptobaltics.org/"
-   }
+   },
+   "image": "events/feed_cryptobaltics_org_web3-vilnius-2023.webp"
   },
   {
    "id": "feed:cypherbaltics.org:palanga-tech-talk-2026-10-28",
@@ -1143,7 +1171,8 @@
    "attribution": {
     "name": "Cypher Baltics",
     "url": "https://cypherbaltics.org/events/"
-   }
+   },
+   "image": "events/feed_cypherbaltics_org_bsides-vilnius-2027.webp"
   },
   {
    "id": "feed:cypherbaltics.org:planned-meetup",
@@ -1206,7 +1235,8 @@
    "attribution": {
     "name": "Cypher Baltics",
     "url": "https://cypherbaltics.org/events/"
-   }
+   },
+   "image": "events/feed_cypherbaltics_org_bsides-vilnius-2026.webp"
   }
  ]
 }
