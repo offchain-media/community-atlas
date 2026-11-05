@@ -111,7 +111,9 @@
    "planb": "Conférences, meetups et ateliers : la liste ouverte des événements de Plan ₿ Network.",
    "feeds": "Sites communautaires qui publient leurs événements au format de l'atlas",
    "ecosystem": "Entreprises : une sélection Bitcoin only établie par la rédaction de cette édition.",
-   "curated": "Événements publiés par la rédaction de cette édition."
+   "curated": "Événements publiés par la rédaction de cette édition.",
+   "luma": "Calendriers Luma de lieux et communautés Bitcoin, avec leur adresse exacte.",
+   "nostr": "Événements de calendrier publiés sur Nostr (NIP-52) avec le tag #bitcoin ou #btc."
   },
   "contributeTitle": "Ajouter ou corriger",
   "contribute": {
@@ -130,12 +132,32 @@
    "planb": "Événements Plan ₿ Network : CC BY-SA 4.0.",
    "meetup": "Les événements Meetup sont liés, pas copiés : titres et horaires uniquement.",
    "basemap": "Fond de carte : OpenFreeMap, © OpenMapTiles, © contributeurs OpenStreetMap.",
-   "brands": "Les noms et logos appartiennent à leurs propriétaires."
+   "brands": "Les noms et logos appartiennent à leurs propriétaires.",
+   "luma": "Les événements Luma sont liés, pas copiés : titres, horaires et lieux uniquement.",
+   "nostr": "Les événements Nostr sont des notes publiques signées par leurs auteurs."
   },
   "channels": {
    "meetup": "Meetup (avec votre groupe lié depuis votre communauté BTC Map)",
    "planb": "Plan ₿ Network",
-   "feeds": "un flux JSON sur votre propre site"
+   "feeds": "un flux JSON sur votre propre site",
+   "luma": "Luma (ouvrez l'issue « Add our events » avec votre calendrier)",
+   "nostr": "Nostr, en événement de calendrier (NIP-52) tagué #bitcoin"
   }
- }
+ },
+ "eventWebsite": "Site de l'événement",
+ "addToCalendar": "Ajouter au calendrier",
+ "showOnMap": "Voir sur la carte",
+ "allEvents": "Tous les événements",
+ "facts": {
+  "when": "Date",
+  "where": "Lieu",
+  "organiser": "Organisateur",
+  "source": "Source"
+ },
+ "zoneOf": "zone de {name}",
+ "zoneHint": "Le meetup a lieu quelque part dans la zone de cette communauté.",
+ "searchMap": "Rechercher une ville, une communauté, un lieu",
+ "searchHint": "Entrée pour chercher dans OpenStreetMap",
+ "searchSource": "Recherche : OpenStreetMap Nominatim",
+ "notFound": "Aucun résultat"
 }

@@ -116,3 +116,39 @@ export function simplify(geo, digits = 3) {
     ),
   );
 }
+
+/** Douglas-Peucker simplification of one ring, tolerance in degrees. */
+function simplifyRing(ring, tolerance) {
+  if (ring.length <= 4) return ring;
+  const keep = new Uint8Array(ring.length);
+  keep[0] = keep[ring.length - 1] = 1;
+  const stack = [[0, ring.length - 1]];
+  while (stack.length) {
+    const [a, b] = stack.pop();
+    const [ax, ay] = ring[a],
+      [bx, by] = ring[b];
+    const dx = bx - ax,
+      dy = by - ay,
+      len = Math.hypot(dx, dy) || 1e-12;
+    let max = 0,
+      index = -1;
+    for (let i = a + 1; i < b; i++) {
+      const d = Math.abs(dy * ring[i][0] - dx * ring[i][1] + bx * ay - by * ax) / len;
+      if (d > max) (max = d), (index = i);
+    }
+    if (max > tolerance) {
+      keep[index] = 1;
+      stack.push([a, index], [index, b]);
+    }
+  }
+  const out = ring.filter((_, i) => keep[i]);
+  return out.length >= 4 ? out : ring;
+}
+
+/** Outline of an area for display: simplified polygons with rounded coordinates. */
+export function outline(geo, tolerance = 0.005, digits = 3) {
+  const f = 10 ** digits;
+  return polygons(geo).map((poly) =>
+    poly.map((ring) => simplifyRing(ring, tolerance).map(([x, y]) => [Math.round(x * f) / f, Math.round(y * f) / f])),
+  );
+}

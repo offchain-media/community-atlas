@@ -14,6 +14,8 @@ An open-source map of the Bitcoin community: meetups, conferences, local communi
 | Places accepting bitcoin | [BTC Map](https://btcmap.org) (OpenStreetMap) | ODbL 1.0 | every run; details fetched live when a place is opened |
 | Communities | [BTC Map communities](https://btcmap.org/communities), public channels only | ODbL 1.0 | every run |
 | Meetups | Public Meetup.com calendars linked from BTC Map communities | titles, times and links only | every run |
+| Meetups and talks | Luma calendars listed in the profile or linked from BTC Map communities, with their exact place | titles, times, places and links only | every run |
+| Meetups | Nostr calendar events (NIP-52) tagged `#bitcoin` or `#btc`, from public relays; `data/exclusions.json` drops spam | public notes | every run |
 | Conferences, meetups, workshops | [Plan ₿ Network open event list](https://github.com/PlanB-Network/bitcoin-educational-content/tree/dev/events) | CC BY-SA 4.0 | every run |
 | Community events | JSON feeds published by community sites ([format](docs/DATA.md#feed-format)) | each site's terms | every run |
 | Your own events | `profiles/<name>/events.json` | yours | on commit |
@@ -21,7 +23,7 @@ An open-source map of the Bitcoin community: meetups, conferences, local communi
 
 Event pictures (Plan ₿ thumbnails, community feed covers) and community logos are copied and resized at harvest time into `data/images/` and served by the atlas itself, so visitors load nothing from third-party servers. A Meetup event shows its community's logo. Company logos live in the profile (`logos/`); `node scripts/fetch-logos.mjs` fetches them from the GitHub organisation named in each entry's `github` field.
 
-The same event published by several sources appears once, with links to the others. Personal contact fields from BTC Map (email, phone, WhatsApp, Signal) are never republished. Meetup descriptions are not copied. See [docs/DATA.md](docs/DATA.md).
+The same event published by several sources appears once, with links to the others. Every event has its own page in each language (`<path>events/<slug>/`) with schema.org Event data, a calendar file and a link to it on the map. When the event is a copy of a community site's event page, the atlas page points search engines to that original instead. Personal contact fields from BTC Map (email, phone, WhatsApp, Signal) are never republished. Meetup descriptions are not copied. See [docs/DATA.md](docs/DATA.md).
 
 ## Run it
 
@@ -68,6 +70,7 @@ The About page has a code generator. By hand:
 | `layers=events,communities` | map layers shown at start (`merchants`, `communities`, `events`) |
 | `lat`, `lon`, `z` | map position and zoom |
 | `theme=dark` or `light` | force a theme |
+| `focus=<event id>` | open that event's card on the map (used by "Show on the map" on event pages) |
 
 ## Reuse the data
 
@@ -81,7 +84,8 @@ Keep the attributions: OpenStreetMap contributors and BTC Map (ODbL), Plan ₿ N
 
 ## Add your events
 
-- Publish them on Meetup with your group linked from your BTC Map community, or on Plan ₿ Network: they appear at the next refresh.
+- Publish them on Meetup with your group linked from your BTC Map community, on Plan ₿ Network, or on Nostr as a NIP-52 calendar event tagged `#bitcoin` with a geohash (`g` tag): they appear at the next refresh.
+- Using Luma: open the issue "Add our events" with your calendar address, or link it from your BTC Map community.
 - Or publish a JSON feed on your own site ([format](docs/DATA.md#feed-format)) and open the issue "Add our events".
 
 ## Hosting on offchain.media

@@ -15,7 +15,7 @@ import { bbox, inBbox, inShape, shape } from "./lib/geo.mjs";
 import { fromFeed } from "./harvest/feeds.mjs";
 import { dedupe, groupEvents, toICS } from "../src/shared/events.js";
 import { esc, fmt, plural, safeURL } from "../src/shared/util.js";
-import { countryName, eventHTML } from "../src/shared/format.js";
+import { countryName, dateLabel, eventHTML, eventPath, eventTitle, whereLabel } from "../src/shared/format.js";
 
 const { values } = parseArgs({
   options: {
@@ -117,7 +117,11 @@ const harvested = [
   ...(S.feeds?.length ? (await src("feed-events.json", { events: [] })).events.filter((e) => feedHosts.has(e.source)) : []),
   ...(S.planb ? (await src("planb-events.json", { events: [] })).events : []),
   ...(S.meetup ? (await src("meetup-events.json", { events: [] })).events : []),
+  ...(S.luma ? (await src("luma-events.json", { events: [] })).events : []),
+  ...(S.nostr ? (await src("nostr-events.json", { events: [] })).events : []),
 ];
+// Fill in the country of events that only have coordinates.
+for (const e of harvested) if (!e.country && Number.isFinite(e.lat)) e.country = countryAt(e.lon, e.lat) || null;
 const keepPastDays = profile.keepPastDays ?? 730;
 const events = dedupe(
   harvested.filter(
@@ -133,6 +137,19 @@ for (const e of events) {
   ids.add(e.id);
 }
 const groups = groupEvents(events, NOW);
+
+// Every event gets a page at <language path>events/<slug>/.
+const slugs = new Set();
+for (const e of events) {
+  const words = (v) => String(v).normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  let slug = words(e.title).slice(0, 70).replace(/-$/, "");
+  slug = slug ? slug + (e.start ? "-" + e.start.slice(0, 10) : "") : words(e.id).slice(0, 90) || "event";
+  while (slugs.has(slug)) slug += "-2";
+  slugs.add(slug);
+  e.slug = slug;
+}
+// An event copied from a community site that has its own page for it points search engines there.
+const ownPageElsewhere = (e) => e.source.startsWith("feed:") && !!(S.feeds || []).find((f) => e.source === "feed:" + new URL(f.url).hostname && f.eventPage) && !!e.listing;
 
 // Companies: only entries read at their source or approved by an editor are published.
 const ecosystemFile = await readJSON(join(PROFILE_DIR, "ecosystem.json"), { companies: [] });
@@ -189,6 +206,8 @@ const sourcesMeta = Object.fromEntries(
     merchants: S.merchants && { count: places.length, fetchedAt: merchantsSrc.fetchedAt, license: "ODbL-1.0", url: "https://btcmap.org/" },
     communities: S.communities && { count: communities.length, fetchedAt: communitiesSrc.fetchedAt, license: "ODbL-1.0", url: "https://btcmap.org/communities" },
     meetup: S.meetup && { count: bySource((s) => s === "meetup"), fetchedAt: meta.meetup?.at, url: "https://www.meetup.com/" },
+    luma: S.luma && { count: bySource((s) => s === "luma"), fetchedAt: meta.luma?.at, url: "https://luma.com/" },
+    nostr: S.nostr && { count: bySource((s) => s === "nostr"), fetchedAt: meta.nostr?.at, url: "https://github.com/nostr-protocol/nips/blob/master/52.md" },
     planb: S.planb && { count: bySource((s) => s === "planb"), fetchedAt: meta.planb?.at, license: "CC BY-SA 4.0", url: "https://planb.academy/" },
     feeds: S.feeds?.length && { count: bySource((s) => s.startsWith("feed:")), fetchedAt: meta.feeds?.at, sites: S.feeds.map((f) => ({ name: f.name, url: f.site || f.url })) },
     curated: curated.length && { count: bySource((s) => s === "curated") },
@@ -206,13 +225,19 @@ const files = {
     countries: Object.fromEntries(countryShapes.filter((c) => c.main).map((c) => [c.code, c.main.map((v) => +v.toFixed(2))])),
   },
 };
+// One small outline file per community, loaded only when a community or one of its events is opened.
+const areas = (await src("btcmap-community-areas.json", { areas: {} })).areas;
+await mkdir(at("data/areas"), { recursive: true });
+for (const c of communities)
+  if (areas[c.id]) await writeFile(at("data/areas", c.id.replace(/[^\w-]/g, "_") + ".json"), JSON.stringify({ type: "MultiPolygon", coordinates: areas[c.id] }));
+
 const hash = createHash("sha256");
 for (const [name, value] of Object.entries(files)) {
   const text = JSON.stringify(value);
   hash.update(text);
   await writeFile(at("data", name), text);
 }
-const CODE = ["src/app.js", "src/app.css", "src/shared/events.js", "src/shared/format.js", "src/shared/util.js"];
+const CODE = ["src/app.js", "src/page.js", "src/app.css", "src/shared/events.js", "src/shared/format.js", "src/shared/util.js"];
 for (const f of CODE) hash.update(await readFile(resolve(ROOT, f)));
 const BUILD = hash.digest("hex").slice(0, 10);
 await writeFile(
@@ -222,6 +247,9 @@ await writeFile(
 const host = new URL(profile.origin).hostname;
 const calendarEvents = [...groups.upcoming, ...groups.past.filter((e) => Date.parse(e.start) > NOW - 30 * 86400000)];
 await writeFile(at("events.ics"), toICS(calendarEvents, { name: profile.name, host, now: NOW }));
+await mkdir(at("events"), { recursive: true });
+for (const e of events)
+  if (e.start && e.status !== "planned") await writeFile(at("events", e.slug + ".ics"), toICS([e], { name: profile.name, host, now: NOW }));
 
 for (const [from, to] of copies) {
   await mkdir(join(to, ".."), { recursive: true });
@@ -233,6 +261,7 @@ await mkdir(at("assets/shared"), { recursive: true });
 await cp(resolve(ROOT, "src/app.js"), at("assets/app.js"));
 await cp(resolve(ROOT, "src/app.css"), at("assets/app.css"));
 for (const f of ["events.js", "format.js", "util.js"]) await cp(resolve(ROOT, "src/shared", f), at("assets/shared", f));
+await cp(resolve(ROOT, "src/page.js"), at("assets/page.js"));
 for (const f of ["maplibre-gl.js", "maplibre-gl.css", "maplibre-LICENSE.txt"]) await cp(resolve(ROOT, "vendor", f), at("assets", f));
 if (profile.shareImage) await cp(join(PROFILE_DIR, profile.shareImage), at("assets", basename(profile.shareImage)));
 
@@ -271,7 +300,15 @@ const STRINGS = Object.fromEntries(
 );
 const mapStyles = profile.map.styles || { light: "https://tiles.openfreemap.org/styles/positron", dark: "https://tiles.openfreemap.org/styles/dark" };
 const connectSrc = [
-  ...new Set([...Object.values(mapStyles).map((u) => new URL(u).origin), "https://tiles.openfreemap.org", ...(profile.map.connectSrc || []), S.merchants && "https://api.btcmap.org"].filter(Boolean)),
+  ...new Set(
+    [
+      ...Object.values(mapStyles).map((u) => new URL(u).origin),
+      "https://tiles.openfreemap.org",
+      ...(profile.map.connectSrc || []),
+      S.merchants && "https://api.btcmap.org",
+      profile.map.search !== false && "https://nominatim.openstreetmap.org",
+    ].filter(Boolean),
+  ),
 ].join(" ");
 
 function themeVars() {
@@ -317,7 +354,7 @@ function aboutHTML(T) {
     const sites = k === "feeds" ? ": " + S.feeds.map((f) => `<a href="${esc(f.site || f.url)}" rel="noopener">${esc(f.name)}</a>`).join(", ") + "." : "";
     return `<li>${esc(A.sources[k])}${sites}${count(k)}</li>`;
   });
-  const channels = ["meetup", "planb", "feeds"].filter((k) => (k === "feeds" ? S.feeds?.length : S[k])).map((k) => A.channels[k]);
+  const channels = ["meetup", "luma", "nostr", "planb", "feeds"].filter((k) => (k === "feeds" ? S.feeds?.length : S[k])).map((k) => A.channels[k]);
   const list = (items) => new Intl.ListFormat(T.locale, { type: "disjunction" }).format(items);
   const contribute = [
     S.merchants && A.contribute.merchants,
@@ -325,7 +362,7 @@ function aboutHTML(T) {
     channels.length && fmt(A.contribute.events, { channels: list(channels) }) + (S.feeds?.length && repo ? " " + A.contribute.eventsFeed : ""),
     companies.length && repo && A.contribute.ecosystem,
   ].filter(Boolean);
-  const licences = [A.licences.code, usesOSM && A.licences.osm, S.planb && A.licences.planb, S.meetup && A.licences.meetup, A.licences.basemap, A.licences.brands].filter(Boolean);
+  const licences = [A.licences.code, usesOSM && A.licences.osm, S.planb && A.licences.planb, S.meetup && A.licences.meetup, S.luma && A.licences.luma, S.nostr && A.licences.nostr, A.licences.basemap, A.licences.brands].filter(Boolean);
   const updated = new Intl.DateTimeFormat(T.locale, { dateStyle: "long", timeStyle: "short", timeZone: "UTC" }).format(new Date(NOW)) + " UTC";
   return `<div class="prose"><p>${esc(A.lead)}</p>
 <h2>${esc(A.sourcesTitle)}</h2><ul>${sources.join("")}</ul>
@@ -336,8 +373,9 @@ ${contribute.length ? `<h2>${esc(A.contributeTitle)}</h2><ul>${contribute.map((c
 <h2>${esc(A.licencesTitle)}</h2><p>${esc(licences.join(" "))}</p></div>`;
 }
 
-function head(lang, { title, description, canonical, embed }) {
-  const share = profile.shareImage ? url(ASSETS + "assets/" + basename(profile.shareImage)) : null;
+function head(lang, { title, description, canonical, embed, paths, image, ogType = "website", app = true, noindex = false }) {
+  const share = image || (profile.shareImage ? url(ASSETS + "assets/" + basename(profile.shareImage)) : null);
+  const alt = paths || Object.fromEntries(profile.languages.map((l) => [l.code, l.path]));
   return `<!doctype html>
 <html lang="${esc(lang.code)}"${profile.theme?.uppercaseHeadings ? ' class="upper"' : ""}>
 <head>
@@ -351,20 +389,22 @@ function head(lang, { title, description, canonical, embed }) {
 ${
   embed
     ? '<meta name="robots" content="noindex">'
-    : `<link rel="canonical" href="${esc(canonical)}">
-${profile.languages.map((l) => `<link rel="alternate" hreflang="${esc(l.code)}" href="${esc(url(l.path))}">`).join("\n")}
-<link rel="alternate" hreflang="x-default" href="${esc(url(profile.languages[0].path))}">
-<meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}">${
+    : `<link rel="canonical" href="${esc(canonical)}">${noindex ? '\n<meta name="robots" content="noindex, follow">' : ""}
+${profile.languages.map((l) => `<link rel="alternate" hreflang="${esc(l.code)}" href="${esc(url(alt[l.code]))}">`).join("\n")}
+<link rel="alternate" hreflang="x-default" href="${esc(url(alt[profile.languages[0].code]))}">
+<meta property="og:type" content="${ogType}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}">${
         share ? `<meta property="og:image" content="${esc(share)}"><meta name="twitter:card" content="summary_large_image">` : ""
       }`
 }
 <link rel="alternate" type="text/calendar" title="${esc(profile.name)}" href="${ASSETS}events.ics">
 <link rel="stylesheet" href="${ASSETS}assets/fonts.css?v=${BUILD}">
-<link rel="stylesheet" href="${ASSETS}assets/maplibre-gl.css">
-<link rel="stylesheet" href="${ASSETS}assets/app.css?v=${BUILD}">
+${app ? `<link rel="stylesheet" href="${ASSETS}assets/maplibre-gl.css">\n` : ""}<link rel="stylesheet" href="${ASSETS}assets/app.css?v=${BUILD}">
 <style>:root{${themeVars()}}</style>
-<script src="${ASSETS}assets/maplibre-gl.js" defer></script>
-<script type="module" src="${ASSETS}assets/app.js?v=${BUILD}"></script>`;
+${
+  app
+    ? `<script src="${ASSETS}assets/maplibre-gl.js" defer></script>\n<script type="module" src="${ASSETS}assets/app.js?v=${BUILD}"></script>`
+    : `<script type="module" src="${ASSETS}assets/page.js?v=${BUILD}"></script>`
+}`;
 }
 
 function config(lang, T, embed) {
@@ -376,17 +416,19 @@ function config(lang, T, embed) {
     build: BUILD,
     embed,
     embedURL: url(lang.path + "embed/"),
+    eventsBase: lang.path + "events/",
     layers,
     map: profile.map,
+    search: profile.map.search !== false,
     mapStyles,
     attribution: mapAttribution,
   }).replace(/</g, "\\u003c");
 }
 
-function tabs(lang, T) {
+function tabs(lang, T, current) {
   return ["map", "events", "communities", "ecosystem", "about"]
     .filter((v) => (v === "ecosystem" ? companies.length : v === "communities" ? communities.length : true))
-    .map((v) => `<a href="${esc(lang.path)}${v === "map" ? "" : "?view=" + v}" data-tab="${v}">${esc(T.views[v])}</a>`)
+    .map((v) => `<a href="${esc(lang.path)}${v === "map" ? "" : "?view=" + v}" data-tab="${v}"${v === current ? ' aria-current="page"' : ""}>${esc(T.views[v])}</a>`)
     .join("");
 }
 
@@ -430,7 +472,7 @@ for (const lang of profile.languages) {
 <section id="view-events" class="page" hidden><header><h1>${esc(T.views.events)}</h1><p>${esc(plural(T.eventsCount, groups.upcoming.length, T.locale))} · <a href="${ASSETS}events.ics">${esc(T.subscribe)}</a>${
       repo ? ` · <a href="${esc(repo)}#add-your-events" rel="noopener">${esc(T.addEvents)}</a>` : ""
     }</p></header>
-<div class="controls" id="events-controls"></div><div id="events-list"><ol class="events">${groups.upcoming.slice(0, 60).map((e) => eventHTML(e, T, lang.code)).join("")}</ol></div></section>
+<div class="controls" id="events-controls"></div><div id="events-list"><ol class="events">${groups.upcoming.slice(0, 60).map((e) => eventHTML(e, T, lang.code, lang.path + "events/")).join("")}</ol></div></section>
 ${
   communities.length
     ? `<section id="view-communities" class="page" hidden><header><h1>${esc(T.views.communities)}</h1><p>${esc(plural(T.communitiesCount, communities.length, T.locale))}</p></header><div class="controls" id="communities-controls"></div><div id="communities-list"></div></section>`
@@ -452,6 +494,9 @@ ${
 `,
   );
 
+  // One page per event, readable without JavaScript, with Event structured data for search engines.
+  for (const e of events) await writePage(lang.path + "events/" + e.slug + "/", eventPage(e, lang, T, switcher, footer));
+
   // Embeddable view: the same app with a minimal header that links back to the full atlas.
   await writePage(
     lang.path + "embed/",
@@ -468,6 +513,81 @@ ${
 </html>
 `,
   );
+}
+
+function eventJSONLD(e, page) {
+  if (!e.start || e.status === "planned") return null;
+  const place = e.online
+    ? { "@type": "VirtualLocation", url: e.url }
+    : {
+        "@type": "Place",
+        name: e.venue || e.city || e.zone || countryName(e.country, "en") || undefined,
+        address: { "@type": "PostalAddress", addressLocality: e.city || undefined, addressCountry: e.country || undefined },
+        geo: e.precision === "venue" ? { "@type": "GeoCoordinates", latitude: e.lat, longitude: e.lon } : undefined,
+      };
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: e.title,
+    startDate: e.start,
+    endDate: e.end || undefined,
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: `https://schema.org/${e.online ? "Online" : "Offline"}EventAttendanceMode`,
+    location: place,
+    image: e.image ? [url(e.image)] : undefined,
+    organizer: e.organiser?.name ? { "@type": "Organization", name: e.organiser.name, url: safeURL(e.organiser.url) || undefined } : undefined,
+    url: page,
+    sameAs: safeURL(e.url) || undefined,
+  };
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
+function eventPage(e, lang, T, switcher, footer) {
+  const base = lang.path + "events/";
+  const own = url(eventPath(e, base));
+  const elsewhere = ownPageElsewhere(e);
+  const canonical = elsewhere ? e.listing : own;
+  const title = eventTitle(e, lang.code);
+  const when = dateLabel(e, T);
+  const where = whereLabel(e, T, true);
+  const type = T.types[e.type] || T.types.other;
+  const description = [type, when, where].filter(Boolean).join(" · ") + ". " + T.listedBy + " " + e.sourceName + ".";
+  const paths = Object.fromEntries(profile.languages.map((l) => [l.code, eventPath(e, l.path + "events/")]));
+  const ld = elsewhere ? null : eventJSONLD(e, own);
+  const link = (href, text) => (safeURL(href) ? `<a href="${esc(safeURL(href))}" rel="noopener noreferrer">${esc(text)}</a>` : esc(text));
+  const sources = [link(e.listing || e.url, e.sourceName), ...(e.alsoListedBy || []).map((o) => link(o.url, o.sourceName))].join(", ");
+  const facts = [
+    [T.facts.when, esc(when)],
+    where && [T.facts.where, esc(where) + (e.precision === "city" ? ` <span class="muted">(${esc(e.zone && !e.city ? T.zoneHint : T.cityLevel)})</span>` : "")],
+    e.organiser?.name && [T.facts.organiser, link(e.organiser.url, e.organiser.name)],
+    [T.facts.source, sources],
+  ].filter(Boolean);
+  const mapLink = Number.isFinite(e.lat)
+    ? `${lang.path}?lat=${e.lat}&lon=${e.lon}&z=${e.precision === "venue" ? 14 : 10}&focus=${encodeURIComponent(e.id)}`
+    : null;
+  const picture = e.image ? `<figure class="event-picture${e.imageFit === "contain" ? " logo" : ""}"><img src="${esc(e.image)}" alt="" width="480" height="270"></figure>` : "";
+  return `${head(lang, { title: `${title} | ${profile.name}`, description, canonical, paths, image: e.image ? url(e.image) : null, ogType: "article", app: false, noindex: elsewhere })}
+${ld ? `<script type="application/ld+json">${ld}</script>\n` : ""}</head>
+<body data-view="event">
+<a class="skip" href="#main">${esc(T.skip)}</a>
+<header class="top">${brand(lang)}<nav class="tabs" aria-label="${esc(profile.name)}">${tabs(lang, T, "events")}</nav>
+<div class="tools">${switcher.replace(/href="([^"]+)" hreflang="(\w+)"/g, (m, h, code) => `href="${esc(paths[code])}" hreflang="${code}"`)}${themeButton(T)}</div></header>
+<main id="main" class="page event-page">
+<p class="crumbs kicker"><a href="${esc(lang.path)}?view=events">${esc(T.views.events)}</a></p>
+<article>
+<p class="kicker"><span class="cat">${esc(type)}</span><span>${esc(when)}</span>${where ? `<span>${esc(whereLabel(e, T))}</span>` : ""}</p>
+<h1>${esc(title)}</h1>
+${picture}
+<dl class="facts">${facts.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join("")}</dl>
+<p class="actions">${safeURL(e.url) ? `<a class="btn primary" href="${esc(e.url)}" rel="noopener noreferrer">${esc(T.eventWebsite)} ↗</a>` : ""}${
+    e.start && e.status !== "planned" ? `<a class="btn" href="${ASSETS}events/${esc(e.slug)}.ics">${esc(T.addToCalendar)}</a>` : ""
+  }${mapLink ? `<a class="btn" href="${esc(mapLink)}">${esc(T.showOnMap)}</a>` : ""}<a class="btn" href="${esc(lang.path)}?view=events">${esc(T.allEvents)}</a></p>
+</article>
+</main>
+<footer class="foot">${footer}</footer>
+</body>
+</html>
+`;
 }
 
 // Local preview: when no language is served at the root, the root points to the first one.
@@ -487,6 +607,17 @@ await writeFile(
   `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${profile.languages.map((l) => `<url><loc>${esc(url(l.path))}</loc><lastmod>${day}</lastmod>${alternates}</url>`).join("\n")}
+${events
+  .filter((e) => !ownPageElsewhere(e))
+  .flatMap((e) =>
+    profile.languages.map(
+      (l) =>
+        `<url><loc>${esc(url(eventPath(e, l.path + "events/")))}</loc>${profile.languages
+          .map((x) => `<xhtml:link rel="alternate" hreflang="${esc(x.code)}" href="${esc(url(eventPath(e, x.path + "events/")))}"/>`)
+          .join("")}</url>`,
+    ),
+  )
+  .join("\n")}
 </urlset>
 `,
 );
@@ -497,7 +628,7 @@ await writeFile(
 
 > ${profile.tagline?.en || ""}
 
-Open data, refreshed automatically. ${credits(STRINGS[profile.languages[0].code]).map(plain).join("; ")}.${S.meetup ? " Meetup events: title, time and link only." : ""}
+Open data, refreshed automatically. ${credits(STRINGS[profile.languages[0].code]).map(plain).join("; ")}.${S.meetup || S.luma ? " Meetup and Luma events: title, time, place and link only." : ""}${S.nostr ? " Nostr events: NIP-52 calendar events tagged #bitcoin." : ""}
 
 ## Data
 

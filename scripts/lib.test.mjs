@@ -119,3 +119,22 @@ test("community points fall inside their area", () => {
   const [lon, lat] = representativePoint(geo);
   assert.ok(inShape(lon, lat, shape(geo)));
 });
+
+import { geohashCenter, naddr, npub } from "./harvest/nostr.mjs";
+import { lumaSlug } from "./harvest/luma.mjs";
+
+test("Nostr geohashes and addresses", () => {
+  const [lon, lat] = geohashCenter("u99zp");
+  assert.ok(Math.abs(lat - 54.69) < 0.05 && Math.abs(lon - 25.27) < 0.05, `Vilnius cell: ${lat},${lon}`);
+  assert.equal(geohashCenter("ai"), null);
+  const pubkey = "3bf0c63fcb93463407af97a5e5ee64fa883d107ef9e558472c4eb9aaaefa459d";
+  assert.equal(npub(pubkey), "npub180cvv07tjdrrgpa0j7j7tmnyl2yr6yr7l8j4s3evf6u64th6gkwsyjh6w6");
+  assert.match(naddr({ kind: 31923, pubkey, tags: [["d", "meetup-1"]] }), /^naddr1[02-9ac-hj-np-z]+$/);
+});
+
+test("Luma calendar links, not event pages", () => {
+  assert.equal(lumaSlug("https://luma.com/freedomlab"), "freedomlab");
+  assert.equal(lumaSlug("https://lu.ma/lacasadesatoshi/"), "lacasadesatoshi");
+  assert.equal(lumaSlug("https://luma.com/event/evt-123"), null);
+  assert.equal(lumaSlug("https://www.meetup.com/x/"), null);
+});

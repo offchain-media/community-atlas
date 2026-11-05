@@ -496,6 +496,298 @@
   "city": "Furtwangen im Schwarzwald",
   "osm": "relation/1240885"
  },
+ "geohash:dp4dx": {
+  "city": "Indianapolis",
+  "country": "US"
+ },
+ "geohash:dp4dz": {
+  "city": "Indianapolis",
+  "country": "US"
+ },
+ "geohash:spnb3": {
+  "city": "Biddeputzi/Villaputzu",
+  "country": "IT"
+ },
+ "geohash:spzw3": {
+  "city": "Reggio Emilia",
+  "country": "IT"
+ },
+ "geohash:sr8rm": {
+  "city": "Arezzo",
+  "country": "IT"
+ },
+ "geohash:srb7z": {
+  "city": "Faenza",
+  "country": "IT"
+ },
+ "geohash:swpjc": {
+  "city": "Paphos Municipality",
+  "country": "CY"
+ },
+ "geohash:u0kgm": {
+  "city": "Neuchâtel",
+  "country": "CH"
+ },
+ "geohash:u0nee": {
+  "city": "Biassono",
+  "country": "IT"
+ },
+ "geohash:u0qkp": {
+  "city": "Glarus Nord",
+  "country": "CH"
+ },
+ "geohash:u0qmn": {
+  "city": "Wattwil",
+  "country": "CH"
+ },
+ "geohash:u0qx0": {
+  "city": "Kreuzlingen",
+  "country": "CH"
+ },
+ "geohash:u0rrd": {
+  "city": "Kempten (Allgäu)",
+  "country": "DE"
+ },
+ "geohash:u0tzb": {
+  "city": "Landau in der Pfalz",
+  "country": "DE"
+ },
+ "geohash:u0uep": {
+  "city": "Trier",
+  "country": "DE"
+ },
+ "geohash:u0vhn": {
+  "city": "Sohren",
+  "country": "DE"
+ },
+ "geohash:u0w4e": {
+  "city": "Oberndorf am Neckar",
+  "country": "DE"
+ },
+ "geohash:u0w69": {
+  "city": "Balingen",
+  "country": "DE"
+ },
+ "geohash:u0wmy": {
+  "city": "Korntal-Münchingen",
+  "country": "DE"
+ },
+ "geohash:u0wxd": {
+  "city": "Heilbronn",
+  "country": "DE"
+ },
+ "geohash:u0xep": {
+  "city": "Augsburg",
+  "country": "DE"
+ },
+ "geohash:u0xzy": {
+  "city": "Hilpoltstein",
+  "country": "DE"
+ },
+ "geohash:u0y18": {
+  "city": "Mannheim",
+  "country": "DE"
+ },
+ "geohash:u0ynr": {
+  "city": "Friedberg (Hessen)",
+  "country": "DE"
+ },
+ "geohash:u0ys2": {
+  "city": "Aschaffenburg",
+  "country": "DE"
+ },
+ "geohash:u0yt9": {
+  "city": "Gelnhausen",
+  "country": "DE"
+ },
+ "geohash:u0yzs": {
+  "city": "Fulda",
+  "country": "DE"
+ },
+ "geohash:u0z56": {
+  "city": "Würzburg",
+  "country": "DE"
+ },
+ "geohash:u0zbh": {
+  "city": "Roth",
+  "country": "DE"
+ },
+ "geohash:u0zf4": {
+  "city": "Erlangen",
+  "country": "DE"
+ },
+ "geohash:u0zjs": {
+  "city": "Bad Kissingen",
+  "country": "DE"
+ },
+ "geohash:u0zk8": {
+  "city": "Schweinfurt",
+  "country": "DE"
+ },
+ "geohash:u1hcj": {
+  "city": "Brühl",
+  "country": "DE"
+ },
+ "geohash:u1hcy": {
+  "city": "Cologne",
+  "country": "DE"
+ },
+ "geohash:u1hg6": {
+  "city": "Dusseldorf",
+  "country": "DE"
+ },
+ "geohash:u1hgp": {
+  "city": "Solingen",
+  "country": "DE"
+ },
+ "geohash:u1hux": {
+  "city": "Essen",
+  "country": "DE"
+ },
+ "geohash:u1j56": {
+  "city": "Wuppertal",
+  "country": "DE"
+ },
+ "geohash:u1jje": {
+  "city": "Recklinghausen",
+  "country": "DE"
+ },
+ "geohash:u1my6": {
+  "city": "Oldenburg",
+  "country": "DE"
+ },
+ "geohash:u1pj4": {
+  "city": "Göttingen",
+  "country": "DE"
+ },
+ "geohash:u1qcv": {
+  "city": "Hanover",
+  "country": "DE"
+ },
+ "geohash:u1qmb": {
+  "city": "Bremen",
+  "country": "DE"
+ },
+ "geohash:u1r92": {
+  "city": "Brunswick",
+  "country": "DE"
+ },
+ "geohash:u1x0e": {
+  "city": "Hamburg",
+  "country": "DE"
+ },
+ "geohash:u1xd7": {
+  "city": "Lübeck",
+  "country": "DE"
+ },
+ "geohash:u23rb": {
+  "city": "Salzburg",
+  "country": "AT"
+ },
+ "geohash:u28fm": {
+  "city": "Mühldorf a. Inn",
+  "country": "DE"
+ },
+ "geohash:u28us": {
+  "city": "Dingolfing",
+  "country": "DE"
+ },
+ "geohash:u28wg": {
+  "city": "Regensburg",
+  "country": "DE"
+ },
+ "geohash:u29pb": {
+  "city": "Cham",
+  "country": "DE"
+ },
+ "geohash:u2bds": {
+  "city": "Weiden in der Oberpfalz",
+  "country": "DE"
+ },
+ "geohash:u2ce0": {
+  "city": "Pilsen",
+  "country": "CZ"
+ },
+ "geohash:u2ce2": {
+  "city": "Třemošná",
+  "country": "CZ"
+ },
+ "geohash:u2d4v": {
+  "city": "Linz",
+  "country": "AT"
+ },
+ "geohash:u2dq9": {
+  "city": "České Budějovice",
+  "country": "CZ"
+ },
+ "geohash:u2ezc": {
+  "city": "Brno",
+  "country": "CZ"
+ },
+ "geohash:u2ezf": {
+  "city": "Brno",
+  "country": "CZ"
+ },
+ "geohash:u2ffe": {
+  "city": "Ledeč nad Sázavou",
+  "country": "CZ"
+ },
+ "geohash:u2fkb": {
+  "city": "Prague",
+  "country": "CZ"
+ },
+ "geohash:u2fm1": {
+  "city": "Prague",
+  "country": "CZ"
+ },
+ "geohash:u2g14": {
+  "city": "Jihlava",
+  "country": "CZ"
+ },
+ "geohash:u2gm8": {
+  "city": "Hradec Králové",
+  "country": "CZ"
+ },
+ "geohash:u2snv": {
+  "city": "Kyjov",
+  "country": "CZ"
+ },
+ "geohash:u2u60": {
+  "city": "Olomouc",
+  "country": "CZ"
+ },
+ "geohash:u2uh6": {
+  "city": "Rapotín",
+  "country": "CZ"
+ },
+ "geohash:u31b4": {
+  "city": "Teplice",
+  "country": "CZ"
+ },
+ "geohash:u31f2": {
+  "city": "Dresden",
+  "country": "DE"
+ },
+ "geohash:u31f8": {
+  "city": "Dresden",
+  "country": "DE"
+ },
+ "geohash:u33dz": {
+  "city": "Neuenhagen bei Berlin",
+  "country": "DE"
+ },
+ "geohash:u3815": {
+  "city": "Schwerin",
+  "country": "DE"
+ },
+ "geohash:u392w": {
+  "city": "Neubrandenburg",
+  "country": "DE"
+ },
+ "geohash:xn0x3": {
+  "city": "Kyoto",
+  "country": "JP"
+ },
  "germany": {
   "lat": 51.1638,
   "lon": 10.4478,

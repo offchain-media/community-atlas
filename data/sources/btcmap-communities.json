@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-05T21:55:22.691Z",
+ "fetchedAt": "2026-11-05T22:52:56.648Z",
  "source": "https://api.btcmap.org/v3/areas?updated_since=2000-01-01T00:00:00Z&limit=100000",
  "license": "ODbL-1.0 (BTC Map)",
  "communities": [
@@ -6786,6 +6786,7 @@
    "continent": "north-america",
    "links": {
     "website": "https://freedomlab.nyc/",
+    "luma": "https://luma.com/freedomlab",
     "twitter": "https://x.com/FreedomLabNYC",
     "linkedin": "https://www.linkedin.com/company/freedom-lab-nyc"
    },

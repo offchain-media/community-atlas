@@ -43,6 +43,36 @@
   "communities": true,
   "planb": true,
   "meetup": true,
+  "luma": [
+   {
+    "name": "PubKey NYC",
+    "url": "https://luma.com/pubkey"
+   },
+   {
+    "name": "Freedom Lab NYC",
+    "url": "https://luma.com/freedomlab"
+   },
+   {
+    "name": "La Casa de Satoshi",
+    "url": "https://luma.com/lacasadesatoshi"
+   },
+   {
+    "name": "Bitspace",
+    "url": "https://luma.com/bitspace"
+   }
+  ],
+  "nostr": {
+   "relays": [
+    "wss://relay.damus.io",
+    "wss://nos.lol",
+    "wss://relay.primal.net",
+    "wss://relay.nostr.band"
+   ],
+   "tags": [
+    "bitcoin",
+    "btc"
+   ]
+  },
   "feeds": [
    {
     "name": "Lithuania BTC",
@@ -93,5 +123,6 @@
    "body": "spectral"
   },
   "uppercaseHeadings": true
- }
+ },
+ "shareImage": "share.png"
 }

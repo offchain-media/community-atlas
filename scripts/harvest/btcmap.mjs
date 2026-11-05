@@ -6,7 +6,7 @@ import { resolve } from "node:path";
 import { writeFile } from "node:fs/promises";
 import { SOURCES, fetchJSON, pool, writeJSON } from "../lib/io.mjs";
 import { saveIndex, storeImage } from "../lib/images.mjs";
-import { representativePoint, simplify, shape, inShape } from "../lib/geo.mjs";
+import { outline, representativePoint, simplify, shape, inShape } from "../lib/geo.mjs";
 import { safeURL } from "../../src/shared/util.js";
 
 const API = "https://api.btcmap.org";
@@ -14,6 +14,7 @@ const API = "https://api.btcmap.org";
 const PUBLIC_LINKS = [
   "website",
   "meetup",
+  "luma",
   "telegram",
   "twitter",
   "nostr",
@@ -80,6 +81,7 @@ export async function harvestAreas() {
   }));
   const countryAt = (lon, lat) => shapes.find((c) => inShape(lon, lat, c.s))?.code || null;
 
+  const outlines = {};
   const communities = areas
     .filter((a) => a.tags.type === "community" && a.tags.geo_json && a.tags.url_alias)
     .map((a) => {
@@ -90,6 +92,7 @@ export async function harvestAreas() {
         const v = safeURL(a.tags["contact:" + k]);
         if (v) links[k] = v;
       }
+      outlines[a.tags.url_alias] = outline(a.tags.geo_json);
       return {
         id: a.tags.url_alias,
         name: a.tags.name,
@@ -117,5 +120,7 @@ export async function harvestAreas() {
   const license = "ODbL-1.0 (BTC Map)";
   await writeJSON(resolve(SOURCES, "btcmap-countries.json"), { fetchedAt, source: url, license, countries }, false);
   await writeJSON(resolve(SOURCES, "btcmap-communities.json"), { fetchedAt, source: url, license, communities });
+  // Community areas, simplified for display (events placed at city level show their community's area).
+  await writeJSON(resolve(SOURCES, "btcmap-community-areas.json"), { fetchedAt, source: url, license, areas: outlines }, false);
   return { countries: countries.length, communities: communities.length };
 }

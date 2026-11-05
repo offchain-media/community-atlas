@@ -16,9 +16,10 @@ A profile is a folder in `profiles/` with a `profile.json` and optional files. T
 | `repository` | no | Your fork, linked from the footer and the About page. |
 | `scope` | yes | `{ "type": "world" }`, `{ "type": "countries", "countries": ["LT", "LV"] }` (BTC Map country shapes) or `{ "type": "bbox", "bbox": [west, south, east, north] }`. Applies to places, communities and events. |
 | `map` | yes | `center` `[lon, lat]`, `zoom`, optional `minZoom`, `maxZoom`, `maxBounds` `[[w, s], [e, n]]`, `styles` `{ "light": url, "dark": url }` (default: OpenFreeMap Positron and Dark). With another style, list in `connectSrc` every other origin it loads tiles, fonts or sprites from, so the page's security policy allows them. |
-| `sources` | yes | `merchants`, `communities`, `meetup`, `planb`: `true` to use them (a missing key means off). `feeds`: list of community feeds, see below. |
+| `sources` | yes | `merchants`, `communities`, `meetup`, `planb`: `true` to use them (a missing key means off). `luma`: `true`, or a list of `{ "name", "url" }` Luma calendars to follow in addition to those linked from BTC Map. `nostr`: `true`, or `{ "relays": [...], "tags": ["bitcoin", "btc"] }`. `feeds`: list of community feeds, see below. |
 | `theme` | no | `accent`, `accentText` `{ light, dark }`, `background` `{ light, dark }`, `text` `{ light, dark }`, `fonts` `{ heading, body }` (names of installed `@fontsource/*` packages), `uppercaseHeadings`. |
-| `shareImage` | no | Image file in the profile folder (1200 × 630), copied into the build and used for social previews. |
+| `shareImage` | no | Image file in the profile folder (1200 × 630), copied into the build and used for social previews. `node scripts/render-share.mjs` renders it from `design/share.html` and a capture of the map. |
+| `map.search` | no | `false` hides the map search. The search looks in the atlas data first, then asks OpenStreetMap Nominatim when the visitor presses Enter. |
 | `keepPastDays` | no | How long past events stay listed. Default 730. |
 
 ### A feed

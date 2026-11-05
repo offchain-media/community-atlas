@@ -75,8 +75,8 @@ function load(name) {
 
 /** Render a list of events as HTML (escaped in eventHTML). In embeds, links open a new tab. */
 function eventsHTML(list, cls = "events") {
-  const html = `<ol class="${cls}">${list.map((e) => eventHTML(e, T, LANG)).join("")}</ol>`;
-  return EMBED ? html.replaceAll('rel="noopener noreferrer"', 'rel="noopener noreferrer" target="_blank"') : html;
+  const html = `<ol class="${cls}">${list.map((e) => eventHTML(e, T, LANG, CFG.eventsBase)).join("")}</ol>`;
+  return EMBED ? html.replaceAll("<a ", '<a target="_blank" ') : html;
 }
 
 /* ---------- theme ---------- */
@@ -225,6 +225,11 @@ async function features(layer) {
 
 function addLayers() {
   const halo = cssVar("--bg");
+  // Area of the community whose event or card is open: events placed at city level happen somewhere inside it.
+  map.addSource("atlas-zone", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+  map.addLayer({ id: "atlas-zone-fill", type: "fill", source: "atlas-zone", paint: { "fill-color": cssVar("--communities"), "fill-opacity": 0.12 } });
+  map.addLayer({ id: "atlas-zone-line", type: "line", source: "atlas-zone", paint: { "line-color": cssVar("--communities"), "line-width": 2, "line-dasharray": [2, 1.5] } });
+  if (zone) showZone(zone);
   for (const layer of CFG.layers) {
     const color = cssVar("--" + layer);
     const [clusters, count, points] = LAYER_IDS(layer);
@@ -277,6 +282,7 @@ function addLayers() {
   }
 }
 
+let focused = false;
 async function fillLayer(layer) {
   const status = document.querySelector(`[data-layer-status="${layer}"]`);
   try {
@@ -284,6 +290,13 @@ async function fillLayer(layer) {
     const list = await features(layer);
     map.getSource("atlas-" + layer)?.setData({ type: "FeatureCollection", features: list });
     if (status) status.textContent = num(list.length);
+    // Opened from an event page: show that event's card (and its community's area).
+    const focus = params.get("focus");
+    if (layer === "events" && focus && !focused) {
+      focused = true;
+      const e = (await load("events")).events.find((x) => x.id === focus);
+      if (e && Number.isFinite(e.lat)) openPopup("events", { geometry: { coordinates: [e.lon, e.lat] }, properties: { id: e.id } }, true);
+    }
   } catch {
     if (status) status.textContent = "!";
   }
@@ -312,21 +325,113 @@ function renderLayerControls() {
       ),
     );
   box.append(h("button", { type: "button", class: "reset", onclick: () => map.flyTo({ center: CFG.map.center, zoom: CFG.map.zoom }) }, T.resetView));
+  if (CFG.search) panel.prepend(searchBox());
 }
 
-async function openPopup(layer, feature) {
+/* ---------- search: countries, communities, event cities and places, then OpenStreetMap on Enter ---------- */
+
+const norm = (s) => String(s || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+async function searchIndex() {
+  const out = [];
+  const [countries, communities, events] = await Promise.all(
+    ["countries", "communities", "events"].map((n) => (n === "communities" && !CFG.layers.includes("communities") ? null : load(n).catch(() => null))),
+  );
+  for (const [code, b] of Object.entries(countries?.countries || {}))
+    out.push({ label: countryName(code, T.locale), kind: "country", bounds: [[b[0], b[1]], [b[2], b[3]]] });
+  for (const c of communities?.communities || []) out.push({ label: c.name, kind: T.layers.communities, at: [c.lon, c.lat], open: ["communities", c.id] });
+  const cities = new Map();
+  for (const e of events?.events || []) if (e.city && Number.isFinite(e.lat) && !cities.has(e.city)) cities.set(e.city, [e.lon, e.lat]);
+  for (const [city, at] of cities) out.push({ label: city, kind: T.views.events, at });
+  if (cache.has("merchants"))
+    for (const [id, lon, lat, name] of (await load("merchants")).places) if (name) out.push({ label: name, kind: T.layers.merchants, at: [lon, lat], open: ["merchants", id, name] });
+  for (const item of out) item.key = norm(item.label);
+  return out;
+}
+
+function searchBox() {
+  let index = null;
+  const input = h("input", { type: "search", placeholder: T.searchMap, "aria-label": T.searchMap, autocomplete: "off" });
+  const list = h("ul", { class: "search-results", role: "listbox", hidden: true });
+  const go = (item) => {
+    list.hidden = true;
+    input.value = item.label;
+    if (item.bounds) map.fitBounds(item.bounds, { padding: 40, maxZoom: 12 });
+    else map.flyTo({ center: item.at, zoom: Math.max(map.getZoom(), item.kind === T.layers.merchants ? 16 : 10) });
+    if (item.open) {
+      const [layer, id, name] = item.open;
+      map.once("moveend", () => openPopup(layer, { geometry: { coordinates: item.at }, properties: { id, name } }));
+    }
+  };
+  input.addEventListener("input", async () => {
+    index ??= await searchIndex();
+    const q = norm(input.value.trim());
+    if (q.length < 2) return (list.hidden = true);
+    const hits = index.filter((i) => i.key.includes(q)).sort((a, b) => a.key.indexOf(q) - b.key.indexOf(q) || a.key.length - b.key.length).slice(0, 8);
+    list.replaceChildren(
+      ...hits.map((i) => h("li", { role: "option" }, h("button", { type: "button", onclick: () => go(i) }, i.label, h("span", { class: "muted" }, " · " + i.kind)))),
+      h("li", { class: "hint" }, T.searchHint),
+    );
+    list.hidden = false;
+  });
+  input.addEventListener("keydown", async (ev) => {
+    if (ev.key === "Escape") list.hidden = true;
+    if (ev.key !== "Enter") return;
+    ev.preventDefault();
+    const q = input.value.trim();
+    if (!q) return;
+    // Places outside the atlas data: one OpenStreetMap Nominatim request, only on Enter, as its usage policy asks.
+    try {
+      const r = await fetch(`https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&accept-language=${LANG}&q=${encodeURIComponent(q)}`);
+      const [hit] = await r.json();
+      if (!hit) throw new Error();
+      const [s, n, w, e] = hit.boundingbox.map(Number);
+      list.hidden = true;
+      map.fitBounds([[w, s], [e, n]], { padding: 40, maxZoom: 13 });
+    } catch {
+      list.replaceChildren(h("li", { class: "hint" }, T.notFound));
+      list.hidden = false;
+    }
+  });
+  return h("div", { class: "search" }, input, list, h("p", { class: "search-source" }, T.searchSource));
+}
+
+let zone = null;
+async function showZone(id, fit = false) {
+  zone = id;
+  const source = map.getSource("atlas-zone");
+  if (!source) return;
+  if (!id) return source.setData({ type: "FeatureCollection", features: [] });
+  try {
+    const r = await fetch(CFG.data + "areas/" + id.replace(/[^\w-]/g, "_") + ".json?v=" + CFG.build);
+    if (!r.ok || zone !== id) return;
+    const geometry = await r.json();
+    source.setData({ type: "Feature", properties: {}, geometry });
+    if (fit) {
+      const pts = geometry.coordinates.flat(2);
+      const xs = pts.map((p) => p[0]),
+        ys = pts.map((p) => p[1]);
+      map.fitBounds([[Math.min(...xs), Math.min(...ys)], [Math.max(...xs), Math.max(...ys)]], { padding: 60, maxZoom: 12 });
+    }
+  } catch {}
+}
+
+async function openPopup(layer, feature, fitZone = false) {
   popup?.remove();
   const body = h("div", { class: "popup" });
   popup = new maplibregl.Popup({ maxWidth: "320px", focusAfterOpen: true }).setLngLat(feature.geometry.coordinates).setDOMContent(body).addTo(map);
+  popup.on("close", () => showZone(null));
   const id = feature.properties.id;
   if (layer === "merchants") return merchantPopup(body, feature.properties);
   if (layer === "communities") {
     const c = (await load("communities")).communities.find((x) => x.id === id);
     if (c) body.append(...(await communityCard(c, true)).lastChild.childNodes);
+    showZone(id);
     return;
   }
   const e = (await load("events")).events.find((x) => x.id === id);
   if (e) body.innerHTML = eventsHTML([e]);
+  if (e?.community && e.precision === "city") showZone(e.community, fitZone);
 }
 
 async function merchantPopup(body, p) {

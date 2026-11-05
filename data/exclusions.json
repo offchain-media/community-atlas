@@ -1,0 +1,6 @@
+{
+ "about": "Events, authors or title patterns to leave out of the atlas, mostly for open sources such as Nostr where anyone can publish. events: event ids as published (Nostr event id); authors: Nostr public keys in hex; titles: case-insensitive regular expressions.",
+ "events": [],
+ "authors": [],
+ "titles": []
+}

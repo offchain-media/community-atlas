@@ -101,6 +101,12 @@ export function parseICS(text) {
     else if (key === "SUMMARY") current.summary = unescape(value);
     else if (key === "URL") current.url = value.trim();
     else if (key === "STATUS") current.status = value.trim().toUpperCase();
+    else if (key === "LOCATION") current.location = unescape(value);
+    else if (key === "DESCRIPTION") current.description = unescape(value);
+    else if (key === "GEO") {
+      const [lat, lon] = value.split(";").map(Number);
+      if (Number.isFinite(lat) && Number.isFinite(lon) && Math.abs(lat) <= 90 && Math.abs(lon) <= 180) current.geo = [lon, lat];
+    }
     else if (key === "DTSTART") current.start = parseDate(params, value, calZone);
     else if (key === "DTEND") current.end = parseDate(params, value, calZone);
   }

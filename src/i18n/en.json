@@ -111,7 +111,9 @@
    "planb": "Conferences, meetups and workshops: the open event list of Plan ₿ Network.",
    "feeds": "Community sites that publish their events in the Atlas format",
    "ecosystem": "Companies: a Bitcoin-only selection made by the editors of this edition.",
-   "curated": "Events published by the editors of this edition."
+   "curated": "Events published by the editors of this edition.",
+   "luma": "Luma calendars of Bitcoin venues and communities, with their exact place.",
+   "nostr": "Calendar events published on Nostr (NIP-52) with the #bitcoin or #btc tag."
   },
   "contributeTitle": "Add or correct something",
   "contribute": {
@@ -130,12 +132,32 @@
    "planb": "Plan ₿ Network events: CC BY-SA 4.0.",
    "meetup": "Meetup events are linked, not copied: titles and times only.",
    "basemap": "Basemap: OpenFreeMap, © OpenMapTiles, © OpenStreetMap contributors.",
-   "brands": "Names and logos belong to their owners."
+   "brands": "Names and logos belong to their owners.",
+   "luma": "Luma events are linked, not copied: titles, times and places only.",
+   "nostr": "Nostr events are public notes signed by their authors."
   },
   "channels": {
    "meetup": "Meetup (with your group linked from your BTC Map community)",
    "planb": "Plan ₿ Network",
-   "feeds": "a JSON feed on your own site"
+   "feeds": "a JSON feed on your own site",
+   "luma": "Luma (open the issue “Add our events” with your calendar)",
+   "nostr": "Nostr, as a calendar event (NIP-52) tagged #bitcoin"
   }
- }
+ },
+ "eventWebsite": "Event website",
+ "addToCalendar": "Add to calendar",
+ "showOnMap": "Show on the map",
+ "allEvents": "All events",
+ "facts": {
+  "when": "Date",
+  "where": "Place",
+  "organiser": "Organiser",
+  "source": "Source"
+ },
+ "zoneOf": "{name} area",
+ "zoneHint": "The meetup is somewhere in this community's area.",
+ "searchMap": "Search a city, community or place",
+ "searchHint": "Press Enter to search OpenStreetMap",
+ "searchSource": "Search: OpenStreetMap Nominatim",
+ "notFound": "Nothing found"
 }

@@ -36,6 +36,20 @@ test("Off-Chain Media edition builds under its two paths", (t) => {
   const communities = JSON.parse(readFileSync(join(dir, "community-atlas/data/communities.json"), "utf8")).communities;
   for (const c of communities.filter((c) => c.image)) assert.ok(existsSync(join(dir, c.image)), c.image);
   assert.ok(communities.every((c) => !JSON.stringify(c.links).match(/mailto:|"email"|"phone"|whatsapp/i)), "no personal contact fields");
+  // Each event has a page in each language; events with an own page elsewhere point search engines there.
+  const dated = events.find((e) => e.start && e.status !== "planned" && !e.source.startsWith("feed:"));
+  const page = readFileSync(join(dir, "community-atlas/events", dated.slug, "index.html"), "utf8");
+  assert.match(page, /<script type="application\/ld\+json">\{"@context":"https:\/\/schema.org","@type":"Event"/);
+  assert.match(page, new RegExp(`rel="canonical" href="https://offchain.media/community-atlas/events/${dated.slug}/"`));
+  assert.ok(existsSync(join(dir, "fr/community-atlas/events", dated.slug, "index.html")));
+  assert.ok(existsSync(join(dir, "community-atlas/events", dated.slug + ".ics")));
+  const copy = events.find((e) => e.source === "feed:lithuaniabtc.com" && e.listing);
+  if (copy) {
+    const html = readFileSync(join(dir, "community-atlas/events", copy.slug, "index.html"), "utf8");
+    assert.match(html, new RegExp(`rel="canonical" href="${copy.listing.replace(/[.?]/g, "\\$&")}"`));
+    assert.doesNotMatch(html, /ld\+json/);
+  }
+  assert.match(readFileSync(join(dir, "community-atlas/sitemap.xml"), "utf8"), new RegExp(`/community-atlas/events/${dated.slug}/`));
   const embed = readFileSync(join(dir, "community-atlas/embed/index.html"), "utf8");
   assert.match(embed, /name="robots" content="noindex"/);
   assert.match(en, /"embed":false/);

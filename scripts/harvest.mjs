@@ -2,7 +2,7 @@
  * Refresh every source named in the profile. A source that fails keeps its previous file,
  * so one unreachable site never empties the atlas.
  *
- *   node scripts/harvest.mjs [--profile profiles/offchain-media] [--only btcmap,meetup,planb,feeds]
+ *   node scripts/harvest.mjs [--profile profiles/offchain-media] [--only btcmap,meetup,luma,nostr,planb,feeds]
  */
 import { resolve } from "node:path";
 import { parseArgs } from "node:util";
@@ -11,6 +11,8 @@ import { harvestAreas, harvestMerchants } from "./harvest/btcmap.mjs";
 import { harvestMeetup } from "./harvest/meetup.mjs";
 import { harvestPlanB } from "./harvest/planb.mjs";
 import { harvestFeeds } from "./harvest/feeds.mjs";
+import { harvestLuma } from "./harvest/luma.mjs";
+import { harvestNostr } from "./harvest/nostr.mjs";
 
 const { values } = parseArgs({
   options: {
@@ -29,6 +31,8 @@ const steps = [
   // Country shapes are always needed: they give every place and community its country.
   ["areas", want("btcmap"), harvestAreas],
   ["meetup", s.meetup && want("meetup"), () => harvestMeetup()],
+  ["luma", s.luma && want("luma"), () => harvestLuma(Array.isArray(s.luma) ? s.luma : [])],
+  ["nostr", s.nostr && want("nostr"), () => harvestNostr(typeof s.nostr === "object" ? s.nostr : {})],
   ["planb", s.planb && want("planb"), harvestPlanB],
   ["feeds", s.feeds?.length && want("feeds"), () => harvestFeeds(s.feeds)],
 ];
