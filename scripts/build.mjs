@@ -415,6 +415,14 @@ ${companies.length ? `<section id="view-ecosystem" class="page" hidden><header><
   );
 }
 
+// Local preview convenience: when no language lives at the root, the root points to the first one.
+// On offchain.media the Worker routes only the atlas paths, so this file is never served there.
+if (!profile.languages.some((l) => l.path === "/"))
+  await writeFile(
+    join(OUT, "index.html"),
+    `<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${esc(profile.languages[0].path)}"><title>${esc(profile.name)}</title><a href="${esc(profile.languages[0].path)}">${esc(profile.name)}</a>\n`,
+  );
+
 /* ---------- discovery files ---------- */
 
 const pages = profile.languages.map((l) => url(l.path));
