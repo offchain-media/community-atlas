@@ -1,0 +1,1212 @@
+{
+ "fetchedAt": "2026-11-05T19:11:27.536Z",
+ "feeds": [
+  "https://lithuaniabtc.com/data/events.json",
+  "https://bitcoinbaltics.com/data/events.json",
+  "https://cryptobaltics.org/data/events.json",
+  "https://cypherbaltics.org/events/events.json"
+ ],
+ "failures": [],
+ "events": [
+  {
+   "id": "feed:lithuaniabtc.com:planned-meetup",
+   "source": "feed:lithuaniabtc.com",
+   "sourceName": "Lithuania BTC",
+   "type": "meetup",
+   "status": "planned",
+   "title": "Next Bitcoin meetup",
+   "titles": {
+    "en": "Next Bitcoin meetup",
+    "lt": "Kitas „Bitcoin“ susitikimas"
+   },
+   "start": null,
+   "end": null,
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": null,
+   "url": "https://lithuaniabtc.com/en/",
+   "listing": "https://lithuaniabtc.com/en/",
+   "organiser": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   },
+   "attribution": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   }
+  },
+  {
+   "id": "feed:lithuaniabtc.com:planned-walk",
+   "source": "feed:lithuaniabtc.com",
+   "sourceName": "Lithuania BTC",
+   "type": "walk",
+   "status": "planned",
+   "title": "Next Bitcoin Walk",
+   "titles": {
+    "en": "Next Bitcoin Walk",
+    "lt": "Kitas „Bitcoin Walk“ pasivaikščiojimas"
+   },
+   "start": null,
+   "end": null,
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": null,
+   "url": "https://lithuaniabtc.com/en/",
+   "listing": "https://lithuaniabtc.com/en/",
+   "organiser": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   },
+   "attribution": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   }
+  },
+  {
+   "id": "feed:lithuaniabtc.com:meetup-315774816",
+   "source": "feed:lithuaniabtc.com",
+   "sourceName": "Lithuania BTC",
+   "type": "conference",
+   "status": "confirmed",
+   "title": "PROOF < the privacy + sovereignty conference >",
+   "titles": {
+    "en": "PROOF < the privacy + sovereignty conference >",
+    "lt": "PROOF < privatumo ir suvereniteto konferencija >"
+   },
+   "start": "2026-09-27T13:00:00+03:00",
+   "end": "2026-09-27T18:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.71665,
+   "lon": 25.27776,
+   "precision": "venue",
+   "venue": "Nova · Kastytis, V. Gerulaičio g. 10, Vilnius",
+   "url": "https://lithuaniabtc.com/en/events/meetup-315774816/",
+   "listing": "https://lithuaniabtc.com/en/events/meetup-315774816/",
+   "organiser": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   },
+   "attribution": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   }
+  },
+  {
+   "id": "feed:lithuaniabtc.com:2026-08-06-fed",
+   "source": "feed:lithuaniabtc.com",
+   "sourceName": "Lithuania BTC",
+   "type": "other",
+   "status": "confirmed",
+   "title": "Who Is Really In Charge Of Our Currency? - Discussions and documentary",
+   "titles": {
+    "en": "Who Is Really In Charge Of Our Currency? - Discussions and documentary",
+    "lt": "Kas iš tikrųjų valdo mūsų valiutą? Diskusijos ir dokumentinis filmas"
+   },
+   "start": "2026-08-06T18:00:00+03:00",
+   "end": "2026-08-06T20:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.670862,
+   "lon": 25.2686503,
+   "precision": "venue",
+   "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
+   "url": "https://lithuaniabtc.com/en/events/2026-08-06-fed/",
+   "listing": "https://lithuaniabtc.com/en/events/2026-08-06-fed/",
+   "organiser": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   },
+   "attribution": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   }
+  },
+  {
+   "id": "feed:lithuaniabtc.com:2026-07-02-farmer",
+   "source": "feed:lithuaniabtc.com",
+   "sourceName": "Lithuania BTC",
+   "type": "other",
+   "status": "confirmed",
+   "title": "Bitcoin is actually good for the environment - Discussions and documentary",
+   "titles": {
+    "en": "Bitcoin is actually good for the environment - Discussions and documentary",
+    "lt": "Bitcoin iš tikrųjų yra naudingas aplinkai. Diskusijos ir dokumentinis filmas"
+   },
+   "start": "2026-07-02T18:00:00+03:00",
+   "end": "2026-07-02T20:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.670862,
+   "lon": 25.2686503,
+   "precision": "venue",
+   "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
+   "url": "https://lithuaniabtc.com/en/events/2026-07-02-farmer/",
+   "listing": "https://lithuaniabtc.com/en/events/2026-07-02-farmer/",
+   "organiser": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   },
+   "attribution": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   }
+  },
+  {
+   "id": "feed:lithuaniabtc.com:meetup-315411067",
+   "source": "feed:lithuaniabtc.com",
+   "sourceName": "Lithuania BTC",
+   "type": "other",
+   "status": "confirmed",
+   "title": "Bitcoin Meetup: Drinks, Food, and Paying in Bitcoin at Baltic Brew",
+   "titles": {
+    "en": "Bitcoin Meetup: Drinks, Food, and Paying in Bitcoin at Baltic Brew",
+    "lt": "Bitcoin susitikimas: gėrimai, maistas ir atsiskaitymas Bitcoin bare „Baltic Brew“"
+   },
+   "start": "2026-07-02T16:00:00+03:00",
+   "end": "2026-07-02T17:30:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": "Baltic Brew, Vilnius",
+   "url": "https://lithuaniabtc.com/en/events/meetup-315411067/",
+   "listing": "https://lithuaniabtc.com/en/events/meetup-315411067/",
+   "organiser": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   },
+   "attribution": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   }
+  },
+  {
+   "id": "feed:lithuaniabtc.com:2026-06-04-ekasi",
+   "source": "feed:lithuaniabtc.com",
+   "sourceName": "Lithuania BTC",
+   "type": "other",
+   "status": "confirmed",
+   "title": "How Bitcoin Adoption Happens in Real Life",
+   "titles": {
+    "en": "How Bitcoin Adoption Happens in Real Life",
+    "lt": "Kaip Bitcoin prigyja kasdieniame gyvenime"
+   },
+   "start": "2026-06-04T18:00:00+03:00",
+   "end": "2026-06-04T20:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.670862,
+   "lon": 25.2686503,
+   "precision": "venue",
+   "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
+   "url": "https://lithuaniabtc.com/en/events/2026-06-04-ekasi/",
+   "listing": "https://lithuaniabtc.com/en/events/2026-06-04-ekasi/",
+   "organiser": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   },
+   "attribution": {
+    "name": "Lithuania BTC",
+    "url": "https://lithuaniabtc.com/en/"
+   }
+  },
+  {
+   "id": "feed:bitcoinbaltics.com:planned-meetup",
+   "source": "feed:bitcoinbaltics.com",
+   "sourceName": "Bitcoin Baltics",
+   "type": "meetup",
+   "status": "planned",
+   "title": "Next Bitcoin meetup",
+   "titles": {
+    "en": "Next Bitcoin meetup",
+    "lt": "Kitas „Bitcoin“ susitikimas"
+   },
+   "start": null,
+   "end": null,
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": null,
+   "url": "https://bitcoinbaltics.com/",
+   "listing": "https://bitcoinbaltics.com/",
+   "organiser": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   },
+   "attribution": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   }
+  },
+  {
+   "id": "feed:bitcoinbaltics.com:planned-walk",
+   "source": "feed:bitcoinbaltics.com",
+   "sourceName": "Bitcoin Baltics",
+   "type": "walk",
+   "status": "planned",
+   "title": "Next Bitcoin Walk",
+   "titles": {
+    "en": "Next Bitcoin Walk",
+    "lt": "Kitas „Bitcoin Walk“ pasivaikščiojimas"
+   },
+   "start": null,
+   "end": null,
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": null,
+   "url": "https://bitcoinbaltics.com/",
+   "listing": "https://bitcoinbaltics.com/",
+   "organiser": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   },
+   "attribution": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   }
+  },
+  {
+   "id": "feed:bitcoinbaltics.com:meetup-315774816",
+   "source": "feed:bitcoinbaltics.com",
+   "sourceName": "Bitcoin Baltics",
+   "type": "conference",
+   "status": "confirmed",
+   "title": "PROOF < the privacy + sovereignty conference >",
+   "titles": {
+    "en": "PROOF < the privacy + sovereignty conference >",
+    "lt": "PROOF < privatumo ir suvereniteto konferencija >"
+   },
+   "start": "2026-09-27T13:00:00+03:00",
+   "end": "2026-09-27T18:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.71665,
+   "lon": 25.27776,
+   "precision": "venue",
+   "venue": "Nova · Kastytis, V. Gerulaičio g. 10, Vilnius",
+   "url": "https://bitcoinbaltics.com/events/meetup-315774816/",
+   "listing": "https://bitcoinbaltics.com/events/meetup-315774816/",
+   "organiser": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   },
+   "attribution": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   }
+  },
+  {
+   "id": "feed:bitcoinbaltics.com:2026-08-06-fed",
+   "source": "feed:bitcoinbaltics.com",
+   "sourceName": "Bitcoin Baltics",
+   "type": "other",
+   "status": "confirmed",
+   "title": "Who Is Really In Charge Of Our Currency? - Discussions and documentary",
+   "titles": {
+    "en": "Who Is Really In Charge Of Our Currency? - Discussions and documentary",
+    "lt": "Kas iš tikrųjų valdo mūsų valiutą? Diskusijos ir dokumentinis filmas"
+   },
+   "start": "2026-08-06T18:00:00+03:00",
+   "end": "2026-08-06T20:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.670862,
+   "lon": 25.2686503,
+   "precision": "venue",
+   "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
+   "url": "https://bitcoinbaltics.com/events/2026-08-06-fed/",
+   "listing": "https://bitcoinbaltics.com/events/2026-08-06-fed/",
+   "organiser": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   },
+   "attribution": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   }
+  },
+  {
+   "id": "feed:bitcoinbaltics.com:2026-07-02-farmer",
+   "source": "feed:bitcoinbaltics.com",
+   "sourceName": "Bitcoin Baltics",
+   "type": "other",
+   "status": "confirmed",
+   "title": "Bitcoin is actually good for the environment - Discussions and documentary",
+   "titles": {
+    "en": "Bitcoin is actually good for the environment - Discussions and documentary",
+    "lt": "Bitcoin iš tikrųjų yra naudingas aplinkai. Diskusijos ir dokumentinis filmas"
+   },
+   "start": "2026-07-02T18:00:00+03:00",
+   "end": "2026-07-02T20:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.670862,
+   "lon": 25.2686503,
+   "precision": "venue",
+   "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
+   "url": "https://bitcoinbaltics.com/events/2026-07-02-farmer/",
+   "listing": "https://bitcoinbaltics.com/events/2026-07-02-farmer/",
+   "organiser": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   },
+   "attribution": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   }
+  },
+  {
+   "id": "feed:bitcoinbaltics.com:meetup-315411067",
+   "source": "feed:bitcoinbaltics.com",
+   "sourceName": "Bitcoin Baltics",
+   "type": "other",
+   "status": "confirmed",
+   "title": "Bitcoin Meetup: Drinks, Food, and Paying in Bitcoin at Baltic Brew",
+   "titles": {
+    "en": "Bitcoin Meetup: Drinks, Food, and Paying in Bitcoin at Baltic Brew",
+    "lt": "Bitcoin susitikimas: gėrimai, maistas ir atsiskaitymas Bitcoin bare „Baltic Brew“"
+   },
+   "start": "2026-07-02T16:00:00+03:00",
+   "end": "2026-07-02T17:30:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": "Baltic Brew, Vilnius",
+   "url": "https://bitcoinbaltics.com/events/meetup-315411067/",
+   "listing": "https://bitcoinbaltics.com/events/meetup-315411067/",
+   "organiser": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   },
+   "attribution": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   }
+  },
+  {
+   "id": "feed:bitcoinbaltics.com:2026-06-04-ekasi",
+   "source": "feed:bitcoinbaltics.com",
+   "sourceName": "Bitcoin Baltics",
+   "type": "other",
+   "status": "confirmed",
+   "title": "How Bitcoin Adoption Happens in Real Life",
+   "titles": {
+    "en": "How Bitcoin Adoption Happens in Real Life",
+    "lt": "Kaip Bitcoin prigyja kasdieniame gyvenime"
+   },
+   "start": "2026-06-04T18:00:00+03:00",
+   "end": "2026-06-04T20:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.670862,
+   "lon": 25.2686503,
+   "precision": "venue",
+   "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
+   "url": "https://bitcoinbaltics.com/events/2026-06-04-ekasi/",
+   "listing": "https://bitcoinbaltics.com/events/2026-06-04-ekasi/",
+   "organiser": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   },
+   "attribution": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   }
+  },
+  {
+   "id": "feed:bitcoinbaltics.com:tallinn-316565528",
+   "source": "feed:bitcoinbaltics.com",
+   "sourceName": "Bitcoin Baltics",
+   "type": "meetup",
+   "status": "confirmed",
+   "title": "Bitcoin in Denmark: Building a Community from the Ground Up",
+   "titles": {
+    "en": "Bitcoin in Denmark: Building a Community from the Ground Up"
+   },
+   "start": "2026-09-22T19:00:00+03:00",
+   "end": "2026-09-22T21:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "EE",
+   "lat": 59.437958,
+   "lon": 24.74415,
+   "precision": "venue",
+   "venue": "Vabaduse Tuba, Pikk 7, Room 11, Tallinn",
+   "url": "https://bitcoinbaltics.com/events/tallinn-316565528/",
+   "listing": "https://bitcoinbaltics.com/events/tallinn-316565528/",
+   "organiser": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   },
+   "attribution": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   }
+  },
+  {
+   "id": "feed:bitcoinbaltics.com:honeybadger-riga-2025",
+   "source": "feed:bitcoinbaltics.com",
+   "sourceName": "Bitcoin Baltics",
+   "type": "conference",
+   "status": "confirmed",
+   "title": "Baltic Honeybadger 2025",
+   "titles": {
+    "en": "Baltic Honeybadger 2025"
+   },
+   "start": "2025-08-09T10:00:00+03:00",
+   "end": "2025-08-10T18:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LV",
+   "lat": 56.9762199,
+   "lon": 24.1668844,
+   "precision": "venue",
+   "venue": "Fantadroms, Riga",
+   "url": "https://bitcoinbaltics.com/events/honeybadger-riga-2025/",
+   "listing": "https://bitcoinbaltics.com/events/honeybadger-riga-2025/",
+   "organiser": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   },
+   "attribution": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   }
+  },
+  {
+   "id": "feed:bitcoinbaltics.com:btcpp-riga-privacy-2025",
+   "source": "feed:bitcoinbaltics.com",
+   "sourceName": "Bitcoin Baltics",
+   "type": "conference",
+   "status": "confirmed",
+   "title": "bitcoin++ Riga · Privacy edition",
+   "titles": {
+    "en": "bitcoin++ Riga · Privacy edition"
+   },
+   "start": "2025-08-07T10:00:00+03:00",
+   "end": "2025-08-08T18:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LV",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": "National Library of Latvia, Riga",
+   "url": "https://bitcoinbaltics.com/events/btcpp-riga-privacy-2025/",
+   "listing": "https://bitcoinbaltics.com/events/btcpp-riga-privacy-2025/",
+   "organiser": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   },
+   "attribution": {
+    "name": "Bitcoin Baltics",
+    "url": "https://bitcoinbaltics.com/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:planned-meetup",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "meetup",
+   "status": "planned",
+   "title": "Next Bitcoin meetup",
+   "titles": {
+    "en": "Next Bitcoin meetup",
+    "lt": "Kitas „Bitcoin“ susitikimas"
+   },
+   "start": null,
+   "end": null,
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": null,
+   "url": "https://cryptobaltics.org/",
+   "listing": "https://cryptobaltics.org/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:planned-walk",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "walk",
+   "status": "planned",
+   "title": "Next Bitcoin Walk",
+   "titles": {
+    "en": "Next Bitcoin Walk",
+    "lt": "Kitas „Bitcoin Walk“ pasivaikščiojimas"
+   },
+   "start": null,
+   "end": null,
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": null,
+   "url": "https://cryptobaltics.org/",
+   "listing": "https://cryptobaltics.org/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:meetup-315774816",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "conference",
+   "status": "confirmed",
+   "title": "PROOF < the privacy + sovereignty conference >",
+   "titles": {
+    "en": "PROOF < the privacy + sovereignty conference >",
+    "lt": "PROOF < privatumo ir suvereniteto konferencija >"
+   },
+   "start": "2026-09-27T13:00:00+03:00",
+   "end": "2026-09-27T18:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.71665,
+   "lon": 25.27776,
+   "precision": "venue",
+   "venue": "Nova · Kastytis, V. Gerulaičio g. 10, Vilnius",
+   "url": "https://cryptobaltics.org/events/meetup-315774816/",
+   "listing": "https://cryptobaltics.org/events/meetup-315774816/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:2026-08-06-fed",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "other",
+   "status": "confirmed",
+   "title": "Who Is Really In Charge Of Our Currency? - Discussions and documentary",
+   "titles": {
+    "en": "Who Is Really In Charge Of Our Currency? - Discussions and documentary",
+    "lt": "Kas iš tikrųjų valdo mūsų valiutą? Diskusijos ir dokumentinis filmas"
+   },
+   "start": "2026-08-06T18:00:00+03:00",
+   "end": "2026-08-06T20:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.670862,
+   "lon": 25.2686503,
+   "precision": "venue",
+   "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
+   "url": "https://cryptobaltics.org/events/2026-08-06-fed/",
+   "listing": "https://cryptobaltics.org/events/2026-08-06-fed/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:2026-07-02-farmer",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "other",
+   "status": "confirmed",
+   "title": "Bitcoin is actually good for the environment - Discussions and documentary",
+   "titles": {
+    "en": "Bitcoin is actually good for the environment - Discussions and documentary",
+    "lt": "Bitcoin iš tikrųjų yra naudingas aplinkai. Diskusijos ir dokumentinis filmas"
+   },
+   "start": "2026-07-02T18:00:00+03:00",
+   "end": "2026-07-02T20:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.670862,
+   "lon": 25.2686503,
+   "precision": "venue",
+   "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
+   "url": "https://cryptobaltics.org/events/2026-07-02-farmer/",
+   "listing": "https://cryptobaltics.org/events/2026-07-02-farmer/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:meetup-315411067",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "other",
+   "status": "confirmed",
+   "title": "Bitcoin Meetup: Drinks, Food, and Paying in Bitcoin at Baltic Brew",
+   "titles": {
+    "en": "Bitcoin Meetup: Drinks, Food, and Paying in Bitcoin at Baltic Brew",
+    "lt": "Bitcoin susitikimas: gėrimai, maistas ir atsiskaitymas Bitcoin bare „Baltic Brew“"
+   },
+   "start": "2026-07-02T16:00:00+03:00",
+   "end": "2026-07-02T17:30:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": "Baltic Brew, Vilnius",
+   "url": "https://cryptobaltics.org/events/meetup-315411067/",
+   "listing": "https://cryptobaltics.org/events/meetup-315411067/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:2026-06-04-ekasi",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "other",
+   "status": "confirmed",
+   "title": "How Bitcoin Adoption Happens in Real Life",
+   "titles": {
+    "en": "How Bitcoin Adoption Happens in Real Life",
+    "lt": "Kaip Bitcoin prigyja kasdieniame gyvenime"
+   },
+   "start": "2026-06-04T18:00:00+03:00",
+   "end": "2026-06-04T20:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.670862,
+   "lon": 25.2686503,
+   "precision": "venue",
+   "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
+   "url": "https://cryptobaltics.org/events/2026-06-04-ekasi/",
+   "listing": "https://cryptobaltics.org/events/2026-06-04-ekasi/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:tallinn-316565528",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "meetup",
+   "status": "confirmed",
+   "title": "Bitcoin in Denmark: Building a Community from the Ground Up",
+   "titles": {
+    "en": "Bitcoin in Denmark: Building a Community from the Ground Up"
+   },
+   "start": "2026-09-22T19:00:00+03:00",
+   "end": "2026-09-22T21:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "EE",
+   "lat": 59.437958,
+   "lon": 24.74415,
+   "precision": "venue",
+   "venue": "Vabaduse Tuba, Pikk 7, Room 11, Tallinn",
+   "url": "https://cryptobaltics.org/events/tallinn-316565528/",
+   "listing": "https://cryptobaltics.org/events/tallinn-316565528/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:honeybadger-riga-2025",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "conference",
+   "status": "confirmed",
+   "title": "Baltic Honeybadger 2025",
+   "titles": {
+    "en": "Baltic Honeybadger 2025"
+   },
+   "start": "2025-08-09T10:00:00+03:00",
+   "end": "2025-08-10T18:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LV",
+   "lat": 56.9762199,
+   "lon": 24.1668844,
+   "precision": "venue",
+   "venue": "Fantadroms, Riga",
+   "url": "https://cryptobaltics.org/events/honeybadger-riga-2025/",
+   "listing": "https://cryptobaltics.org/events/honeybadger-riga-2025/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:btcpp-riga-privacy-2025",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "conference",
+   "status": "confirmed",
+   "title": "bitcoin++ Riga · Privacy edition",
+   "titles": {
+    "en": "bitcoin++ Riga · Privacy edition"
+   },
+   "start": "2025-08-07T10:00:00+03:00",
+   "end": "2025-08-08T18:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LV",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": "National Library of Latvia, Riga",
+   "url": "https://cryptobaltics.org/events/btcpp-riga-privacy-2025/",
+   "listing": "https://cryptobaltics.org/events/btcpp-riga-privacy-2025/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:solana-connect-2026",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "meetup",
+   "status": "confirmed",
+   "title": "Solana Connect",
+   "titles": {
+    "en": "Solana Connect"
+   },
+   "start": "2026-10-14T19:00:00+03:00",
+   "end": "2026-10-14T22:00:00+03:00",
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LV",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": "Riga, Riga",
+   "url": "https://cryptobaltics.org/events/solana-connect-2026/",
+   "listing": "https://cryptobaltics.org/events/solana-connect-2026/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:unblock-fintech-2026",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "conference",
+   "status": "confirmed",
+   "title": "UN:BLOCK Fintech Forum",
+   "titles": {
+    "en": "UN:BLOCK Fintech Forum"
+   },
+   "start": "2026-10-15",
+   "end": "2026-10-15",
+   "dateOnly": true,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LV",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": "Riga, Riga",
+   "url": "https://cryptobaltics.org/events/unblock-fintech-2026/",
+   "listing": "https://cryptobaltics.org/events/unblock-fintech-2026/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:unblock-2027",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "conference",
+   "status": "confirmed",
+   "title": "UN:BLOCK 2027",
+   "titles": {
+    "en": "UN:BLOCK 2027"
+   },
+   "start": "2027-03-10",
+   "end": "2027-03-11",
+   "dateOnly": true,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LV",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": "Riga, Riga",
+   "url": "https://cryptobaltics.org/events/unblock-2027/",
+   "listing": "https://cryptobaltics.org/events/unblock-2027/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:solana-vibecheck-2026",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "meetup",
+   "status": "confirmed",
+   "title": "Solana Baltics Vibecheck",
+   "titles": {
+    "en": "Solana Baltics Vibecheck"
+   },
+   "start": "2026-09-16",
+   "end": "2026-09-16",
+   "dateOnly": true,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": "Vilnius, Vilnius",
+   "url": "https://cryptobaltics.org/events/solana-vibecheck-2026/",
+   "listing": "https://cryptobaltics.org/events/solana-vibecheck-2026/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:unblock-2026",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "conference",
+   "status": "confirmed",
+   "title": "UN:BLOCK 2026",
+   "titles": {
+    "en": "UN:BLOCK 2026"
+   },
+   "start": "2026-04-01",
+   "end": "2026-04-02",
+   "dateOnly": true,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LV",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": "Riga, Riga",
+   "url": "https://cryptobaltics.org/events/unblock-2026/",
+   "listing": "https://cryptobaltics.org/events/unblock-2026/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:ethtallinn-2024",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "hackathon",
+   "status": "confirmed",
+   "title": "ETHTallinn 2024",
+   "titles": {
+    "en": "ETHTallinn 2024"
+   },
+   "start": "2024-04-19",
+   "end": "2024-04-21",
+   "dateOnly": true,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "EE",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": "Tallinn, Tallinn",
+   "url": "https://cryptobaltics.org/events/ethtallinn-2024/",
+   "listing": "https://cryptobaltics.org/events/ethtallinn-2024/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cryptobaltics.org:web3-vilnius-2023",
+   "source": "feed:cryptobaltics.org",
+   "sourceName": "Crypto Baltics",
+   "type": "conference",
+   "status": "confirmed",
+   "title": "Web3 Summit Vilnius 2023",
+   "titles": {
+    "en": "Web3 Summit Vilnius 2023"
+   },
+   "start": "2023-11-09",
+   "end": "2023-11-09",
+   "dateOnly": true,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": "Vilnius, Vilnius",
+   "url": "https://cryptobaltics.org/events/web3-vilnius-2023/",
+   "listing": "https://cryptobaltics.org/events/web3-vilnius-2023/",
+   "organiser": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   },
+   "attribution": {
+    "name": "Crypto Baltics",
+    "url": "https://cryptobaltics.org/"
+   }
+  },
+  {
+   "id": "feed:cypherbaltics.org:palanga-tech-talk-2026-10-28",
+   "source": "feed:cypherbaltics.org",
+   "sourceName": "Cypher Baltics",
+   "type": "meetup",
+   "status": "confirmed",
+   "title": "Palanga — Tech & Talk",
+   "titles": {
+    "en": "Palanga — Tech & Talk"
+   },
+   "start": "2026-10-28T18:30:00+02:00",
+   "end": null,
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 55.91412,
+   "lon": 21.05673,
+   "precision": "venue",
+   "venue": "Muzikos klubas \"Vandenis\", Birutės al. 47, Palanga",
+   "url": "https://cypherbaltics.org/events/",
+   "listing": "https://cypherbaltics.org/events/",
+   "organiser": {
+    "name": "David de Miko",
+    "url": null
+   },
+   "attribution": {
+    "name": "Cypher Baltics",
+    "url": "https://cypherbaltics.org/events/"
+   }
+  },
+  {
+   "id": "feed:cypherbaltics.org:bsides-vilnius-2027",
+   "source": "feed:cypherbaltics.org",
+   "sourceName": "Cypher Baltics",
+   "type": "conference",
+   "status": "planned",
+   "title": "BSides Vilnius 2027",
+   "titles": {
+    "en": "BSides Vilnius 2027"
+   },
+   "start": null,
+   "end": null,
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.6872,
+   "lon": 25.2797,
+   "precision": "city",
+   "venue": "Vilnius · venue to be announced",
+   "url": "https://cypherbaltics.org/events/",
+   "listing": "https://cypherbaltics.org/events/",
+   "organiser": {
+    "name": "BSides Vilnius",
+    "url": "https://bsidesvilnius.lt/"
+   },
+   "attribution": {
+    "name": "Cypher Baltics",
+    "url": "https://cypherbaltics.org/events/"
+   }
+  },
+  {
+   "id": "feed:cypherbaltics.org:planned-meetup",
+   "source": "feed:cypherbaltics.org",
+   "sourceName": "Cypher Baltics",
+   "type": "meetup",
+   "status": "planned",
+   "title": "Next Bitcoin meetup",
+   "titles": {
+    "en": "Next Bitcoin meetup",
+    "lt": "Kitas „Bitcoin“ susitikimas"
+   },
+   "start": null,
+   "end": null,
+   "dateOnly": false,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": null,
+   "lon": null,
+   "precision": null,
+   "venue": null,
+   "url": "https://cypherbaltics.org/events/",
+   "listing": "https://cypherbaltics.org/events/",
+   "organiser": {
+    "name": "Lithuania BTC",
+    "url": null
+   },
+   "attribution": {
+    "name": "Cypher Baltics",
+    "url": "https://cypherbaltics.org/events/"
+   }
+  },
+  {
+   "id": "feed:cypherbaltics.org:bsides-vilnius-2026",
+   "source": "feed:cypherbaltics.org",
+   "sourceName": "Cypher Baltics",
+   "type": "conference",
+   "status": "confirmed",
+   "title": "BSides Vilnius 2026 · Security Theater",
+   "titles": {
+    "en": "BSides Vilnius 2026 · Security Theater"
+   },
+   "start": "2026-06-03",
+   "end": "2026-06-04",
+   "dateOnly": true,
+   "timeZone": "Europe/Vilnius",
+   "city": null,
+   "country": "LT",
+   "lat": 54.6872,
+   "lon": 25.2797,
+   "precision": "city",
+   "venue": "Kablys, Vilnius, Kablys, Vilnius",
+   "url": "https://cypherbaltics.org/events/",
+   "listing": "https://cypherbaltics.org/events/",
+   "organiser": {
+    "name": "BSides Vilnius",
+    "url": "https://bsidesvilnius.lt/"
+   },
+   "attribution": {
+    "name": "Cypher Baltics",
+    "url": "https://cypherbaltics.org/events/"
+   }
+  }
+ ]
+}

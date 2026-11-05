@@ -1,0 +1,25 @@
+{
+  "name": "community-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open-source map of Bitcoin meetups, conferences, communities, merchants and companies. Fork it for your city, country or the whole world.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "harvest": "node scripts/harvest.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test scripts/*.test.mjs",
+    "preview": "python3 -m http.server 8790 --bind 127.0.0.1 --directory public",
+    "deploy:check": "wrangler deploy --dry-run",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@fontsource/oswald": "5.3.0",
+    "@fontsource/spectral": "5.3.0",
+    "wrangler": "4.144.0",
+    "yaml": "2.8.1"
+  }
+}

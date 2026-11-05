@@ -1,0 +1,161 @@
+{
+ "about": "Candidates examined and not listed, with the reason. Kept for transparency and future review; not published.",
+ "verifiedAt": "2026-11-05",
+ "rejected": [
+  {
+   "name": "Strike",
+   "reason": "Supports USDT deposits/withdrawals (TRON) in several countries.",
+   "evidence": "https://strike.me/blog/announcing-usdt-deposits-and-withdrawals/"
+  },
+  {
+   "name": "Casa",
+   "reason": "Offers Ethereum vaults; supports BTC, ETH, USDT and USDC.",
+   "evidence": "https://casa.io/ethereum"
+  },
+  {
+   "name": "Foundation Devices",
+   "reason": "Passport Core (Bitcoin-only) discontinued; Passport Prime supports Ethereum and Solana assets via Legacy Mode.",
+   "evidence": "https://foundation.xyz/products/passport-prime"
+  },
+  {
+   "name": "Blockstream",
+   "reason": "Green/Blockstream app and Jade support Liquid issued assets including USDt; also runs Liquid asset issuance.",
+   "evidence": "https://blog.blockstream.com/en-tether-lands-on-the-liquid-network/"
+  },
+  {
+   "name": "BitBox (Shift Crypto)",
+   "reason": "Sells a Multi edition supporting Ethereum/ERC-20, Litecoin and Cardano alongside the Bitcoin-only edition.",
+   "evidence": "https://blog.bitbox.swiss/en/why-is-there-a-bitcoin-only-edition-of-the-bitbox/"
+  },
+  {
+   "name": "Trezor",
+   "reason": "Universal firmware supports Ethereum, Solana and thousands of tokens; Bitcoin-only firmware is optional.",
+   "evidence": "https://trezor.io/learn/a/bitcoin-only-firmware-on-trezor"
+  },
+  {
+   "name": "Ledger",
+   "reason": "Supports ~15,000 coins and tokens including ETH, SOL, USDT, USDC.",
+   "evidence": "https://www.ledger.com/supported-crypto-assets"
+  },
+  {
+   "name": "Kraken",
+   "reason": "Multi-asset exchange listing hundreds of cryptocurrencies.",
+   "evidence": "https://www.kraken.com/listings"
+  },
+  {
+   "name": "Coinbase",
+   "reason": "Multi-asset exchange (ETH, SOL, USDC, XRP, etc.).",
+   "evidence": "https://www.coinbase.com/how-to-buy"
+  },
+  {
+   "name": "Bitvavo",
+   "reason": "Lists 400+ crypto assets.",
+   "evidence": "https://bitvavo.com/en/markets"
+  },
+  {
+   "name": "Hodl Hodl",
+   "reason": "Lending product (Lend at Hodl Hodl) disburses stablecoins (USDT, USDC) and other assets such as WBTC/XAUT.",
+   "evidence": "https://lend.hodlhodl.com/"
+  },
+  {
+   "name": "BTCPay Server",
+   "reason": "Official FAQ says it accepts Bitcoin and altcoins (altcoin support via plugins); also a community project rather than a company.",
+   "evidence": "https://docs.btcpayserver.org/FAQ/General/"
+  },
+  {
+   "name": "Start9",
+   "reason": "StartOS marketplace includes a Monero full node package; general-purpose self-hosting OS.",
+   "evidence": "https://marketplace.start9.com/monerod?api=community-registry.start9.com&name=Community+Registry"
+  },
+  {
+   "name": "Umbrel",
+   "reason": "Official Umbrel App Store lists a Monero Node app in its Crypto category; general home-server OS.",
+   "evidence": "https://apps.umbrel.com/app/monero"
+  },
+  {
+   "name": "Breez",
+   "reason": "Breez SDK (Liquid) supports USDT; Breez SDK (Spark) supports sending/receiving USDC/USDT across many chains.",
+   "evidence": "https://blog.breez.technology/spark-or-liquid-you-cant-go-wrong-with-the-breez-sdk-c553e035fc4d"
+  },
+  {
+   "name": "Blink",
+   "reason": "Non-custodial mode Dollar Balance uses the USDB stablecoin (Brale) on Spark.",
+   "evidence": "https://faq.blink.sv/stablesats/what-is-stablesats"
+  },
+  {
+   "name": "Wallet of Satoshi",
+   "reason": "USD balance is the USDB stablecoin on Spark; homepage mentions USDC/USDT deposits.",
+   "evidence": "https://www.walletofsatoshi.com/disclosure"
+  },
+  {
+   "name": "Voltage",
+   "reason": "Announced stablecoin payments (BitGo partnership; stablecoin support on roadmap) - not Bitcoin-only by positioning.",
+   "evidence": "https://voltage.cloud/blog/bitgo-and-voltage-team-up-to-deliver-instant-bitcoin-and-stablecoin-payments-via-lightning"
+  },
+  {
+   "name": "Fedi",
+   "reason": "Borderline: Bitcoin/Fedimint wallet, but offers a 'Stable Balance' fixed-fiat-value feature (bitcoin-backed synthetic USD, not a stablecoin token). Excluded under 'when unsure, exclude'.",
+   "evidence": "https://www.fedi.xyz/blog/how-stable-balance-works"
+  },
+  {
+   "name": "Coinos",
+   "reason": "Corporate site says Liquid support adds 'the ability to manage assets and NFTs'.",
+   "evidence": "https://corporate.coinos.io/"
+  },
+  {
+   "name": "Lendasat",
+   "reason": "Bitcoin-backed loans paid out in USDC/USDT on Polygon, Ethereum, Solana, Starknet, Liquid; LendaSwap BTC<->stablecoin swaps.",
+   "evidence": "https://lendasat.com/docs/p2p-loans/guides/borrow-stablecoins"
+  },
+  {
+   "name": "Satora",
+   "reason": "Formerly Lendasat/Lendaswap; non-custodial BTC<->stablecoin swap protocol incl. Ethereum, Arbitrum, Polygon, USDC (CCTP).",
+   "evidence": "https://partners.circle.com/partner/satora"
+  },
+  {
+   "name": "Firefish",
+   "reason": "Bitcoin-backed loans also disbursed in USDT and USDC.",
+   "evidence": "https://firefish.io/blog/usdt-loans-against-bitcoin"
+  },
+  {
+   "name": "Bitcoin Keeper",
+   "reason": "Terms: services are for Bitcoin (BTC) and USDT (TRC-20); app has a USDT wallet.",
+   "evidence": "https://www.bitcoinkeeper.app/terms-of-service/"
+  },
+  {
+   "name": "Bipa",
+   "reason": "Brazilian app also offers 'digital dollar' / USDT.",
+   "evidence": "https://bipa.app/blog/bipa-o-app-de-bitcoin-com-cartao-cashback-cofrinho-e-usdt-bipa"
+  },
+  {
+   "name": "Amboss",
+   "reason": "Payments API sends/receives USDT and USDC over Lightning (Taproot Assets).",
+   "evidence": "https://docs.amboss.tech/"
+  },
+  {
+   "name": "Pleb.fi",
+   "reason": "A Bitcoin developer hackathon/event series, not a company or product; no official site verified.",
+   "evidence": "https://hotfix.coindesk.com/layer2/2022/04/13/beyond-the-bitcoin-conference-hype-plebfi-builds-inclusivity"
+  },
+  {
+   "name": "Primal",
+   "reason": "Primarily a Nostr social client with a built-in Lightning wallet; could not verify an official Bitcoin-only statement (only pricing page found).",
+   "evidence": "https://primal.net/premium"
+  },
+  {
+   "name": "Bitkit (Synonym)",
+   "reason": "Could not verify: Bitcoin/Lightning wallet, but no explicit Bitcoin-only statement found; Synonym also builds non-wallet products (Pubky).",
+   "evidence": "https://synonym.to/products"
+  },
+  {
+   "name": "Pouch.ph",
+   "reason": "Could not verify Bitcoin-only status from official pages (only BTC/PHP pricing found).",
+   "evidence": "https://pouch.ph/pricing"
+  },
+  {
+   "name": "Amber (AmberApp)",
+   "reason": "Could not verify an explicit Bitcoin-only statement; AmberWallet new downloads paused.",
+   "evidence": "https://www.amber.app/"
+  }
+ ]
+}

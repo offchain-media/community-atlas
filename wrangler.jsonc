@@ -1,0 +1,22 @@
+{
+  // Off-Chain Media edition: served on the existing offchain.media zone under two paths.
+  // Forks: change "name" and "routes" (or remove "routes" to deploy on workers.dev only).
+  // The Cloudflare account comes from `wrangler login` or CLOUDFLARE_ACCOUNT_ID; no id is stored here.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "community-atlas",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "offchain.media/community-atlas*", "zone_name": "offchain.media" },
+    { "pattern": "offchain.media/fr/community-atlas*", "zone_name": "offchain.media" }
+  ],
+  "vars": { "EMBED_ANCESTORS": "*" }
+}

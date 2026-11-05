@@ -1,0 +1,679 @@
+{
+ "about": "Bitcoin-only companies and projects shown on the Ecosystem page. Rule: products support Bitcoin (on-chain, Lightning or Bitcoin layers) and no other cryptocurrency or token. Each entry links the page that supports the claim. 'verification': 'read' = official page or repository read directly; 'search' = checked through a search tool summary of the official domain, to be re-read before final validation. 'review': 'pending' until an editor of this edition validates the entry.",
+ "rule": "bitcoin-only",
+ "verifiedAt": "2026-11-05",
+ "companies": [
+  {
+   "id": "muun",
+   "name": "Muun",
+   "url": "https://muun.com",
+   "category": "wallet",
+   "country": null,
+   "description": {
+    "en": "Self-custodial 2-of-2 multisig mobile wallet for bitcoin and Lightning payments.",
+    "fr": "Portefeuille mobile en auto-garde, multisig 2 sur 2, pour paiements bitcoin et Lightning."
+   },
+   "evidence": "https://muun.com/",
+   "evidenceNote": "Site and README (github.com/muun/apollo) describe a non-custodial Bitcoin and Lightning wallet; terms name Muun Wallet Inc., incorporated in the Cayman Islands.",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  },
+  {
+   "id": "sparrow-wallet",
+   "name": "Sparrow Wallet",
+   "url": "https://sparrowwallet.com",
+   "category": "wallet",
+   "country": null,
+   "description": {
+    "en": "Open-source desktop Bitcoin wallet focused on security, privacy and hardware wallet support.",
+    "fr": "Portefeuille Bitcoin desktop open source axé sur la sécurité, la confidentialité et les portefeuilles matériels."
+   },
+   "evidence": "https://github.com/sparrowwallet/sparrow",
+   "evidenceNote": "README: 'Sparrow is a modern desktop Bitcoin wallet application'; no other assets supported (no explicit 'bitcoin-only' wording).",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  },
+  {
+   "id": "wizardsardine",
+   "name": "Wizardsardine (Liana)",
+   "url": "https://wizardsardine.com",
+   "category": "wallet",
+   "country": null,
+   "description": {
+    "en": "Developer of Liana, an open-source Bitcoin wallet with timelocked recovery and inheritance paths.",
+    "fr": "Développeur de Liana, portefeuille Bitcoin open source avec chemins de récupération et de succession temporisés."
+   },
+   "evidence": "https://github.com/wizardsardine/liana",
+   "evidenceNote": "README: 'Liana is a simple Bitcoin wallet' with a recovery key usable after inactivity; site tagline 'Bitcoin infrastructure, on your own terms'.",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  },
+  {
+   "id": "zeus",
+   "name": "ZEUS",
+   "url": "https://zeusln.com",
+   "category": "wallet",
+   "country": null,
+   "description": {
+    "en": "Open-source mobile wallet for Bitcoin and Lightning with an embedded node or remote node connection.",
+    "fr": "Portefeuille mobile open source Bitcoin et Lightning, avec nœud intégré ou connexion à un nœud distant."
+   },
+   "evidence": "https://github.com/ZeusLN/zeus",
+   "evidenceNote": "README feature list includes '[x] Bitcoin only wallet'; AGPLv3, Lightning, on-chain and Cashu ecash.",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  },
+  {
+   "id": "bitkey",
+   "name": "Bitkey",
+   "url": "https://bitkey.world",
+   "category": "hardware",
+   "country": "US",
+   "description": {
+    "en": "Self-custody bitcoin wallet combining a hardware device, a mobile app and 2-of-3 multisig.",
+    "fr": "Portefeuille bitcoin en auto-garde associant un boîtier, une application mobile et un multisig 2 sur 3."
+   },
+   "evidence": "https://bitkey.world/legal/terms-of-service",
+   "evidenceNote": "Terms: 'the Services are only compatible with Bitcoin'; site calls it a Bitcoin-only 2-of-3 multisig wallet. Operated by Block, Inc.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "coinkite",
+   "name": "Coinkite (COLDCARD)",
+   "url": "https://coinkite.com",
+   "category": "hardware",
+   "country": "CA",
+   "description": {
+    "en": "Canadian maker of the COLDCARD air-gapped signing device and other bitcoin hardware.",
+    "fr": "Fabricant canadien du dispositif de signature isolé COLDCARD et d'autres matériels bitcoin."
+   },
+   "evidence": "https://coldcard.com/about",
+   "evidenceNote": "About page presents Coinkite as a Bitcoin-only company with no multi-chain option on COLDCARD; terms list a registered address in Toronto.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "seedsigner",
+   "name": "SeedSigner",
+   "url": "https://seedsigner.com",
+   "category": "hardware",
+   "country": null,
+   "description": {
+    "en": "Open-source DIY air-gapped Bitcoin signing device built from low-cost parts.",
+    "fr": "Dispositif de signature Bitcoin isolé, open source et à monter soi-même avec des pièces bon marché."
+   },
+   "evidence": "https://github.com/SeedSigner/seedsigner",
+   "evidenceNote": "README: 'Build an offline, airgapped Bitcoin signing device for less than $50!'",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  },
+  {
+   "id": "21bitcoin",
+   "name": "21bitcoin",
+   "url": "https://21bitcoin.app",
+   "category": "broker",
+   "country": "AT",
+   "description": {
+    "en": "Austrian app to buy, save and sell bitcoin, licensed under MiCAR by the FMA.",
+    "fr": "Application autrichienne pour acheter, épargner et vendre du bitcoin, agréée MiCAR par la FMA."
+   },
+   "evidence": "https://21bitcoin.app/en/blog/21bitcoin-vs-other-bitcoin-only-platforms",
+   "evidenceNote": "FIOR Digital GmbH: 'first Austrian Bitcoin-only company with a MiCAR CASP licence'; focuses exclusively on Bitcoin, only BTC accepted.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "bitaroo",
+   "name": "Bitaroo",
+   "url": "https://www.bitaroo.com.au",
+   "category": "broker",
+   "country": "AU",
+   "description": {
+    "en": "Australian bitcoin exchange with an order book, instant buy and custody options.",
+    "fr": "Plateforme d'échange bitcoin australienne avec carnet d'ordres, achat instantané et options de garde."
+   },
+   "evidence": "https://www.bitaroo.com.au/about/",
+   "evidenceNote": "About page: 'Australia's biggest Bitcoin-only exchange', 100% Australian owned, operating since 2020.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "bitcoin-well",
+   "name": "Bitcoin Well",
+   "url": "https://bitcoinwell.com",
+   "category": "broker",
+   "country": "CA",
+   "description": {
+    "en": "Listed Canadian company selling bitcoin online and through ATMs, delivered to self-custody.",
+    "fr": "Société canadienne cotée vendant du bitcoin en ligne et par distributeurs, livré en auto-garde."
+   },
+   "evidence": "https://bitcoinwell.com/about",
+   "evidenceNote": "Calls itself a bitcoin-only, non-custodial business (TSXV: BTCW) headquartered in Edmonton, Alberta; comparison table 'Bitcoin only' vs 'Hundreds of altcoins'.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "bitonic",
+   "name": "Bitonic",
+   "url": "https://bitonic.nl",
+   "category": "broker",
+   "country": "NL",
+   "description": {
+    "en": "Dutch AFM-licensed service to buy and sell bitcoin via iDEAL, including auto-invest.",
+    "fr": "Service néerlandais agréé AFM pour acheter et vendre du bitcoin via iDEAL, avec achat automatique."
+   },
+   "evidence": "https://bitonic.nl/en/faq/82/at-bitonic-you-can-only-buy-or-sell-bitcoin-btc-no-other-cryptocurrencies-why-is-this",
+   "evidenceNote": "FAQ: 'At Bitonic you can only buy or sell bitcoin (BTC), no other cryptocurrencies'.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "bittr",
+   "name": "Bittr",
+   "url": "https://getbittr.com",
+   "category": "broker",
+   "country": "CH",
+   "description": {
+    "en": "Swiss service for recurring bitcoin purchases by bank transfer to the user's own wallet.",
+    "fr": "Service suisse d'achat récurrent de bitcoin par virement vers le portefeuille de l'utilisateur."
+   },
+   "evidence": "https://getbittr.com/blog/the-bittr-story",
+   "evidenceNote": "BITTR AG states it will never add support for any cryptocurrency other than bitcoin.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "bull-bitcoin",
+   "name": "Bull Bitcoin",
+   "url": "https://www.bullbitcoin.com",
+   "category": "broker",
+   "country": null,
+   "description": {
+    "en": "Non-custodial bitcoin exchange and open-source BULL wallet, active in Canada, Europe and Latin America.",
+    "fr": "Plateforme bitcoin non custodiale et portefeuille open source BULL, au Canada, en Europe et en Amérique latine."
+   },
+   "evidence": "https://www.bullbitcoin.com/blog/bull-bitcoin-just-landed-in-argentina",
+   "evidenceNote": "Blog: works exclusively with Bitcoin, 'no altcoins'; wallet marketed as 'self-custodial, open source, Bitcoin only'.",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  },
+  {
+   "id": "peach-bitcoin",
+   "name": "Peach Bitcoin",
+   "url": "https://peachbitcoin.com",
+   "category": "broker",
+   "country": "CH",
+   "description": {
+    "en": "Peer-to-peer marketplace to buy and sell bitcoin without KYC, using multisig escrow.",
+    "fr": "Place de marché pair-à-pair pour acheter et vendre du bitcoin sans KYC, avec séquestre multisig."
+   },
+   "evidence": "https://peachbitcoin.com/terms-and-conditions/",
+   "evidenceNote": "Terms describe a P2P bitcoin marketplace with 2-of-2 multisig escrow, limits set under Swiss law; only bitcoin is traded (no explicit 'bitcoin-only' wording found).",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "pocket-bitcoin",
+   "name": "Pocket Bitcoin",
+   "url": "https://pocketbitcoin.com",
+   "category": "broker",
+   "country": "CH",
+   "description": {
+    "en": "Swiss service to buy bitcoin by bank transfer, delivered to the user's own wallet.",
+    "fr": "Service suisse d'achat de bitcoin par virement, livré dans le portefeuille de l'utilisateur."
+   },
+   "evidence": "https://pocketbitcoin.com/faq/does-pocket-support-alternative-cryptocurrencies",
+   "evidenceNote": "FAQ: Pocket does not support any other cryptocurrency; legal page names Pocket App AG, Lupfig, Switzerland, operator of a bitcoin-only platform.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "relai",
+   "name": "Relai",
+   "url": "https://relai.app",
+   "category": "broker",
+   "country": "CH",
+   "description": {
+    "en": "Swiss mobile app to buy bitcoin and run savings plans, with keys held by the user.",
+    "fr": "Application suisse pour acheter du bitcoin et programmer une épargne, clés détenues par l'utilisateur."
+   },
+   "evidence": "https://relai.app/about/",
+   "evidenceNote": "Describes itself as a non-custodial Bitcoin-only app based in Switzerland.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "river",
+   "name": "River",
+   "url": "https://river.com",
+   "category": "broker",
+   "country": "US",
+   "description": {
+    "en": "US bitcoin brokerage offering purchases, custody and interest on cash paid in bitcoin.",
+    "fr": "Courtier bitcoin américain proposant achat, garde et intérêts sur liquidités versés en bitcoin."
+   },
+   "evidence": "https://river.com/",
+   "evidenceNote": "Site describes River as a Bitcoin-only financial platform; FAQ says it does not plan to support other cryptocurrencies. US state money-transmitter licences listed at river.com/legal/licenses.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "stackinsat",
+   "name": "StackinSat",
+   "url": "https://stackinsat.com",
+   "category": "broker",
+   "country": null,
+   "description": {
+    "en": "French-language recurring bitcoin purchase (DCA) service called Plan Épargne Bitcoin.",
+    "fr": "Service francophone d'achat programmé de bitcoin (DCA) appelé Plan Épargne Bitcoin."
+   },
+   "evidence": "https://help.stackinsat.com/fr/article/en-quoi-loffre-stackinsat-est-differenciante-de-celles-des-concurrents-qui-proposent-aussi-le-dca-14epxiu/",
+   "evidenceNote": "Help centre: savings service 'orienté uniquement sur bitcoin'; no multi-crypto platform planned.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "swan-bitcoin",
+   "name": "Swan Bitcoin",
+   "url": "https://www.swanbitcoin.com",
+   "category": "broker",
+   "country": "US",
+   "description": {
+    "en": "US platform for recurring bitcoin purchases, bitcoin IRAs and private client services.",
+    "fr": "Plateforme américaine d'achat récurrent de bitcoin, de comptes retraite bitcoin et de services privés."
+   },
+   "evidence": "https://help.swanbitcoin.com/hc/en-us/articles/360046659494-What-is-Swan-Bitcoin",
+   "evidenceNote": "Swan's own pages: does not offer altcoins or memecoins, 'Bitcoin only'. A Swan-hosted page gives Los Angeles, California as HQ.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "bringin",
+   "name": "Bringin",
+   "url": "https://bringin.xyz",
+   "category": "payments",
+   "country": null,
+   "description": {
+    "en": "European app to sell bitcoin via Lightning or on-chain into a euro IBAN account and card.",
+    "fr": "Application européenne pour vendre du bitcoin via Lightning ou on-chain vers un compte IBAN et une carte en euros."
+   },
+   "evidence": "https://bringin.xyz/blog/learn/focusing-on-bitcoin/",
+   "evidenceNote": "Describes itself as a Bitcoin-only app for people in Europe, 'No altcoins'; pitches euro payouts so users need not handle stablecoins.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "fold",
+   "name": "Fold",
+   "url": "https://foldapp.com",
+   "category": "payments",
+   "country": null,
+   "description": {
+    "en": "App and payment cards that pay spending rewards in bitcoin.",
+    "fr": "Application et cartes de paiement qui versent des récompenses d'achat en bitcoin."
+   },
+   "evidence": "https://foldapp.com/legal/rewards-program-terms",
+   "evidenceNote": "Rewards terms: bitcoin is the sole form of rewards; card announcement promises 'bitcoin-only rewards without the complexity of tokens'.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "machankura",
+   "name": "Machankura",
+   "url": "https://8333.mobi",
+   "category": "payments",
+   "country": null,
+   "description": {
+    "en": "Service to send and receive bitcoin over USSD on basic phones in several African countries.",
+    "fr": "Service pour envoyer et recevoir du bitcoin par USSD sur téléphones basiques dans plusieurs pays africains."
+   },
+   "evidence": "https://8333.mobi/",
+   "evidenceNote": "Site: send and receive sats to your phone number via USSD; user manual lists Bitcoin/Lightning only.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "swiss-bitcoin-pay",
+   "name": "Swiss Bitcoin Pay",
+   "url": "https://swiss-bitcoin-pay.ch",
+   "category": "payments",
+   "country": "CH",
+   "description": {
+    "en": "Swiss payment service letting merchants accept bitcoin on-chain and over Lightning.",
+    "fr": "Service de paiement suisse permettant aux commerçants d'accepter le bitcoin on-chain et via Lightning."
+   },
+   "evidence": "https://swiss-bitcoin-pay.ch/",
+   "evidenceNote": "Site: 'Accept Bitcoin in your Business', Lightning and on-chain only, supervised by FINMA; no altcoin support found (no explicit 'bitcoin-only' wording).",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "tando",
+   "name": "Tando",
+   "url": "https://tando.me",
+   "category": "payments",
+   "country": null,
+   "description": {
+    "en": "Kenyan app to pay M-Pesa merchants and phone numbers with bitcoin over Lightning.",
+    "fr": "Application kényane pour payer marchands et numéros M-Pesa en bitcoin via Lightning."
+   },
+   "evidence": "https://tando.me/",
+   "evidenceNote": "Site: spend bitcoin anywhere M-Pesa is accepted in Kenya, users pay from their own Lightning wallet; terms by Tando Ltd.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "acinq",
+   "name": "ACINQ (Phoenix)",
+   "url": "https://acinq.co",
+   "category": "lightning",
+   "country": "FR",
+   "description": {
+    "en": "French Lightning Network developer behind the Eclair implementation and the Phoenix wallet.",
+    "fr": "Développeur français du Lightning Network, auteur de l'implémentation Eclair et du portefeuille Phoenix."
+   },
+   "evidence": "https://acinq.co/assets/press_releases/20191009_Announcement_Series_A_press_release.pdf",
+   "evidenceNote": "ACINQ describes itself as a French Bitcoin technology company focused on the Lightning Network; Phoenix is a self-custodial Bitcoin Lightning wallet (phoenix.acinq.co).",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  },
+  {
+   "id": "alby",
+   "name": "Alby",
+   "url": "https://getalby.com",
+   "category": "lightning",
+   "country": null,
+   "description": {
+    "en": "Maker of Alby Hub, self-custodial Lightning node and wallet software, plus a browser extension.",
+    "fr": "Éditeur d'Alby Hub, logiciel de nœud et portefeuille Lightning en auto-garde, et d'une extension navigateur."
+   },
+   "evidence": "https://guides.getalby.com/user-guide/alby-hub",
+   "evidenceNote": "Guides describe Alby Hub as self-custodial Lightning wallet software with an on-chain bitcoin wallet; no other assets mentioned.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "second",
+   "name": "Second",
+   "url": "https://second.tech",
+   "category": "lightning",
+   "country": null,
+   "description": {
+    "en": "Developer of Bark, an open-source implementation of the Ark protocol on Bitcoin.",
+    "fr": "Développeur de Bark, implémentation open source du protocole Ark sur Bitcoin."
+   },
+   "evidence": "https://second.tech/blog/bark-now-on-bitcoin-mainnet",
+   "evidenceNote": "Blog/docs: Bark is live on bitcoin mainnet for self-custodial payments over Ark, Lightning and on-chain.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "mynode",
+   "name": "MyNode",
+   "url": "https://mynodebtc.com",
+   "category": "node",
+   "country": null,
+   "description": {
+    "en": "Self-hosted Bitcoin and Lightning node platform, as free software or preinstalled hardware.",
+    "fr": "Plateforme de nœud Bitcoin et Lightning auto-hébergé, en logiciel gratuit ou matériel préinstallé."
+   },
+   "evidence": "https://github.com/mynodebtc/mynode",
+   "evidenceNote": "README: 'the easiest way to run a dedicated, easy to use, Bitcoin Node and Lightning Wallet'.",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  },
+  {
+   "id": "raspiblitz",
+   "name": "RaspiBlitz",
+   "url": "https://raspiblitz.org",
+   "category": "node",
+   "country": null,
+   "description": {
+    "en": "Open-source do-it-yourself Bitcoin and Lightning full node for Raspberry Pi.",
+    "fr": "Nœud complet Bitcoin et Lightning open source à monter soi-même sur Raspberry Pi."
+   },
+   "evidence": "https://github.com/raspiblitz/raspiblitz",
+   "evidenceNote": "README: 'a do-it-yourself Bitcoin & Lightning Fullnode running on a RaspberryPi'.",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  },
+  {
+   "id": "mempool",
+   "name": "The Mempool Open Source Project",
+   "url": "https://mempool.space",
+   "category": "node",
+   "country": null,
+   "description": {
+    "en": "Open-source, self-hostable Bitcoin mempool and blockchain explorer with a public API.",
+    "fr": "Explorateur open source et auto-hébergeable du mempool et de la blockchain Bitcoin, avec API publique."
+   },
+   "evidence": "https://github.com/mempool/mempool",
+   "evidenceNote": "README: mempool visualizer, explorer and API 'developed and operated for the benefit of the Bitcoin community'. Also offers a Liquid explorer view.",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  },
+  {
+   "id": "bitaxe",
+   "name": "Bitaxe (Open Source Miners United)",
+   "url": "https://bitaxe.org",
+   "category": "mining",
+   "country": null,
+   "description": {
+    "en": "Community-built open-source Bitcoin ASIC miner with published hardware and ESP-Miner firmware.",
+    "fr": "Mineur ASIC Bitcoin open source conçu par la communauté, matériel et firmware ESP-Miner publiés."
+   },
+   "evidence": "https://osmu.wiki/bitaxe/about/",
+   "evidenceNote": "Project site and OSMU wiki describe Bitaxe as an open-source Bitcoin miner pairing a Bitcoin ASIC chip with an ESP32-S3.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "braiins",
+   "name": "Braiins",
+   "url": "https://braiins.com",
+   "category": "mining",
+   "country": null,
+   "description": {
+    "en": "Bitcoin mining company running Braiins Pool and developing Braiins OS firmware for ASIC miners.",
+    "fr": "Entreprise de minage bitcoin exploitant Braiins Pool et développant le firmware Braiins OS pour mineurs ASIC."
+   },
+   "evidence": "https://academy.braiins.com/braiins-pool/faqs/pool",
+   "evidenceNote": "Pool FAQ: you can mine Bitcoin on Braiins Pool; no plans to support altcoins such as Ethereum, Monero, Litecoin or Dogecoin.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "futurebit",
+   "name": "FutureBit",
+   "url": "https://www.futurebit.io",
+   "category": "mining",
+   "country": null,
+   "description": {
+    "en": "Maker of Apollo home Bitcoin miners that also run a full Bitcoin node.",
+    "fr": "Fabricant des mineurs domestiques Apollo qui font aussi tourner un nœud Bitcoin complet."
+   },
+   "evidence": "https://www.futurebit.io/apollo-btc",
+   "evidenceNote": "Product pages describe Apollo as a Bitcoin ASIC miner and desktop computer running a full node; all products are Bitcoin-focused.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "ocean",
+   "name": "OCEAN",
+   "url": "https://ocean.xyz",
+   "category": "mining",
+   "country": null,
+   "description": {
+    "en": "Non-custodial Bitcoin mining pool using TIDES payouts and the DATUM protocol for miner-built templates.",
+    "fr": "Pool de minage Bitcoin non custodial avec paiements TIDES et protocole DATUM de modèles de blocs côté mineur."
+   },
+   "evidence": "https://github.com/OCEAN-xyz/datum_gateway",
+   "evidenceNote": "Official DATUM Gateway README (Bitcoin Ocean, LLC): 'Official DATUM supports Bitcoin only, using Bitcoin's consensus rules and SHA-256d proof of work'.",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  },
+  {
+   "id": "nunchuk",
+   "name": "Nunchuk",
+   "url": "https://nunchuk.io",
+   "category": "custody",
+   "country": null,
+   "description": {
+    "en": "Multisig self-custody and inheritance platform for bitcoin, with mobile and desktop apps.",
+    "fr": "Plateforme d'auto-garde multisig et de succession pour le bitcoin, avec applications mobiles et desktop."
+   },
+   "evidence": "https://nunchuk.io/faq",
+   "evidenceNote": "FAQ says the company is Bitcoin-only and never has custody of users' bitcoin.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "onramp",
+   "name": "Onramp",
+   "url": "https://onrampbitcoin.com",
+   "category": "custody",
+   "country": null,
+   "description": {
+    "en": "Bitcoin platform offering multi-institution 2-of-3 custody, brokerage and related services.",
+    "fr": "Plateforme bitcoin proposant une garde multi-institutionnelle 2 sur 3, du courtage et des services associés."
+   },
+   "evidence": "https://onrampbitcoin.com/about",
+   "evidenceNote": "Describes itself as a Bitcoin-only platform / 'a bitcoin-only financial platform'.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "unchained",
+   "name": "Unchained",
+   "url": "https://www.unchained.com",
+   "category": "custody",
+   "country": "US",
+   "description": {
+    "en": "Collaborative multisig custody, bitcoin IRAs, a trading desk and bitcoin-backed loans.",
+    "fr": "Garde multisig collaborative, comptes retraite bitcoin, desk d'achat et prêts adossés au bitcoin."
+   },
+   "evidence": "https://www.unchained.com/",
+   "evidenceNote": "Describes itself as bitcoin financial services built on collaborative custody; lending material states 'we are bitcoin-only'. Company pages place HQ in Austin, Texas.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "bitcoin-magazine",
+   "name": "Bitcoin Magazine",
+   "url": "https://bitcoinmagazine.com",
+   "category": "education",
+   "country": null,
+   "description": {
+    "en": "Bitcoin news publication founded in 2012, published by BTC Inc.",
+    "fr": "Média d'information sur le Bitcoin fondé en 2012, édité par BTC Inc."
+   },
+   "evidence": "https://bitcoinmagazine.com/about",
+   "evidenceNote": "About page: 'The first publication devoted exclusively to Bitcoin'; published by BTC Inc., a subsidiary of Nakamoto Inc.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "btrust",
+   "name": "Btrust",
+   "url": "https://www.btrust.tech",
+   "category": "education",
+   "country": null,
+   "description": {
+    "en": "Organisation funding and training open-source Bitcoin developers, with a focus on Africa.",
+    "fr": "Organisation qui finance et forme des développeurs Bitcoin open source, en particulier en Afrique."
+   },
+   "evidence": "https://www.btrust.tech/",
+   "evidenceNote": "Site: Btrust Builders training, BitDevs sponsorship and grants for Bitcoin Core, wallets and Lightning work.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "mi-primer-bitcoin",
+   "name": "Mi Primer Bitcoin",
+   "url": "https://myfirstbitcoin.io",
+   "category": "education",
+   "country": null,
+   "description": {
+    "en": "Non-profit Bitcoin education organisation started in El Salvador, known for its Bitcoin Diploma.",
+    "fr": "Association d'éducation Bitcoin née au Salvador, connue pour son Diplôme Bitcoin."
+   },
+   "evidence": "https://es.myfirstbitcoin.io/la-historia-del-diploma-bitcoin/",
+   "evidenceNote": "Site documents Bitcoin-only education programmes (Bitcoin Diploma, online school) begun in El Salvador in 2021.",
+   "verifiedAt": "2026-11-05",
+   "verification": "search",
+   "review": "pending"
+  },
+  {
+   "id": "plan-b-network",
+   "name": "Plan ₿ Network",
+   "url": "https://planb.network",
+   "category": "education",
+   "country": null,
+   "description": {
+    "en": "Bitcoin education initiative offering free open-source courses, tutorials and local hubs.",
+    "fr": "Initiative d'éducation Bitcoin proposant cours open source gratuits, tutoriels et communautés locales."
+   },
+   "evidence": "https://github.com/planb-network/bitcoin-educational-content",
+   "evidenceNote": "README: aims to build 'the first multilingual and open-source e-learning platform focused on Bitcoin'; content CC BY-SA.",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  },
+  {
+   "id": "wasabi-wallet",
+   "name": "Wasabi Wallet",
+   "url": "https://wasabiwallet.io",
+   "category": "privacy",
+   "country": null,
+   "description": {
+    "en": "Open-source desktop Bitcoin wallet with built-in coinjoin and Tor routing.",
+    "fr": "Portefeuille Bitcoin desktop open source avec coinjoin intégré et routage Tor."
+   },
+   "evidence": "https://github.com/WalletWasabi/WalletWasabi",
+   "evidenceNote": "README: 'An open-source, non-custodial, privacy-focused Bitcoin wallet for desktop'; MIT licence.",
+   "verifiedAt": "2026-11-05",
+   "verification": "read",
+   "review": "pending"
+  }
+ ]
+}

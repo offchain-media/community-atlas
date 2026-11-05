@@ -1,0 +1,1227 @@
+{
+ "7 bree street, cape town, south africa": {
+  "lat": -33.9236,
+  "lon": 18.4155,
+  "country": "ZA",
+  "city": "Cape Town",
+  "osm": "way/636072980"
+ },
+ "abu dhabi, uae": {
+  "lat": 24.4538,
+  "lon": 54.3774,
+  "country": "AE",
+  "city": "Abu Dhabi",
+  "osm": "relation/4479763"
+ },
+ "abu dhabi, united arab emirates": {
+  "lat": 24.4538,
+  "lon": 54.3774,
+  "country": "AE",
+  "city": "Abu Dhabi",
+  "osm": "relation/4479763"
+ },
+ "addis abeba, ethiopia": {
+  "lat": 9,
+  "lon": 38.75,
+  "country": "ET",
+  "city": "Addis Ababa",
+  "osm": "relation/1707699"
+ },
+ "amsterdam, netherlands": {
+  "lat": 52.3731,
+  "lon": 4.8925,
+  "country": "NL",
+  "city": "Amsterdam",
+  "osm": "relation/271110"
+ },
+ "annecy, france": {
+  "lat": 45.8992,
+  "lon": 6.1289,
+  "country": "FR",
+  "city": "Annecy",
+  "osm": "relation/6791758"
+ },
+ "antiguo cuscatlan, el salvador": {
+  "lat": 13.6728,
+  "lon": -89.2466,
+  "country": "SV",
+  "city": "La Libertad",
+  "osm": "relation/6805100"
+ },
+ "antwerpen, belgium": {
+  "lat": 51.2211,
+  "lon": 4.3997,
+  "country": "BE",
+  "city": "Antwerp",
+  "osm": "relation/59518"
+ },
+ "arnhem, netherlands": {
+  "lat": 51.9843,
+  "lon": 5.9109,
+  "country": "NL",
+  "city": "Arnhem",
+  "osm": "relation/272939"
+ },
+ "asuncion, paraguay": {
+  "lat": -25.28,
+  "lon": -57.6344,
+  "country": "PY",
+  "city": "Asuncion",
+  "osm": "node/249854726"
+ },
+ "asunción, paraguay": {
+  "lat": -25.28,
+  "lon": -57.6344,
+  "country": "PY",
+  "city": "Asuncion",
+  "osm": "node/249854726"
+ },
+ "atalanta, usa": {
+  "lat": 36.3404,
+  "lon": -94.0969,
+  "country": "US",
+  "city": "Rogers",
+  "osm": "node/359016519"
+ },
+ "austin, texas, usa": {
+  "lat": 30.2649,
+  "lon": -97.7474,
+  "country": "US",
+  "city": "Austin",
+  "osm": "relation/113314"
+ },
+ "bali, indonesia": {
+  "lat": -8.2271,
+  "lon": 115.1919,
+  "country": "ID",
+  "city": "Bali",
+  "osm": "relation/1615621"
+ },
+ "bandung, indonesia": {
+  "lat": -6.9218,
+  "lon": 107.6071,
+  "country": "ID",
+  "city": "Bandung City",
+  "osm": "relation/13290062"
+ },
+ "bangalore, karnataka, india": {
+  "lat": 12.9768,
+  "lon": 77.5901,
+  "country": "IN",
+  "city": "Bengaluru",
+  "osm": "relation/7902476"
+ },
+ "bangkok, thailand": {
+  "lat": 13.7525,
+  "lon": 100.4935,
+  "country": "TH",
+  "city": "Bangkok",
+  "osm": "relation/92277"
+ },
+ "barcelona, spain": {
+  "lat": 41.3826,
+  "lon": 2.1771,
+  "country": "ES",
+  "city": "Barcelona",
+  "osm": "relation/347950"
+ },
+ "bedford, england": {
+  "lat": 52.1364,
+  "lon": -0.4675,
+  "country": "GB",
+  "city": "Bedford",
+  "osm": "node/4085941"
+ },
+ "bedford, united kingdom": {
+  "lat": 52.1364,
+  "lon": -0.4675,
+  "country": "GB",
+  "city": "Bedford",
+  "osm": "node/4085941"
+ },
+ "beechworth, australia": {
+  "lat": -36.3595,
+  "lon": 146.687,
+  "country": "AU",
+  "city": "Beechworth",
+  "osm": "relation/2583191"
+ },
+ "belgrade, serbia": {
+  "lat": 44.8153,
+  "lon": 20.4457,
+  "country": "RS",
+  "city": "Belgrade",
+  "osm": "relation/2728438"
+ },
+ "bengaluru, india": {
+  "lat": 12.9768,
+  "lon": 77.5901,
+  "country": "IN",
+  "city": "Bengaluru",
+  "osm": "relation/7902476"
+ },
+ "bengaluru, karnataka, india": {
+  "lat": 12.9768,
+  "lon": 77.5901,
+  "country": "IN",
+  "city": "Bengaluru",
+  "osm": "relation/7902476"
+ },
+ "berlengas, portugal": {
+  "lat": 39.4516,
+  "lon": -9.5179,
+  "country": "PT",
+  "city": "Peniche",
+  "osm": "relation/6299203"
+ },
+ "berlin, germany": {
+  "lat": 52.5174,
+  "lon": 13.3951,
+  "country": "DE",
+  "city": "Berlin",
+  "osm": "relation/62422"
+ },
+ "berlín, el salvador": {
+  "lat": 13.4971,
+  "lon": -88.5303,
+  "country": "SV",
+  "city": "Usulután",
+  "osm": "relation/19560755"
+ },
+ "biarritz, france": {
+  "lat": 43.4833,
+  "lon": -1.5593,
+  "country": "FR",
+  "city": "Biarritz",
+  "osm": "relation/166717"
+ },
+ "bitcoin embassy, san salvador, el salvador": {
+  "lat": 13.718,
+  "lon": -89.2467,
+  "country": "SV",
+  "city": "San Salvador",
+  "osm": "way/1189694538"
+ },
+ "bodø, norway": {
+  "lat": 67.2844,
+  "lon": 14.3818,
+  "country": "NO",
+  "city": "Bodø",
+  "osm": "relation/409037"
+ },
+ "bohicon, benin": {
+  "lat": 7.1816,
+  "lon": 2.0696,
+  "country": "BJ",
+  "city": "Bohicon",
+  "osm": "relation/2946029"
+ },
+ "bordeaux, france": {
+  "lat": 44.8412,
+  "lon": -0.58,
+  "country": "FR",
+  "city": "Bordeaux",
+  "osm": "relation/105270"
+ },
+ "brescia, italia": {
+  "lat": 45.7796,
+  "lon": 10.4259,
+  "country": "IT",
+  "city": "Lombardy",
+  "osm": "relation/44882"
+ },
+ "brescia, italy": {
+  "lat": 45.7796,
+  "lon": 10.4259,
+  "country": "IT",
+  "city": "Lombardy",
+  "osm": "relation/44882"
+ },
+ "bretagne, france": {
+  "lat": 48.2641,
+  "lon": -2.9202,
+  "country": "FR",
+  "city": "Brittany",
+  "osm": "relation/102740"
+ },
+ "bristol, england": {
+  "lat": 51.443,
+  "lon": -2.5817,
+  "country": "GB",
+  "city": "England",
+  "osm": "relation/57539"
+ },
+ "budapest, hungary": {
+  "lat": 47.4818,
+  "lon": 19.1449,
+  "country": "HU",
+  "city": "Budapest",
+  "osm": "relation/37244"
+ },
+ "buenos aires, argentina": {
+  "lat": -34.6096,
+  "lon": -58.3888,
+  "country": "AR",
+  "city": "Buenos Aires",
+  "osm": "relation/1224652"
+ },
+ "bury st edmunds, england": {
+  "lat": 52.246,
+  "lon": 0.7125,
+  "country": "GB",
+  "city": "West Suffolk",
+  "osm": "relation/4507925"
+ },
+ "busan, south korea": {
+  "lat": 35.18,
+  "lon": 129.0752,
+  "country": "KR",
+  "city": "Busan",
+  "osm": "relation/2396450"
+ },
+ "calgary, canada": {
+  "lat": 51.0456,
+  "lon": -114.0575,
+  "country": "CA",
+  "city": "Calgary",
+  "osm": "relation/3227127"
+ },
+ "cambridge, ma, usa": {
+  "lat": 42.3656,
+  "lon": -71.104,
+  "country": "US",
+  "city": "Cambridge",
+  "osm": "relation/1933745"
+ },
+ "cape town, south africa": {
+  "lat": -33.9288,
+  "lon": 18.4172,
+  "country": "ZA",
+  "city": "Cape Town",
+  "osm": "node/32675806"
+ },
+ "charlotte , north carolina, usa": {
+  "lat": 35.2272,
+  "lon": -80.8431,
+  "country": "US",
+  "city": "Charlotte",
+  "osm": "relation/177415"
+ },
+ "chiang mai, thailand": {
+  "lat": 18.7883,
+  "lon": 98.9859,
+  "country": "TH",
+  "city": "Chiang Mai City Municipality",
+  "osm": "relation/18271830"
+ },
+ "cholul, merida, mexico": {
+  "lat": 21.0422,
+  "lon": -89.5572,
+  "country": "MX",
+  "city": "Cholul",
+  "osm": "relation/6418301"
+ },
+ "colva, goa": {
+  "lat": 15.2773,
+  "lon": 73.9202,
+  "country": "IN",
+  "city": "Colva",
+  "osm": "node/2637221118"
+ },
+ "copenhague, denmark": {
+  "lat": 55.6867,
+  "lon": 12.5701,
+  "country": "DK",
+  "city": "Copenhagen",
+  "osm": "node/13707878"
+ },
+ "cotonou, benín": {
+  "lat": 6.3677,
+  "lon": 2.4253,
+  "country": "BJ",
+  "city": "Cotonou",
+  "osm": "relation/2851879"
+ },
+ "coutances, france": {
+  "lat": 49.0478,
+  "lon": -1.4455,
+  "country": "FR",
+  "city": "Coutances",
+  "osm": "relation/409957"
+ },
+ "cyberspace": {
+  "lat": 52.2698,
+  "lon": 104.3033,
+  "country": "RU",
+  "city": "Irkutsk",
+  "osm": "node/14077864578"
+ },
+ "dadar west, mumbai, india": {
+  "lat": 19.0239,
+  "lon": 72.8382,
+  "country": "IN",
+  "city": "Maharashtra",
+  "osm": "node/631537707"
+ },
+ "dakar, senegal": {
+  "lat": 14.6934,
+  "lon": -17.4479,
+  "country": "SN",
+  "city": "Dakar",
+  "osm": "relation/12982139"
+ },
+ "dallas, texas, usa": {
+  "lat": 32.7763,
+  "lon": -96.7969,
+  "country": "US",
+  "city": "Dallas",
+  "osm": "relation/6571629"
+ },
+ "darjeeling , west bengal, india": {
+  "lat": 27.0378,
+  "lon": 88.2632,
+  "country": "IN",
+  "city": "Darjeeling",
+  "osm": "node/3411073296"
+ },
+ "dehli, india": {
+  "lat": 28.6328,
+  "lon": 77.2198,
+  "country": "IN",
+  "city": "Delhi",
+  "osm": "relation/1942586"
+ },
+ "denver, colorado, united states": {
+  "lat": 39.7392,
+  "lon": -104.9849,
+  "country": "US",
+  "city": "Denver",
+  "osm": "relation/1411339"
+ },
+ "douala, cameroon": {
+  "lat": 4.0429,
+  "lon": 9.7062,
+  "country": "CM",
+  "city": "Douala",
+  "osm": "node/732125487"
+ },
+ "dubai, uae": {
+  "lat": 25.0743,
+  "lon": 55.1886,
+  "country": "AE",
+  "city": "Dubai Emirate",
+  "osm": "relation/4479752"
+ },
+ "dublin, ireland": {
+  "lat": 53.3494,
+  "lon": -6.2606,
+  "country": "IE",
+  "city": "Dublin",
+  "osm": "relation/1109531"
+ },
+ "durham, north carolina, usa": {
+  "lat": 35.9967,
+  "lon": -78.9018,
+  "country": "US",
+  "city": "Durham",
+  "osm": "relation/179868"
+ },
+ "edinburgh, scotland": {
+  "lat": 55.9533,
+  "lon": -3.1884,
+  "country": "GB",
+  "city": "City of Edinburgh",
+  "osm": "relation/1920901"
+ },
+ "el zonte, el salvador": {
+  "lat": 13.4978,
+  "lon": -89.4407,
+  "country": "SV",
+  "city": "El Zonte",
+  "osm": "way/958573446"
+ },
+ "fernando de la mora, paraguay": {
+  "lat": -25.3282,
+  "lon": -57.5521,
+  "country": "PY",
+  "city": "Fernando de la Mora",
+  "osm": "relation/3681127"
+ },
+ "florianopolis, brasil": {
+  "lat": -27.5973,
+  "lon": -48.5496,
+  "country": "BR",
+  "city": "Florianópolis",
+  "osm": "relation/296561"
+ },
+ "florianopolis, brazil": {
+  "lat": -27.5973,
+  "lon": -48.5496,
+  "country": "BR",
+  "city": "Florianópolis",
+  "osm": "relation/296561"
+ },
+ "fort lauderdale, florida, usa": {
+  "lat": 26.1223,
+  "lon": -80.1434,
+  "country": "US",
+  "city": "Fort Lauderdale",
+  "osm": "relation/117955"
+ },
+ "fort worth, texas, usa": {
+  "lat": 32.7532,
+  "lon": -97.3327,
+  "country": "US",
+  "city": "Fort Worth",
+  "osm": "relation/115274"
+ },
+ "france": {
+  "lat": 46.6034,
+  "lon": 1.8883,
+  "country": "FR",
+  "city": "France",
+  "osm": "relation/2202162"
+ },
+ "funchal, portugal": {
+  "lat": 32.6496,
+  "lon": -16.9087,
+  "country": "PT",
+  "city": "Funchal",
+  "osm": "relation/8421413"
+ },
+ "furtwangen, germany": {
+  "lat": 48.0512,
+  "lon": 8.2074,
+  "country": "DE",
+  "city": "Furtwangen im Schwarzwald",
+  "osm": "relation/1240885"
+ },
+ "germany": {
+  "lat": 51.1638,
+  "lon": 10.4478,
+  "country": "DE",
+  "city": "Germany",
+  "osm": "relation/51477"
+ },
+ "glasgow, scotland": {
+  "lat": 55.8612,
+  "lon": -4.2502,
+  "country": "GB",
+  "city": "Glasgow",
+  "osm": "node/11127374"
+ },
+ "goa, india": {
+  "lat": 15.3005,
+  "lon": 74.0855,
+  "country": "IN",
+  "city": "Goa",
+  "osm": "relation/11251493"
+ },
+ "guatemala city, guatemala": {
+  "lat": 14.6416,
+  "lon": -90.5133,
+  "country": "GT",
+  "city": "Guatemala City",
+  "osm": "relation/67992"
+ },
+ "haidmühle, germany": {
+  "lat": 48.8249,
+  "lon": 13.776,
+  "country": "DE",
+  "city": "Haidmühle",
+  "osm": "relation/958942"
+ },
+ "hannover, germany": {
+  "lat": 52.3745,
+  "lon": 9.7386,
+  "country": "DE",
+  "city": "Hanover",
+  "osm": "relation/59418"
+ },
+ "hawthorne, usa": {
+  "lat": 33.9128,
+  "lon": -118.3426,
+  "country": "US",
+  "city": "Hawthorne",
+  "osm": "relation/2317585"
+ },
+ "helsinki, finland": {
+  "lat": 60.1666,
+  "lon": 24.9435,
+  "country": "FI",
+  "city": "Helsinki",
+  "osm": "relation/34914"
+ },
+ "ho chi minh city, viet nam": {
+  "lat": 10.7737,
+  "lon": 106.7166,
+  "country": "VN",
+  "city": "Ho Chi Minh City",
+  "osm": "relation/1973756"
+ },
+ "hong hong, china": {
+  "lat": 31.2099,
+  "lon": 121.313,
+  "country": "CN",
+  "city": "Minhang District",
+  "osm": "node/9267770648"
+ },
+ "hong kong": {
+  "lat": 22.2818,
+  "lon": 114.1583,
+  "country": "CN",
+  "city": "Hong Kong",
+  "osm": "relation/20044132"
+ },
+ "hoover dam, nevada": {
+  "lat": 36.0173,
+  "lon": -114.762,
+  "country": "US",
+  "city": "Nevada",
+  "osm": "node/13285574674"
+ },
+ "hotel sheraton presidente, san salvador, el salvador": {
+  "lat": 13.6913,
+  "lon": -89.2417,
+  "country": "SV",
+  "city": "San Salvador",
+  "osm": "node/6054798996"
+ },
+ "istanbul, turkiye": {
+  "lat": 41.0064,
+  "lon": 28.9759,
+  "country": "TR",
+  "city": "Istanbul",
+  "osm": "node/1882099475"
+ },
+ "johannesburg, south africa": {
+  "lat": -26.205,
+  "lon": 28.0497,
+  "country": "ZA",
+  "city": "Johannesburg",
+  "osm": "node/261833893"
+ },
+ "juneau, alaska": {
+  "lat": 58.302,
+  "lon": -134.4197,
+  "country": "US",
+  "city": "Juneau",
+  "osm": "relation/2605281"
+ },
+ "kansas city, usa": {
+  "lat": 39.1001,
+  "lon": -94.5781,
+  "country": "US",
+  "city": "Kansas City",
+  "osm": "relation/141008"
+ },
+ "kec. kuta utara, indonesia": {
+  "lat": -8.6344,
+  "lon": 115.1397,
+  "country": "ID",
+  "city": "Mengwi",
+  "osm": "way/375809390"
+ },
+ "kelowna, canada": {
+  "lat": 49.8879,
+  "lon": -119.4959,
+  "country": "CA",
+  "city": "Kelowna",
+  "osm": "relation/2221794"
+ },
+ "kreuzlingen, switzerland": {
+  "lat": 47.6464,
+  "lon": 9.1726,
+  "country": "CH",
+  "city": "Kreuzlingen",
+  "osm": "relation/1684537"
+ },
+ "kreuzlingen": {
+  "lat": 47.6464,
+  "lon": 9.1726,
+  "country": "CH",
+  "city": "Kreuzlingen",
+  "osm": "relation/1684537"
+ },
+ "kuala lumpur, singapore": {
+  "lat": 3.1554,
+  "lon": 101.7211,
+  "country": "MY",
+  "city": "Kuala Lumpur",
+  "osm": "way/370519322"
+ },
+ "kuta utara, bali, indonesia": {
+  "lat": -8.6423,
+  "lon": 115.1581,
+  "country": "ID",
+  "city": "North Kuta",
+  "osm": "relation/17839416"
+ },
+ "köln, germany": {
+  "lat": 50.9384,
+  "lon": 6.96,
+  "country": "DE",
+  "city": "Cologne",
+  "osm": "relation/62578"
+ },
+ "lagos, nigeria": {
+  "lat": 6.4551,
+  "lon": 3.3942,
+  "country": "NG",
+  "city": "Lagos",
+  "osm": "node/27565124"
+ },
+ "lansing, mi, usa": {
+  "lat": 42.7338,
+  "lon": -84.5546,
+  "country": "US",
+  "city": "Lansing",
+  "osm": "relation/134997"
+ },
+ "las vegas, nevada, usa": {
+  "lat": 36.1674,
+  "lon": -115.1484,
+  "country": "US",
+  "city": "Las Vegas",
+  "osm": "relation/170117"
+ },
+ "las vegas, united states": {
+  "lat": 36.1674,
+  "lon": -115.1484,
+  "country": "US",
+  "city": "Las Vegas",
+  "osm": "relation/170117"
+ },
+ "las vegas, usa": {
+  "lat": 36.1674,
+  "lon": -115.1484,
+  "country": "US",
+  "city": "Las Vegas",
+  "osm": "relation/170117"
+ },
+ "lille, france": {
+  "lat": 50.6366,
+  "lon": 3.0635,
+  "country": "FR",
+  "city": "Lille",
+  "osm": "relation/58404"
+ },
+ "london, england": {
+  "lat": 51.5074,
+  "lon": -0.1278,
+  "country": "GB",
+  "city": "Greater London",
+  "osm": "relation/175342"
+ },
+ "london, ontario": {
+  "lat": 42.9837,
+  "lon": -81.2496,
+  "country": "CA",
+  "city": "London",
+  "osm": "relation/7485368"
+ },
+ "lugano, switzerland": {
+  "lat": 46.0038,
+  "lon": 8.9512,
+  "country": "CH",
+  "city": "Lugano",
+  "osm": "relation/2888417"
+ },
+ "lyon, france": {
+  "lat": 45.7578,
+  "lon": 4.832,
+  "country": "FR",
+  "city": "Lyon",
+  "osm": "relation/120965"
+ },
+ "madrid, spain": {
+  "lat": 40.4168,
+  "lon": -3.7035,
+  "country": "ES",
+  "city": "Madrid",
+  "osm": "relation/5326784"
+ },
+ "malaga, spain": {
+  "lat": 36.7648,
+  "lon": -4.4422,
+  "country": "ES",
+  "city": "Andalusia",
+  "osm": "relation/340746"
+ },
+ "mallorca, spain": {
+  "lat": 39.6134,
+  "lon": 2.8829,
+  "country": "ES",
+  "city": "Balearic Islands",
+  "osm": "relation/6803636"
+ },
+ "manchester, england": {
+  "lat": 53.4425,
+  "lon": -2.2325,
+  "country": "GB",
+  "city": "Manchester",
+  "osm": "relation/146656"
+ },
+ "maribor, slovenia": {
+  "lat": 46.5576,
+  "lon": 15.6456,
+  "country": "SI",
+  "city": "Maribor",
+  "osm": "node/36667529"
+ },
+ "medellin, colombia": {
+  "lat": 6.2697,
+  "lon": -75.6026,
+  "country": "CO",
+  "city": "Medellín",
+  "osm": "relation/1343264"
+ },
+ "mexico city, mexico": {
+  "lat": 19.3208,
+  "lon": -99.1515,
+  "country": "MX",
+  "city": "Mexico City",
+  "osm": "relation/1376330"
+ },
+ "miami, florida, usa": {
+  "lat": 25.7742,
+  "lon": -80.1936,
+  "country": "US",
+  "city": "Miami",
+  "osm": "relation/1216769"
+ },
+ "miami, united states": {
+  "lat": 25.7742,
+  "lon": -80.1936,
+  "country": "US",
+  "city": "Miami",
+  "osm": "relation/1216769"
+ },
+ "miami, usa": {
+  "lat": 25.7742,
+  "lon": -80.1936,
+  "country": "US",
+  "city": "Miami",
+  "osm": "relation/1216769"
+ },
+ "milan, italy": {
+  "lat": 45.4642,
+  "lon": 9.1896,
+  "country": "IT",
+  "city": "Milan",
+  "osm": "relation/44915"
+ },
+ "montreal, canada": {
+  "lat": 45.5032,
+  "lon": -73.5698,
+  "country": "CA",
+  "city": "Montreal",
+  "osm": "relation/1634158"
+ },
+ "nairobi, kenya": {
+  "lat": -1.3024,
+  "lon": 36.8289,
+  "country": "KE",
+  "city": "Nairobi County",
+  "osm": "relation/9721587"
+ },
+ "nanty, wales": {
+  "lat": 52.4206,
+  "lon": -3.6849,
+  "country": "GB",
+  "city": "Wales",
+  "osm": "node/3945662656"
+ },
+ "naples, florida, usa": {
+  "lat": 26.1422,
+  "lon": -81.7943,
+  "country": "US",
+  "city": "Naples",
+  "osm": "relation/1216778"
+ },
+ "nashville, usa": {
+  "lat": 36.1623,
+  "lon": -86.7743,
+  "country": "US",
+  "city": "Nashville",
+  "osm": "relation/197472"
+ },
+ "neuchatel, switzerland": {
+  "lat": 46.9896,
+  "lon": 6.9293,
+  "country": "CH",
+  "city": "Neuchâtel",
+  "osm": "relation/1685519"
+ },
+ "neuchâtel, switzerland": {
+  "lat": 46.9896,
+  "lon": 6.9293,
+  "country": "CH",
+  "city": "Neuchâtel",
+  "osm": "relation/1685519"
+ },
+ "new hampshire, usa": {
+  "lat": 43.4849,
+  "lon": -71.6554,
+  "country": "US",
+  "city": "New Hampshire",
+  "osm": "relation/67213"
+ },
+ "new york city, ny, usa": {
+  "lat": 40.7127,
+  "lon": -74.006,
+  "country": "US",
+  "city": "New York",
+  "osm": "relation/175905"
+ },
+ "new york, usa": {
+  "lat": 40.7127,
+  "lon": -74.006,
+  "country": "US",
+  "city": "New York",
+  "osm": "relation/175905"
+ },
+ "obonjan, croatia": {
+  "lat": 43.6791,
+  "lon": 15.7856,
+  "country": "HR",
+  "city": "Grad Šibenik",
+  "osm": "relation/11138774"
+ },
+ "orlando, florida": {
+  "lat": 28.5421,
+  "lon": -81.379,
+  "country": "US",
+  "city": "Orlando",
+  "osm": "relation/1128379"
+ },
+ "oslo, norway": {
+  "lat": 59.9133,
+  "lon": 10.739,
+  "country": "NO",
+  "city": "Oslo",
+  "osm": "relation/406091"
+ },
+ "ouidah, benín": {
+  "lat": 6.3666,
+  "lon": 2.0854,
+  "country": "BJ",
+  "city": "Ouidah",
+  "osm": "node/313015821"
+ },
+ "oxford, uk": {
+  "lat": 51.752,
+  "lon": -1.2578,
+  "country": "GB",
+  "city": "Oxford",
+  "osm": "relation/394037"
+ },
+ "palazzo dei congressi, lugano, switzerland": {
+  "lat": 46.0051,
+  "lon": 8.9563,
+  "country": "CH",
+  "city": "Lugano",
+  "osm": "way/148111331"
+ },
+ "palma, spain": {
+  "lat": 39.5696,
+  "lon": 2.6501,
+  "country": "ES",
+  "city": "Palma",
+  "osm": "relation/341321"
+ },
+ "panamá, panama": {
+  "lat": 8.9714,
+  "lon": -79.5342,
+  "country": "PA",
+  "city": "Panama City",
+  "osm": "node/1242998122"
+ },
+ "parakou, benin": {
+  "lat": 9.34,
+  "lon": 2.6278,
+  "country": "BJ",
+  "city": "Parakou",
+  "osm": "relation/2859964"
+ },
+ "paramaribo, suriname": {
+  "lat": 5.8242,
+  "lon": -55.1663,
+  "country": "SR",
+  "city": "Paramaribo",
+  "osm": "relation/13026345"
+ },
+ "paris , france": {
+  "lat": 48.8589,
+  "lon": 2.32,
+  "country": "FR",
+  "city": "Paris",
+  "osm": "relation/7444"
+ },
+ "paris, france": {
+  "lat": 48.8589,
+  "lon": 2.32,
+  "country": "FR",
+  "city": "Paris",
+  "osm": "relation/7444"
+ },
+ "plovdiv, bulgaria": {
+  "lat": 42.1419,
+  "lon": 24.7499,
+  "country": "BG",
+  "city": "Plovdiv",
+  "osm": "node/1698668366"
+ },
+ "port louis, mauritius": {
+  "lat": -20.1625,
+  "lon": 57.5028,
+  "country": "MU",
+  "city": "Port Louis",
+  "osm": "node/243819778"
+ },
+ "portland, orlando, usa": {
+  "lat": 28.5609,
+  "lon": -81.3633,
+  "country": "US",
+  "city": "Orlando",
+  "osm": "way/11200652"
+ },
+ "prague, czech republic": {
+  "lat": 50.0875,
+  "lon": 14.4213,
+  "country": "CZ",
+  "city": "Prague",
+  "osm": "relation/435514"
+ },
+ "queensland, australia": {
+  "lat": -22.1647,
+  "lon": 144.5845,
+  "country": "AU",
+  "city": "Queensland",
+  "osm": "relation/2316595"
+ },
+ "riga, latvia": {
+  "lat": 56.9494,
+  "lon": 24.1052,
+  "country": "LV",
+  "city": "Riga",
+  "osm": "relation/13048688"
+ },
+ "roatan, honduras": {
+  "lat": 16.349,
+  "lon": -86.4978,
+  "country": "HN",
+  "city": "Roatán",
+  "osm": "relation/5989963"
+ },
+ "roatán, honduras": {
+  "lat": 16.349,
+  "lon": -86.4978,
+  "country": "HN",
+  "city": "Roatán",
+  "osm": "relation/5989963"
+ },
+ "rouen, france": {
+  "lat": 49.4405,
+  "lon": 1.094,
+  "country": "FR",
+  "city": "Rouen",
+  "osm": "relation/75628"
+ },
+ "san francisco, usa": {
+  "lat": 37.7879,
+  "lon": -122.4075,
+  "country": "US",
+  "city": "San Francisco",
+  "osm": "relation/111968"
+ },
+ "san salvador, el salvador": {
+  "lat": 13.6976,
+  "lon": -89.1912,
+  "country": "SV",
+  "city": "San Salvador",
+  "osm": "relation/6462027"
+ },
+ "seoul, korea": {
+  "lat": 37.5667,
+  "lon": 126.9783,
+  "country": "KR",
+  "city": "Seoul",
+  "osm": "relation/2297418"
+ },
+ "seoul, south korea": {
+  "lat": 37.5667,
+  "lon": 126.9783,
+  "country": "KR",
+  "city": "Seoul",
+  "osm": "relation/2297418"
+ },
+ "sofia, bucharest": {
+  "lat": 44.4154,
+  "lon": 26.1914,
+  "country": "RO",
+  "city": "Bucharest",
+  "osm": "way/1307431253"
+ },
+ "stadthagen, germany": {
+  "lat": 52.329,
+  "lon": 9.2053,
+  "country": "DE",
+  "city": "Stadthagen",
+  "osm": "relation/1176598"
+ },
+ "strasbourg, france": {
+  "lat": 48.5846,
+  "lon": 7.7507,
+  "country": "FR",
+  "city": "Strasbourg",
+  "osm": "relation/71033"
+ },
+ "sydney, australia": {
+  "lat": -33.8698,
+  "lon": 151.2083,
+  "country": "AU",
+  "city": "Sydney",
+  "osm": "relation/5750005"
+ },
+ "são paulo, brazil": {
+  "lat": -23.5507,
+  "lon": -46.6334,
+  "country": "BR",
+  "city": "São Paulo",
+  "osm": "relation/298285"
+ },
+ "taipei, taiwan": {
+  "lat": 25.0375,
+  "lon": 121.5637,
+  "country": "TW",
+  "city": "Taipei",
+  "osm": "relation/1293250"
+ },
+ "tampa, fl, usa": {
+  "lat": 27.945,
+  "lon": -82.4583,
+  "country": "US",
+  "city": "Tampa",
+  "osm": "relation/1216849"
+ },
+ "templin, germany": {
+  "lat": 53.1193,
+  "lon": 13.5006,
+  "country": "DE",
+  "city": "Templin",
+  "osm": "relation/1334098"
+ },
+ "texas, usa": {
+  "lat": 31.2639,
+  "lon": -98.5456,
+  "country": "US",
+  "city": "Texas",
+  "osm": "relation/114690"
+ },
+ "thun, switzerland": {
+  "lat": 46.7583,
+  "lon": 7.6281,
+  "country": "CH",
+  "city": "Thun",
+  "osm": "relation/1682682"
+ },
+ "tokyo, japan": {
+  "lat": 35.6769,
+  "lon": 139.7639,
+  "country": "JP",
+  "city": "Tokyo",
+  "osm": "relation/1543125"
+ },
+ "torino, italia": {
+  "lat": 45.0678,
+  "lon": 7.6825,
+  "country": "IT",
+  "city": "Turin",
+  "osm": "relation/43992"
+ },
+ "toronto, canada": {
+  "lat": 43.6535,
+  "lon": -79.3839,
+  "country": "CA",
+  "city": "Toronto",
+  "osm": "relation/324211"
+ },
+ "turin, italy": {
+  "lat": 45.0678,
+  "lon": 7.6825,
+  "country": "IT",
+  "city": "Turin",
+  "osm": "relation/43992"
+ },
+ "tysons, va, usa": {
+  "lat": 38.9191,
+  "lon": -77.223,
+  "country": "US",
+  "city": "Tysons",
+  "osm": "relation/206744"
+ },
+ "valletta, malta": {
+  "lat": 35.899,
+  "lon": 14.5137,
+  "country": "MT",
+  "city": "Valletta",
+  "osm": "relation/7510580"
+ },
+ "vancouver, canada": {
+  "lat": 49.2609,
+  "lon": -123.114,
+  "country": "CA",
+  "city": "Vancouver",
+  "osm": "relation/1852574"
+ },
+ "viareggio, italy": {
+  "lat": 43.8672,
+  "lon": 10.2506,
+  "country": "IT",
+  "city": "Viareggio",
+  "osm": "relation/42664"
+ },
+ "victoria bc, canada": {
+  "lat": 48.4283,
+  "lon": -123.365,
+  "country": "CA",
+  "city": "Victoria",
+  "osm": "relation/2221062"
+ },
+ "vienna, austria": {
+  "lat": 48.2084,
+  "lon": 16.3725,
+  "country": "AT",
+  "city": "Vienna",
+  "osm": "relation/109166"
+ },
+ "villa ciani, lugano, switzerland": {
+  "lat": 46.0046,
+  "lon": 8.9565,
+  "country": "CH",
+  "city": "Lugano",
+  "osm": "way/39213173"
+ },
+ "warsaw, poland": {
+  "lat": 52.232,
+  "lon": 21.0067,
+  "country": "PL",
+  "city": "Warsaw",
+  "osm": "relation/336075"
+ },
+ "washington, dc 20007, usa": {
+  "lat": 38.8951,
+  "lon": -77.0364,
+  "country": "US",
+  "city": "Washington",
+  "osm": "relation/5396194"
+ },
+ "wiesenstrasse 32, baden, switzerland": {
+  "lat": 47.4795,
+  "lon": 8.2982,
+  "country": "CH",
+  "city": "Baden",
+  "osm": "way/134236132"
+ }
+}

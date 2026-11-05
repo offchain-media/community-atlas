@@ -1,0 +1,27 @@
+{
+ "about": "Example of a regional edition: the Baltic countries, served at the root of its own domain, in English only, with no publisher logo. Copy this folder to start yours. Every key is explained in docs/PROFILE.md.",
+ "id": "example-region",
+ "name": "Baltic Bitcoin Atlas",
+ "tagline": { "en": "Bitcoin meetups, communities and places to pay in bitcoin in Estonia, Latvia and Lithuania." },
+ "publisher": { "name": "Your community", "url": "https://example.org/" },
+ "origin": "https://atlas.example.org",
+ "languages": [{ "code": "en", "name": "English", "path": "/" }],
+ "repository": "https://github.com/your-name/community-atlas",
+ "scope": { "type": "countries", "countries": ["LT", "LV", "EE"] },
+ "map": { "center": [24.6, 57.0], "zoom": 5.2, "minZoom": 4, "maxZoom": 18, "maxBounds": [[14, 50], [36, 63]] },
+ "sources": {
+  "merchants": true,
+  "communities": true,
+  "planb": true,
+  "meetup": true,
+  "feeds": [
+   { "name": "Lithuania BTC", "url": "https://lithuaniabtc.com/data/events.json", "site": "https://lithuaniabtc.com/en/", "eventPage": "/en/events/{id}/", "country": "LT", "timeZone": "Europe/Vilnius" }
+  ]
+ },
+ "theme": {
+  "accent": "#0f766e",
+  "accentText": { "light": "#0b5e58", "dark": "#2dd4bf" },
+  "uppercaseHeadings": false
+ },
+ "keepPastDays": 1095
+}

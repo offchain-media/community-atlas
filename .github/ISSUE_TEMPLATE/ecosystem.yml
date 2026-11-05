@@ -1,0 +1,30 @@
+name: "Ecosystem: add, correct or remove a company"
+description: The Ecosystem page lists Bitcoin-only companies and projects, each with a source.
+title: "Ecosystem: "
+labels: [ecosystem]
+body:
+  - type: dropdown
+    id: action
+    attributes:
+      label: Request
+      options: [Add, Correct, Remove]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Company or project
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Source showing it supports Bitcoin only (or not)
+      description: An official page is best. Without a source the request cannot be reviewed.
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes

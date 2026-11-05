@@ -1,0 +1,31 @@
+name: Add our events
+description: Ask for your community's event feed or calendar to be read by this atlas.
+title: "Events: "
+labels: [events]
+body:
+  - type: input
+    id: community
+    attributes:
+      label: Community name
+    validations:
+      required: true
+  - type: input
+    id: feed
+    attributes:
+      label: Where your events are published
+      description: A Meetup group, a Plan ₿ Network listing, or a JSON feed in the Atlas format (see docs/DATA.md).
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: Your website
+      placeholder: https://
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent
+      options:
+        - label: I organise or represent this community and agree that its public events are listed with a link back to us.
+          required: true
