@@ -1,0 +1,69 @@
+/**
+ * Event display, shared by the build (pre-rendered list) and the browser, so both show the same text.
+ * Times are shown in the event's time zone, or in UTC when the source gives none.
+ */
+import { esc, safeURL, safeZone } from "./util.js";
+import { startInstant } from "./events.js";
+
+const UTC_DAY = (d) => new Date(Date.parse(d.slice(0, 10) + "T00:00:00Z"));
+
+function dateParts(e, locale) {
+  const t = startInstant(e);
+  if (!t) return null;
+  const timeZone = e.dateOnly ? "UTC" : safeZone(e.timeZone);
+  const part = (o) => new Intl.DateTimeFormat(locale, { timeZone, ...o }).format(new Date(t));
+  return { day: part({ day: "numeric" }), month: part({ month: "short" }), year: part({ year: "numeric" }) };
+}
+
+export function dateLabel(e, T) {
+  if (!e.start) return T.planned;
+  const opts = { day: "numeric", month: "long", year: "numeric" };
+  if (e.dateOnly) {
+    const f = new Intl.DateTimeFormat(T.locale, { ...opts, timeZone: "UTC" });
+    const a = UTC_DAY(e.start);
+    const b = e.end ? UTC_DAY(e.end) : null;
+    return b && b > a ? f.formatRange(a, b) : f.format(a);
+  }
+  return new Intl.DateTimeFormat(T.locale, {
+    ...opts,
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: safeZone(e.timeZone),
+    timeZoneName: "short",
+  }).format(new Date(e.start));
+}
+
+export function countryName(code, locale) {
+  if (!code) return "";
+  try {
+    return new Intl.DisplayNames([locale], { type: "region" }).of(code);
+  } catch {
+    return code;
+  }
+}
+
+export function eventTitle(e, lang) {
+  return e.titles?.[lang] || e.title;
+}
+
+function link(href, text) {
+  const url = safeURL(href);
+  return url ? `<a href="${esc(url)}" rel="noopener noreferrer">${esc(text)}</a>` : esc(text);
+}
+
+/** One event as an HTML list item. Every value is escaped. */
+export function eventHTML(e, T, lang, tag = "li") {
+  const p = dateParts(e, T.locale);
+  const where = e.online ? T.online : [e.city, countryName(e.country, T.locale)].filter(Boolean).join(", ");
+  const source = e.listing && e.listing !== e.url ? link(e.listing, e.sourceName) : esc(e.sourceName);
+  const others = (e.alsoListedBy || []).map((o) => link(o.url, o.sourceName)).join(", ");
+  return `<${tag} class="event" data-type="${esc(e.type)}"><div class="date" aria-hidden="true">${
+    p
+      ? `<span class="d">${esc(p.day)}</span><span class="m">${esc(p.month)}</span><span class="y">${esc(p.year)}</span>`
+      : '<span class="m">?</span>'
+  }</div><div class="body"><h3>${link(e.url, eventTitle(e, lang))}</h3><p class="when">${esc(dateLabel(e, T))}</p><p class="meta"><span class="type">${esc(
+    T.types[e.type] || T.types.other,
+  )}</span>${where ? " · " + esc(where) : ""}${
+    e.precision === "city" ? ` <span class="muted" title="${esc(T.cityLevel)}">◌</span>` : ""
+  }</p><p class="source">${esc(T.listedBy)} ${source}${others ? `, ${esc(T.alsoListedBy)} ${others}` : ""}</p></div></${tag}>`;
+}

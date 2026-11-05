@@ -1,12 +1,12 @@
 {
  "merchants": {
   "ok": true,
-  "at": "2026-11-05T19:14:59.080Z",
-  "result": 29750
+  "at": "2026-11-05T21:22:31.134Z",
+  "result": 29753
  },
  "areas": {
   "ok": true,
-  "at": "2026-11-05T19:14:59.929Z",
+  "at": "2026-11-05T21:22:32.044Z",
   "result": {
    "countries": 229,
    "communities": 691
@@ -14,7 +14,7 @@
  },
  "meetup": {
   "ok": true,
-  "at": "2026-11-05T19:07:07.141Z",
+  "at": "2026-11-05T21:22:49.360Z",
   "result": {
    "groups": 97,
    "events": 203,
@@ -23,15 +23,16 @@
  },
  "planb": {
   "ok": true,
-  "at": "2026-11-05T19:12:41.991Z",
+  "at": "2026-11-05T21:22:50.684Z",
   "result": {
    "events": 288,
-   "skipped": 8
+   "skipped": 8,
+   "notLocated": 0
   }
  },
  "feeds": {
   "ok": true,
-  "at": "2026-11-05T19:11:27.538Z",
+  "at": "2026-11-05T21:22:52.926Z",
   "result": {
    "events": 38,
    "failures": 0

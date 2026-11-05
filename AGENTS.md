@@ -8,7 +8,7 @@ You help a person, often the organiser of a Bitcoin meetup or community, make **
 2. **Never ask for or write a password, token, API key, recovery phrase or payment detail.** Logins happen in the person's own browser or terminal.
 3. **Never delete files, rewrite Git history or deploy without explicit permission.** Building and previewing locally is always fine.
 4. **Configuration first.** Work in `profiles/<their-name>/`. Touch `src/`, `scripts/` or `worker.mjs` only when the profile cannot do it, and say why.
-5. **Never invent data.** No made-up events, coordinates, companies or links. An event without a confirmed date is `"status": "planned"` with no `start`. A company in `ecosystem.json` needs an `evidence` link the person or you actually read.
+5. **Never invent data.** No made-up events, coordinates, companies or links. An event without a confirmed date is `"status": "planned"` with no `start`. A company in `ecosystem.json` needs an `evidence` link; set `"verification": "read"` only when that page was actually read, otherwise leave it for an editor to approve.
 6. **Keep the attributions and licences** (`THIRD_PARTY.md`, footer, About page). Replace the Off-Chain Media logo; it is not licensed.
 
 ## Steps for a new atlas

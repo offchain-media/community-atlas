@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-05T19:11:27.536Z",
+ "fetchedAt": "2026-11-05T21:22:52.924Z",
  "feeds": [
   "https://lithuaniabtc.com/data/events.json",
   "https://bitcoinbaltics.com/data/events.json",
@@ -93,7 +93,7 @@
    "lon": 25.27776,
    "precision": "venue",
    "venue": "Nova · Kastytis, V. Gerulaičio g. 10, Vilnius",
-   "url": "https://lithuaniabtc.com/en/events/meetup-315774816/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/events/315774816/",
    "listing": "https://lithuaniabtc.com/en/events/meetup-315774816/",
    "organiser": {
     "name": "Lithuania BTC",
@@ -125,7 +125,7 @@
    "lon": 25.2686503,
    "precision": "venue",
    "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
-   "url": "https://lithuaniabtc.com/en/events/2026-08-06-fed/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/events/315641101/",
    "listing": "https://lithuaniabtc.com/en/events/2026-08-06-fed/",
    "organiser": {
     "name": "Lithuania BTC",
@@ -157,7 +157,7 @@
    "lon": 25.2686503,
    "precision": "venue",
    "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
-   "url": "https://lithuaniabtc.com/en/events/2026-07-02-farmer/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/events/315410986/",
    "listing": "https://lithuaniabtc.com/en/events/2026-07-02-farmer/",
    "organiser": {
     "name": "Lithuania BTC",
@@ -189,7 +189,7 @@
    "lon": null,
    "precision": null,
    "venue": "Baltic Brew, Vilnius",
-   "url": "https://lithuaniabtc.com/en/events/meetup-315411067/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/events/315411067/",
    "listing": "https://lithuaniabtc.com/en/events/meetup-315411067/",
    "organiser": {
     "name": "Lithuania BTC",
@@ -221,7 +221,7 @@
    "lon": 25.2686503,
    "precision": "venue",
    "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
-   "url": "https://lithuaniabtc.com/en/events/2026-06-04-ekasi/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/",
    "listing": "https://lithuaniabtc.com/en/events/2026-06-04-ekasi/",
    "organiser": {
     "name": "Lithuania BTC",
@@ -317,7 +317,7 @@
    "lon": 25.27776,
    "precision": "venue",
    "venue": "Nova · Kastytis, V. Gerulaičio g. 10, Vilnius",
-   "url": "https://bitcoinbaltics.com/events/meetup-315774816/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/events/315774816/",
    "listing": "https://bitcoinbaltics.com/events/meetup-315774816/",
    "organiser": {
     "name": "Bitcoin Baltics",
@@ -349,7 +349,7 @@
    "lon": 25.2686503,
    "precision": "venue",
    "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
-   "url": "https://bitcoinbaltics.com/events/2026-08-06-fed/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/events/315641101/",
    "listing": "https://bitcoinbaltics.com/events/2026-08-06-fed/",
    "organiser": {
     "name": "Bitcoin Baltics",
@@ -381,7 +381,7 @@
    "lon": 25.2686503,
    "precision": "venue",
    "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
-   "url": "https://bitcoinbaltics.com/events/2026-07-02-farmer/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/events/315410986/",
    "listing": "https://bitcoinbaltics.com/events/2026-07-02-farmer/",
    "organiser": {
     "name": "Bitcoin Baltics",
@@ -413,7 +413,7 @@
    "lon": null,
    "precision": null,
    "venue": "Baltic Brew, Vilnius",
-   "url": "https://bitcoinbaltics.com/events/meetup-315411067/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/events/315411067/",
    "listing": "https://bitcoinbaltics.com/events/meetup-315411067/",
    "organiser": {
     "name": "Bitcoin Baltics",
@@ -445,7 +445,7 @@
    "lon": 25.2686503,
    "precision": "venue",
    "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
-   "url": "https://bitcoinbaltics.com/events/2026-06-04-ekasi/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/",
    "listing": "https://bitcoinbaltics.com/events/2026-06-04-ekasi/",
    "organiser": {
     "name": "Bitcoin Baltics",
@@ -476,7 +476,7 @@
    "lon": 24.74415,
    "precision": "venue",
    "venue": "Vabaduse Tuba, Pikk 7, Room 11, Tallinn",
-   "url": "https://bitcoinbaltics.com/events/tallinn-316565528/",
+   "url": "https://www.meetup.com/mission-liberty-tallinn/events/316565528/",
    "listing": "https://bitcoinbaltics.com/events/tallinn-316565528/",
    "organiser": {
     "name": "Bitcoin Baltics",
@@ -507,7 +507,7 @@
    "lon": 24.1668844,
    "precision": "venue",
    "venue": "Fantadroms, Riga",
-   "url": "https://bitcoinbaltics.com/events/honeybadger-riga-2025/",
+   "url": "https://baltichoneybadger.com/",
    "listing": "https://bitcoinbaltics.com/events/honeybadger-riga-2025/",
    "organiser": {
     "name": "Bitcoin Baltics",
@@ -538,7 +538,7 @@
    "lon": null,
    "precision": null,
    "venue": "National Library of Latvia, Riga",
-   "url": "https://bitcoinbaltics.com/events/btcpp-riga-privacy-2025/",
+   "url": "https://btcpp.dev/riga",
    "listing": "https://bitcoinbaltics.com/events/btcpp-riga-privacy-2025/",
    "organiser": {
     "name": "Bitcoin Baltics",
@@ -634,7 +634,7 @@
    "lon": 25.27776,
    "precision": "venue",
    "venue": "Nova · Kastytis, V. Gerulaičio g. 10, Vilnius",
-   "url": "https://cryptobaltics.org/events/meetup-315774816/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/events/315774816/",
    "listing": "https://cryptobaltics.org/events/meetup-315774816/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -666,7 +666,7 @@
    "lon": 25.2686503,
    "precision": "venue",
    "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
-   "url": "https://cryptobaltics.org/events/2026-08-06-fed/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/events/315641101/",
    "listing": "https://cryptobaltics.org/events/2026-08-06-fed/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -698,7 +698,7 @@
    "lon": 25.2686503,
    "precision": "venue",
    "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
-   "url": "https://cryptobaltics.org/events/2026-07-02-farmer/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/events/315410986/",
    "listing": "https://cryptobaltics.org/events/2026-07-02-farmer/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -730,7 +730,7 @@
    "lon": null,
    "precision": null,
    "venue": "Baltic Brew, Vilnius",
-   "url": "https://cryptobaltics.org/events/meetup-315411067/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/events/315411067/",
    "listing": "https://cryptobaltics.org/events/meetup-315411067/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -762,7 +762,7 @@
    "lon": 25.2686503,
    "precision": "venue",
    "venue": "Zolak Micro Art Residence, Vytenio g. 50D, Vilnius",
-   "url": "https://cryptobaltics.org/events/2026-06-04-ekasi/",
+   "url": "https://www.meetup.com/bitcoin-lithuania-meetup/",
    "listing": "https://cryptobaltics.org/events/2026-06-04-ekasi/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -793,7 +793,7 @@
    "lon": 24.74415,
    "precision": "venue",
    "venue": "Vabaduse Tuba, Pikk 7, Room 11, Tallinn",
-   "url": "https://cryptobaltics.org/events/tallinn-316565528/",
+   "url": "https://www.meetup.com/mission-liberty-tallinn/events/316565528/",
    "listing": "https://cryptobaltics.org/events/tallinn-316565528/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -824,7 +824,7 @@
    "lon": 24.1668844,
    "precision": "venue",
    "venue": "Fantadroms, Riga",
-   "url": "https://cryptobaltics.org/events/honeybadger-riga-2025/",
+   "url": "https://baltichoneybadger.com/",
    "listing": "https://cryptobaltics.org/events/honeybadger-riga-2025/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -855,7 +855,7 @@
    "lon": null,
    "precision": null,
    "venue": "National Library of Latvia, Riga",
-   "url": "https://cryptobaltics.org/events/btcpp-riga-privacy-2025/",
+   "url": "https://btcpp.dev/riga",
    "listing": "https://cryptobaltics.org/events/btcpp-riga-privacy-2025/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -886,7 +886,7 @@
    "lon": null,
    "precision": null,
    "venue": "Riga, Riga",
-   "url": "https://cryptobaltics.org/events/solana-connect-2026/",
+   "url": "https://luma.com/6qqwcg3o",
    "listing": "https://cryptobaltics.org/events/solana-connect-2026/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -917,7 +917,7 @@
    "lon": null,
    "precision": null,
    "venue": "Riga, Riga",
-   "url": "https://cryptobaltics.org/events/unblock-fintech-2026/",
+   "url": "https://fintech.unblockeurope.com/",
    "listing": "https://cryptobaltics.org/events/unblock-fintech-2026/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -948,7 +948,7 @@
    "lon": null,
    "precision": null,
    "venue": "Riga, Riga",
-   "url": "https://cryptobaltics.org/events/unblock-2027/",
+   "url": "https://unblockeurope.com/",
    "listing": "https://cryptobaltics.org/events/unblock-2027/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -979,7 +979,7 @@
    "lon": null,
    "precision": null,
    "venue": "Vilnius, Vilnius",
-   "url": "https://cryptobaltics.org/events/solana-vibecheck-2026/",
+   "url": "https://www.meetup.com/blockchainlt/",
    "listing": "https://cryptobaltics.org/events/solana-vibecheck-2026/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -1010,7 +1010,7 @@
    "lon": null,
    "precision": null,
    "venue": "Riga, Riga",
-   "url": "https://cryptobaltics.org/events/unblock-2026/",
+   "url": "https://unblockeurope.com/about-us",
    "listing": "https://cryptobaltics.org/events/unblock-2026/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -1041,7 +1041,7 @@
    "lon": null,
    "precision": null,
    "venue": "Tallinn, Tallinn",
-   "url": "https://cryptobaltics.org/events/ethtallinn-2024/",
+   "url": "https://linktr.ee/ethtallinn",
    "listing": "https://cryptobaltics.org/events/ethtallinn-2024/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -1072,7 +1072,7 @@
    "lon": null,
    "precision": null,
    "venue": "Vilnius, Vilnius",
-   "url": "https://cryptobaltics.org/events/web3-vilnius-2023/",
+   "url": "https://www.litexpo.lt/wp-content/uploads/2023/10/Web_3_one_pager_2.pdf",
    "listing": "https://cryptobaltics.org/events/web3-vilnius-2023/",
    "organiser": {
     "name": "Crypto Baltics",
@@ -1103,7 +1103,7 @@
    "lon": 21.05673,
    "precision": "venue",
    "venue": "Muzikos klubas \"Vandenis\", Birutės al. 47, Palanga",
-   "url": "https://cypherbaltics.org/events/",
+   "url": "https://www.facebook.com/events/1833289711186731/",
    "listing": "https://cypherbaltics.org/events/",
    "organiser": {
     "name": "David de Miko",
@@ -1134,7 +1134,7 @@
    "lon": 25.2797,
    "precision": "city",
    "venue": "Vilnius · venue to be announced",
-   "url": "https://cypherbaltics.org/events/",
+   "url": "https://bsidesvilnius.lt/",
    "listing": "https://cypherbaltics.org/events/",
    "organiser": {
     "name": "BSides Vilnius",
@@ -1166,7 +1166,7 @@
    "lon": null,
    "precision": null,
    "venue": null,
-   "url": "https://cypherbaltics.org/events/",
+   "url": "https://lithuaniabtc.com/en/",
    "listing": "https://cypherbaltics.org/events/",
    "organiser": {
     "name": "Lithuania BTC",
@@ -1197,7 +1197,7 @@
    "lon": 25.2797,
    "precision": "city",
    "venue": "Kablys, Vilnius, Kablys, Vilnius",
-   "url": "https://cypherbaltics.org/events/",
+   "url": "https://bsidesvilnius.lt/",
    "listing": "https://cypherbaltics.org/events/",
    "organiser": {
     "name": "BSides Vilnius",

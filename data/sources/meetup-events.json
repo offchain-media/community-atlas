@@ -1,19 +1,19 @@
 {
- "fetchedAt": "2026-11-05T19:07:07.138Z",
+ "fetchedAt": "2026-11-05T21:22:49.357Z",
  "source": "Meetup.com group calendars linked from BTC Map communities",
  "groups": 97,
  "failures": [
   {
-   "group": "bitcoin-albany",
-   "error": "HTTP 404 for https://www.meetup.com/bitcoin-albany/events/ical/"
+   "group": "ann-arbor-liberty-meetup-group",
+   "error": "HTTP 404 for https://www.meetup.com/ann-arbor-liberty-meetup-group/events/ical/"
   },
   {
    "group": "fr-FR",
    "error": "HTTP 404 for https://www.meetup.com/fr-FR/events/ical/"
   },
   {
-   "group": "ann-arbor-liberty-meetup-group",
-   "error": "HTTP 404 for https://www.meetup.com/ann-arbor-liberty-meetup-group/events/ical/"
+   "group": "bitcoin-albany",
+   "error": "HTTP 404 for https://www.meetup.com/bitcoin-albany/events/ical/"
   },
   {
    "group": "es-ES",
@@ -147,6 +147,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinmeetup/events/317025942/",
+   "listing": "https://www.meetup.com/bitcoinmeetup/events/",
    "organiser": {
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
@@ -171,6 +172,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinmeetup/events/315560883/",
+   "listing": "https://www.meetup.com/bitcoinmeetup/events/",
    "organiser": {
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
@@ -195,6 +197,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinmeetup/events/316084657/",
+   "listing": "https://www.meetup.com/bitcoinmeetup/events/",
    "organiser": {
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
@@ -219,6 +222,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinmeetup/events/316323782/",
+   "listing": "https://www.meetup.com/bitcoinmeetup/events/",
    "organiser": {
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
@@ -243,6 +247,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinmeetup/events/trffvtyjcqbgb/",
+   "listing": "https://www.meetup.com/bitcoinmeetup/events/",
    "organiser": {
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
@@ -267,6 +272,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinmeetup/events/315560938/",
+   "listing": "https://www.meetup.com/bitcoinmeetup/events/",
    "organiser": {
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
@@ -291,6 +297,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinmeetup/events/316084663/",
+   "listing": "https://www.meetup.com/bitcoinmeetup/events/",
    "organiser": {
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
@@ -315,6 +322,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinmeetup/events/trffvtykccbcb/",
+   "listing": "https://www.meetup.com/bitcoinmeetup/events/",
    "organiser": {
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
@@ -339,6 +347,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinmeetup/events/trffvtykcdbhb/",
+   "listing": "https://www.meetup.com/bitcoinmeetup/events/",
    "organiser": {
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
@@ -363,6 +372,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinmeetup/events/trffvtykcfbhb/",
+   "listing": "https://www.meetup.com/bitcoinmeetup/events/",
    "organiser": {
     "name": "Arnhem Bitcoin City",
     "url": "https://www.meetup.com/bitcoinmeetup/"
@@ -387,6 +397,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/atlantabitdevs/events/315045010/",
+   "listing": "https://www.meetup.com/atlantabitdevs/events/",
    "organiser": {
     "name": "Atlanta BitDevs",
     "url": "https://www.meetup.com/atlantabitdevs/"
@@ -411,6 +422,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/atlantabitdevs/events/317195141/",
+   "listing": "https://www.meetup.com/atlantabitdevs/events/",
    "organiser": {
     "name": "Atlanta BitDevs",
     "url": "https://www.meetup.com/atlantabitdevs/"
@@ -435,6 +447,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/atlantabitdevs/events/315045051/",
+   "listing": "https://www.meetup.com/atlantabitdevs/events/",
    "organiser": {
     "name": "Atlanta BitDevs",
     "url": "https://www.meetup.com/atlantabitdevs/"
@@ -459,6 +472,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bay-area-bitcoiners/events/317182049/",
+   "listing": "https://www.meetup.com/bay-area-bitcoiners/events/",
    "organiser": {
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
@@ -483,6 +497,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bay-area-bitcoiners/events/317262538/",
+   "listing": "https://www.meetup.com/bay-area-bitcoiners/events/",
    "organiser": {
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
@@ -507,6 +522,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bay-area-bitcoiners/events/314863314/",
+   "listing": "https://www.meetup.com/bay-area-bitcoiners/events/",
    "organiser": {
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
@@ -531,6 +547,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bay-area-bitcoiners/events/314863327/",
+   "listing": "https://www.meetup.com/bay-area-bitcoiners/events/",
    "organiser": {
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
@@ -555,6 +572,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bay-area-bitcoiners/events/317049329/",
+   "listing": "https://www.meetup.com/bay-area-bitcoiners/events/",
    "organiser": {
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
@@ -579,6 +597,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bay-area-bitcoiners/events/314863328/",
+   "listing": "https://www.meetup.com/bay-area-bitcoiners/events/",
    "organiser": {
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
@@ -603,6 +622,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bay-area-bitcoiners/events/314863329/",
+   "listing": "https://www.meetup.com/bay-area-bitcoiners/events/",
    "organiser": {
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
@@ -627,6 +647,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bay-area-bitcoiners/events/314863330/",
+   "listing": "https://www.meetup.com/bay-area-bitcoiners/events/",
    "organiser": {
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
@@ -651,6 +672,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bay-area-bitcoiners/events/314863338/",
+   "listing": "https://www.meetup.com/bay-area-bitcoiners/events/",
    "organiser": {
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
@@ -675,6 +697,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bay-area-bitcoiners/events/pcrzmtykchbkc/",
+   "listing": "https://www.meetup.com/bay-area-bitcoiners/events/",
    "organiser": {
     "name": "Bay Area Bitcoiners",
     "url": "https://www.meetup.com/bay-area-bitcoiners/"
@@ -699,6 +722,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/316413135/",
+   "listing": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/",
    "organiser": {
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
@@ -723,6 +747,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/lkknbvyjcqbkb/",
+   "listing": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/",
    "organiser": {
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
@@ -747,6 +772,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/ghkwbvyjcqbvb/",
+   "listing": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/",
    "organiser": {
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
@@ -771,6 +797,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/lkknbvykccbgb/",
+   "listing": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/",
    "organiser": {
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
@@ -795,6 +822,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/ghkwbvykccbbc/",
+   "listing": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/",
    "organiser": {
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
@@ -819,6 +847,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/lkknbvykcdbcb/",
+   "listing": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/",
    "organiser": {
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
@@ -843,6 +872,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/ghkwbvykcdbwb/",
+   "listing": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/",
    "organiser": {
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
@@ -867,6 +897,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/lkknbvykcfbcb/",
+   "listing": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/",
    "organiser": {
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
@@ -891,6 +922,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/ghkwbvykcfbwb/",
+   "listing": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/",
    "organiser": {
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
@@ -915,6 +947,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/ghkwbvykcgbcc/",
+   "listing": "https://www.meetup.com/duc-bitcoin-meetup-paris/events/",
    "organiser": {
     "name": "Bitcoin \"DUC\" PARIS Montmartre",
     "url": "https://www.meetup.com/duc-bitcoin-meetup-paris/"
@@ -939,6 +972,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer/events/316912317/",
+   "listing": "https://www.meetup.com/Bitcoin-and-Beer/events/",
    "organiser": {
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
@@ -963,6 +997,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer/events/317192449/",
+   "listing": "https://www.meetup.com/Bitcoin-and-Beer/events/",
    "organiser": {
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
@@ -987,6 +1022,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer/events/zpskwtykccblb/",
+   "listing": "https://www.meetup.com/Bitcoin-and-Beer/events/",
    "organiser": {
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
@@ -1011,6 +1047,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer/events/zpskwtykcdbqb/",
+   "listing": "https://www.meetup.com/Bitcoin-and-Beer/events/",
    "organiser": {
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
@@ -1035,6 +1072,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer/events/zpskwtykcfbqb/",
+   "listing": "https://www.meetup.com/Bitcoin-and-Beer/events/",
    "organiser": {
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
@@ -1059,6 +1097,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer/events/zpskwtykcgbmb/",
+   "listing": "https://www.meetup.com/Bitcoin-and-Beer/events/",
    "organiser": {
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
@@ -1083,6 +1122,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer/events/zpskwtykchbsb/",
+   "listing": "https://www.meetup.com/Bitcoin-and-Beer/events/",
    "organiser": {
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
@@ -1107,6 +1147,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer/events/zpskwtykcjbpb/",
+   "listing": "https://www.meetup.com/Bitcoin-and-Beer/events/",
    "organiser": {
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
@@ -1131,6 +1172,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer/events/zpskwtykckbmb/",
+   "listing": "https://www.meetup.com/Bitcoin-and-Beer/events/",
    "organiser": {
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
@@ -1155,6 +1197,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer/events/zpskwtykclbrb/",
+   "listing": "https://www.meetup.com/Bitcoin-and-Beer/events/",
    "organiser": {
     "name": "Bitcoin & Beer",
     "url": "https://www.meetup.com/Bitcoin-and-Beer/"
@@ -1179,6 +1222,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-alps/events/316155728/",
+   "listing": "https://www.meetup.com/bitcoin-bern/events/",
    "organiser": {
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
@@ -1203,6 +1247,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-alps/events/315325639/",
+   "listing": "https://www.meetup.com/bitcoin-bern/events/",
    "organiser": {
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
@@ -1227,6 +1272,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-alps/events/312417505/",
+   "listing": "https://www.meetup.com/bitcoin-bern/events/",
    "organiser": {
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
@@ -1251,6 +1297,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-alps/events/zwlxvtykccbgb/",
+   "listing": "https://www.meetup.com/bitcoin-bern/events/",
    "organiser": {
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
@@ -1275,6 +1322,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-alps/events/wkbmgtykccbsb/",
+   "listing": "https://www.meetup.com/bitcoin-bern/events/",
    "organiser": {
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
@@ -1299,6 +1347,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-alps/events/zwlxvtykcdbcb/",
+   "listing": "https://www.meetup.com/bitcoin-bern/events/",
    "organiser": {
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
@@ -1323,6 +1372,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-alps/events/wkbmgtykcdbpb/",
+   "listing": "https://www.meetup.com/bitcoin-bern/events/",
    "organiser": {
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
@@ -1347,6 +1397,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-alps/events/zwlxvtykcfbcb/",
+   "listing": "https://www.meetup.com/bitcoin-bern/events/",
    "organiser": {
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
@@ -1371,6 +1422,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-alps/events/wkbmgtykcfbpb/",
+   "listing": "https://www.meetup.com/bitcoin-bern/events/",
    "organiser": {
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
@@ -1395,6 +1447,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-alps/events/zwlxvtykcgbhb/",
+   "listing": "https://www.meetup.com/bitcoin-bern/events/",
    "organiser": {
     "name": "Bitcoin Alps",
     "url": "https://www.meetup.com/bitcoin-bern/"
@@ -1419,6 +1472,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-byron-bay/events/317275740/",
+   "listing": "https://www.meetup.com/bitcoin-byron-bay/events/",
    "organiser": {
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
@@ -1443,6 +1497,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-byron-bay/events/qjqzxtyjcqbjb/",
+   "listing": "https://www.meetup.com/bitcoin-byron-bay/events/",
    "organiser": {
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
@@ -1467,6 +1522,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-byron-bay/events/xtstztyjcqbqb/",
+   "listing": "https://www.meetup.com/bitcoin-byron-bay/events/",
    "organiser": {
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
@@ -1491,6 +1547,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-byron-bay/events/qjqzxtykccbfb/",
+   "listing": "https://www.meetup.com/bitcoin-byron-bay/events/",
    "organiser": {
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
@@ -1515,6 +1572,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-byron-bay/events/xtstztykccbmb/",
+   "listing": "https://www.meetup.com/bitcoin-byron-bay/events/",
    "organiser": {
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
@@ -1539,6 +1597,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-byron-bay/events/qjqzxtykcdbkb/",
+   "listing": "https://www.meetup.com/bitcoin-byron-bay/events/",
    "organiser": {
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
@@ -1563,6 +1622,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-byron-bay/events/xtstztykcdbrb/",
+   "listing": "https://www.meetup.com/bitcoin-byron-bay/events/",
    "organiser": {
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
@@ -1587,6 +1647,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-byron-bay/events/qjqzxtykcfbkb/",
+   "listing": "https://www.meetup.com/bitcoin-byron-bay/events/",
    "organiser": {
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
@@ -1611,6 +1672,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-byron-bay/events/xtstztykcfbrb/",
+   "listing": "https://www.meetup.com/bitcoin-byron-bay/events/",
    "organiser": {
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
@@ -1635,6 +1697,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-byron-bay/events/qjqzxtykcgbgb/",
+   "listing": "https://www.meetup.com/bitcoin-byron-bay/events/",
    "organiser": {
     "name": "Bitcoin Byron Bay",
     "url": "https://www.meetup.com/bitcoin-byron-bay/"
@@ -1659,6 +1722,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoincharlotte/events/317037517/",
+   "listing": "https://www.meetup.com/bitcoincharlotte/events/",
    "organiser": {
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
@@ -1683,6 +1747,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoincharlotte/events/316390404/",
+   "listing": "https://www.meetup.com/bitcoincharlotte/events/",
    "organiser": {
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
@@ -1707,6 +1772,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoincharlotte/events/317133951/",
+   "listing": "https://www.meetup.com/bitcoincharlotte/events/",
    "organiser": {
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
@@ -1731,6 +1797,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoincharlotte/events/317243313/",
+   "listing": "https://www.meetup.com/bitcoincharlotte/events/",
    "organiser": {
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
@@ -1755,6 +1822,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoincharlotte/events/qtqrwtyjcpblc/",
+   "listing": "https://www.meetup.com/bitcoincharlotte/events/",
    "organiser": {
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
@@ -1779,6 +1847,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoincharlotte/events/rngzwtyjcqbhb/",
+   "listing": "https://www.meetup.com/bitcoincharlotte/events/",
    "organiser": {
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
@@ -1803,6 +1872,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoincharlotte/events/cnppztyjcqbkb/",
+   "listing": "https://www.meetup.com/bitcoincharlotte/events/",
    "organiser": {
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
@@ -1827,6 +1897,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoincharlotte/events/316390407/",
+   "listing": "https://www.meetup.com/bitcoincharlotte/events/",
    "organiser": {
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
@@ -1851,6 +1922,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoincharlotte/events/dpgzwtyjcqbqb/",
+   "listing": "https://www.meetup.com/bitcoincharlotte/events/",
    "organiser": {
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
@@ -1875,6 +1947,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoincharlotte/events/qtrvztyjcqbzb/",
+   "listing": "https://www.meetup.com/bitcoincharlotte/events/",
    "organiser": {
     "name": "Bitcoin Charlotte",
     "url": "https://www.meetup.com/bitcoincharlotte/"
@@ -1899,6 +1972,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-district/events/316670091/",
+   "listing": "https://www.meetup.com/bitcoin-district/events/",
    "organiser": {
     "name": "Bitcoin District",
     "url": "https://www.meetup.com/bitcoin-district/"
@@ -1923,6 +1997,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-district/events/317184603/",
+   "listing": "https://www.meetup.com/bitcoin-district/events/",
    "organiser": {
     "name": "Bitcoin District",
     "url": "https://www.meetup.com/bitcoin-district/"
@@ -1947,6 +2022,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-district/events/316670092/",
+   "listing": "https://www.meetup.com/bitcoin-district/events/",
    "organiser": {
     "name": "Bitcoin District",
     "url": "https://www.meetup.com/bitcoin-district/"
@@ -1971,6 +2047,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-district/events/310457850/",
+   "listing": "https://www.meetup.com/bitcoin-district/events/",
    "organiser": {
     "name": "Bitcoin District",
     "url": "https://www.meetup.com/bitcoin-district/"
@@ -1995,6 +2072,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-mallorca/events/316670691/",
+   "listing": "https://www.meetup.com/Bitcoin-Mallorca/events/",
    "organiser": {
     "name": "Bitcoin Mallorca",
     "url": "https://www.meetup.com/Bitcoin-Mallorca/"
@@ -2019,6 +2097,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-manchester/events/mdgtltyjcpbjc/",
+   "listing": "https://www.meetup.com/bitcoin-manchester/events/",
    "organiser": {
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
@@ -2043,6 +2122,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-manchester/events/315752830/",
+   "listing": "https://www.meetup.com/bitcoin-manchester/events/",
    "organiser": {
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
@@ -2067,6 +2147,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-manchester/events/mdgtltykccblc/",
+   "listing": "https://www.meetup.com/bitcoin-manchester/events/",
    "organiser": {
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
@@ -2091,6 +2172,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-manchester/events/mdgtltykcdbhc/",
+   "listing": "https://www.meetup.com/bitcoin-manchester/events/",
    "organiser": {
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
@@ -2115,6 +2197,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-manchester/events/mdgtltykcfbhc/",
+   "listing": "https://www.meetup.com/bitcoin-manchester/events/",
    "organiser": {
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
@@ -2139,6 +2222,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-manchester/events/mdgtltykcgbmc/",
+   "listing": "https://www.meetup.com/bitcoin-manchester/events/",
    "organiser": {
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
@@ -2163,6 +2247,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-manchester/events/mdgtltykchbkc/",
+   "listing": "https://www.meetup.com/bitcoin-manchester/events/",
    "organiser": {
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
@@ -2187,6 +2272,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-manchester/events/mdgtltykcjbgc/",
+   "listing": "https://www.meetup.com/bitcoin-manchester/events/",
    "organiser": {
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
@@ -2211,6 +2297,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-manchester/events/mdgtltykckbmc/",
+   "listing": "https://www.meetup.com/bitcoin-manchester/events/",
    "organiser": {
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
@@ -2235,6 +2322,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-manchester/events/mdgtltykclbjc/",
+   "listing": "https://www.meetup.com/bitcoin-manchester/events/",
    "organiser": {
     "name": "Bitcoin Manchester",
     "url": "https://www.meetup.com/bitcoin-manchester/"
@@ -2259,6 +2347,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-munich/events/317179286/",
+   "listing": "https://www.meetup.com/bitcoin-munich/events/",
    "organiser": {
     "name": "Bitcoin Munich",
     "url": "https://www.meetup.com/bitcoin-munich/"
@@ -2283,6 +2372,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-noosa/events/316955860/",
+   "listing": "https://www.meetup.com/bitcoin-noosa/events/",
    "organiser": {
     "name": "Bitcoin Noosa",
     "url": "https://www.meetup.com/bitcoin-noosa/"
@@ -2307,6 +2397,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin_sydney/events/316685502/",
+   "listing": "https://www.meetup.com/Bitcoin_Sydney/events/",
    "organiser": {
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
@@ -2331,6 +2422,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin_sydney/events/316685519/",
+   "listing": "https://www.meetup.com/Bitcoin_Sydney/events/",
    "organiser": {
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
@@ -2355,6 +2447,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin_sydney/events/316685543/",
+   "listing": "https://www.meetup.com/Bitcoin_Sydney/events/",
    "organiser": {
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
@@ -2379,6 +2472,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin_sydney/events/316685562/",
+   "listing": "https://www.meetup.com/Bitcoin_Sydney/events/",
    "organiser": {
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
@@ -2403,6 +2497,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin_sydney/events/316685577/",
+   "listing": "https://www.meetup.com/Bitcoin_Sydney/events/",
    "organiser": {
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
@@ -2427,6 +2522,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin_sydney/events/317080733/",
+   "listing": "https://www.meetup.com/Bitcoin_Sydney/events/",
    "organiser": {
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
@@ -2451,6 +2547,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin_sydney/events/317080522/",
+   "listing": "https://www.meetup.com/Bitcoin_Sydney/events/",
    "organiser": {
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
@@ -2475,6 +2572,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin_sydney/events/317080579/",
+   "listing": "https://www.meetup.com/Bitcoin_Sydney/events/",
    "organiser": {
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
@@ -2499,6 +2597,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin_sydney/events/317080655/",
+   "listing": "https://www.meetup.com/Bitcoin_Sydney/events/",
    "organiser": {
     "name": "Bitcoin Northern Beaches",
     "url": "https://www.meetup.com/Bitcoin_Sydney/"
@@ -2523,6 +2622,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/p2p-gent/events/316338826/",
+   "listing": "https://www.meetup.com/p2p-gent/events/",
    "organiser": {
     "name": "Bitcoin P2P Gent",
     "url": "https://www.meetup.com/p2p-gent/"
@@ -2547,6 +2647,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinpark/events/312080213/",
+   "listing": "https://www.meetup.com/bitcoinpark/events/",
    "organiser": {
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
@@ -2571,6 +2672,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinpark/events/312080240/",
+   "listing": "https://www.meetup.com/bitcoinpark/events/",
    "organiser": {
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
@@ -2595,6 +2697,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinpark/events/317260115/",
+   "listing": "https://www.meetup.com/bitcoinpark/events/",
    "organiser": {
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
@@ -2619,6 +2722,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinpark/events/316358712/",
+   "listing": "https://www.meetup.com/bitcoinpark/events/",
    "organiser": {
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
@@ -2643,6 +2747,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinpark/events/312947782/",
+   "listing": "https://www.meetup.com/bitcoinpark/events/",
    "organiser": {
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
@@ -2667,6 +2772,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinpark/events/312447076/",
+   "listing": "https://www.meetup.com/bitcoinpark/events/",
    "organiser": {
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
@@ -2691,6 +2797,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinpark/events/jpbnztyjcqbjc/",
+   "listing": "https://www.meetup.com/bitcoinpark/events/",
    "organiser": {
     "name": "Bitcoin Park",
     "url": "https://www.meetup.com/bitcoinpark/"
@@ -2715,6 +2822,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-saigon-meetup/events/317021611/",
+   "listing": "https://www.meetup.com/Bitcoin-Saigon-Meetup/events/",
    "organiser": {
     "name": "Bitcoin Saigon",
     "url": "https://www.meetup.com/Bitcoin-Saigon-Meetup/"
@@ -2739,6 +2847,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669067/",
+   "listing": "https://www.meetup.com/swedish-bitcoin-meetups/events/",
    "organiser": {
     "name": "Bitcoin Uppsala",
     "url": "https://www.meetup.com/swedish-bitcoin-meetups/"
@@ -2763,6 +2872,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/swedish-bitcoin-meetups/events/317285663/",
+   "listing": "https://www.meetup.com/swedish-bitcoin-meetups/events/",
    "organiser": {
     "name": "Bitcoin Uppsala",
     "url": "https://www.meetup.com/swedish-bitcoin-meetups/"
@@ -2787,6 +2897,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/swedish-bitcoin-meetups/events/317015057/",
+   "listing": "https://www.meetup.com/swedish-bitcoin-meetups/events/",
    "organiser": {
     "name": "Bitcoin Uppsala",
     "url": "https://www.meetup.com/swedish-bitcoin-meetups/"
@@ -2811,6 +2922,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669070/",
+   "listing": "https://www.meetup.com/swedish-bitcoin-meetups/events/",
    "organiser": {
     "name": "Bitcoin Uppsala",
     "url": "https://www.meetup.com/swedish-bitcoin-meetups/"
@@ -2835,6 +2947,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/317242464/",
+   "listing": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/",
    "organiser": {
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
@@ -2859,6 +2972,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/317279188/",
+   "listing": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/",
    "organiser": {
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
@@ -2883,6 +2997,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/317279389/",
+   "listing": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/",
    "organiser": {
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
@@ -2907,6 +3022,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/317279320/",
+   "listing": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/",
    "organiser": {
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
@@ -2931,6 +3047,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/317279316/",
+   "listing": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/",
    "organiser": {
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
@@ -2955,6 +3072,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/fdswbvyjcqbhb/",
+   "listing": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/",
    "organiser": {
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
@@ -2979,6 +3097,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/fdswbvyjcqbqb/",
+   "listing": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/events/",
    "organiser": {
     "name": "Bitcoin y Lightning Guadalajara",
     "url": "https://www.meetup.com/guadalajara-bitcoin-and-lightning/"
@@ -3003,6 +3122,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitshala/events/317220907/",
+   "listing": "https://www.meetup.com/bitshala/events/",
    "organiser": {
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
@@ -3027,6 +3147,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitshala/events/317270889/",
+   "listing": "https://www.meetup.com/bitshala/events/",
    "organiser": {
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
@@ -3051,6 +3172,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitshala/events/317071800/",
+   "listing": "https://www.meetup.com/bitshala/events/",
    "organiser": {
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
@@ -3075,6 +3197,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitshala/events/317285169/",
+   "listing": "https://www.meetup.com/bitshala/events/",
    "organiser": {
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
@@ -3099,6 +3222,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitshala/events/317299781/",
+   "listing": "https://www.meetup.com/bitshala/events/",
    "organiser": {
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
@@ -3123,6 +3247,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitshala/events/knbpztyjcpbqb/",
+   "listing": "https://www.meetup.com/bitshala/events/",
    "organiser": {
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
@@ -3147,6 +3272,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitshala/events/lnbpztyjcpbrb/",
+   "listing": "https://www.meetup.com/bitshala/events/",
    "organiser": {
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
@@ -3171,6 +3297,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitshala/events/gnbpztyjcpbvb/",
+   "listing": "https://www.meetup.com/bitshala/events/",
    "organiser": {
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
@@ -3195,6 +3322,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitshala/events/hnbpztyjcpbwb/",
+   "listing": "https://www.meetup.com/bitshala/events/",
    "organiser": {
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
@@ -3219,6 +3347,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitshala/events/jnbpztyjcpbxb/",
+   "listing": "https://www.meetup.com/bitshala/events/",
    "organiser": {
     "name": "Bitshala",
     "url": "https://www.meetup.com/bitshala/"
@@ -3243,6 +3372,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/boulder-bitcoiners/events/317220065/",
+   "listing": "https://www.meetup.com/boulder-bitcoiners/events/",
    "organiser": {
     "name": "Boulder Bitcoin",
     "url": "https://www.meetup.com/boulder-bitcoiners/"
@@ -3267,6 +3397,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/316896816/",
+   "listing": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/",
    "organiser": {
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
@@ -3291,6 +3422,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/dvcsjtyjcqbnb/",
+   "listing": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/",
    "organiser": {
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
@@ -3315,6 +3447,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/dvcsjtykccbsb/",
+   "listing": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/",
    "organiser": {
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
@@ -3339,6 +3472,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/dvcsjtykcdbpb/",
+   "listing": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/",
    "organiser": {
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
@@ -3363,6 +3497,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/dvcsjtykcfbpb/",
+   "listing": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/",
    "organiser": {
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
@@ -3387,6 +3522,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/dvcsjtykcgblb/",
+   "listing": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/",
    "organiser": {
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
@@ -3411,6 +3547,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/dvcsjtykchbrb/",
+   "listing": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/",
    "organiser": {
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
@@ -3435,6 +3572,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/dvcsjtykcjbnb/",
+   "listing": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/",
    "organiser": {
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
@@ -3459,6 +3597,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/dvcsjtykckblb/",
+   "listing": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/",
    "organiser": {
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
@@ -3483,6 +3622,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/dvcsjtykclbqb/",
+   "listing": "https://www.meetup.com/dallas-bitcoin-meetup-group/events/",
    "organiser": {
     "name": "Dallas Bitcoin",
     "url": "https://www.meetup.com/dallas-bitcoin-meetup-group/"
@@ -3507,6 +3647,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer-detroit/events/317098137/",
+   "listing": "https://www.meetup.com/bitcoin-and-beer-detroit/events/",
    "organiser": {
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
@@ -3531,6 +3672,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer-detroit/events/317262985/",
+   "listing": "https://www.meetup.com/bitcoin-and-beer-detroit/events/",
    "organiser": {
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
@@ -3555,6 +3697,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer-detroit/events/317199102/",
+   "listing": "https://www.meetup.com/bitcoin-and-beer-detroit/events/",
    "organiser": {
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
@@ -3579,6 +3722,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer-detroit/events/tfqrxtyjcpbhc/",
+   "listing": "https://www.meetup.com/bitcoin-and-beer-detroit/events/",
    "organiser": {
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
@@ -3603,6 +3747,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer-detroit/events/tfqrxtyjcqbdb/",
+   "listing": "https://www.meetup.com/bitcoin-and-beer-detroit/events/",
    "organiser": {
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
@@ -3627,6 +3772,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer-detroit/events/tfqrxtyjcqbmb/",
+   "listing": "https://www.meetup.com/bitcoin-and-beer-detroit/events/",
    "organiser": {
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
@@ -3651,6 +3797,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer-detroit/events/tfqrxtyjcqbvb/",
+   "listing": "https://www.meetup.com/bitcoin-and-beer-detroit/events/",
    "organiser": {
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
@@ -3675,6 +3822,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer-detroit/events/tfqrxtyjcqbfc/",
+   "listing": "https://www.meetup.com/bitcoin-and-beer-detroit/events/",
    "organiser": {
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
@@ -3699,6 +3847,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer-detroit/events/tfqrxtyjcqbnc/",
+   "listing": "https://www.meetup.com/bitcoin-and-beer-detroit/events/",
    "organiser": {
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
@@ -3723,6 +3872,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-and-beer-detroit/events/tfqrxtykccbjb/",
+   "listing": "https://www.meetup.com/bitcoin-and-beer-detroit/events/",
    "organiser": {
     "name": "Detroit Bitcoin and Beer",
     "url": "https://www.meetup.com/bitcoin-and-beer-detroit/"
@@ -3747,6 +3897,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/grand-rapids-bitcoin/events/316687671/",
+   "listing": "https://www.meetup.com/grand-rapids-bitcoin/events/",
    "organiser": {
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
@@ -3771,6 +3922,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/grand-rapids-bitcoin/events/fczbbvyjcpbhc/",
+   "listing": "https://www.meetup.com/grand-rapids-bitcoin/events/",
    "organiser": {
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
@@ -3795,6 +3947,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/grand-rapids-bitcoin/events/nrcbwtyjcqbsb/",
+   "listing": "https://www.meetup.com/grand-rapids-bitcoin/events/",
    "organiser": {
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
@@ -3819,6 +3972,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/grand-rapids-bitcoin/events/fczbbvyjcqbnc/",
+   "listing": "https://www.meetup.com/grand-rapids-bitcoin/events/",
    "organiser": {
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
@@ -3843,6 +3997,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/grand-rapids-bitcoin/events/312750871/",
+   "listing": "https://www.meetup.com/grand-rapids-bitcoin/events/",
    "organiser": {
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
@@ -3867,6 +4022,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/grand-rapids-bitcoin/events/fczbbvykccbkc/",
+   "listing": "https://www.meetup.com/grand-rapids-bitcoin/events/",
    "organiser": {
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
@@ -3891,6 +4047,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/grand-rapids-bitcoin/events/fczbbvykcdbgc/",
+   "listing": "https://www.meetup.com/grand-rapids-bitcoin/events/",
    "organiser": {
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
@@ -3915,6 +4072,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/grand-rapids-bitcoin/events/fczbbvykcfbpc/",
+   "listing": "https://www.meetup.com/grand-rapids-bitcoin/events/",
    "organiser": {
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
@@ -3939,6 +4097,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/grand-rapids-bitcoin/events/fczbbvykcgblc/",
+   "listing": "https://www.meetup.com/grand-rapids-bitcoin/events/",
    "organiser": {
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
@@ -3963,6 +4122,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/grand-rapids-bitcoin/events/fczbbvykchbjc/",
+   "listing": "https://www.meetup.com/grand-rapids-bitcoin/events/",
    "organiser": {
     "name": "Grand Rapids Bitcoin",
     "url": "https://www.meetup.com/grand-rapids-bitcoin/"
@@ -3987,6 +4147,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/magic-city-bitcoin/events/317168966/",
+   "listing": "https://www.meetup.com/magic-city-bitcoin/events/",
    "organiser": {
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
@@ -4011,6 +4172,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/magic-city-bitcoin/events/rtpqztyjcqbcc/",
+   "listing": "https://www.meetup.com/magic-city-bitcoin/events/",
    "organiser": {
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
@@ -4035,6 +4197,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/magic-city-bitcoin/events/rtpqztykccbxb/",
+   "listing": "https://www.meetup.com/magic-city-bitcoin/events/",
    "organiser": {
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
@@ -4059,6 +4222,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/magic-city-bitcoin/events/rtpqztykcdbtb/",
+   "listing": "https://www.meetup.com/magic-city-bitcoin/events/",
    "organiser": {
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
@@ -4083,6 +4247,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/magic-city-bitcoin/events/rtpqztykcfbtb/",
+   "listing": "https://www.meetup.com/magic-city-bitcoin/events/",
    "organiser": {
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
@@ -4107,6 +4272,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/magic-city-bitcoin/events/rtpqztykcgbzb/",
+   "listing": "https://www.meetup.com/magic-city-bitcoin/events/",
    "organiser": {
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
@@ -4131,6 +4297,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/magic-city-bitcoin/events/rtpqztykchbwb/",
+   "listing": "https://www.meetup.com/magic-city-bitcoin/events/",
    "organiser": {
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
@@ -4155,6 +4322,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/magic-city-bitcoin/events/rtpqztykcjbcc/",
+   "listing": "https://www.meetup.com/magic-city-bitcoin/events/",
    "organiser": {
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
@@ -4179,6 +4347,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/magic-city-bitcoin/events/rtpqztykckbzb/",
+   "listing": "https://www.meetup.com/magic-city-bitcoin/events/",
    "organiser": {
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
@@ -4203,6 +4372,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/magic-city-bitcoin/events/rtpqztykclbvb/",
+   "listing": "https://www.meetup.com/magic-city-bitcoin/events/",
    "organiser": {
     "name": "Magic City Bitcoin",
     "url": "https://www.meetup.com/magic-city-bitcoin/"
@@ -4227,6 +4397,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/massachusetts-bitcoin-meetup/events/308318864/",
+   "listing": "https://www.meetup.com/massachusetts-bitcoin-meetup/events/",
    "organiser": {
     "name": "Mass Adoption",
     "url": "https://www.meetup.com/massachusetts-bitcoin-meetup/"
@@ -4251,6 +4422,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/melbourne-bitcoin-only/events/316992816/",
+   "listing": "https://www.meetup.com/Melbourne-Bitcoin-Only/events/",
    "organiser": {
     "name": "Melbourne Bitcoin Only",
     "url": "https://www.meetup.com/Melbourne-Bitcoin-Only/"
@@ -4275,6 +4447,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/melbourne-bitcoin-only/events/314601860/",
+   "listing": "https://www.meetup.com/Melbourne-Bitcoin-Only/events/",
    "organiser": {
     "name": "Melbourne Bitcoin Only",
     "url": "https://www.meetup.com/Melbourne-Bitcoin-Only/"
@@ -4299,6 +4472,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/melbourne-bitcoin-only/events/317029241/",
+   "listing": "https://www.meetup.com/Melbourne-Bitcoin-Only/events/",
    "organiser": {
     "name": "Melbourne Bitcoin Only",
     "url": "https://www.meetup.com/Melbourne-Bitcoin-Only/"
@@ -4323,6 +4497,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/nolabitcoin/events/317254156/",
+   "listing": "https://www.meetup.com/nolabitcoin/events/",
    "organiser": {
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
@@ -4347,6 +4522,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/nolabitcoin/events/dhgvttykccbgb/",
+   "listing": "https://www.meetup.com/nolabitcoin/events/",
    "organiser": {
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
@@ -4371,6 +4547,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/nolabitcoin/events/dhgvttykcdbcb/",
+   "listing": "https://www.meetup.com/nolabitcoin/events/",
    "organiser": {
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
@@ -4395,6 +4572,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/nolabitcoin/events/dhgvttykcfbcb/",
+   "listing": "https://www.meetup.com/nolabitcoin/events/",
    "organiser": {
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
@@ -4419,6 +4597,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/nolabitcoin/events/dhgvttykcgbhb/",
+   "listing": "https://www.meetup.com/nolabitcoin/events/",
    "organiser": {
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
@@ -4443,6 +4622,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/nolabitcoin/events/dhgvttykchbfb/",
+   "listing": "https://www.meetup.com/nolabitcoin/events/",
    "organiser": {
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
@@ -4467,6 +4647,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/nolabitcoin/events/dhgvttykcjbkb/",
+   "listing": "https://www.meetup.com/nolabitcoin/events/",
    "organiser": {
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
@@ -4491,6 +4672,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/nolabitcoin/events/dhgvttykckbhb/",
+   "listing": "https://www.meetup.com/nolabitcoin/events/",
    "organiser": {
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
@@ -4515,6 +4697,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/nolabitcoin/events/dhgvttykclbdb/",
+   "listing": "https://www.meetup.com/nolabitcoin/events/",
    "organiser": {
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
@@ -4539,6 +4722,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/nolabitcoin/events/dhgvttykcmbjb/",
+   "listing": "https://www.meetup.com/nolabitcoin/events/",
    "organiser": {
     "name": "Nola Bitcoin",
     "url": "https://www.meetup.com/nolabitcoin/"
@@ -4563,6 +4747,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/fayetteville-bitcoin-meetup-group/events/316891906/",
+   "listing": "https://www.meetup.com/fayetteville-cryptocurrency-meetup-group/events/",
    "organiser": {
     "name": "Northwest Arkansas Bitcoin",
     "url": "https://www.meetup.com/fayetteville-cryptocurrency-meetup-group/"
@@ -4587,6 +4772,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/ribitcoiners/events/316190516/",
+   "listing": "https://www.meetup.com/ribitcoiners/events/",
    "organiser": {
     "name": "Rhode Island Bitcoiners",
     "url": "https://www.meetup.com/ribitcoiners/"
@@ -4611,6 +4797,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/ribitcoiners/events/316190548/",
+   "listing": "https://www.meetup.com/ribitcoiners/events/",
    "organiser": {
     "name": "Rhode Island Bitcoiners",
     "url": "https://www.meetup.com/ribitcoiners/"
@@ -4635,6 +4822,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-only-sactown/events/316787153/",
+   "listing": "https://www.meetup.com/bitcoin-only-sactown/events/",
    "organiser": {
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
@@ -4659,6 +4847,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-only-sactown/events/317116220/",
+   "listing": "https://www.meetup.com/bitcoin-only-sactown/events/",
    "organiser": {
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
@@ -4683,6 +4872,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-only-sactown/events/317127377/",
+   "listing": "https://www.meetup.com/bitcoin-only-sactown/events/",
    "organiser": {
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
@@ -4707,6 +4897,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-only-sactown/events/316787165/",
+   "listing": "https://www.meetup.com/bitcoin-only-sactown/events/",
    "organiser": {
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
@@ -4731,6 +4922,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-only-sactown/events/jbwxbtykccbsb/",
+   "listing": "https://www.meetup.com/bitcoin-only-sactown/events/",
    "organiser": {
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
@@ -4755,6 +4947,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-only-sactown/events/nndfxtykccblc/",
+   "listing": "https://www.meetup.com/bitcoin-only-sactown/events/",
    "organiser": {
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
@@ -4779,6 +4972,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-only-sactown/events/jbwxbtykcdbpb/",
+   "listing": "https://www.meetup.com/bitcoin-only-sactown/events/",
    "organiser": {
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
@@ -4803,6 +4997,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-only-sactown/events/nndfxtykcdbhc/",
+   "listing": "https://www.meetup.com/bitcoin-only-sactown/events/",
    "organiser": {
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
@@ -4827,6 +5022,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-only-sactown/events/jbwxbtykcfbpb/",
+   "listing": "https://www.meetup.com/bitcoin-only-sactown/events/",
    "organiser": {
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
@@ -4851,6 +5047,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoin-only-sactown/events/nndfxtykcfbhc/",
+   "listing": "https://www.meetup.com/bitcoin-only-sactown/events/",
    "organiser": {
     "name": "SacTown Bitcoin",
     "url": "https://www.meetup.com/bitcoin-only-sactown/"
@@ -4875,6 +5072,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/victoriabitcoin/events/317185876/",
+   "listing": "https://www.meetup.com/vicbtc/events/",
    "organiser": {
     "name": "Victoria Bitcoin",
     "url": "https://www.meetup.com/vicbtc/"
@@ -4899,6 +5097,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/victoriabitcoin/events/317185926/",
+   "listing": "https://www.meetup.com/vicbtc/events/",
    "organiser": {
     "name": "Victoria Bitcoin",
     "url": "https://www.meetup.com/vicbtc/"
@@ -4923,6 +5122,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/victoriabitcoin/events/317185921/",
+   "listing": "https://www.meetup.com/vicbtc/events/",
    "organiser": {
     "name": "Victoria Bitcoin",
     "url": "https://www.meetup.com/vicbtc/"
@@ -4947,6 +5147,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/western-mass-bitcoin-meetup/events/317036271/",
+   "listing": "https://www.meetup.com/western-mass-bitcoin-meetup/events/",
    "organiser": {
     "name": "Western Mass Bitcoin",
     "url": "https://www.meetup.com/western-mass-bitcoin-meetup/"
@@ -4971,6 +5172,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/western-mass-bitcoin-meetup/events/317036288/",
+   "listing": "https://www.meetup.com/western-mass-bitcoin-meetup/events/",
    "organiser": {
     "name": "Western Mass Bitcoin",
     "url": "https://www.meetup.com/western-mass-bitcoin-meetup/"
@@ -4995,6 +5197,7 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/yycbitcoin/events/317193378/",
+   "listing": "https://www.meetup.com/yycbitcoin/events/",
    "organiser": {
     "name": "YYC Bitcoin",
     "url": "https://www.meetup.com/yycbitcoin/"

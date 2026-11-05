@@ -6,17 +6,38 @@
   "en": "Bitcoin meetups, conferences, communities and places to pay in bitcoin, worldwide.",
   "fr": "Meetups, conférences, communautés Bitcoin et lieux où payer en bitcoin, dans le monde entier."
  },
- "publisher": { "name": "Off-Chain Media", "url": "https://offchain.media/", "logo": "logo.svg" },
+ "publisher": {
+  "name": "Off-Chain Media",
+  "url": "https://offchain.media/",
+  "logo": "logo.svg"
+ },
  "origin": "https://offchain.media",
  "languages": [
-  { "code": "en", "name": "English", "path": "/community-atlas/" },
-  { "code": "fr", "name": "Français", "path": "/fr/community-atlas/" }
+  {
+   "code": "en",
+   "name": "English",
+   "path": "/community-atlas/"
+  },
+  {
+   "code": "fr",
+   "name": "Français",
+   "path": "/fr/community-atlas/"
+  }
  ],
  "assetsPath": "/community-atlas/",
  "repository": "https://github.com/offchain-media/community-atlas",
- "contact": "https://offchain.media/about",
- "scope": { "type": "world" },
- "map": { "center": [12, 28], "zoom": 1.4, "minZoom": 1, "maxZoom": 18 },
+ "scope": {
+  "type": "world"
+ },
+ "map": {
+  "center": [
+   12,
+   28
+  ],
+  "zoom": 1.4,
+  "minZoom": 1,
+  "maxZoom": 18
+ },
  "sources": {
   "merchants": true,
   "communities": true,
@@ -55,11 +76,22 @@
  },
  "theme": {
   "accent": "#f7931a",
-  "accentText": { "light": "#a85a00", "dark": "#f7931a" },
-  "background": { "light": "#ffffff", "dark": "#1a1a1a" },
-  "text": { "light": "#1a1a1a", "dark": "#ffffff" },
-  "fonts": { "heading": "oswald", "body": "spectral" },
+  "accentText": {
+   "light": "#a85a00",
+   "dark": "#f7931a"
+  },
+  "background": {
+   "light": "#ffffff",
+   "dark": "#1a1a1a"
+  },
+  "text": {
+   "light": "#1a1a1a",
+   "dark": "#ffffff"
+  },
+  "fonts": {
+   "heading": "oswald",
+   "body": "spectral"
+  },
   "uppercaseHeadings": true
- },
- "embed": { "allowedAncestors": ["*"] }
+ }
 }

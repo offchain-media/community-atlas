@@ -124,11 +124,12 @@ details[open] > .panel-title { margin-bottom: 0.5rem; }
 .maplibregl-popup-content { background: var(--bg); color: var(--ink); border-radius: var(--radius); padding: 0.9rem 1rem; font: 0.92rem/1.45 var(--ui); box-shadow: 0 4px 18px rgb(0 0 0 / 0.2); }
 .maplibregl-popup-tip { border-top-color: var(--bg) !important; border-bottom-color: var(--bg) !important; }
 .maplibregl-popup-close-button { color: var(--ink); font-size: 1.2rem; padding: 0 6px; }
-.popup h3, .maplibregl-popup-content h3 { margin: 0 1rem 0.35rem 0; font-size: 1.05rem; line-height: 1.25; }
+.maplibregl-popup-content h3 { margin: 0 1rem 0.35rem 0; font-size: 1.05rem; line-height: 1.25; }
 .popup .details { display: grid; grid-template-columns: auto 1fr; gap: 0.15rem 0.6rem; margin: 0.5rem 0; }
 .popup dt { color: var(--muted); }
 .popup dd { margin: 0; overflow-wrap: anywhere; }
-.popup .event { grid-template-columns: 1fr; }
+.popup ol.events { border: 0; }
+.popup .event { grid-template-columns: 1fr; padding: 0; border: 0; }
 .popup .event .date { display: none; }
 
 /* controls */
@@ -168,7 +169,7 @@ ol.events { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(-
 .community h3, .company h3 { margin: 0 0 0.25rem; font-size: 1.1rem; line-height: 1.25; }
 .community p, .company p { margin: 0.25rem 0 0; }
 .community .meta, .company .meta { font: 0.8rem var(--ui); color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
-.community .links, .company .links { font: 0.85rem/1.6 var(--ui); }
+.community .links { font: 0.85rem/1.6 var(--ui); }
 .community .next { font: 0.88rem var(--ui); }
 .company .why { font: 0.8rem var(--ui); color: var(--muted); }
 .group-title { margin: 2rem 0 0.8rem; font-size: 1.2rem; }
@@ -192,8 +193,7 @@ body[data-view="map"] footer.foot { display: none; }
 /* embed */
 .embed .top { position: static; min-height: 44px; }
 .embed .brand .name { font-size: 1rem; }
-.embed #view-map { height: 100dvh; }
-.embed.with-header #view-map { height: calc(100dvh - 44px); }
+.embed #view-map { height: calc(100dvh - 44px); }
 .embed .page { padding: 1rem; }
 .embed .map-panel { top: auto; bottom: 28px; width: auto; }
 
@@ -210,4 +210,3 @@ body[data-view="map"] footer.foot { display: none; }
   .event { grid-template-columns: 3.4rem 1fr; gap: 0.75rem; }
   .event .date .d { font-size: 1.25rem; }
 }
-@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }

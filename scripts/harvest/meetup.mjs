@@ -6,6 +6,7 @@
 import { resolve } from "node:path";
 import { SOURCES, fetchText, pool, readJSON, sleep, writeJSON } from "../lib/io.mjs";
 import { parseICS } from "../lib/ical.mjs";
+import { safeURL } from "../../src/shared/util.js";
 
 export function meetupGroup(url) {
   try {
@@ -35,13 +36,13 @@ export async function harvestMeetup({ horizonDays = 365 } = {}) {
     try {
       const ics = await fetchText(`https://www.meetup.com/${group}/events/ical/`, { timeout: 20000 });
       return parseICS(ics)
-        .filter((e) => e.status !== "CANCELLED" && e.start && !e.start.dateOnly)
+        .filter((e) => e.uid && e.status !== "CANCELLED" && e.start && !e.start.dateOnly)
         .filter((e) => {
           const t = Date.parse(e.start.iso);
           return t > now - 30 * 86400000 && t < horizon;
         })
         .map((e) => ({
-          id: "meetup:" + (e.uid || "").replace(/@.*$/, "").replace(/^event_/, ""),
+          id: "meetup:" + e.uid.replace(/@.*$/, "").replace(/^event_/, ""),
           source: "meetup",
           sourceName: "Meetup",
           type: "meetup",
@@ -53,11 +54,12 @@ export async function harvestMeetup({ horizonDays = 365 } = {}) {
           timeZone: e.start.timeZone,
           city: null,
           country: community.country,
-          lon: e.geo?.[0] ?? community.lon,
-          lat: e.geo?.[1] ?? community.lat,
-          precision: e.geo ? "venue" : "city",
+          lon: community.lon,
+          lat: community.lat,
+          precision: "city",
           venue: null,
-          url: e.url || `https://www.meetup.com/${group}/events/`,
+          url: safeURL(e.url) || `https://www.meetup.com/${group}/events/`,
+          listing: `https://www.meetup.com/${group}/events/`,
           organiser: { name: community.name, url: `https://www.meetup.com/${group}/` },
           community: community.id,
         }));

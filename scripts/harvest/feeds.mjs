@@ -5,18 +5,10 @@
  */
 import { resolve } from "node:path";
 import { SOURCES, fetchJSON, writeJSON } from "../lib/io.mjs";
+import { safeURL, safeZone } from "../../src/shared/util.js";
 
 const pick = (v, lang = "en") =>
   v && typeof v === "object" ? v[lang] || Object.values(v)[0] || "" : String(v || "");
-
-const safeURL = (v) => {
-  try {
-    const u = new URL(v);
-    return u.protocol === "https:" || u.protocol === "http:" ? u.href : null;
-  } catch {
-    return null;
-  }
-};
 
 const TYPES = new Set(["meetup", "conference", "workshop", "walk", "course", "hackathon", "party"]);
 
@@ -35,7 +27,7 @@ export function fromFeed(e, feed) {
   const located = Number.isFinite(lat) && Number.isFinite(lon) && !e.addressUncertain;
   const listing = dated && feed.eventPage
     ? new URL(feed.eventPage.replace("{id}", encodeURIComponent(e.id)), feed.url).href
-    : feed.events || feed.site || null;
+    : feed.site || null;
   return {
     id: `feed:${host}:${e.id}`,
     source: "feed:" + host,
@@ -47,14 +39,14 @@ export function fromFeed(e, feed) {
     start: dated ? (dateOnly ? e.start.slice(0, 10) : e.start) : null,
     end: dated && e.end ? (dateOnly ? e.end.slice(0, 10) : e.end) : null,
     dateOnly,
-    timeZone: feed.timeZone || null,
+    timeZone: [e.timeZone, feed.timeZone].find((z) => z && safeZone(z) === z) || null,
     city: e.city || null,
     country: e.country || feed.country || null,
     lat: located ? lat : null,
     lon: located ? lon : null,
     precision: located ? (e.locationPrecision === "city" ? "city" : "venue") : null,
     venue: [e.venue, e.address].filter(Boolean).join(", ") || null,
-    url: listing || safeURL(e.url) || safeURL(e.website),
+    url: safeURL(e.url) || listing || safeURL(e.website),
     listing,
     organiser: e.organiser ? { name: e.organiser, url: safeURL(e.website) } : { name: feed.name, url: feed.site },
     attribution: { name: feed.name || host, url: feed.site || `https://${host}/` },

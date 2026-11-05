@@ -2,12 +2,12 @@
 
 ## Sources and rules
 
-- **BTC Map places.** `GET https://api.btcmap.org/v4/places`, deleted places removed. Stored as `[id, lon, lat, name, icon]`; the build adds the country code. The opening hours, address and website shown in a popup are fetched live from BTC Map, so corrections made there appear immediately.
-- **BTC Map communities.** `GET https://api.btcmap.org/v3/areas`, areas of type `community`. A community is placed at a point inside its area. Only public channels are kept (website, Meetup, Telegram, X, Nostr and similar). Email, phone, WhatsApp and Signal fields are personal and never republished.
+- **BTC Map places.** `GET https://api.btcmap.org/v4/places`, deleted places removed. Stored as `[id, lon, lat, name]`; the build adds the country code. The opening hours, address and website shown in a popup are fetched live from BTC Map, so corrections made there appear immediately.
+- **BTC Map communities and countries.** `GET https://api.btcmap.org/v3/areas`: areas of type `community`, and country shapes, which give every place, community and Meetup event its country. A community is placed at a point inside its area. Only public channels are kept (website, Meetup, Telegram, X, Nostr and similar). Email, phone, WhatsApp and Signal fields are personal and never republished.
 - **Meetup.** For each community whose BTC Map record links a meetup.com group, the public group calendar (`https://www.meetup.com/<group>/events/ical/`) is read. Only title, start, end and link are kept, from 30 days ago to 1 year ahead. The calendar has no coordinates, so events are placed at the community's location and marked as city-level.
-- **Plan ₿ Network.** The `events/` folder of [PlanB-Network/bitcoin-educational-content](https://github.com/PlanB-Network/bitcoin-educational-content) (CC BY-SA 4.0). Its dates are in UTC, with the event's time zone alongside; a start at local midnight and an end at local 23:59 become whole days. Cities are geocoded once with OpenStreetMap Nominatim (1 request per second) and kept in `data/geocode-cache.json`. Each event links to its Plan ₿ source file.
+- **Plan ₿ Network.** The `events/` folder of [PlanB-Network/bitcoin-educational-content](https://github.com/PlanB-Network/bitcoin-educational-content) (CC BY-SA 4.0). Its dates are in UTC, with the event's time zone alongside; a start at local midnight and an end at local 23:59 become whole days. Cities are geocoded once with OpenStreetMap Nominatim (1 request per second) and kept in `data/geocode-cache.json`; events whose city is not found are listed in `notLocated` and shown without a map marker. Each event links to its Plan ₿ source file.
 - **Community feeds.** Listed in the profile. An entry whose `canonical` page is on another site is skipped: it is a copy, and the original comes from that other site's feed.
-- **Duplicates.** Two events are the same when they start the same day (or within 24 hours), are less than about 100 km apart and share at least 60 % of their significant title words. The most precise location wins; the other sources stay listed under `alsoListedBy`.
+- **Duplicates.** Two events are the same when they start the same day (or within 24 hours), are less than 100 km apart and share at least 60 % of their significant title words. The edition's own event wins, then the most precise location; the other sources stay listed under `alsoListedBy`.
 
 A source that fails keeps its previous data; `data/sources/meta.json` records the last success and error of each.
 
@@ -27,7 +27,7 @@ A source that fails keeps its previous data; `data/sources/meta.json` records th
 | `city`, `country` | city name and ISO 3166-1 alpha-2 code |
 | `lat`, `lon`, `precision` | location and how precise it is: `venue` or `city` |
 | `online` | true for online-only events |
-| `url`, `listing` | the event's page, and the page of the source listing it |
+| `url`, `listing` | the event's page, and the page where the source lists it (credited as "Listed by") |
 | `organiser`, `community` | `{ name, url }`, and the BTC Map community id when known |
 | `attribution` | `{ name, url, license }` for sources that require it |
 | `alsoListedBy` | other sources that published the same event |

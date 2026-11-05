@@ -59,7 +59,7 @@ export function representativePoint(geo) {
 
 const round = ([x, y]) => [+x.toFixed(5), +y.toFixed(5)];
 
-export function inRing(lon, lat, ring) {
+function inRing(lon, lat, ring) {
   let inside = false;
   for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
     const [x, y] = ring[i],
@@ -70,7 +70,7 @@ export function inRing(lon, lat, ring) {
   return inside;
 }
 
-export function inPolygon(lon, lat, poly) {
+function inPolygon(lon, lat, poly) {
   return inRing(lon, lat, poly[0]) && !poly.slice(1).some((r) => inRing(lon, lat, r));
 }
 
@@ -99,17 +99,6 @@ export function inShape(lon, lat, shape) {
 /** Prepare a shape for repeated point tests. */
 export function shape(geo) {
   return { polygons: polygons(geo), bbox: bbox(geo) };
-}
-
-/** Great-circle distance in kilometres. */
-export function distanceKm(a, b) {
-  const r = Math.PI / 180;
-  const dLat = (b[1] - a[1]) * r,
-    dLon = (b[0] - a[0]) * r;
-  const h =
-    Math.sin(dLat / 2) ** 2 +
-    Math.cos(a[1] * r) * Math.cos(b[1] * r) * Math.sin(dLon / 2) ** 2;
-  return 12742 * Math.asin(Math.sqrt(h));
 }
 
 /** Reduce coordinate precision to shrink stored geometry (about 100 m at 3 decimals). */

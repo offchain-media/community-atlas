@@ -4,8 +4,13 @@ import { fileURLToPath } from "node:url";
 
 export const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 export const SOURCES = resolve(ROOT, "data/sources");
-export const USER_AGENT =
-  "CommunityAtlas/1.0 (+https://github.com/offchain-media/community-atlas)";
+const PKG = JSON.parse(await readFile(resolve(ROOT, "package.json"), "utf8"));
+let userAgent = `CommunityAtlas/${PKG.version}`;
+
+/** Identify requests with the edition's repository, as Nominatim and others ask. */
+export function setUserAgent(repository) {
+  userAgent = `CommunityAtlas/${PKG.version}${repository ? ` (+${repository})` : ""}`;
+}
 
 export async function readJSON(path, fallback) {
   try {
@@ -26,7 +31,7 @@ export async function writeJSON(path, value, pretty = true) {
 
 export async function fetchText(url, { timeout = 30000, headers = {} } = {}) {
   const response = await fetch(url, {
-    headers: { "User-Agent": USER_AGENT, ...headers },
+    headers: { "User-Agent": userAgent, ...headers },
     signal: AbortSignal.timeout(timeout),
     redirect: "follow",
   });
@@ -53,14 +58,4 @@ export async function pool(items, limit, task) {
     }),
   );
   return results;
-}
-
-export function slug(value) {
-  return String(value)
-    .normalize("NFKD")
-    .replace(/[̀-ͯ]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "")
-    .slice(0, 80);
 }

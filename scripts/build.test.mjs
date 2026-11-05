@@ -2,7 +2,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { existsSync, readFileSync, rmSync } from "node:fs";
+import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import worker from "../worker.mjs";
@@ -45,10 +45,58 @@ test("a regional profile keeps only its countries", (t) => {
   build("profiles/example-region", dir);
   const merchants = JSON.parse(readFileSync(join(dir, "data/merchants.json"), "utf8")).places;
   assert.ok(merchants.length > 0);
-  assert.ok(merchants.every((p) => ["LT", "LV", "EE"].includes(p[5])), "only Baltic places");
+  assert.ok(merchants.every((p) => ["LT", "LV", "EE"].includes(p[4])), "only Baltic places");
   const events = JSON.parse(readFileSync(join(dir, "data/events.json"), "utf8")).events;
-  assert.ok(events.every((e) => !e.country || ["LT", "LV", "EE"].includes(e.country)));
+  assert.ok(events.length > 0);
+  assert.ok(events.every((e) => ["LT", "LV", "EE"].includes(e.country)), "every event is in a Baltic country");
   assert.ok(existsSync(join(dir, "index.html")));
+});
+
+test("the edition's own events use the feed format and win over other sources", (t) => {
+  const profileDir = mkdtempSync(join(tmpdir(), "atlas-profile-"));
+  const dir = out + "-own";
+  t.after(() => {
+    rmSync(profileDir, { recursive: true, force: true });
+    rmSync(dir, { recursive: true, force: true });
+  });
+  const profile = JSON.parse(readFileSync(join(root, "profiles/example-region/profile.json"), "utf8"));
+  profile.shareImage = "share.png";
+  writeFileSync(join(profileDir, "profile.json"), JSON.stringify(profile));
+  writeFileSync(join(profileDir, "share.png"), "png");
+  // Same title and day as an event published in the Lithuania BTC feed.
+  const feedEvent = JSON.parse(readFileSync(join(root, "data/sources/feed-events.json"), "utf8")).events.find(
+    (e) => e.source === "feed:lithuaniabtc.com" && e.start && Number.isFinite(e.lat),
+  );
+  writeFileSync(
+    join(profileDir, "events.json"),
+    JSON.stringify([
+      { id: "ours", type: "meetup", title: { en: feedEvent.title, lt: "Mūsų" }, start: feedEvent.start, lat: feedEvent.lat, lon: feedEvent.lon, country: "LT" },
+      { id: "next-a", status: "planned", title: { en: "Next walk" }, country: "LT" },
+      { id: "next-b", status: "planned", title: { en: "Next meetup" }, country: "LT" },
+    ]),
+  );
+  build(profileDir, dir);
+  const events = JSON.parse(readFileSync(join(dir, "data/events.json"), "utf8")).events;
+  const ours = events.find((e) => e.id === "curated:ours");
+  assert.equal(ours.title, feedEvent.title);
+  assert.deepEqual(ours.titles, { en: feedEvent.title, lt: "Mūsų" });
+  assert.ok(ours.alsoListedBy.some((o) => o.source === "feed:lithuaniabtc.com"), "the feed copy is merged into ours");
+  assert.ok(!events.some((e) => e.id === feedEvent.id));
+  assert.equal(events.filter((e) => e.status === "planned" && e.source === "curated").length, 2);
+  const html = readFileSync(join(dir, "index.html"), "utf8");
+  assert.doesNotMatch(html, /\[object Object\]/);
+  assert.match(html, /og:image" content="https:\/\/atlas.example.org\/assets\/share.png"/);
+  assert.ok(existsSync(join(dir, "assets/share.png")));
+});
+
+test("published companies are verified and carry no internal review fields", (t) => {
+  const dir = out + "-eco";
+  t.after(() => rmSync(dir, { recursive: true, force: true }));
+  build("profiles/offchain-media", dir);
+  const { companies } = JSON.parse(readFileSync(join(dir, "community-atlas/data/ecosystem.json"), "utf8"));
+  const source = JSON.parse(readFileSync(join(root, "profiles/offchain-media/ecosystem.json"), "utf8")).companies;
+  assert.equal(companies.length, source.filter((c) => c.verification === "read" || c.review === "approved").length);
+  for (const c of companies) for (const k of ["verification", "review", "evidenceNote"]) assert.ok(!(k in c), k);
 });
 
 test("worker opens data to other sites and lets only embeds be framed", async () => {

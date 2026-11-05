@@ -10,7 +10,8 @@ import { existsSync } from "node:fs";
 import { readdir, readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { parse } from "yaml";
-import { ROOT, SOURCES, USER_AGENT, readJSON, sleep, writeJSON } from "../lib/io.mjs";
+import { ROOT, SOURCES, fetchJSON, readJSON, sleep, writeJSON } from "../lib/io.mjs";
+import { safeURL, safeZone } from "../../src/shared/util.js";
 
 const REPO = "https://github.com/PlanB-Network/bitcoin-educational-content";
 const BRANCH = "dev";
@@ -33,19 +34,14 @@ function checkout() {
   return dir;
 }
 
-export async function geocode(query, cache) {
+async function geocode(query, cache) {
   const key = query.trim().toLowerCase();
   if (key in cache) return cache[key];
   await sleep(1100);
   const url =
     "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&addressdetails=1&accept-language=en&q=" +
     encodeURIComponent(query);
-  const response = await fetch(url, {
-    headers: { "User-Agent": USER_AGENT },
-    signal: AbortSignal.timeout(20000),
-  });
-  if (!response.ok) throw new Error(`Nominatim HTTP ${response.status}`);
-  const [hit] = await response.json();
+  const [hit] = await fetchJSON(url, { timeout: 20000 });
   cache[key] = hit
     ? {
         lat: +(+hit.lat).toFixed(4),
@@ -92,10 +88,7 @@ export function planbDates(startValue, endValue, timeZone) {
     b = parse(endValue);
   if (!a) return null;
   if (a.day) return { start: a.day, end: b?.day || b?.instant?.toISOString().slice(0, 10) || null, dateOnly: true };
-  let zone = null;
-  try {
-    if (timeZone) new Intl.DateTimeFormat("en", { timeZone }).format(0), (zone = timeZone);
-  } catch {}
+  const zone = timeZone && safeZone(timeZone) === timeZone ? timeZone : null;
   const ls = localParts(a.instant, zone || "UTC");
   const le = b?.instant ? localParts(b.instant, zone || "UTC") : null;
   const wholeDays = ls.time === "00:00" && (!le || le.time === "23:59" || le.time === "00:00");
@@ -108,15 +101,6 @@ export function planbDates(startValue, endValue, timeZone) {
   return { start: a.instant.toISOString(), end: b?.instant?.toISOString() || null, dateOnly: false, timeZone: zone };
 }
 
-const safeURL = (v) => {
-  try {
-    const u = new URL(String(v).trim());
-    return u.protocol === "https:" || u.protocol === "http:" ? u.href : null;
-  } catch {
-    return null;
-  }
-};
-
 export async function harvestPlanB() {
   const dir = checkout();
   const cache = await readJSON(CACHE, {});
@@ -125,7 +109,8 @@ export async function harvestPlanB() {
     .map((d) => d.name)
     .sort();
   const events = [],
-    skipped = [];
+    skipped = [],
+    notLocated = [];
   for (const folder of folders) {
     let y;
     try {
@@ -150,8 +135,9 @@ export async function harvestPlanB() {
       try {
         geo = await geocode(place, cache);
       } catch (error) {
-        skipped.push({ folder, reason: "geocoding failed: " + error.message });
+        notLocated.push({ folder, place, error: error.message });
       }
+      if (!geo && !notLocated.some((n) => n.folder === folder)) notLocated.push({ folder, place, error: "not found" });
     }
     const listing = y.id ? `https://planb.academy/en/events/${y.id}` : null;
     events.push({
@@ -164,7 +150,7 @@ export async function harvestPlanB() {
       start: dates.start,
       end: dates.end,
       dateOnly: dates.dateOnly,
-      timeZone: dates.timeZone || y.timezone || null,
+      timeZone: dates.timeZone || null,
       city: geo?.city || place.split(",")[0] || null,
       country: geo?.country || null,
       lon: geo?.lon ?? null,
@@ -174,8 +160,6 @@ export async function harvestPlanB() {
       venue: [y.address_line_2, y.address_line_3].filter(Boolean).join(", ") || null,
       url: safeURL(y.links?.website) || listing,
       listing,
-      languages: Array.isArray(y.language) ? y.language : [],
-      tags: Array.isArray(y.tags) ? y.tags : [],
       attribution: {
         name: "Plan ₿ Network",
         url: `${REPO}/tree/${BRANCH}/events/${encodeURIComponent(folder)}`,
@@ -190,7 +174,8 @@ export async function harvestPlanB() {
     source: `${REPO}/tree/${commit}/events`,
     license: "CC BY-SA 4.0 (Plan ₿ Network)",
     skipped,
+    notLocated,
     events,
   });
-  return { events: events.length, skipped: skipped.length };
+  return { events: events.length, skipped: skipped.length, notLocated: notLocated.length };
 }

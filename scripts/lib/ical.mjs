@@ -44,7 +44,7 @@ function unescape(value) {
 }
 
 /** Parse a DTSTART/DTEND property into { iso, dateOnly, timeZone }. */
-export function parseDate(params, value, fallbackZone) {
+function parseDate(params, value, fallbackZone) {
   const m = /^(\d{4})(\d{2})(\d{2})(?:T(\d{2})(\d{2})(\d{2})?(Z)?)?$/.exec(
     value.trim(),
   );
@@ -100,12 +100,8 @@ export function parseICS(text) {
     if (key === "UID") current.uid = value.trim();
     else if (key === "SUMMARY") current.summary = unescape(value);
     else if (key === "URL") current.url = value.trim();
-    else if (key === "LOCATION") current.location = unescape(value);
     else if (key === "STATUS") current.status = value.trim().toUpperCase();
-    else if (key === "GEO") {
-      const [lat, lon] = value.split(";").map(Number);
-      if (Number.isFinite(lat) && Number.isFinite(lon)) current.geo = [lon, lat];
-    } else if (key === "DTSTART") current.start = parseDate(params, value, calZone);
+    else if (key === "DTSTART") current.start = parseDate(params, value, calZone);
     else if (key === "DTEND") current.end = parseDate(params, value, calZone);
   }
   return events;

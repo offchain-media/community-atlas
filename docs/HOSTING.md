@@ -22,11 +22,11 @@ npm run deploy
 
 Automatic deployment: add the repository secrets `CLOUDFLARE_API_TOKEN` (permission "Workers Scripts: Edit" and "Workers Routes: Edit" on the zone) and `CLOUDFLARE_ACCOUNT_ID`. `.github/workflows/refresh.yml` then harvests, tests, builds and deploys every 6 hours.
 
-After the first deployment, link the atlas from the site's Maps menu and add `https://offchain.media/community-atlas/sitemap.xml` to the site's sitemap index.
+The atlas writes its own `sitemap.xml` under its path; add it to the site's sitemap index so search engines find it.
 
 ## GitHub Pages
 
-For a project site at `https://<user>.github.io/<repo>/`, set `origin` to `https://<user>.github.io` and the language `path` to `/<repo>/` in the profile. Then set the repository variable `DEPLOY_PAGES` to `true` and Settings > Pages > Source to "GitHub Actions". Pages cannot set headers: data files are readable by other sites anyway (GitHub Pages sends `Access-Control-Allow-Origin: *`), and every page can be framed.
+For a project site at `https://<user>.github.io/<repo>/`, set `origin` to `https://<user>.github.io` and the first language `path` to `/<repo>/` in the profile; other languages must live below it, such as `/<repo>/fr/`. The workflow uploads `public/<repo>/`, which Pages serves at `/<repo>/`. Then set the repository variable `DEPLOY_PAGES` to `true` and Settings > Pages > Source to "GitHub Actions". Pages cannot set headers: data files are readable by other sites anyway (GitHub Pages sends `Access-Control-Allow-Origin: *`), and every page can be framed.
 
 ## Any static host
 

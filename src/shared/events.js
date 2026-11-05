@@ -42,7 +42,7 @@ export function groupEvents(events, now = Date.now()) {
   }
   upcoming.sort((a, b) => startInstant(a) - startInstant(b));
   past.sort((a, b) => startInstant(b) - startInstant(a));
-  planned.sort((a, b) => a.title.localeCompare(b.title));
+  planned.sort((a, b) => String(a.title).localeCompare(String(b.title)));
   return { upcoming, planned, past };
 }
 
@@ -58,18 +58,23 @@ const words = (s) =>
   );
 const STOP = new Set(["the", "and", "for", "with", "bitcoin", "btc", "meetup", "conference", "edition"]);
 
-/** Likely the same event published by two sources: same first day, close place, similar title. */
-export function sameEvent(a, b) {
+/** Great-circle distance in kilometres between two [lon, lat] points. */
+function distanceKm(a, b) {
+  const r = Math.PI / 180;
+  const h =
+    Math.sin(((b[1] - a[1]) * r) / 2) ** 2 +
+    Math.cos(a[1] * r) * Math.cos(b[1] * r) * Math.sin(((b[0] - a[0]) * r) / 2) ** 2;
+  return 12742 * Math.asin(Math.sqrt(h));
+}
+
+/** Likely the same event published by two sources: same first day, within 100 km, similar title. */
+function sameEvent(a, b) {
   if (!a.start || !b.start || a.start.slice(0, 10) !== b.start.slice(0, 10)) {
     const sa = startInstant(a),
       sb = startInstant(b);
     if (!sa || !sb || Math.abs(sa - sb) > DAY) return false;
   }
-  if (
-    Number.isFinite(a.lat) &&
-    Number.isFinite(b.lat) &&
-    (Math.abs(a.lat - b.lat) > 1 || Math.abs(a.lon - b.lon) > 1.5)
-  )
+  if (Number.isFinite(a.lat) && Number.isFinite(b.lat) && distanceKm([a.lon, a.lat], [b.lon, b.lat]) > 100)
     return false;
   const wa = words(a.title),
     wb = words(b.title);
@@ -79,9 +84,9 @@ export function sameEvent(a, b) {
   return common / Math.min(wa.size, wb.size) >= 0.6;
 }
 
-const PRECISION = { venue: 3, city: 2, region: 1 };
+const PRECISION = { venue: 2, city: 1 };
 
-/** Merge duplicates, keeping the most precise location and every source link. */
+/** Merge duplicates. The edition's own event wins, then the most precise location; other sources stay linked. */
 export function dedupe(events) {
   const out = [];
   for (const e of events) {
@@ -91,11 +96,11 @@ export function dedupe(events) {
       continue;
     }
     const better =
-      (PRECISION[e.precision] || 0) > (PRECISION[twin.precision] || 0) ||
-      (e.source === "curated" && twin.source !== "curated");
+      twin.source !== "curated" &&
+      (e.source === "curated" || (PRECISION[e.precision] || 0) > (PRECISION[twin.precision] || 0));
     const keep = better ? { ...e, alsoListedBy: twin.alsoListedBy } : twin;
     const other = better ? twin : e;
-    keep.alsoListedBy.push({ source: other.source, sourceName: other.sourceName, url: other.url });
+    keep.alsoListedBy.push({ source: other.source, sourceName: other.sourceName, url: other.listing || other.url });
     out[out.indexOf(twin)] = keep;
   }
   return out;
@@ -129,7 +134,7 @@ const stamp = (t) => new Date(t).toISOString().replace(/[-:]/g, "").replace(/\.\
 const day = (d) => d.slice(0, 10).replace(/-/g, "");
 
 /** iCalendar text for dated events. */
-export function toICS(events, { name, host }) {
+export function toICS(events, { name, host, now = Date.now() }) {
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
@@ -139,7 +144,7 @@ export function toICS(events, { name, host }) {
   ];
   for (const e of events) {
     if (e.status === "planned" || !e.start) continue;
-    lines.push("BEGIN:VEVENT", `UID:${e.id.replace(/[^\w.-]/g, "-")}@${host}`, `DTSTAMP:${stamp(Date.now())}`);
+    lines.push("BEGIN:VEVENT", `UID:${e.id.replace(/[^\w.-]/g, "-")}@${host}`, `DTSTAMP:${stamp(now)}`);
     if (e.dateOnly) {
       const endDay = new Date(Date.parse((e.end || e.start).slice(0, 10) + "T00:00:00Z") + DAY);
       lines.push(

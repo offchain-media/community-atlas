@@ -4,10 +4,10 @@ The MIT licence covers the code of this repository only. The following keep thei
 
 | What | Where | Terms |
 |---|---|---|
-| MapLibre GL JS | `vendor/` | BSD-3-Clause, `vendor/maplibre-LICENSE.txt` |
+| MapLibre GL JS 5.6.2 (distribution build, unmodified) | `vendor/` | BSD-3-Clause, `vendor/maplibre-LICENSE.txt` |
 | Oswald, Spectral fonts | installed from `@fontsource/*`, copied into the build | SIL Open Font License 1.1, licence copied next to the files |
 | Places and community records | `data/sources/btcmap-*.json` and the published data | © OpenStreetMap contributors and BTC Map, Open Database License 1.0. Keep the attribution; a database derived from them stays under ODbL. |
-| Country shapes | `data/sources/btcmap-countries.json` | from BTC Map (Natural Earth based), ODbL |
+| Country shapes | `data/sources/btcmap-countries.json` | BTC Map country areas, whose shapes and attributes come from Natural Earth Admin 0 (public domain); the BTC Map database is ODbL |
 | Plan ₿ Network events | `data/sources/planb-events.json` | © Plan ₿ Network contributors, CC BY-SA 4.0. Each event links its source file. |
 | Geocoding results | `data/geocode-cache.json` | © OpenStreetMap contributors, ODbL, via Nominatim |
 | Meetup events | `data/sources/meetup-events.json` | Facts only (title, time, link) from public calendars; descriptions are not copied. |

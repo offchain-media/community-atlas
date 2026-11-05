@@ -6,6 +6,7 @@ import { resolve } from "node:path";
 import { writeFile } from "node:fs/promises";
 import { SOURCES, fetchJSON, writeJSON } from "../lib/io.mjs";
 import { representativePoint, simplify, shape, inShape } from "../lib/geo.mjs";
+import { safeURL } from "../../src/shared/util.js";
 
 const API = "https://api.btcmap.org";
 // Public channels only. Personal contact fields (email, phone, WhatsApp, Signal) are never republished.
@@ -28,17 +29,8 @@ const PUBLIC_LINKS = [
   "geyser",
 ];
 
-const safeURL = (v) => {
-  try {
-    const u = new URL(v);
-    return u.protocol === "https:" || u.protocol === "http:" ? u.href : null;
-  } catch {
-    return null;
-  }
-};
-
 export async function harvestMerchants() {
-  const url = `${API}/v4/places?fields=id,lat,lon,name,icon,deleted_at`;
+  const url = `${API}/v4/places?fields=id,lat,lon,name,deleted_at`;
   const all = await fetchJSON(url, { timeout: 180000 });
   if (!Array.isArray(all)) throw new Error("Unexpected BTC Map places response");
   const places = all
@@ -48,7 +40,6 @@ export async function harvestMerchants() {
       +p.lon.toFixed(5),
       +p.lat.toFixed(5),
       (p.name || "").slice(0, 80),
-      p.icon || "",
     ])
     .sort((a, b) => a[0] - b[0]);
   if (places.length < 1000) throw new Error(`Only ${places.length} places; keeping previous file`);
@@ -57,7 +48,7 @@ export async function harvestMerchants() {
     fetchedAt: new Date().toISOString(),
     source: url,
     license: "ODbL-1.0 (OpenStreetMap contributors, BTC Map)",
-    fields: ["id", "lon", "lat", "name", "icon"],
+    fields: ["id", "lon", "lat", "name"],
   }).slice(0, -1);
   await writeFile(
     resolve(SOURCES, "btcmap-merchants.json"),
@@ -105,12 +96,8 @@ export async function harvestAreas() {
         lat: point[1],
         country: countryAt(point[0], point[1]),
         continent: a.tags.continent || null,
-        organization: a.tags.organization || null,
-        icon: safeURL(a.tags["icon:square"]),
         links,
         btcmap: `https://btcmap.org/community/${encodeURIComponent(a.tags.url_alias)}`,
-        verifiedAt: a.tags["verified:date"] || null,
-        updatedAt: a.updated_at || null,
       };
     })
     .filter(Boolean)

@@ -6,7 +6,7 @@
  */
 import { resolve } from "node:path";
 import { parseArgs } from "node:util";
-import { ROOT, SOURCES, readJSON, writeJSON } from "./lib/io.mjs";
+import { ROOT, SOURCES, readJSON, setUserAgent, writeJSON } from "./lib/io.mjs";
 import { harvestAreas, harvestMerchants } from "./harvest/btcmap.mjs";
 import { harvestMeetup } from "./harvest/meetup.mjs";
 import { harvestPlanB } from "./harvest/planb.mjs";
@@ -22,10 +22,12 @@ const profile = await readJSON(resolve(ROOT, values.profile, "profile.json"));
 const only = values.only ? new Set(values.only.split(",")) : null;
 const want = (name) => !only || only.has(name);
 const s = profile.sources || {};
+setUserAgent(profile.repository);
 
 const steps = [
   ["merchants", s.merchants && want("btcmap"), harvestMerchants],
-  ["areas", (s.communities || s.meetup) && want("btcmap"), harvestAreas],
+  // Country shapes are always needed: they give every place and community its country.
+  ["areas", want("btcmap"), harvestAreas],
   ["meetup", s.meetup && want("meetup"), () => harvestMeetup()],
   ["planb", s.planb && want("planb"), harvestPlanB],
   ["feeds", s.feeds?.length && want("feeds"), () => harvestFeeds(s.feeds)],
