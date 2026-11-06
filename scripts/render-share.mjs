@@ -25,7 +25,7 @@ const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
 // 1. The map at world zoom, without the interface.
 const embed = new URL("embed/?view=map&theme=light&lat=22&lon=-98&z=1.5", values.url);
 await page.goto(embed.href, { waitUntil: "load" });
-await page.addStyleTag({ content: ".top,.map-panel,.maplibregl-control-container{display:none!important}#view-map{height:100vh!important}" });
+await page.addStyleTag({ content: ".top,.map-search,.map-legend,.maplibregl-control-container{display:none!important}#view-map{height:100vh!important}" });
 await page.waitForTimeout(7000);
 await page.screenshot({ path: join(design, "map.png") });
 

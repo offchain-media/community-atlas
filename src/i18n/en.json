@@ -157,6 +157,8 @@
  "zoneOf": "{name} area",
  "zoneHint": "The meetup is somewhere in this community's area.",
  "searchMap": "Search a city, community or place",
+ "searchCountry": "Country",
+ "searchCity": "City with events",
  "searchHint": "Press Enter to search OpenStreetMap",
  "searchSource": "Search: OpenStreetMap Nominatim",
  "notFound": "Nothing found"
