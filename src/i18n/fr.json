@@ -157,6 +157,7 @@
  "zoneOf": "zone de {name}",
  "zoneHint": "Le meetup a lieu quelque part dans la zone de cette communauté.",
  "searchMap": "Rechercher une ville, une communauté, un lieu",
+ "noCountry": "Pays non indiqué",
  "searchCountry": "Pays",
  "searchCity": "Ville avec événements",
  "searchHint": "Entrée pour chercher dans OpenStreetMap",

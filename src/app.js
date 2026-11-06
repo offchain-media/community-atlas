@@ -539,7 +539,7 @@ async function renderEvents() {
 
 /* ---------- communities ---------- */
 
-async function communityCard(c, compact = false) {
+async function communityCard(c, compact = false, withCountry = true) {
   const { events } = await load("events").catch(() => ({ events: [] }));
   const upcoming = groupEvents(events.filter((e) => e.community === c.id)).upcoming;
   const links = Object.entries(c.links)
@@ -557,7 +557,7 @@ async function communityCard(c, compact = false) {
     h(
       "div",
       {},
-      h("p", { class: "kicker" }, h("span", { class: "cat" }, countryName(c.country, T.locale) || c.continent || "")),
+      withCountry ? h("p", { class: "kicker" }, h("span", { class: "cat" }, countryName(c.country, T.locale) || c.continent || "")) : null,
       h("h3", {}, extLink(c.links.website || c.btcmap, c.name)),
       upcoming.length
         ? h("p", { class: "next" }, plural(T.eventsCount, upcoming.length, T.locale), ": ", extLink(upcoming[0].url, eventTitle(upcoming[0], LANG)), " · ", dateLabel(upcoming[0], T))
@@ -597,8 +597,28 @@ async function renderCommunities() {
     const items = all.filter(
       (c) => (!state.country || c.country === state.country) && (!state.q || (c.name + " " + countryName(c.country, T.locale)).toLowerCase().includes(state.q)),
     );
-    const cards = await Promise.all(items.slice(0, state.limit).map((c) => communityCard(c)));
-    const parts = [items.length ? h("div", { class: "grid" }, cards) : h("p", { class: "empty" }, T.noResults)];
+    // One section per country, countries in alphabetical order, communities without a country last.
+    const countryOf = (c) => countryName(c.country, T.locale) || "";
+    items.sort((a, b) => !countryOf(a) - !countryOf(b) || countryOf(a).localeCompare(countryOf(b), T.locale) || a.name.localeCompare(b.name, T.locale));
+    const totals = new Map();
+    for (const c of items) totals.set(countryOf(c), (totals.get(countryOf(c)) || 0) + 1);
+    const sections = new Map();
+    for (const c of items.slice(0, state.limit)) {
+      const name = countryOf(c);
+      if (!sections.has(name)) sections.set(name, []);
+      sections.get(name).push(c);
+    }
+    const parts = [];
+    for (const [name, list] of sections)
+      parts.push(
+        h(
+          "section",
+          { class: "country-group" },
+          h("div", { class: "section-head" }, h("h2", { class: "group-title" }, (name || T.noCountry) + " · " + num(totals.get(name)))),
+          h("div", { class: "grid" }, await Promise.all(list.map((c) => communityCard(c, false, false)))),
+        ),
+      );
+    if (!items.length) parts.push(h("p", { class: "empty" }, T.noResults));
     if (items.length > state.limit) parts.push(h("button", { type: "button", class: "more", onclick: () => { state.limit += PAGE; draw(); } }, T.showMore));
     list.replaceChildren(...parts);
   }
