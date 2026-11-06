@@ -450,7 +450,7 @@ async function openPopup(layer, feature, fitZone = false) {
   if (layer === "merchants") return merchantPopup(body, feature.properties);
   if (layer === "communities") {
     const c = (await load("communities")).communities.find((x) => x.id === id);
-    if (c) body.append(...(await communityCard(c, true)).lastChild.childNodes);
+    if (c) body.append(...(await communityCard(c, { compact: true })).lastChild.childNodes);
     showZone(id);
     return;
   }
@@ -539,7 +539,7 @@ async function renderEvents() {
 
 /* ---------- communities ---------- */
 
-async function communityCard(c, compact = false, withCountry = true) {
+async function communityCard(c, { compact = false, withCountry = true } = {}) {
   const { events } = await load("events").catch(() => ({ events: [] }));
   const upcoming = groupEvents(events.filter((e) => e.community === c.id)).upcoming;
   const links = Object.entries(c.links)
@@ -609,13 +609,13 @@ async function renderCommunities() {
       sections.get(name).push(c);
     }
     const parts = [];
-    for (const [name, list] of sections)
+    for (const [name, members] of sections)
       parts.push(
         h(
           "section",
           { class: "country-group" },
           h("div", { class: "section-head" }, h("h2", { class: "group-title" }, (name || T.noCountry) + " · " + num(totals.get(name)))),
-          h("div", { class: "grid" }, await Promise.all(list.map((c) => communityCard(c, false, false)))),
+          h("div", { class: "grid" }, await Promise.all(members.map((c) => communityCard(c, { withCountry: false })))),
         ),
       );
     if (!items.length) parts.push(h("p", { class: "empty" }, T.noResults));
