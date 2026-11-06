@@ -1,6 +1,6 @@
 /**
  * Cloudflare Worker in front of the static build.
- * - Serves the atlas under its paths (for example offchain.media/community-atlas/ and /fr/community-atlas/).
+ * - Serves the atlas under its paths (for example offchain.media/atlas/ and /fr/atlas/).
  * - Opens the data and the calendar to other sites (CORS), so communities can reuse them.
  * - Lets any site embed /embed/ pages in an iframe; other pages cannot be framed.
  */

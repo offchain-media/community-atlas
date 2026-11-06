@@ -2,9 +2,9 @@
 
 An open-source map of the Bitcoin community: meetups, conferences, local communities, places that accept bitcoin and Bitcoin-only companies. The data comes from open sources and refreshes itself every 6 hours.
 
-- **Off-Chain Media edition:** https://offchain.media/community-atlas/ (English) and https://offchain.media/fr/community-atlas/ (French), from `profiles/offchain-media/`.
+- **Off-Chain Media edition:** https://offchain.media/atlas/ (English) and https://offchain.media/fr/atlas/ (French), from `profiles/offchain-media/`.
 - **Fork it** for a city, a country or a region: 1 profile folder holds the name, languages, colours, area and sources.
-- **Embed it** on a meetup site without forking: `https://offchain.media/community-atlas/embed/?view=events&country=LT`.
+- **Embed it** on a meetup site without forking: `https://offchain.media/atlas/embed/?view=events&country=LT`.
 - **Reuse the data:** JSON and iCalendar files, open to other sites (CORS).
 
 ## What it shows and where it comes from
@@ -34,7 +34,7 @@ npm ci
 npm run harvest      # refresh every source of the profile into data/sources/
 npm run build        # write the site into public/
 npm test
-npm run preview      # http://127.0.0.1:8790/community-atlas/
+npm run preview      # http://127.0.0.1:8817/atlas/
 ```
 
 The repository holds the last harvested data, so `npm run build` works offline, without pictures until the first `npm run harvest`. Behind an HTTP proxy, run the harvest with `NODE_USE_ENV_PROXY=1` so that Node's `fetch` uses it.
@@ -56,7 +56,7 @@ With an AI assistant that can edit files and run commands, open your fork and sa
 The About page has a code generator. By hand:
 
 ```html
-<iframe src="https://offchain.media/community-atlas/embed/?view=events&country=FR"
+<iframe src="https://offchain.media/atlas/embed/?view=events&country=FR"
         title="Community Atlas" width="100%" height="640" style="border:0" loading="lazy" allow="geolocation"></iframe>
 ```
 
@@ -74,7 +74,7 @@ The About page has a code generator. By hand:
 
 ## Reuse the data
 
-Under the edition's path (for example `https://offchain.media/community-atlas/`):
+Under the edition's path (for example `https://offchain.media/atlas/`):
 
 - `data/events.json`, `events.ics`: events, and a calendar to subscribe to.
 - `data/communities.json`, `data/merchants.json` (`[id, lon, lat, name, country]`), `data/ecosystem.json`, `data/countries.json`.
@@ -90,7 +90,7 @@ Keep the attributions: OpenStreetMap contributors and BTC Map (ODbL), Plan ₿ N
 
 ## Hosting on offchain.media
 
-`wrangler.jsonc` deploys a Cloudflare Worker named `community-atlas` on the routes `offchain.media/community-atlas*` and `offchain.media/fr/community-atlas*` of the existing zone; the rest of offchain.media is untouched. The Worker serves `public/`, opens data files to other sites, and lets only `/embed/` pages be framed. See [docs/HOSTING.md](docs/HOSTING.md).
+`wrangler.jsonc` deploys a Cloudflare Worker named `community-atlas` on the routes `offchain.media/atlas*` and `offchain.media/fr/atlas*` of the existing zone; the rest of offchain.media is untouched. The Worker serves `public/`, opens data files to other sites, and lets only `/embed/` pages be framed. See [docs/HOSTING.md](docs/HOSTING.md).
 
 ## Licences
 

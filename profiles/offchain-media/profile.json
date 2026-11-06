@@ -1,5 +1,5 @@
 {
- "about": "Settings of the Off-Chain Media edition, published at https://offchain.media/community-atlas/. Every key is explained in docs/PROFILE.md.",
+ "about": "Settings of the Off-Chain Media edition, published at https://offchain.media/atlas/. Every key is explained in docs/PROFILE.md.",
  "id": "offchain-media",
  "name": "Community Atlas",
  "tagline": {
@@ -16,15 +16,15 @@
   {
    "code": "en",
    "name": "English",
-   "path": "/community-atlas/"
+   "path": "/atlas/"
   },
   {
    "code": "fr",
    "name": "Français",
-   "path": "/fr/community-atlas/"
+   "path": "/fr/atlas/"
   }
  ],
- "assetsPath": "/community-atlas/",
+ "assetsPath": "/atlas/",
  "repository": "https://github.com/offchain-media/community-atlas",
  "scope": {
   "type": "world"

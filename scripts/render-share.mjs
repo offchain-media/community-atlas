@@ -2,7 +2,7 @@
  * Render a profile's social preview image (1200 × 630) from design/share.html and a capture of the live map.
  * Needs a built and served atlas (npm run build && npm run preview) and Playwright with Chromium.
  *
- *   node scripts/render-share.mjs --profile profiles/offchain-media --url http://127.0.0.1:8790/community-atlas/
+ *   node scripts/render-share.mjs --profile profiles/offchain-media --url http://127.0.0.1:8817/atlas/
  */
 import { createRequire } from "node:module";
 import { join, resolve } from "node:path";
@@ -13,7 +13,7 @@ import { ROOT } from "./lib/io.mjs";
 const { values } = parseArgs({
   options: {
     profile: { type: "string", default: "profiles/offchain-media" },
-    url: { type: "string", default: "http://127.0.0.1:8790/community-atlas/" },
+    url: { type: "string", default: "http://127.0.0.1:8817/atlas/" },
   },
 });
 const require = createRequire(import.meta.url);

@@ -6,8 +6,8 @@ The build writes `public/` with the same paths as the public site. Upload it as 
 
 `wrangler.jsonc` defines the Worker `community-atlas`, with static assets from `public/` and 2 routes on the `offchain.media` zone:
 
-- `offchain.media/community-atlas*`
-- `offchain.media/fr/community-atlas*`
+- `offchain.media/atlas*`
+- `offchain.media/fr/atlas*`
 
 Routes only take these paths; the rest of offchain.media keeps being served as before. The zone must be in the same Cloudflare account as the Worker. No account id is stored in the repository.
 

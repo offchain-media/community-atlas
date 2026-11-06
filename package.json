@@ -12,7 +12,7 @@
     "harvest": "node scripts/harvest.mjs",
     "build": "node scripts/build.mjs",
     "test": "node --test scripts/*.test.mjs",
-    "preview": "python3 -m http.server 8790 --bind 127.0.0.1 --directory public",
+    "preview": "python3 -m http.server 8817 --bind 127.0.0.1 --directory public",
     "deploy:check": "wrangler deploy --dry-run",
     "deploy": "wrangler deploy"
   },

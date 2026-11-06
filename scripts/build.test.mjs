@@ -16,41 +16,41 @@ test("Off-Chain Media edition builds under its two paths", (t) => {
   const dir = out + "-ocm";
   t.after(() => rmSync(dir, { recursive: true, force: true }));
   build("profiles/offchain-media", dir);
-  const en = readFileSync(join(dir, "community-atlas/index.html"), "utf8");
-  const fr = readFileSync(join(dir, "fr/community-atlas/index.html"), "utf8");
+  const en = readFileSync(join(dir, "atlas/index.html"), "utf8");
+  const fr = readFileSync(join(dir, "fr/atlas/index.html"), "utf8");
   assert.match(en, /<html lang="en"/);
   assert.match(fr, /<html lang="fr"/);
-  assert.match(en, /rel="canonical" href="https:\/\/offchain.media\/community-atlas\/"/);
-  assert.match(fr, /hreflang="en" href="https:\/\/offchain.media\/community-atlas\/"/);
+  assert.match(en, /rel="canonical" href="https:\/\/offchain.media\/atlas\/"/);
+  assert.match(fr, /hreflang="en" href="https:\/\/offchain.media\/atlas\/"/);
   // Every local asset reference stays under the atlas paths, never the root of offchain.media.
   for (const html of [en, fr])
     for (const [, ref] of html.matchAll(/(?:src|href)="(\/[^"]*)"/g))
-      assert.ok(ref.startsWith("/community-atlas/") || ref.startsWith("/fr/community-atlas/"), ref);
+      assert.ok(ref.startsWith("/atlas/") || ref.startsWith("/fr/atlas/"), ref);
   for (const f of ["data/events.json", "data/merchants.json", "data/communities.json", "data/ecosystem.json", "data/meta.json", "data/countries.json", "events.ics", "llms.txt", "sitemap.xml", "assets/app.js", "assets/shared/events.js", "embed/index.html"])
-    assert.ok(existsSync(join(dir, "community-atlas", f)), f);
-  const events = JSON.parse(readFileSync(join(dir, "community-atlas/data/events.json"), "utf8")).events;
+    assert.ok(existsSync(join(dir, "atlas", f)), f);
+  const events = JSON.parse(readFileSync(join(dir, "atlas/data/events.json"), "utf8")).events;
   assert.ok(events.length > 0);
   assert.equal(new Set(events.map((e) => e.id)).size, events.length);
   // Every picture an event or a community points to is in the build (none when nothing was harvested).
   for (const e of events.filter((e) => e.image)) assert.ok(existsSync(join(dir, e.image)), e.image);
-  const communities = JSON.parse(readFileSync(join(dir, "community-atlas/data/communities.json"), "utf8")).communities;
+  const communities = JSON.parse(readFileSync(join(dir, "atlas/data/communities.json"), "utf8")).communities;
   for (const c of communities.filter((c) => c.image)) assert.ok(existsSync(join(dir, c.image)), c.image);
   assert.ok(communities.every((c) => !JSON.stringify(c.links).match(/mailto:|"email"|"phone"|whatsapp/i)), "no personal contact fields");
   // Each event has a page in each language; events with an own page elsewhere point search engines there.
   const dated = events.find((e) => e.start && e.status !== "planned" && !e.source.startsWith("feed:"));
-  const page = readFileSync(join(dir, "community-atlas/events", dated.slug, "index.html"), "utf8");
+  const page = readFileSync(join(dir, "atlas/events", dated.slug, "index.html"), "utf8");
   assert.match(page, /<script type="application\/ld\+json">\{"@context":"https:\/\/schema.org","@type":"Event"/);
-  assert.match(page, new RegExp(`rel="canonical" href="https://offchain.media/community-atlas/events/${dated.slug}/"`));
-  assert.ok(existsSync(join(dir, "fr/community-atlas/events", dated.slug, "index.html")));
-  assert.ok(existsSync(join(dir, "community-atlas/events", dated.slug + ".ics")));
+  assert.match(page, new RegExp(`rel="canonical" href="https://offchain.media/atlas/events/${dated.slug}/"`));
+  assert.ok(existsSync(join(dir, "fr/atlas/events", dated.slug, "index.html")));
+  assert.ok(existsSync(join(dir, "atlas/events", dated.slug + ".ics")));
   const copy = events.find((e) => e.source === "feed:lithuaniabtc.com" && e.listing);
   if (copy) {
-    const html = readFileSync(join(dir, "community-atlas/events", copy.slug, "index.html"), "utf8");
+    const html = readFileSync(join(dir, "atlas/events", copy.slug, "index.html"), "utf8");
     assert.match(html, new RegExp(`rel="canonical" href="${copy.listing.replace(/[.?]/g, "\\$&")}"`));
     assert.doesNotMatch(html, /ld\+json/);
   }
-  assert.match(readFileSync(join(dir, "community-atlas/sitemap.xml"), "utf8"), new RegExp(`/community-atlas/events/${dated.slug}/`));
-  const embed = readFileSync(join(dir, "community-atlas/embed/index.html"), "utf8");
+  assert.match(readFileSync(join(dir, "atlas/sitemap.xml"), "utf8"), new RegExp(`/atlas/events/${dated.slug}/`));
+  const embed = readFileSync(join(dir, "atlas/embed/index.html"), "utf8");
   assert.match(embed, /name="robots" content="noindex"/);
   assert.match(en, /"embed":false/);
   assert.match(embed, /"embed":true/);
@@ -110,7 +110,7 @@ test("published companies are verified and carry no internal review fields", (t)
   const dir = out + "-eco";
   t.after(() => rmSync(dir, { recursive: true, force: true }));
   build("profiles/offchain-media", dir);
-  const { companies } = JSON.parse(readFileSync(join(dir, "community-atlas/data/ecosystem.json"), "utf8"));
+  const { companies } = JSON.parse(readFileSync(join(dir, "atlas/data/ecosystem.json"), "utf8"));
   const source = JSON.parse(readFileSync(join(root, "profiles/offchain-media/ecosystem.json"), "utf8")).companies;
   assert.equal(companies.length, source.filter((c) => c.verification === "read" || c.review === "approved").length);
   for (const c of companies) for (const k of ["verification", "review", "evidenceNote"]) assert.ok(!(k in c), k);
@@ -119,10 +119,10 @@ test("published companies are verified and carry no internal review fields", (t)
 test("worker opens data to other sites and lets only embeds be framed", async () => {
   const env = { ASSETS: { fetch: async () => new Response("x", { headers: { "Content-Type": "text/html" } }) } };
   const get = (p, method = "GET") => worker.fetch(new Request("https://offchain.media" + p, { method }), env);
-  assert.equal((await get("/community-atlas/data/events.json")).headers.get("Access-Control-Allow-Origin"), "*");
-  assert.equal((await get("/community-atlas/events.ics")).headers.get("Content-Type"), "text/calendar; charset=utf-8");
-  assert.equal((await get("/community-atlas/data/events.json", "OPTIONS")).status, 204);
-  assert.equal((await get("/community-atlas/embed/")).headers.get("Content-Security-Policy"), "frame-ancestors *");
-  assert.equal((await get("/community-atlas/")).headers.get("X-Frame-Options"), "SAMEORIGIN");
-  assert.equal((await get("/community-atlas/")).headers.get("Access-Control-Allow-Origin"), null);
+  assert.equal((await get("/atlas/data/events.json")).headers.get("Access-Control-Allow-Origin"), "*");
+  assert.equal((await get("/atlas/events.ics")).headers.get("Content-Type"), "text/calendar; charset=utf-8");
+  assert.equal((await get("/atlas/data/events.json", "OPTIONS")).status, 204);
+  assert.equal((await get("/atlas/embed/")).headers.get("Content-Security-Policy"), "frame-ancestors *");
+  assert.equal((await get("/atlas/")).headers.get("X-Frame-Options"), "SAMEORIGIN");
+  assert.equal((await get("/atlas/")).headers.get("Access-Control-Allow-Origin"), null);
 });
