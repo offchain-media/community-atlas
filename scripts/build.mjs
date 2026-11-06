@@ -468,7 +468,7 @@ for (const lang of profile.languages) {
 <header class="top">${brand(lang)}<nav class="tabs" aria-label="${esc(profile.name)}">${tabs(lang, T)}</nav>
 <div class="tools">${switcher}${themeButton(T)}</div></header>
 <main id="main" tabindex="-1">
-<section id="view-map" aria-label="${esc(T.views.map)}"><div id="map"></div><div class="map-panel" id="layer-controls"></div></section>
+<section id="view-map" aria-label="${esc(T.views.map)}"><div id="map"></div><div class="map-search" id="map-search"></div><div class="map-legend" id="layer-controls"></div></section>
 <section id="view-events" class="page" hidden><header><h1>${esc(T.views.events)}</h1><p>${esc(plural(T.eventsCount, groups.upcoming.length, T.locale))} · <a href="${ASSETS}events.ics">${esc(T.subscribe)}</a>${
       repo ? ` · <a href="${esc(repo)}#add-your-events" rel="noopener">${esc(T.addEvents)}</a>` : ""
     }</p></header>
@@ -505,7 +505,7 @@ ${
 <body class="embed" data-view="map">
 <header class="top"><div class="brand"><a class="name" href="${esc(url(lang.path))}" target="_blank" rel="noopener">${esc(profile.name)} ↗</a></div><div class="tools">${themeButton(T)}</div></header>
 <main id="main" tabindex="-1">
-<section id="view-map" aria-label="${esc(T.views.map)}"><div id="map"></div><div class="map-panel" id="layer-controls"></div></section>
+<section id="view-map" aria-label="${esc(T.views.map)}"><div id="map"></div><div class="map-search" id="map-search"></div><div class="map-legend" id="layer-controls"></div></section>
 <section id="view-events" class="page" hidden><div class="controls" id="events-controls"></div><div id="events-list"></div></section>
 </main>
 <script type="application/json" id="atlas-config">${config(lang, T, true)}</script>

@@ -165,6 +165,7 @@ function initMap() {
   });
   map.touchZoomRotate.disableRotation();
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+  map.addControl(resetControl(), "top-right");
   map.addControl(new maplibregl.GeolocateControl({ trackUserLocation: false }), "top-right");
   // Layer handlers are tied to layer ids, so they survive style changes: register them once.
   for (const layer of CFG.layers) {
@@ -309,23 +310,42 @@ function setLayer(layer, on) {
   if (on && map.getSource("atlas-" + layer)) fillLayer(layer);
 }
 
+/* Small square button under the zoom buttons: back to the profile's starting view. */
+function resetControl() {
+  let box;
+  return {
+    onAdd() {
+      const button = h("button", { type: "button", class: "atlas-reset", title: T.resetView, "aria-label": T.resetView, onclick: () => map.flyTo({ center: CFG.map.center, zoom: CFG.map.zoom }) });
+      button.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/><circle cx="12" cy="12" r="2.5"/></svg>';
+      box = h("div", { class: "maplibregl-ctrl maplibregl-ctrl-group" }, button);
+      return box;
+    },
+    onRemove() {
+      box?.remove();
+    },
+  };
+}
+
+/* Legend in the bottom-left corner: each line shows or hides its layer. */
 function renderLayerControls() {
-  const panel = document.getElementById("layer-controls");
-  const box = h("div", { class: "panel-body" });
-  panel.append(h("details", { open: innerWidth > 760 && !EMBED }, h("summary", { class: "panel-title" }, T.layersTitle), box));
+  const legend = document.getElementById("layer-controls");
+  legend.setAttribute("role", "group");
+  legend.setAttribute("aria-label", T.layersTitle);
+  legend.title = T.layersTitle;
   for (const layer of CFG.layers)
-    box.append(
+    legend.append(
       h(
         "label",
         { class: "layer layer-" + layer },
         h("input", { type: "checkbox", checked: layerState.has(layer), onchange: (ev) => setLayer(layer, ev.target.checked) }),
         h("span", { class: "swatch", "aria-hidden": "true" }),
-        h("span", {}, T.layers[layer]),
+        h("span", { class: "layer-name" }, T.layers[layer]),
         h("span", { class: "layer-count", "data-layer-status": layer }),
       ),
     );
-  box.append(h("button", { type: "button", class: "reset", onclick: () => map.flyTo({ center: CFG.map.center, zoom: CFG.map.zoom }) }, T.resetView));
-  if (CFG.search) panel.prepend(searchBox());
+  const search = document.getElementById("map-search");
+  if (CFG.search) search.append(searchBox());
+  else search.remove();
 }
 
 /* ---------- search: countries, communities, event cities and places, then OpenStreetMap on Enter ---------- */
@@ -338,11 +358,14 @@ async function searchIndex() {
     ["countries", "communities", "events"].map((n) => (n === "communities" && !CFG.layers.includes("communities") ? null : load(n).catch(() => null))),
   );
   for (const [code, b] of Object.entries(countries?.countries || {}))
-    out.push({ label: countryName(code, T.locale), kind: "country", bounds: [[b[0], b[1]], [b[2], b[3]]] });
+    out.push({ label: countryName(code, T.locale), kind: T.searchCountry, bounds: [[b[0], b[1]], [b[2], b[3]]] });
+  // Some sources put a country name or "Online" in the city field: those are not cities.
+  const notCities = new Set(["online", ...Object.keys(countries?.countries || {}).flatMap((code) => [norm(countryName(code, T.locale)), norm(countryName(code, "en"))])]);
   for (const c of communities?.communities || []) out.push({ label: c.name, kind: T.layers.communities, at: [c.lon, c.lat], open: ["communities", c.id] });
   const cities = new Map();
-  for (const e of events?.events || []) if (e.city && Number.isFinite(e.lat) && !cities.has(e.city)) cities.set(e.city, [e.lon, e.lat]);
-  for (const [city, at] of cities) out.push({ label: city, kind: T.views.events, at });
+  for (const e of events?.events || [])
+    if (e.city && Number.isFinite(e.lat) && !cities.has(e.city) && !notCities.has(norm(e.city))) cities.set(e.city, [e.lon, e.lat]);
+  for (const [city, at] of cities) out.push({ label: city, kind: T.searchCity, at });
   if (cache.has("merchants"))
     for (const [id, lon, lat, name] of (await load("merchants")).places) if (name) out.push({ label: name, kind: T.layers.merchants, at: [lon, lat], open: ["merchants", id, name] });
   for (const item of out) item.key = norm(item.label);
@@ -370,7 +393,7 @@ function searchBox() {
     const hits = index.filter((i) => i.key.includes(q)).sort((a, b) => a.key.indexOf(q) - b.key.indexOf(q) || a.key.length - b.key.length).slice(0, 8);
     list.replaceChildren(
       ...hits.map((i) => h("li", { role: "option" }, h("button", { type: "button", onclick: () => go(i) }, i.label, h("span", { class: "muted" }, " · " + i.kind)))),
-      h("li", { class: "hint" }, T.searchHint),
+      h("li", { class: "hint" }, T.searchHint, h("br"), T.searchSource),
     );
     list.hidden = false;
   });
@@ -393,7 +416,9 @@ function searchBox() {
       list.hidden = false;
     }
   });
-  return h("div", { class: "search" }, input, list, h("p", { class: "search-source" }, T.searchSource));
+  const icon = h("span", { class: "search-icon", "aria-hidden": "true" });
+  icon.innerHTML = '<svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>';
+  return h("div", { class: "search", role: "search" }, icon, input, list);
 }
 
 let zone = null;
@@ -425,7 +450,7 @@ async function openPopup(layer, feature, fitZone = false) {
   if (layer === "merchants") return merchantPopup(body, feature.properties);
   if (layer === "communities") {
     const c = (await load("communities")).communities.find((x) => x.id === id);
-    if (c) body.append(...(await communityCard(c, true)).lastChild.childNodes);
+    if (c) body.append(...(await communityCard(c, { compact: true })).lastChild.childNodes);
     showZone(id);
     return;
   }
@@ -514,7 +539,7 @@ async function renderEvents() {
 
 /* ---------- communities ---------- */
 
-async function communityCard(c, compact = false) {
+async function communityCard(c, { compact = false, withCountry = true } = {}) {
   const { events } = await load("events").catch(() => ({ events: [] }));
   const upcoming = groupEvents(events.filter((e) => e.community === c.id)).upcoming;
   const links = Object.entries(c.links)
@@ -532,7 +557,7 @@ async function communityCard(c, compact = false) {
     h(
       "div",
       {},
-      h("p", { class: "kicker" }, h("span", { class: "cat" }, countryName(c.country, T.locale) || c.continent || "")),
+      withCountry ? h("p", { class: "kicker" }, h("span", { class: "cat" }, countryName(c.country, T.locale) || c.continent || "")) : null,
       h("h3", {}, extLink(c.links.website || c.btcmap, c.name)),
       upcoming.length
         ? h("p", { class: "next" }, plural(T.eventsCount, upcoming.length, T.locale), ": ", extLink(upcoming[0].url, eventTitle(upcoming[0], LANG)), " · ", dateLabel(upcoming[0], T))
@@ -572,8 +597,28 @@ async function renderCommunities() {
     const items = all.filter(
       (c) => (!state.country || c.country === state.country) && (!state.q || (c.name + " " + countryName(c.country, T.locale)).toLowerCase().includes(state.q)),
     );
-    const cards = await Promise.all(items.slice(0, state.limit).map((c) => communityCard(c)));
-    const parts = [items.length ? h("div", { class: "grid" }, cards) : h("p", { class: "empty" }, T.noResults)];
+    // One section per country, countries in alphabetical order, communities without a country last.
+    const countryOf = (c) => countryName(c.country, T.locale) || "";
+    items.sort((a, b) => !countryOf(a) - !countryOf(b) || countryOf(a).localeCompare(countryOf(b), T.locale) || a.name.localeCompare(b.name, T.locale));
+    const totals = new Map();
+    for (const c of items) totals.set(countryOf(c), (totals.get(countryOf(c)) || 0) + 1);
+    const sections = new Map();
+    for (const c of items.slice(0, state.limit)) {
+      const name = countryOf(c);
+      if (!sections.has(name)) sections.set(name, []);
+      sections.get(name).push(c);
+    }
+    const parts = [];
+    for (const [name, members] of sections)
+      parts.push(
+        h(
+          "section",
+          { class: "country-group" },
+          h("div", { class: "section-head" }, h("h2", { class: "group-title" }, (name || T.noCountry) + " · " + num(totals.get(name)))),
+          h("div", { class: "grid" }, await Promise.all(members.map((c) => communityCard(c, { withCountry: false })))),
+        ),
+      );
+    if (!items.length) parts.push(h("p", { class: "empty" }, T.noResults));
     if (items.length > state.limit) parts.push(h("button", { type: "button", class: "more", onclick: () => { state.limit += PAGE; draw(); } }, T.showMore));
     list.replaceChildren(...parts);
   }
