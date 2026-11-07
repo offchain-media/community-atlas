@@ -1,12 +1,8 @@
 {
- "fetchedAt": "2026-11-05T22:13:21.835Z",
+ "fetchedAt": "2026-11-07T11:58:39.082Z",
  "source": "Meetup.com group calendars linked from BTC Map communities",
  "groups": 97,
  "failures": [
-  {
-   "group": "bitcoin-albany",
-   "error": "HTTP 404 for https://www.meetup.com/bitcoin-albany/events/ical/"
-  },
   {
    "group": "ann-arbor-liberty-meetup-group",
    "error": "HTTP 404 for https://www.meetup.com/ann-arbor-liberty-meetup-group/events/ical/"
@@ -14,6 +10,10 @@
   {
    "group": "fr-FR",
    "error": "HTTP 404 for https://www.meetup.com/fr-FR/events/ical/"
+  },
+  {
+   "group": "bitcoin-albany",
+   "error": "HTTP 404 for https://www.meetup.com/bitcoin-albany/events/ical/"
   },
   {
    "group": "es-ES",
@@ -96,20 +96,24 @@
    "error": "HTTP 403 for https://www.meetup.com/nebitcoiners/events/ical/"
   },
   {
-   "group": "porto-alegre-bitcoin-meetup",
-   "error": "HTTP 403 for https://www.meetup.com/porto-alegre-bitcoin-meetup/events/ical/"
+   "group": "pitbitdevs",
+   "error": "HTTP 404 for https://www.meetup.com/pitbitdevs/events/ical/"
   },
   {
    "group": "Portland-Bitcoin-Group",
    "error": "HTTP 403 for https://www.meetup.com/Portland-Bitcoin-Group/events/ical/"
   },
   {
-   "group": "southern-maryland-bitcoiners",
-   "error": "HTTP 404 for https://www.meetup.com/southern-maryland-bitcoiners/events/ical/"
+   "group": "porto-alegre-bitcoin-meetup",
+   "error": "HTTP 403 for https://www.meetup.com/porto-alegre-bitcoin-meetup/events/ical/"
   },
   {
    "group": "ko-KR",
    "error": "HTTP 404 for https://www.meetup.com/ko-KR/events/ical/"
+  },
+  {
+   "group": "southern-maryland-bitcoiners",
+   "error": "HTTP 404 for https://www.meetup.com/southern-maryland-bitcoiners/events/ical/"
   },
   {
    "group": "saint-charles-bitcoin-meetup-group",
@@ -129,33 +133,6 @@
   }
  ],
  "events": [
-  {
-   "id": "meetup:317025942",
-   "source": "meetup",
-   "sourceName": "Meetup",
-   "type": "meetup",
-   "status": "confirmed",
-   "title": "[TURNHOUT] Freedom friday bitcoin meetup",
-   "start": "2026-11-06T18:00:00.000Z",
-   "end": "2026-11-06T21:00:00.000Z",
-   "dateOnly": false,
-   "timeZone": "Europe/Amsterdam",
-   "city": null,
-   "country": "NL",
-   "lon": 5.89253,
-   "lat": 52.00112,
-   "precision": "city",
-   "venue": null,
-   "url": "https://www.meetup.com/bitcoinmeetup/events/317025942/",
-   "listing": "https://www.meetup.com/bitcoinmeetup/events/",
-   "organiser": {
-    "name": "Arnhem Bitcoin City",
-    "url": "https://www.meetup.com/bitcoinmeetup/"
-   },
-   "community": "arnhem-bitcoin-city",
-   "zone": "Arnhem Bitcoin City",
-   "image": "communities/arnhem-bitcoin-city.webp"
-  },
   {
    "id": "meetup:315560883",
    "source": "meetup",
@@ -390,6 +367,33 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitcoinmeetup/events/trffvtykcfbhb/",
+   "listing": "https://www.meetup.com/bitcoinmeetup/events/",
+   "organiser": {
+    "name": "Arnhem Bitcoin City",
+    "url": "https://www.meetup.com/bitcoinmeetup/"
+   },
+   "community": "arnhem-bitcoin-city",
+   "zone": "Arnhem Bitcoin City",
+   "image": "communities/arnhem-bitcoin-city.webp"
+  },
+  {
+   "id": "meetup:trffvtykcgbdb",
+   "source": "meetup",
+   "sourceName": "Meetup",
+   "type": "meetup",
+   "status": "confirmed",
+   "title": "[TURNHOUT] Freedom friday bitcoin meetup",
+   "start": "2027-04-02T17:00:00.000Z",
+   "end": "2027-04-02T20:00:00.000Z",
+   "dateOnly": false,
+   "timeZone": "Europe/Amsterdam",
+   "city": null,
+   "country": "NL",
+   "lon": 5.89253,
+   "lat": 52.00112,
+   "precision": "city",
+   "venue": null,
+   "url": "https://www.meetup.com/bitcoinmeetup/events/trffvtykcgbdb/",
    "listing": "https://www.meetup.com/bitcoinmeetup/events/",
    "organiser": {
     "name": "Arnhem Bitcoin City",
@@ -2236,7 +2240,7 @@
    "image": "communities/bitcoin-mallorca.webp"
   },
   {
-   "id": "meetup:mdgtltyjcpbjc",
+   "id": "meetup:317317174",
    "source": "meetup",
    "sourceName": "Meetup",
    "type": "meetup",
@@ -2252,7 +2256,7 @@
    "lat": 53.51638,
    "precision": "city",
    "venue": null,
-   "url": "https://www.meetup.com/bitcoin-manchester/events/mdgtltyjcpbjc/",
+   "url": "https://www.meetup.com/bitcoin-manchester/events/317317174/",
    "listing": "https://www.meetup.com/bitcoin-manchester/events/",
    "organiser": {
     "name": "Bitcoin Manchester",
@@ -3316,33 +3320,6 @@
    "image": "communities/bitcoin-y-lightning-guadalajara.webp"
   },
   {
-   "id": "meetup:317220907",
-   "source": "meetup",
-   "sourceName": "Meetup",
-   "type": "meetup",
-   "status": "confirmed",
-   "title": "Bitshala Reading Club",
-   "start": "2026-11-06T14:30:00.000Z",
-   "end": "2026-11-06T15:30:00.000Z",
-   "dateOnly": false,
-   "timeZone": "Asia/Kolkata",
-   "city": null,
-   "country": "IN",
-   "lon": 77.60302,
-   "lat": 12.97611,
-   "precision": "city",
-   "venue": null,
-   "url": "https://www.meetup.com/bitshala/events/317220907/",
-   "listing": "https://www.meetup.com/bitshala/events/",
-   "organiser": {
-    "name": "Bitshala",
-    "url": "https://www.meetup.com/bitshala/"
-   },
-   "community": "bitshala",
-   "zone": "Bitshala",
-   "image": "communities/bitshala.webp"
-  },
-  {
    "id": "meetup:317270889",
    "source": "meetup",
    "sourceName": "Meetup",
@@ -3451,7 +3428,7 @@
    "image": "communities/bitshala.webp"
   },
   {
-   "id": "meetup:knbpztyjcpbqb",
+   "id": "meetup:317314292",
    "source": "meetup",
    "sourceName": "Meetup",
    "type": "meetup",
@@ -3467,7 +3444,7 @@
    "lat": 12.97611,
    "precision": "city",
    "venue": null,
-   "url": "https://www.meetup.com/bitshala/events/knbpztyjcpbqb/",
+   "url": "https://www.meetup.com/bitshala/events/317314292/",
    "listing": "https://www.meetup.com/bitshala/events/",
    "organiser": {
     "name": "Bitshala",
@@ -3576,6 +3553,33 @@
    "precision": "city",
    "venue": null,
    "url": "https://www.meetup.com/bitshala/events/jnbpztyjcpbxb/",
+   "listing": "https://www.meetup.com/bitshala/events/",
+   "organiser": {
+    "name": "Bitshala",
+    "url": "https://www.meetup.com/bitshala/"
+   },
+   "community": "bitshala",
+   "zone": "Bitshala",
+   "image": "communities/bitshala.webp"
+  },
+  {
+   "id": "meetup:316824894",
+   "source": "meetup",
+   "sourceName": "Meetup",
+   "type": "meetup",
+   "status": "confirmed",
+   "title": "Mastering Lightning (ML) - Season 5 - Orientation Session",
+   "start": "2026-11-18T14:30:00.000Z",
+   "end": "2026-11-18T15:30:00.000Z",
+   "dateOnly": false,
+   "timeZone": "Asia/Kolkata",
+   "city": null,
+   "country": "IN",
+   "lon": 77.60302,
+   "lat": 12.97611,
+   "precision": "city",
+   "venue": null,
+   "url": "https://www.meetup.com/bitshala/events/316824894/",
    "listing": "https://www.meetup.com/bitshala/events/",
    "organiser": {
     "name": "Bitshala",
@@ -3964,7 +3968,7 @@
    "image": "communities/detroit-bitcoin-and-beer.webp"
   },
   {
-   "id": "meetup:tfqrxtyjcpbhc",
+   "id": "meetup:317307677",
    "source": "meetup",
    "sourceName": "Meetup",
    "type": "meetup",
@@ -3980,7 +3984,7 @@
    "lat": 42.38212,
    "precision": "city",
    "venue": null,
-   "url": "https://www.meetup.com/bitcoin-and-beer-detroit/events/tfqrxtyjcpbhc/",
+   "url": "https://www.meetup.com/bitcoin-and-beer-detroit/events/317307677/",
    "listing": "https://www.meetup.com/bitcoin-and-beer-detroit/events/",
    "organiser": {
     "name": "Detroit Bitcoin and Beer",
@@ -4180,7 +4184,7 @@
    "image": "communities/grand-rapids-bitcoin.webp"
   },
   {
-   "id": "meetup:fczbbvyjcpbhc",
+   "id": "meetup:317305654",
    "source": "meetup",
    "sourceName": "Meetup",
    "type": "meetup",
@@ -4196,7 +4200,7 @@
    "lat": 42.96065,
    "precision": "city",
    "venue": null,
-   "url": "https://www.meetup.com/grand-rapids-bitcoin/events/fczbbvyjcpbhc/",
+   "url": "https://www.meetup.com/grand-rapids-bitcoin/events/317305654/",
    "listing": "https://www.meetup.com/grand-rapids-bitcoin/events/",
    "organiser": {
     "name": "Grand Rapids Bitcoin",
@@ -5069,60 +5073,6 @@
    "community": "nola-bitcoin",
    "zone": "Nola Bitcoin",
    "image": "communities/nola-bitcoin.webp"
-  },
-  {
-   "id": "meetup:316891906",
-   "source": "meetup",
-   "sourceName": "Meetup",
-   "type": "meetup",
-   "status": "confirmed",
-   "title": "Peer to Peer Social | Bentonville",
-   "start": "2026-11-06T00:30:00.000Z",
-   "end": "2026-11-06T02:30:00.000Z",
-   "dateOnly": false,
-   "timeZone": "America/Chicago",
-   "city": null,
-   "country": "US",
-   "lon": -94.02716,
-   "lat": 36.03232,
-   "precision": "city",
-   "venue": null,
-   "url": "https://www.meetup.com/fayetteville-bitcoin-meetup-group/events/316891906/",
-   "listing": "https://www.meetup.com/fayetteville-cryptocurrency-meetup-group/events/",
-   "organiser": {
-    "name": "Northwest Arkansas Bitcoin",
-    "url": "https://www.meetup.com/fayetteville-cryptocurrency-meetup-group/"
-   },
-   "community": "northwest-arkansas-bitcoin",
-   "zone": "Northwest Arkansas Bitcoin",
-   "image": "communities/northwest-arkansas-bitcoin.webp"
-  },
-  {
-   "id": "meetup:316190516",
-   "source": "meetup",
-   "sourceName": "Meetup",
-   "type": "meetup",
-   "status": "confirmed",
-   "title": "Rhode Island Bitcoin Meetup #52 | Bitcoin, Lightning & Local Adoption",
-   "start": "2026-11-05T23:30:00.000Z",
-   "end": "2026-11-06T01:30:00.000Z",
-   "dateOnly": false,
-   "timeZone": "America/New_York",
-   "city": null,
-   "country": "US",
-   "lon": -71.52732,
-   "lat": 41.58562,
-   "precision": "city",
-   "venue": null,
-   "url": "https://www.meetup.com/ribitcoiners/events/316190516/",
-   "listing": "https://www.meetup.com/ribitcoiners/events/",
-   "organiser": {
-    "name": "Rhode Island Bitcoiners",
-    "url": "https://www.meetup.com/ribitcoiners/"
-   },
-   "community": "rhode-island-bitcoiners",
-   "zone": "Rhode Island Bitcoiners",
-   "image": "communities/rhode-island-bitcoiners.webp"
   },
   {
    "id": "meetup:316190548",

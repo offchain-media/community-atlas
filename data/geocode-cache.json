@@ -644,6 +644,10 @@
   "city": "Essen",
   "country": "DE"
  },
+ "geohash:u1j0z": {
+  "city": "Hennef",
+  "country": "DE"
+ },
  "geohash:u1j56": {
   "city": "Wuppertal",
   "country": "DE"
@@ -711,6 +715,10 @@
  "geohash:u2ce2": {
   "city": "Třemošná",
   "country": "CZ"
+ },
+ "geohash:u2d09": {
+  "city": "Oberschlierbach",
+  "country": "AT"
  },
  "geohash:u2d4v": {
   "city": "Linz",

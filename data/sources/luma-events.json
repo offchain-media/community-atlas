@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-05T22:53:18.918Z",
+ "fetchedAt": "2026-11-07T11:58:45.574Z",
  "source": "Luma calendars listed in the profile or linked from BTC Map communities",
  "calendars": [
   "pubkey",
@@ -200,34 +200,6 @@
    "organiser": {
     "name": "Freedom Lab NYC",
     "url": "https://luma.com/freedomlab"
-   },
-   "community": null,
-   "zone": null,
-   "image": null
-  },
-  {
-   "id": "luma:evt-HALrwG2WK5NhFCL",
-   "source": "luma",
-   "sourceName": "Luma",
-   "type": "meetup",
-   "status": "confirmed",
-   "title": "¿La IA nos matará a todos? Riesgo real, poder y propaganda",
-   "start": "2026-10-07T00:00:00.000Z",
-   "end": "2026-10-07T03:00:00.000Z",
-   "dateOnly": false,
-   "timeZone": null,
-   "city": null,
-   "country": null,
-   "lon": -99.1855144,
-   "lat": 19.3841878,
-   "precision": "venue",
-   "online": false,
-   "venue": "Giorgione 55",
-   "url": "https://luma.com/lacasade-2xza",
-   "listing": "https://luma.com/lacasadesatoshi",
-   "organiser": {
-    "name": "La Casa de Satoshi",
-    "url": "https://luma.com/lacasadesatoshi"
    },
    "community": null,
    "zone": null,

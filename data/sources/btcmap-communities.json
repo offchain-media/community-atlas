@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-05T22:52:56.648Z",
+ "fetchedAt": "2026-11-07T11:58:25.037Z",
  "source": "https://api.btcmap.org/v3/areas?updated_since=2000-01-01T00:00:00Z&limit=100000",
  "license": "ODbL-1.0 (BTC Map)",
  "communities": [
@@ -471,17 +471,17 @@
    "image": "communities/annecy.webp"
   },
   {
-   "id": "satoshi-spritz-arezzo",
+   "id": "arezzo-bitcoin-meetup",
    "name": "Arezzo Bitcoin Meetup",
-   "lon": 11.86852,
-   "lat": 43.53616,
+   "lon": 11.86671,
+   "lat": 43.53611,
    "country": "IT",
    "continent": "europe",
    "links": {
     "telegram": "https://t.me/arezzobitcoinmeetup"
    },
-   "btcmap": "https://btcmap.org/community/satoshi-spritz-arezzo",
-   "image": "communities/satoshi-spritz-arezzo.webp"
+   "btcmap": "https://btcmap.org/community/arezzo-bitcoin-meetup",
+   "image": "communities/arezzo-bitcoin-meetup.webp"
   },
   {
    "id": "arnhem-bitcoin-city",
@@ -932,7 +932,8 @@
    "links": {
     "website": "https://bitcoinacademyclub.com/"
    },
-   "btcmap": "https://btcmap.org/community/bitcoin-academy-club"
+   "btcmap": "https://btcmap.org/community/bitcoin-academy-club",
+   "image": "communities/bitcoin-academy-club.webp"
   },
   {
    "id": "bitcoin-acajutla",
@@ -1826,7 +1827,8 @@
    "links": {
     "twitter": "https://twitter.com/BTC_Chiavenna"
    },
-   "btcmap": "https://btcmap.org/community/bitcoin-chiavenna"
+   "btcmap": "https://btcmap.org/community/bitcoin-chiavenna",
+   "image": "communities/bitcoin-chiavenna.webp"
   },
   {
    "id": "bitcoin-cidade-do-sol",
@@ -2536,7 +2538,8 @@
     "telegram": "https://t.me/+w8gBdChb2I43MTc0",
     "twitter": "https://twitter.com/BlockchainJura"
    },
-   "btcmap": "https://btcmap.org/community/bitcoin-jura"
+   "btcmap": "https://btcmap.org/community/bitcoin-jura",
+   "image": "communities/bitcoin-jura.webp"
   },
   {
    "id": "bitcoin-kampala",
@@ -2615,7 +2618,8 @@
    "links": {
     "telegram": "https://t.co/UzFUrrlhzq"
    },
-   "btcmap": "https://btcmap.org/community/bitcoin-la-laguna"
+   "btcmap": "https://btcmap.org/community/bitcoin-la-laguna",
+   "image": "communities/bitcoin-la-laguna.webp"
   },
   {
    "id": "bitcoin-la-pirraya",
@@ -4546,7 +4550,8 @@
    "links": {
     "meetup": "https://www.meetup.com/central-florida-bitcoiners"
    },
-   "btcmap": "https://btcmap.org/community/canberra-bitcoin"
+   "btcmap": "https://btcmap.org/community/canberra-bitcoin",
+   "image": "communities/canberra-bitcoin.webp"
   },
   {
    "id": "cannes",
@@ -6164,7 +6169,8 @@
     "website": "https://portal.einundzwanzig.space/de/meetup/einundzwanzig-rheinisch-bergischer-kreis?l=de",
     "telegram": "https://t.me/+IT8SUzDOLtZmM2Ey"
    },
-   "btcmap": "https://btcmap.org/community/einundzwanzig-rheinisch-bergischer-kreis"
+   "btcmap": "https://btcmap.org/community/einundzwanzig-rheinisch-bergischer-kreis",
+   "image": "communities/einundzwanzig-rheinisch-bergischer-kreis.webp"
   },
   {
    "id": "einundzwanzig-ried-ii",
@@ -6949,6 +6955,19 @@
    "image": "communities/grenoble.webp"
   },
   {
+   "id": "happyland",
+   "name": "Happyland",
+   "lon": 120.91353,
+   "lat": 14.597,
+   "country": null,
+   "continent": "asia",
+   "links": {
+    "website": "https://21.gifts/"
+   },
+   "btcmap": "https://btcmap.org/community/happyland",
+   "image": "communities/happyland.webp"
+  },
+  {
    "id": "harlem-bitcoin",
    "name": "Harlem Bitcoin",
    "lon": -73.94472,
@@ -7188,7 +7207,8 @@
    "country": "CZ",
    "continent": "europe",
    "links": {},
-   "btcmap": "https://btcmap.org/community/jednadvacet-znojemsko"
+   "btcmap": "https://btcmap.org/community/jednadvacet-znojemsko",
+   "image": "communities/jednadvacet-znojemsko.webp"
   },
   {
    "id": "jersey-city-bitcoin",
@@ -8336,7 +8356,8 @@
     "meetup": "https://www.meetup.com/pitbitdevs/",
     "twitter": "https://x.com/pitbitdevs"
    },
-   "btcmap": "https://btcmap.org/community/pittsburgh-bitdevs"
+   "btcmap": "https://btcmap.org/community/pittsburgh-bitdevs",
+   "image": "communities/pittsburgh-bitdevs.webp"
   },
   {
    "id": "plano-b-serra-gaúcha",
@@ -8953,7 +8974,8 @@
     "twitter": "https://x.com/unidosxsatoshi",
     "youtube": "https://www.youtube.com/channel/UCy6Bj_2uf3qNskJCESZnvNg"
    },
-   "btcmap": "https://btcmap.org/community/sst-altagracia"
+   "btcmap": "https://btcmap.org/community/sst-altagracia",
+   "image": "communities/sst-altagracia.webp"
   },
   {
    "id": "satoshi-of-hermanas-mirabal",
@@ -8966,7 +8988,8 @@
     "twitter": "https://x.com/unidosxsatoshi",
     "youtube": "https://www.youtube.com/channel/UCy6Bj_2uf3qNskJCESZnvNg"
    },
-   "btcmap": "https://btcmap.org/community/satoshi-of-hermanas-mirabal"
+   "btcmap": "https://btcmap.org/community/satoshi-of-hermanas-mirabal",
+   "image": "communities/satoshi-of-hermanas-mirabal.webp"
   },
   {
    "id": "satoshi-somos-todos",
@@ -9491,6 +9514,20 @@
    },
    "btcmap": "https://btcmap.org/community/tjugoett-stockholm",
    "image": "communities/tjugoett-stockholm.webp"
+  },
+  {
+   "id": "togo-bitcoin-community",
+   "name": "Togo Bitcoin Community",
+   "lon": 1.28228,
+   "lat": 6.50188,
+   "country": "TG",
+   "continent": "africa",
+   "links": {
+    "twitter": "https://x.com/Togo_Bitcoin",
+    "facebook": "https://www.facebook.com/Togobitcoincommunity"
+   },
+   "btcmap": "https://btcmap.org/community/togo-bitcoin-community",
+   "image": "communities/togo-bitcoin-community.webp"
   },
   {
    "id": "tokyo-bitcoin-base",

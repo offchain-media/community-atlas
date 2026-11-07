@@ -1,4 +1,4 @@
-{"fetchedAt":"2026-11-05T22:52:54.231Z","source":"https://api.btcmap.org/v4/places?fields=id,lat,lon,name,deleted_at","license":"ODbL-1.0 (OpenStreetMap contributors, BTC Map)","fields":["id","lon","lat","name"],"places":[
+{"fetchedAt":"2026-11-07T11:58:23.238Z","source":"https://api.btcmap.org/v4/places?fields=id,lat,lon,name,deleted_at","license":"ODbL-1.0 (OpenStreetMap contributors, BTC Map)","fields":["id","lon","lat","name"],"places":[
 [2,8.94982,45.99988,"Boatcenter Lugano"],
 [4,168.73086,-45.01522,"Ones and Zeros Technology"],
 [5,8.95284,46.00467,"La Dispensa"],
@@ -9371,7 +9371,6 @@
 [21015,17.58977,48.38311,"Raspberry Restaurant Trnava"],
 [21016,20.52633,48.64963,"Pneuservis Igor Imre Rožňava"],
 [21017,17.84306,48.76204,"Doma a záhrada ZIPA PLUS - Nové mesto nad Váhom"],
-[21018,20.54048,48.66499,"Capo Razzo Barbershop"],
 [21019,55.3023,25.17324,"Amantius Apartments"],
 [21020,17.83951,48.75129,"Keramika u Zuzky - Nové Mesto nad Váhom"],
 [21021,20.57188,48.94386,"Autoroll"],
@@ -29751,5 +29750,17 @@
 [43369,-43.96076,-19.85753,"Adélio Barbearia e Cabeleireiros"],
 [43370,-78.91265,36.69915,"Southside Motors"],
 [43371,-118.38871,34.20422,"ExprtFix"],
-[43372,-68.95673,12.15954,"Alle Hens aan Dek"]
+[43372,-68.95673,12.15954,"Alle Hens aan Dek"],
+[43373,-117.75029,34.05544,"Canani Coffee Corp."],
+[43374,-49.08127,-26.48391,"Acácio Tattoo"],
+[43375,-81.9698,27.96278,"Old Florida Tint"],
+[43376,-80.06893,26.4727,"Casa Rosa"],
+[43377,-71.6058,42.8207,"Salon Amalie"],
+[43378,-81.68417,30.30985,"Hart House"],
+[43379,-83.14391,42.48962,"Boukie's Grill"],
+[43380,-80.83337,35.2462,"Grow"],
+[43381,-80.75958,35.28998,"Tracee the Barber"],
+[43382,-80.84119,35.236,"Ritual"],
+[43383,-80.80112,35.23686,"White Veil Coffee @ Pure on The Plaza"],
+[43384,-80.73432,33.45804,"Coinhub"]
 ]}

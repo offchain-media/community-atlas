@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-05T21:56:02.819Z",
+ "fetchedAt": "2026-11-07T11:59:05.075Z",
  "feeds": [
   "https://lithuaniabtc.com/data/events.json",
   "https://bitcoinbaltics.com/data/events.json",
@@ -474,7 +474,8 @@
    "status": "confirmed",
    "title": "Bitcoin in Denmark: Building a Community from the Ground Up",
    "titles": {
-    "en": "Bitcoin in Denmark: Building a Community from the Ground Up"
+    "en": "Bitcoin in Denmark: Building a Community from the Ground Up",
+    "lt": "Bitcoin Danijoje. Bendruomenės kūrimas nuo pradžių"
    },
    "start": "2026-09-22T19:00:00+03:00",
    "end": "2026-09-22T21:00:00+03:00",
@@ -506,7 +507,8 @@
    "status": "confirmed",
    "title": "Baltic Honeybadger 2025",
    "titles": {
-    "en": "Baltic Honeybadger 2025"
+    "en": "Baltic Honeybadger 2025",
+    "lt": "Baltic Honeybadger 2025"
    },
    "start": "2025-08-09T10:00:00+03:00",
    "end": "2025-08-10T18:00:00+03:00",
@@ -538,7 +540,8 @@
    "status": "confirmed",
    "title": "bitcoin++ Riga · Privacy edition",
    "titles": {
-    "en": "bitcoin++ Riga · Privacy edition"
+    "en": "bitcoin++ Riga · Privacy edition",
+    "lt": "bitcoin++ Riga · privatumo renginys"
    },
    "start": "2025-08-07T10:00:00+03:00",
    "end": "2025-08-08T18:00:00+03:00",
@@ -799,7 +802,8 @@
    "status": "confirmed",
    "title": "Bitcoin in Denmark: Building a Community from the Ground Up",
    "titles": {
-    "en": "Bitcoin in Denmark: Building a Community from the Ground Up"
+    "en": "Bitcoin in Denmark: Building a Community from the Ground Up",
+    "lt": "Bitcoin Danijoje. Bendruomenės kūrimas nuo pradžių"
    },
    "start": "2026-09-22T19:00:00+03:00",
    "end": "2026-09-22T21:00:00+03:00",
@@ -831,7 +835,8 @@
    "status": "confirmed",
    "title": "Baltic Honeybadger 2025",
    "titles": {
-    "en": "Baltic Honeybadger 2025"
+    "en": "Baltic Honeybadger 2025",
+    "lt": "Baltic Honeybadger 2025"
    },
    "start": "2025-08-09T10:00:00+03:00",
    "end": "2025-08-10T18:00:00+03:00",
@@ -863,7 +868,8 @@
    "status": "confirmed",
    "title": "bitcoin++ Riga · Privacy edition",
    "titles": {
-    "en": "bitcoin++ Riga · Privacy edition"
+    "en": "bitcoin++ Riga · Privacy edition",
+    "lt": "bitcoin++ Riga · privatumo renginys"
    },
    "start": "2025-08-07T10:00:00+03:00",
    "end": "2025-08-08T18:00:00+03:00",
@@ -895,7 +901,8 @@
    "status": "confirmed",
    "title": "Solana Connect",
    "titles": {
-    "en": "Solana Connect"
+    "en": "Solana Connect",
+    "lt": "Solana Connect"
    },
    "start": "2026-10-14T19:00:00+03:00",
    "end": "2026-10-14T22:00:00+03:00",
@@ -927,7 +934,8 @@
    "status": "confirmed",
    "title": "UN:BLOCK Fintech Forum",
    "titles": {
-    "en": "UN:BLOCK Fintech Forum"
+    "en": "UN:BLOCK Fintech Forum",
+    "lt": "UN:BLOCK Fintech Forum"
    },
    "start": "2026-10-15",
    "end": "2026-10-15",
@@ -959,10 +967,11 @@
    "status": "confirmed",
    "title": "UN:BLOCK 2027",
    "titles": {
-    "en": "UN:BLOCK 2027"
+    "en": "UN:BLOCK 2027",
+    "lt": "UN:BLOCK 2027"
    },
-   "start": "2027-03-10",
-   "end": "2027-03-11",
+   "start": "2027-04-07",
+   "end": "2027-04-08",
    "dateOnly": true,
    "timeZone": "Europe/Vilnius",
    "city": null,
@@ -991,7 +1000,8 @@
    "status": "confirmed",
    "title": "Solana Baltics Vibecheck",
    "titles": {
-    "en": "Solana Baltics Vibecheck"
+    "en": "Solana Baltics Vibecheck",
+    "lt": "Solana Baltics Vibecheck"
    },
    "start": "2026-09-16",
    "end": "2026-09-16",
@@ -1023,7 +1033,8 @@
    "status": "confirmed",
    "title": "UN:BLOCK 2026",
    "titles": {
-    "en": "UN:BLOCK 2026"
+    "en": "UN:BLOCK 2026",
+    "lt": "UN:BLOCK 2026"
    },
    "start": "2026-04-01",
    "end": "2026-04-02",
@@ -1055,7 +1066,8 @@
    "status": "confirmed",
    "title": "ETHTallinn 2024",
    "titles": {
-    "en": "ETHTallinn 2024"
+    "en": "ETHTallinn 2024",
+    "lt": "ETHTallinn 2024"
    },
    "start": "2024-04-19",
    "end": "2024-04-21",
@@ -1087,7 +1099,8 @@
    "status": "confirmed",
    "title": "Web3 Summit Vilnius 2023",
    "titles": {
-    "en": "Web3 Summit Vilnius 2023"
+    "en": "Web3 Summit Vilnius 2023",
+    "lt": "Web3 Summit Vilnius 2023"
    },
    "start": "2023-11-09",
    "end": "2023-11-09",
@@ -1119,7 +1132,8 @@
    "status": "confirmed",
    "title": "Palanga — Tech & Talk",
    "titles": {
-    "en": "Palanga — Tech & Talk"
+    "en": "Palanga — Tech & Talk",
+    "lt": "Palanga — Tech & Talk"
    },
    "start": "2026-10-28T18:30:00+02:00",
    "end": null,
@@ -1150,7 +1164,8 @@
    "status": "planned",
    "title": "BSides Vilnius 2027",
    "titles": {
-    "en": "BSides Vilnius 2027"
+    "en": "BSides Vilnius 2027",
+    "lt": "BSides Vilnius 2027"
    },
    "start": null,
    "end": null,
@@ -1214,7 +1229,8 @@
    "status": "confirmed",
    "title": "BSides Vilnius 2026 · Security Theater",
    "titles": {
-    "en": "BSides Vilnius 2026 · Security Theater"
+    "en": "BSides Vilnius 2026 · Security Theater",
+    "lt": "BSides Vilnius 2026 · Security Theater"
    },
    "start": "2026-06-03",
    "end": "2026-06-04",

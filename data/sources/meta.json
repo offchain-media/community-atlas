@@ -1,29 +1,29 @@
 {
  "merchants": {
   "ok": true,
-  "at": "2026-11-05T22:52:54.281Z",
-  "result": 29753
+  "at": "2026-11-07T11:58:23.272Z",
+  "result": 29764
  },
  "areas": {
   "ok": true,
-  "at": "2026-11-05T22:52:56.701Z",
+  "at": "2026-11-07T11:58:25.080Z",
   "result": {
    "countries": 229,
-   "communities": 691
+   "communities": 693
   }
  },
  "meetup": {
   "ok": true,
-  "at": "2026-11-05T22:13:21.838Z",
+  "at": "2026-11-07T11:58:39.084Z",
   "result": {
    "groups": 97,
-   "events": 202,
-   "failures": 31
+   "events": 200,
+   "failures": 32
   }
  },
  "planb": {
   "ok": true,
-  "at": "2026-11-05T21:55:49.622Z",
+  "at": "2026-11-07T11:59:03.838Z",
   "result": {
    "events": 288,
    "skipped": 8,
@@ -32,7 +32,7 @@
  },
  "feeds": {
   "ok": true,
-  "at": "2026-11-05T21:56:02.820Z",
+  "at": "2026-11-07T11:59:05.076Z",
   "result": {
    "events": 38,
    "failures": 0
@@ -40,19 +40,19 @@
  },
  "luma": {
   "ok": true,
-  "at": "2026-11-05T22:53:18.921Z",
+  "at": "2026-11-07T11:58:45.574Z",
   "result": {
    "calendars": 4,
-   "events": 14,
+   "events": 13,
    "failures": 0
   }
  },
  "nostr": {
   "ok": true,
-  "at": "2026-11-05T22:57:10.692Z",
+  "at": "2026-11-07T11:58:59.212Z",
   "result": {
-   "found": 214,
-   "events": 161
+   "found": 153,
+   "events": 124
   }
  }
 }
